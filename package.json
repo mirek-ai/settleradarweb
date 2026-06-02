@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/buildDatabaseJson.js",
+    "sync-db": "node scripts/buildDatabaseJson.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
