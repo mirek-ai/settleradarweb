@@ -496,7 +496,7 @@ export default function Home() {
                     <div className="bg-slate-50 dark:bg-slate-900/50 p-2.5 rounded-lg border border-slate-200 dark:border-slate-800 flex flex-col">
                       <span className="text-[10px] uppercase font-bold text-slate-500 mb-1">Tax Burden</span>
                       {taxes != null ? (
-                        <span className={`font-bold text-sm ${getTaxBadge(taxes).split(' ')[0]}`}>
+                        <span className={`font-bold text-sm ${taxes < 15 ? 'text-emerald-600 dark:text-emerald-400' : taxes < 30 ? 'text-yellow-600 dark:text-yellow-400' : 'text-red-600 dark:text-red-400'}`}>
                           {taxes.toFixed(1)}%
                         </span>
                       ) : <span className="text-slate-400 text-sm">--</span>}
