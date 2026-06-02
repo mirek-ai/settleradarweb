@@ -1,0 +1,119 @@
+{
+  "name": "17. Ingest Wikipedia Religions (Auto)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "years"
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger (Yearly)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [ 0, 300 ]
+    },
+    {
+      "parameters": {
+        "command": "node C:\\Users\\miros\\Downloads\\Projekty\\settleradar\\scripts\\scrapeReligions.js"
+      },
+      "id": "execute-command",
+      "name": "Run Scraper Script",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [ 200, 300 ]
+    },
+    {
+      "parameters": {
+        "operation": "read",
+        "fileSelector": "C:\\Users\\miros\\Downloads\\Projekty\\settleradar\\public\\religions.json"
+      },
+      "id": "read-file",
+      "name": "Read Local JSON",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [ 400, 300 ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const fileContent = $input.first().binary.data;\nconst buffer = await this.helpers.getBinaryDataBuffer(0, 'data');\nconst jsonString = buffer.toString('utf8');\nconst data = JSON.parse(jsonString);\n\nconst output = [];\n\nfor (const item of data) {\n  const country = item.country;\n  for (const [religion, percent] of Object.entries(item.religions)) {\n    if (percent > 0) {\n      output.push({\n        json: {\n          Country: country,\n          Religion: religion,\n          Percentage: percent\n        }\n      });\n    }\n  }\n}\n\nreturn output;"
+      },
+      "id": "code-process",
+      "name": "Process Religion JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [ 600, 300 ]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO app.country_religions (country_iso3, religion_name, percentage, year)\nSELECT c.iso_alpha3, $2, $3, extract(year from current_date)\nFROM app.countries c\nWHERE LOWER(c.name) = LOWER($1)\n  OR LOWER(c.name) = LOWER($1 || ' (country)')\n  OR (c.iso_alpha2 = 'KR' AND $1 = 'South Korea')\n  OR (c.iso_alpha2 = 'CZ' AND $1 = 'Czech Republic')\nON CONFLICT (country_iso3, religion_name, year) \nDO UPDATE SET percentage = EXCLUDED.percentage;",
+        "options": {
+          "queryParameters": "={{ [$json.Country, $json.Religion, $json.Percentage] }}"
+        }
+      },
+      "id": "postgres-upsert",
+      "name": "Upsert to Postgres",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [ 800, 300 ],
+      "credentials": {
+        "postgres": {
+          "id": "postgres-account",
+          "name": "Postgres account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Yearly)": {
+      "main": [
+        [
+          {
+            "node": "Run Scraper Script",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run Scraper Script": {
+      "main": [
+        [
+          {
+            "node": "Read Local JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Local JSON": {
+      "main": [
+        [
+          {
+            "node": "Process Religion JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Religion JSON": {
+      "main": [
+        [
+          {
+            "node": "Upsert to Postgres",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {}
+}

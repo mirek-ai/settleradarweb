@@ -1,0 +1,85 @@
+{
+  "name": "17. Ingest Religions (Embedded Fixed)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "years"
+            }
+          ]
+        }
+      },
+      "id": "trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = [{\"Country\":\"Poland\",\"Christianity\":85,\"Islam\":0.1,\"Unaffiliated\":14,\"Hinduism\":0,\"Buddhism\":0},{\"Country\":\"Germany\",\"Christianity\":54,\"Islam\":6.5,\"Unaffiliated\":39,\"Hinduism\":0.1,\"Buddhism\":0.2},{\"Country\":\"United States\",\"Christianity\":63,\"Islam\":1,\"Unaffiliated\":29,\"Hinduism\":1,\"Buddhism\":1},{\"Country\":\"United Kingdom\",\"Christianity\":46,\"Islam\":6.5,\"Unaffiliated\":37,\"Hinduism\":1.7,\"Buddhism\":0.5},{\"Country\":\"Spain\",\"Christianity\":56,\"Islam\":2.5,\"Unaffiliated\":39,\"Hinduism\":0.1,\"Buddhism\":0.1},{\"Country\":\"France\",\"Christianity\":47,\"Islam\":5,\"Unaffiliated\":40,\"Hinduism\":0,\"Buddhism\":0.5},{\"Country\":\"Italy\",\"Christianity\":79,\"Islam\":4,\"Unaffiliated\":16,\"Hinduism\":0.1,\"Buddhism\":0.2},{\"Country\":\"Netherlands\",\"Christianity\":36,\"Islam\":5,\"Unaffiliated\":54,\"Hinduism\":0.5,\"Buddhism\":0.5},{\"Country\":\"Sweden\",\"Christianity\":53,\"Islam\":8,\"Unaffiliated\":37,\"Hinduism\":0.1,\"Buddhism\":0.2},{\"Country\":\"Norway\",\"Christianity\":68,\"Islam\":3,\"Unaffiliated\":27,\"Hinduism\":0.5,\"Buddhism\":0.5},{\"Country\":\"Denmark\",\"Christianity\":71,\"Islam\":5,\"Unaffiliated\":22,\"Hinduism\":0.2,\"Buddhism\":0.2},{\"Country\":\"Switzerland\",\"Christianity\":61,\"Islam\":5.5,\"Unaffiliated\":31,\"Hinduism\":0.6,\"Buddhism\":0.5},{\"Country\":\"Canada\",\"Christianity\":53,\"Islam\":5,\"Unaffiliated\":34,\"Hinduism\":2.3,\"Buddhism\":1.4},{\"Country\":\"Australia\",\"Christianity\":43,\"Islam\":3.2,\"Unaffiliated\":38.9,\"Hinduism\":2.7,\"Buddhism\":2.4},{\"Country\":\"New Zealand\",\"Christianity\":37,\"Islam\":1.3,\"Unaffiliated\":48,\"Hinduism\":2.6,\"Buddhism\":1.5},{\"Country\":\"Japan\",\"Christianity\":1.5,\"Islam\":0.2,\"Unaffiliated\":60,\"Hinduism\":0,\"Buddhism\":31},{\"Country\":\"South Korea\",\"Christianity\":27.6,\"Islam\":0.2,\"Unaffiliated\":56,\"Hinduism\":0,\"Buddhism\":15.5},{\"Country\":\"China\",\"Christianity\":5.1,\"Islam\":1.8,\"Unaffiliated\":73.5,\"Hinduism\":0,\"Buddhism\":15.8},{\"Country\":\"India\",\"Christianity\":2.3,\"Islam\":14.2,\"Unaffiliated\":0.1,\"Hinduism\":79.8,\"Buddhism\":0.7},{\"Country\":\"Brazil\",\"Christianity\":88,\"Islam\":0,\"Unaffiliated\":8,\"Hinduism\":0,\"Buddhism\":0.1},{\"Country\":\"Mexico\",\"Christianity\":92,\"Islam\":0,\"Unaffiliated\":8,\"Hinduism\":0,\"Buddhism\":0},{\"Country\":\"United Arab Emirates\",\"Christianity\":12.6,\"Islam\":76,\"Unaffiliated\":1,\"Hinduism\":6.6,\"Buddhism\":2},{\"Country\":\"Saudi Arabia\",\"Christianity\":4.4,\"Islam\":93,\"Unaffiliated\":0.7,\"Hinduism\":1.1,\"Buddhism\":0.3},{\"Country\":\"Singapore\",\"Christianity\":18.9,\"Islam\":15.6,\"Unaffiliated\":20,\"Hinduism\":5,\"Buddhism\":31.1},{\"Country\":\"South Africa\",\"Christianity\":79.8,\"Islam\":1.5,\"Unaffiliated\":15,\"Hinduism\":1.2,\"Buddhism\":0.1},{\"Country\":\"Ireland\",\"Christianity\":76,\"Islam\":1.3,\"Unaffiliated\":14,\"Hinduism\":0.3,\"Buddhism\":0.1},{\"Country\":\"Portugal\",\"Christianity\":84,\"Islam\":0.4,\"Unaffiliated\":14,\"Hinduism\":0.1,\"Buddhism\":0.1},{\"Country\":\"Austria\",\"Christianity\":68,\"Islam\":8,\"Unaffiliated\":22,\"Hinduism\":0.1,\"Buddhism\":0.3},{\"Country\":\"Czech Republic\",\"Christianity\":11.7,\"Islam\":0.1,\"Unaffiliated\":78,\"Hinduism\":0,\"Buddhism\":0.1},{\"Country\":\"Hungary\",\"Christianity\":52,\"Islam\":0.1,\"Unaffiliated\":45,\"Hinduism\":0,\"Buddhism\":0.1}];\nconst output = [];\nfor (const item of data) {\n  for (const [rel, pct] of Object.entries(item)) {\n    if (rel !== 'Country' && pct > 0) {\n      output.push({ json: { Country: item.Country, Religion: rel, Percentage: pct } });\n    }\n  }\n}\nreturn output;"
+      },
+      "id": "data",
+      "name": "Load Religion Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO app.country_religions (country_iso3, religion_name, percentage, year)\nSELECT c.iso_alpha3, $2, $3, extract(year from current_date)\nFROM app.countries c\nWHERE LOWER(c.name) = LOWER($1)\n   OR LOWER(c.name) = LOWER($1 || ' (country)')\n   OR (c.iso_alpha2 = 'KR' AND $1 = 'South Korea')\n   OR (c.iso_alpha2 = 'CZ' AND $1 = 'Czech Republic')\nON CONFLICT (country_iso3, religion_name, year) \nDO UPDATE SET percentage = EXCLUDED.percentage;",
+        "options": {
+          "queryParameters": "={{ [$json.Country, $json.Religion, $json.Percentage] }}"
+        }
+      },
+      "id": "postgres",
+      "name": "Upsert to Postgres",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [
+        400,
+        300
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "postgres-account",
+          "name": "Postgres account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Load Religion Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Load Religion Data": {
+      "main": [
+        [
+          {
+            "node": "Upsert to Postgres",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {}
+}

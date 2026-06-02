@@ -1,0 +1,188 @@
+{
+  "name": "18 - Demographics Ingestion (World Bank)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "months",
+              "interval": 6
+            }
+          ]
+        }
+      },
+      "id": "trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL.FE.ZS?format=json&per_page=1000&date=2022:2025",
+        "options": {}
+      },
+      "id": "http-female",
+      "name": "Fetch Female %",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        200,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const rawData = $input.first().json[1];\nif (!rawData) return [];\n\nconst output = [];\nfor (const item of rawData) {\n  if (item.value !== null && item.countryiso3code) {\n    output.push({\n      json: {\n        country_iso3: item.countryiso3code,\n        indicator_code: 'wb_female_population_pct',\n        year: parseInt(item.date),\n        value: parseFloat(item.value)\n      }\n    });\n  }\n}\nreturn output;"
+      },
+      "id": "code-female",
+      "name": "Transform Female Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        400,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO app.country_indicators (country_iso3, indicator_code, year, value, source)\nSELECT $1, $2, $3, $4, 'World Bank API'\nWHERE EXISTS (SELECT 1 FROM app.countries WHERE iso_alpha3 = $1)\nON CONFLICT (country_iso3, indicator_code, year) \nDO UPDATE SET value = EXCLUDED.value;",
+        "options": {
+          "queryParameters": "={{ [$json.country_iso3, $json.indicator_code, $json.year, $json.value] }}"
+        }
+      },
+      "id": "postgres-female",
+      "name": "Upsert Female %",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [
+        600,
+        200
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "H2lVdnOfmAF0B0aU",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL.MA.ZS?format=json&per_page=1000&date=2022:2025",
+        "options": {}
+      },
+      "id": "http-male",
+      "name": "Fetch Male %",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        200,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const rawData = $input.first().json[1];\nif (!rawData) return [];\n\nconst output = [];\nfor (const item of rawData) {\n  if (item.value !== null && item.countryiso3code) {\n    output.push({\n      json: {\n        country_iso3: item.countryiso3code,\n        indicator_code: 'wb_male_population_pct',\n        year: parseInt(item.date),\n        value: parseFloat(item.value)\n      }\n    });\n  }\n}\nreturn output;"
+      },
+      "id": "code-male",
+      "name": "Transform Male Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        400,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO app.country_indicators (country_iso3, indicator_code, year, value, source)\nSELECT $1, $2, $3, $4, 'World Bank API'\nWHERE EXISTS (SELECT 1 FROM app.countries WHERE iso_alpha3 = $1)\nON CONFLICT (country_iso3, indicator_code, year) \nDO UPDATE SET value = EXCLUDED.value;",
+        "options": {
+          "queryParameters": "={{ [$json.country_iso3, $json.indicator_code, $json.year, $json.value] }}"
+        }
+      },
+      "id": "postgres-male",
+      "name": "Upsert Male %",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [
+        600,
+        400
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "H2lVdnOfmAF0B0aU",
+          "name": "Postgres account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Fetch Female %",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Fetch Male %",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Female %": {
+      "main": [
+        [
+          {
+            "node": "Transform Female Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform Female Data": {
+      "main": [
+        [
+          {
+            "node": "Upsert Female %",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Male %": {
+      "main": [
+        [
+          {
+            "node": "Transform Male Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform Male Data": {
+      "main": [
+        [
+          {
+            "node": "Upsert Male %",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {}
+}

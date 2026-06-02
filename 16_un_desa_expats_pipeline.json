@@ -1,0 +1,144 @@
+{
+  "name": "16_UN_DESA_Expats_Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "years"
+            }
+          ]
+        }
+      },
+      "id": "1",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2020_ims_stock_by_sex_destination_and_origin.xlsx",
+        "responseFormat": "file",
+        "options": {}
+      },
+      "id": "2",
+      "name": "Download UN Excel",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        220,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "read",
+        "binaryPropertyName": "data",
+        "options": {
+          "headerRow": 10,
+          "sheetName": "Table 1"
+        }
+      },
+      "id": "3",
+      "name": "Spreadsheet File",
+      "type": "n8n-nodes-base.spreadsheetFile",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst destinations = {};\n\n// Group by destination\nfor (const item of items) {\n  const row = item.json;\n  const destName = row['Region, development group, country or area of destination'];\n  const originName = row['Region, development group, country or area of origin'];\n  const countStr = row['2020'];\n  \n  if (!destName || !originName || typeof countStr === 'undefined') continue;\n  if (destName === originName) continue;\n  if (originName.trim() === 'WORLD' || originName.trim() === 'Total') continue;\n  \n  const destClean = destName.trim();\n  const originClean = originName.trim();\n  \n  // Skip regions (very rough heuristic: if there's leading spaces it's usually a country in this dataset, wait, actually UN dataset has spaces for countries to show hierarchy).\n  // We will let the SQL query filter out regions because they won't match app.countries!\n  \n  // Parse count\n  let count = 0;\n  if (typeof countStr === 'number') count = countStr;\n  else if (typeof countStr === 'string') count = parseInt(countStr.replace(/\\s/g, ''), 10) || 0;\n  \n  if (!destinations[destClean]) {\n    destinations[destClean] = [];\n  }\n  destinations[destClean].push({ origin: originClean, count: count });\n}\n\nconst output = [];\n\n// Get top 5 origins per destination\nfor (const dest in destinations) {\n  const origins = destinations[dest];\n  origins.sort((a, b) => b.count - a.count);\n  const top5 = origins.slice(0, 5);\n  \n  for (const expat of top5) {\n    if (expat.count > 0) {\n      output.push({\n        json: {\n          Destination: dest,\n          Origin: expat.origin,\n          Count: expat.count\n        }\n      });\n    }\n  }\n}\n\nreturn output;"
+      },
+      "id": "4",
+      "name": "Process Top 5 Expats",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO app.country_expats (destination_iso3, origin_iso3, migrant_count, year)\nSELECT c1.iso_alpha3, c2.iso_alpha3, $3, 2020\nFROM app.countries c1, app.countries c2\nWHERE (LOWER(c1.name) = LOWER($1) OR c1.name ILIKE $1 || '%')\n  AND (LOWER(c2.name) = LOWER($2) OR c2.name ILIKE $2 || '%')\nON CONFLICT (destination_iso3, origin_iso3, year) \nDO UPDATE SET migrant_count = EXCLUDED.migrant_count;",
+        "options": {
+          "queryParameters": "={{ [$json.Destination, $json.Origin, $json.Count] }}"
+        }
+      },
+      "id": "5",
+      "name": "Upsert to Postgres",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [
+        880,
+        0
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "1",
+          "name": "SettleRadar DB"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Download UN Excel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download UN Excel": {
+      "main": [
+        [
+          {
+            "node": "Spreadsheet File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Spreadsheet File": {
+      "main": [
+        [
+          {
+            "node": "Process Top 5 Expats",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Top 5 Expats": {
+      "main": [
+        [
+          {
+            "node": "Upsert to Postgres",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f1d0a5b0-7b2a-4a2a-9e11-1a2b3c4d5e6f"
+}
