@@ -1,15 +1,15 @@
 'use client';
 
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 
-export function Analytics() {
+function AnalyticsInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
     if (pathname && typeof window !== 'undefined' && window.gtag) {
-      const url = pathname + searchParams.toString();
+      const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '');
       
       // Force GA4 to track the page view explicitly on every route change
       window.gtag('event', 'page_view', {
@@ -20,4 +20,12 @@ export function Analytics() {
   }, [pathname, searchParams]);
 
   return null;
+}
+
+export function Analytics() {
+  return (
+    <Suspense fallback={null}>
+      <AnalyticsInner />
+    </Suspense>
+  );
 }
