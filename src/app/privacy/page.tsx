@@ -32,7 +32,10 @@ export default function PrivacyPolicy() {
         <section className="space-y-4 mt-8">
           <h2 className="text-2xl font-bold">1.5. Data Licensing &amp; Open Data</h2>
           <p>
-            All datasets aggregated and visualized on SettleRadar are sourced from publicly available Open Data repositories. Data providers such as The World Bank, UN DESA, and the World Health Organization release their datasets under permissive licenses, including <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> or public domain dedications. 
+            All datasets aggregated and visualized on SettleRadar are sourced from publicly available Open Data repositories. Data providers such as The World Bank, UN DESA, the World Health Organization, and Wikipedia release their datasets under permissive licenses, including <strong>Creative Commons Attribution (CC BY 4.0 / CC BY-SA)</strong> or public domain dedications. 
+          </p>
+          <p>
+            Data referenced from The Heritage Foundation (Index of Economic Freedom) is publicly available and utilized under the <strong>Fair Use</strong> doctrine (or equivalent factual data extraction exceptions) exclusively for informational, non-commercial comparative purposes.
           </p>
           <p>
             SettleRadar operates in full compliance with these licenses by aggregating factual data points without claiming ownership of the underlying proprietary rights, and by providing appropriate attribution to the original organizations.
