@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CookieBanner } from "@/components/CookieBanner";
+import { Analytics } from "@/components/Analytics";
 import Script from "next/script";
 
 const inter = Inter({
@@ -154,6 +155,7 @@ export default function RootLayout({
           </footer>
 
           <CookieBanner />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
