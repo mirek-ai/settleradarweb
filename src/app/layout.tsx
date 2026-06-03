@@ -84,36 +84,36 @@ export default function RootLayout({
         />
 
         {/* GOOGLE CONSENT MODE V2 DEFAULT (Cookieless pings) */}
-        <Script id="ga-consent" strategy="beforeInteractive">
-          {`
+        <Script id="ga-consent" strategy="beforeInteractive" dangerouslySetInnerHTML={{
+          __html: `
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            window.gtag = function gtag(){window.dataLayer.push(arguments);}
             // Default to denied for GDPR compliance
-            gtag('consent', 'default', {
+            window.gtag('consent', 'default', {
               'ad_storage': 'denied',
               'analytics_storage': 'denied'
             });
             // Check if user previously accepted
             if (typeof window !== 'undefined' && localStorage.getItem('cookie_consent') === 'granted') {
-              gtag('consent', 'update', {
+              window.gtag('consent', 'update', {
                 'analytics_storage': 'granted'
               });
             }
-          `}
-        </Script>
+          `
+        }} />
         
         {/* GOOGLE ANALYTICS 4 */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-03P3QS7E3H" strategy="afterInteractive" />
-        <Script id="ga-init" strategy="afterInteractive">
-          {`
+        <Script id="ga-init" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-03P3QS7E3H', {
+            window.gtag = function gtag(){window.dataLayer.push(arguments);}
+            window.gtag('js', new Date());
+            window.gtag('config', 'G-03P3QS7E3H', {
               page_path: window.location.pathname,
             });
-          `}
-        </Script>
+          `
+        }} />
       </head>
       <body suppressHydrationWarning className="min-h-full flex flex-col font-sans bg-background text-foreground transition-colors duration-300">
         <ThemeProvider>
