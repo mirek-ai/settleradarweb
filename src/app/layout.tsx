@@ -5,8 +5,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CookieBanner } from "@/components/CookieBanner";
-import { Analytics } from "@/components/Analytics";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -85,7 +85,9 @@ export default function RootLayout({
         />
 
         {/* STEP 1: Consent Mode defaults — runs BEFORE any GA script loads */}
-        <script
+        <Script
+          id="ga-consent"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -106,22 +108,6 @@ export default function RootLayout({
             `,
           }}
         />
-
-        {/* STEP 2: Load GA4 library */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-03P3QS7E3H"
-          strategy="afterInteractive"
-        />
-
-        {/* STEP 3: Initialize GA4 — consent state is already set above */}
-        <Script id="ga-init" strategy="afterInteractive" dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-03P3QS7E3H');
-          `
-        }} />
       </head>
       <body suppressHydrationWarning className="min-h-full flex flex-col font-sans bg-background text-foreground transition-colors duration-300">
         <ThemeProvider>
@@ -162,7 +148,7 @@ export default function RootLayout({
           </footer>
 
           <CookieBanner />
-          <Analytics />
+          <GoogleAnalytics gaId="G-03P3QS7E3H" />
         </ThemeProvider>
       </body>
     </html>
