@@ -144,6 +144,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       name: `Demographic and Economic Data for ${country.name}`,
       description: `Comprehensive indicators for ${country.name} including taxes, safety, climate, and freedom metrics from trusted international sources.`,
       url: `https://settleradar.com/country/${country.slug}`,
+      license: "https://creativecommons.org/licenses/by/4.0/",
       creator: {
         '@type': 'Organization',
         name: 'SettleRadar Data Intelligence'

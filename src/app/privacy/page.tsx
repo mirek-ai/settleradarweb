@@ -30,6 +30,16 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="space-y-4 mt-8">
+          <h2 className="text-2xl font-bold">1.5. Data Licensing &amp; Open Data</h2>
+          <p>
+            All datasets aggregated and visualized on SettleRadar are sourced from publicly available Open Data repositories. Data providers such as The World Bank, UN DESA, and the World Health Organization release their datasets under permissive licenses, including <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> or public domain dedications. 
+          </p>
+          <p>
+            SettleRadar operates in full compliance with these licenses by aggregating factual data points without claiming ownership of the underlying proprietary rights, and by providing appropriate attribution to the original organizations.
+          </p>
+        </section>
+
+        <section className="space-y-4 mt-8">
           <h2 className="text-2xl font-bold">2. AI-Generated Content</h2>
           <p>
             Some textual summaries, comparisons, and insights provided on this platform are algorithmically generated using Artificial Intelligence (AI) models. 
