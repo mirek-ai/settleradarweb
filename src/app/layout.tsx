@@ -84,11 +84,36 @@ export default function RootLayout({
           }}
         />
 
-        {/* GOOGLE ANALYTICS 4 — bare minimum for debugging */}
+        {/* STEP 1: Consent Mode defaults — runs BEFORE any GA script loads */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              window.gtag = gtag;
+
+              gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied'
+              });
+
+              // If user previously accepted, upgrade BEFORE config fires
+              try {
+                if (localStorage.getItem('cookie_consent') === 'granted') {
+                  gtag('consent', 'update', { 'analytics_storage': 'granted' });
+                }
+              } catch(e) {}
+            `,
+          }}
+        />
+
+        {/* STEP 2: Load GA4 library */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-03P3QS7E3H"
           strategy="afterInteractive"
         />
+
+        {/* STEP 3: Initialize GA4 — consent state is already set above */}
         <Script id="ga-init" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];

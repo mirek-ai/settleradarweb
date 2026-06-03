@@ -29,6 +29,12 @@ export function CookieBanner() {
       window.gtag('consent', 'update', {
         analytics_storage: 'granted',
       });
+
+      // Send a fresh page_view so this visit appears in Real-Time
+      window.gtag('event', 'page_view', {
+        page_path: window.location.pathname,
+        page_title: document.title,
+      });
     }
   };
 
