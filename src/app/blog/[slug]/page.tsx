@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, MapPin } from 'lucide-react';
+import { formatDate } from '@/lib/utils';
 
 export async function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -54,7 +55,7 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground leading-tight">
         {postData.title}
       </h1>
-      <p className="text-primary font-semibold mb-10">{postData.date}</p>
+      <p className="text-primary font-semibold mb-10">{formatDate(postData.date)}</p>
       
       <div className="prose prose-lg dark:prose-invert prose-blue max-w-none prose-table:w-full prose-table:text-left prose-th:bg-foreground/5 prose-th:p-4 prose-td:p-4 prose-tr:border-b prose-tr:border-foreground/10">
         <ReactMarkdown 

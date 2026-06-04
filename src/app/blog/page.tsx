@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { getSortedPostsData } from '@/lib/posts';
+import { formatDate } from '@/lib/utils';
 
 export const metadata = {
   title: 'Blog | SettleRadar',
@@ -34,7 +35,7 @@ export default function BlogIndex() {
                 </div>
               )}
               <div className="p-6">
-                <p className="text-sm text-primary font-semibold mb-2">{post.date}</p>
+                <p className="text-sm text-primary font-semibold mb-2">{formatDate(post.date)}</p>
                 <h2 className="text-xl font-bold mb-3 text-foreground line-clamp-3">{post.title}</h2>
                 <p className="text-foreground/70 line-clamp-3 text-sm">{post.excerpt}</p>
               </div>

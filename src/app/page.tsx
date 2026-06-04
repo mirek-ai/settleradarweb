@@ -154,7 +154,7 @@ export default function Home() {
             onClick={() => { setActiveScenario('all'); setSortBy('freedom'); setSortOrder('desc'); }}
             className={`px-6 py-3 rounded-xl border transition-all ${activeScenario === 'all' ? 'bg-black/20 dark:bg-white/20 border-black/20 dark:border-white/40 shadow-[0_0_15px_rgba(255,255,255,0.1)]' : 'glass-card hover:bg-black/10 dark:bg-white/10'}`}
           >
-            <Globe className="w-5 h-5 inline-block mr-2 text-slate-700 dark:text-slate-300" /> All Countries
+            <Globe className="w-5 h-5 inline-block mr-2 text-slate-700 dark:text-slate-300" /> All Destinations
           </button>
           <button 
             onClick={() => { setActiveScenario('tax-haven'); setSortBy('taxes'); setSortOrder('asc'); }}
