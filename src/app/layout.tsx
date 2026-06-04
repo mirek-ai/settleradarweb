@@ -123,6 +123,7 @@ export default function RootLayout({
               <div className="hidden md:flex items-center gap-6 text-sm font-medium">
                 <Link href="/" className="hover:opacity-70 transition-opacity">Discover</Link>
                 <Link href="/compare" className="hover:opacity-70 transition-opacity">Compare</Link>
+                <Link href="/blog" className="hover:opacity-70 transition-opacity">Blog</Link>
                 <ThemeToggle />
               </div>
             </div>
