@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-04T09:43:40.425Z",
+  "updatedAt": "2026-06-04T09:52:20.100Z",
   "countries": [
     {
       "id": "AFG",
@@ -153,8 +153,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -74404,
-          "year": 2025,
+          "value": -48958,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_population": {
@@ -461,8 +461,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -24230,
-          "year": 2025,
+          "value": -25357,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -616,8 +616,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -27531,
-          "year": 2025,
+          "value": -25963,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_women_in_parliament_pct": {
@@ -929,8 +929,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -1051,
-          "year": 2025,
+          "value": -1159,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -1134,8 +1134,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 843,
-          "year": 2025,
+          "value": 1061,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -1446,8 +1446,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -3524,
-          "year": 2025,
+          "value": -995,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -1876,8 +1876,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 12,
-          "year": 2025,
+          "value": 0,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -2186,8 +2186,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 2859,
-          "year": 2025,
+          "value": 4133,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -2334,8 +2334,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -29013,
-          "year": 2025,
+          "value": 75000,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_women_in_parliament_pct": {
@@ -2665,8 +2665,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 111,
-          "year": 2025,
+          "value": 147,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -2965,8 +2965,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 137109,
-          "year": 2025,
+          "value": 140232,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -3277,8 +3277,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 11254,
-          "year": 2025,
+          "value": 4819,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -3589,8 +3589,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 8731,
-          "year": 2025,
+          "value": -84122,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -3819,8 +3819,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 935,
-          "year": 2025,
+          "value": 1001,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -4119,8 +4119,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 18128,
-          "year": 2025,
+          "value": 20002,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -4431,8 +4431,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -402100,
-          "year": 2025,
+          "value": -549918,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -4726,8 +4726,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -87,
-          "year": 2025,
+          "value": -80,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -5043,8 +5043,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -3020,
-          "year": 2025,
+          "value": -3034,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -5353,8 +5353,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 31989,
-          "year": 2025,
+          "value": 41679,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -5655,8 +5655,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 360,
-          "year": 2025,
+          "value": 595,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -5960,8 +5960,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -7847,
-          "year": 2025,
+          "value": -192,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -6145,8 +6145,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2,
-          "year": 2025,
+          "value": 0,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -6455,8 +6455,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 455,
-          "year": 2025,
+          "value": 291,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -6760,8 +6760,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -3179,
-          "year": 2025,
+          "value": -3008,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -7036,8 +7036,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -6994,
-          "year": 2025,
+          "value": -485,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -7343,8 +7343,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -5665,
-          "year": 2025,
+          "value": -6487,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -7755,8 +7755,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -217283,
-          "year": 2025,
+          "value": -240059,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -7942,8 +7942,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 153,
-          "year": 2025,
+          "value": 587,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -8168,7 +8168,7 @@
         },
         "wb_net_migration": {
           "value": 0,
-          "year": 2025,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -8443,8 +8443,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2961,
-          "year": 2025,
+          "value": 5173,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -8736,8 +8736,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -27130,
-          "year": 2025,
+          "value": -24957,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -9043,8 +9043,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -34727,
-          "year": 2025,
+          "value": 1995,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -9336,8 +9336,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -31469,
-          "year": 2025,
+          "value": -31837,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -9634,8 +9634,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -15379,
-          "year": 2025,
+          "value": -4798,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -9941,8 +9941,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 326204,
-          "year": 2025,
+          "value": 433842,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -10176,8 +10176,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -1284,
-          "year": 2025,
+          "value": -1226,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -10437,8 +10437,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 888,
-          "year": 2025,
+          "value": 921,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -10742,8 +10742,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -14693,
-          "year": 2025,
+          "value": -14682,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -11032,8 +11032,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -123104,
-          "year": 2025,
+          "value": 496830,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -11344,8 +11344,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 51712,
-          "year": 2025,
+          "value": 62679,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -11642,8 +11642,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -268126,
-          "year": 2025,
+          "value": -567724,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -12128,8 +12128,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 129139,
-          "year": 2025,
+          "value": 154521,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -12416,8 +12416,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -2127,
-          "year": 2025,
+          "value": -2002,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -12868,8 +12868,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 1000,
-          "year": 2025,
+          "value": 995,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -13173,8 +13173,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -3481,
-          "year": 2025,
+          "value": 10202,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -13475,8 +13475,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -22244,
-          "year": 2025,
+          "value": -22797,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -13658,8 +13658,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 470,
-          "year": 2025,
+          "value": 518,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -13961,8 +13961,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 7749,
-          "year": 2025,
+          "value": 8697,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -14271,8 +14271,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -112188,
-          "year": 2025,
+          "value": -14638,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -14504,8 +14504,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -27309,
-          "year": 2025,
+          "value": -14992,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -14780,8 +14780,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 22103,
-          "year": 2025,
+          "value": 31006,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -15070,8 +15070,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -581,
-          "year": 2025,
+          "value": 500,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -15333,8 +15333,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -242,
-          "year": 2025,
+          "value": -199,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -15643,8 +15643,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -35306,
-          "year": 2025,
+          "value": -34915,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -15955,8 +15955,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -17219,
-          "year": 2025,
+          "value": -21948,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -16258,8 +16258,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -57305,
-          "year": 2025,
+          "value": 305006,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -16556,8 +16556,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -23934,
-          "year": 2025,
+          "value": -23253,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -16841,8 +16841,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 3812,
-          "year": 2025,
+          "value": 3997,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -17116,8 +17116,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -6698,
-          "year": 2025,
+          "value": -15284,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -17421,8 +17421,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -13350,
-          "year": 2025,
+          "value": 5717,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -17726,8 +17726,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -5775,
-          "year": 2025,
+          "value": -8549,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -18031,8 +18031,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 24054,
-          "year": 2025,
+          "value": -11996,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -18308,8 +18308,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 386,
-          "year": 2025,
+          "value": 599,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -18610,8 +18610,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -3288,
-          "year": 2025,
+          "value": -3289,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -18922,8 +18922,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 18246,
-          "year": 2025,
+          "value": 38156,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -19227,8 +19227,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 91737,
-          "year": 2025,
+          "value": 91862,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -19550,8 +19550,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -1199,
-          "year": 2025,
+          "value": -1348,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -19945,8 +19945,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 1116,
-          "year": 2025,
+          "value": 987,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -20182,8 +20182,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2984,
-          "year": 2025,
+          "value": -3000,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -20494,8 +20494,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 1283,
-          "year": 2025,
+          "value": 2003,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -20804,8 +20804,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -334072,
-          "year": 2025,
+          "value": 609553,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -21109,8 +21109,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -17079,
-          "year": 2025,
+          "value": -10003,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -21284,8 +21284,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 549,
-          "year": 2025,
+          "value": 689,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -21582,8 +21582,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 16636,
-          "year": 2025,
+          "value": -159430,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -21772,8 +21772,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -265,
-          "year": 2025,
+          "value": -318,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -21994,8 +21994,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -185,
-          "year": 2025,
+          "value": -190,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -22327,8 +22327,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -493,
-          "year": 2025,
+          "value": -500,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -22618,8 +22618,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -7959,
-          "year": 2025,
+          "value": -8940,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -22922,8 +22922,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -16282,
-          "year": 2025,
+          "value": -3997,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -23217,8 +23217,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -1373,
-          "year": 2025,
+          "value": -1400,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -23514,8 +23514,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -5092,
-          "year": 2025,
+          "value": -6161,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -23802,8 +23802,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -32052,
-          "year": 2025,
+          "value": -31786,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -24200,8 +24200,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -4778,
-          "year": 2025,
+          "value": -5044,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -24410,8 +24410,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 17863,
-          "year": 2025,
+          "value": -3427,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -24686,8 +24686,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -16331,
-          "year": 2025,
+          "value": 49213,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -24998,8 +24998,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 2709,
-          "year": 2025,
+          "value": 4630,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -25308,8 +25308,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -495753,
-          "year": 2025,
+          "value": -979179,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -25620,8 +25620,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -39509,
-          "year": 2025,
+          "value": -37501,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -25930,8 +25930,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 116786,
-          "year": 2025,
+          "value": 262044,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -26181,8 +26181,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -1064,
-          "year": 2025,
+          "value": -5710,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -26467,8 +26467,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 35417,
-          "year": 2025,
+          "value": 43873,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -26632,8 +26632,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 166,
-          "year": 2025,
+          "value": 196,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -26937,8 +26937,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 11466,
-          "year": 2025,
+          "value": 9999,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -27235,8 +27235,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 75448,
-          "year": 2025,
+          "value": 150189,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -27480,8 +27480,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 11305,
-          "year": 2025,
+          "value": 6002,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -27751,8 +27751,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -11053,
-          "year": 2025,
+          "value": -10003,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -28046,8 +28046,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 140579,
-          "year": 2025,
+          "value": 175003,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -28444,8 +28444,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -303267,
-          "year": 2025,
+          "value": -17445,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -28742,8 +28742,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -8834,
-          "year": 2025,
+          "value": -4822,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -29040,8 +29040,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -27330,
-          "year": 2025,
+          "value": -10003,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -29318,8 +29318,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -462,
-          "year": 2025,
+          "value": -485,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -29700,8 +29700,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": 42775,
-          "year": 2025,
+          "value": 50008,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -29952,8 +29952,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 1815,
-          "year": 2025,
+          "value": 5601,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -30252,8 +30252,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -10645,
-          "year": 2025,
+          "value": -10003,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -30528,8 +30528,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -7330,
-          "year": 2025,
+          "value": 7966,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -30838,8 +30838,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -10230,
-          "year": 2025,
+          "value": -34193,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -31131,8 +31131,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -5192,
-          "year": 2025,
+          "value": -5168,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -31433,8 +31433,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -9870,
-          "year": 2025,
+          "value": -5002,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -31700,8 +31700,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -172,
-          "year": 2025,
+          "value": -2001,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -31913,8 +31913,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 194,
-          "year": 2025,
+          "value": 214,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -32225,8 +32225,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -24618,
-          "year": 2025,
+          "value": 44935,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -32525,8 +32525,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 5237,
-          "year": 2025,
+          "value": 5905,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -32737,8 +32737,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -328,
-          "year": 2025,
+          "value": 8807,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -33008,8 +33008,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2227,
-          "year": 2025,
+          "value": -1487,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -33318,8 +33318,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -5628,
-          "year": 2025,
+          "value": -5811,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -33623,8 +33623,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 166615,
-          "year": 2025,
+          "value": 181071,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -33935,8 +33935,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2283,
-          "year": 2025,
+          "value": -2877,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -34237,8 +34237,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -48019,
-          "year": 2025,
+          "value": -39953,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -34544,8 +34544,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 5161,
-          "year": 2025,
+          "value": 6591,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -34766,8 +34766,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -1698,
-          "year": 2025,
+          "value": -1832,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -35185,8 +35185,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -5044,
-          "year": 2025,
+          "value": 2999,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -35492,8 +35492,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2784,
-          "year": 2025,
+          "value": -2824,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -35936,8 +35936,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -108037,
-          "year": 2025,
+          "value": -101044,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -36219,8 +36219,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -1125,
-          "year": 2025,
+          "value": -1134,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -36490,8 +36490,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -29766,
-          "year": 2025,
+          "value": -18570,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -36656,8 +36656,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 100,
-          "year": 2025,
+          "value": 88,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -36952,8 +36952,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 79,
-          "year": 2025,
+          "value": 0,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -37218,8 +37218,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -9279,
-          "year": 2025,
+          "value": 12000,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -37681,8 +37681,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -56254,
-          "year": 2025,
+          "value": -39650,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -37991,8 +37991,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -65573,
-          "year": 2025,
+          "value": -36276,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -38238,8 +38238,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -39661,
-          "year": 2025,
+          "value": -34989,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -38538,8 +38538,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 1866,
-          "year": 2025,
+          "value": 11675,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -38758,8 +38758,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -122,
-          "year": 2025,
+          "value": -148,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -39058,8 +39058,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -364699,
-          "year": 2025,
+          "value": -409782,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -39370,8 +39370,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 104681,
-          "year": 2025,
+          "value": 144558,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -39567,8 +39567,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 440,
-          "year": 2025,
+          "value": 485,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -39850,8 +39850,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 17403,
-          "year": 2025,
+          "value": 21404,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -40162,8 +40162,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -8371,
-          "year": 2025,
+          "value": -7996,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -40457,8 +40457,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -7704,
-          "year": 2025,
+          "value": 995,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -40764,8 +40764,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -15258,
-          "year": 2025,
+          "value": -57936,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -41288,8 +41288,8 @@
           "source": "Heritage Foundation"
         },
         "wb_net_migration": {
-          "value": -2787,
-          "year": 2025,
+          "value": -1997,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -41414,8 +41414,8 @@
           "source": "World Bank API"
         },
         "wb_net_migration": {
-          "value": -5645,
-          "year": 2025,
+          "value": -5597,
+          "year": 2023,
           "source": "World Bank"
         },
         "who_life_expectancy": {
@@ -41741,8 +41741,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -963,
-          "year": 2025,
+          "value": -1321,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -42037,8 +42037,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 29798,
-          "year": 2025,
+          "value": 53806,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -42339,8 +42339,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 113734,
-          "year": 2025,
+          "value": 156285,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -42646,8 +42646,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -1235336,
-          "year": 2025,
+          "value": -1619557,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -42861,8 +42861,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -16,
-          "year": 2025,
+          "value": -19,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -43074,8 +43074,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -23156,
-          "year": 2025,
+          "value": -24996,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -43355,8 +43355,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 6151,
-          "year": 2025,
+          "value": 7262,
+          "year": 2023,
           "source": "World Bank"
         }
       },
@@ -43643,8 +43643,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -284,
-          "year": 2025,
+          "value": -787,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -43955,8 +43955,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -12423,
-          "year": 2025,
+          "value": -12500,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -44255,8 +44255,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 11931,
-          "year": 2025,
+          "value": 24783,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -44491,8 +44491,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -149315,
-          "year": 2025,
+          "value": -164284,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -44889,8 +44889,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -330820,
-          "year": 2025,
+          "value": -7824,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -45194,8 +45194,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 16472,
-          "year": 2025,
+          "value": 29102,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -45344,8 +45344,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 5495,
-          "year": 2025,
+          "value": 19833,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_air_quality": {
@@ -45558,11 +45558,6 @@
           "year": 2024,
           "source": "World Bank API"
         },
-        "wb_net_migration": {
-          "value": 36288,
-          "year": 2025,
-          "source": "World Bank"
-        },
         "wb_air_quality": {
           "value": 75.66,
           "year": 2020,
@@ -45706,6 +45701,11 @@
         "wb_internet_users_pct": {
           "value": 98.09,
           "year": 2024,
+          "source": "World Bank"
+        },
+        "wb_net_migration": {
+          "value": 39995,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -45946,8 +45946,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2999,
-          "year": 2025,
+          "value": -995,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -46222,8 +46222,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -29041,
-          "year": 2025,
+          "value": -27780,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -46532,8 +46532,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -251822,
-          "year": 2025,
+          "value": 27807,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -46808,8 +46808,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 6282,
-          "year": 2025,
+          "value": -9001,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -47362,8 +47362,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 18,
-          "year": 2025,
+          "value": 0,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -47664,8 +47664,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -23,
-          "year": 2025,
+          "value": 0,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -47834,8 +47834,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -1170,
-          "year": 2025,
+          "value": -1697,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -48210,8 +48210,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -714,
-          "year": 2025,
+          "value": -784,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -48505,8 +48505,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2815,
-          "year": 2025,
+          "value": -2810,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -48710,8 +48710,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 122,
-          "year": 2025,
+          "value": -190,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -48924,8 +48924,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 119738,
-          "year": 2025,
+          "value": 325691,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -49229,8 +49229,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -12636,
-          "year": 2025,
+          "value": -9999,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -49541,8 +49541,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -13086,
-          "year": 2025,
+          "value": 4348,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -49833,8 +49833,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 1590,
-          "year": 2025,
+          "value": 1809,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -50140,8 +50140,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -11309,
-          "year": 2025,
+          "value": -4000,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -50442,8 +50442,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 16892,
-          "year": 2025,
+          "value": 26996,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -50629,8 +50629,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 530,
-          "year": 2025,
+          "value": 567,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -50905,8 +50905,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -31377,
-          "year": 2025,
+          "value": 4933,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -51212,8 +51212,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 2711,
-          "year": 2025,
+          "value": 5339,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -51514,8 +51514,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 1631,
-          "year": 2025,
+          "value": 1636,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -51781,8 +51781,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 12077,
-          "year": 2025,
+          "value": 46217,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -52079,8 +52079,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 146370,
-          "year": 2025,
+          "value": 228222,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -52484,8 +52484,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 65731,
-          "year": 2025,
+          "value": 87800,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -52685,8 +52685,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 6145,
-          "year": 2025,
+          "value": 455000,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -52990,8 +52990,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 96630,
-          "year": 2025,
+          "value": 119099,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -53300,8 +53300,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -30724,
-          "year": 2025,
+          "value": -28011,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -53526,8 +53526,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 291469,
-          "year": 2025,
+          "value": -1349998,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -53828,8 +53828,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -967,
-          "year": 2025,
+          "value": -988,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -54233,8 +54233,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 47079,
-          "year": 2025,
+          "value": 55209,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -54531,8 +54531,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 37253,
-          "year": 2025,
+          "value": 45098,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -54813,8 +54813,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 421693,
-          "year": 2025,
+          "value": 757309,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -55074,8 +55074,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -650,
-          "year": 2025,
+          "value": -592,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -55531,8 +55531,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -21606,
-          "year": 2025,
+          "value": -19999,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -55829,8 +55829,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -12730,
-          "year": 2025,
+          "value": -39388,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -56105,8 +56105,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 27509,
-          "year": 2025,
+          "value": 19648,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -56405,8 +56405,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2550,
-          "year": 2025,
+          "value": -5620,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -56712,8 +56712,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -15010,
-          "year": 2025,
+          "value": -15406,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -57057,8 +57057,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -2150,
-          "year": 2025,
+          "value": -2173,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -57359,8 +57359,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 691,
-          "year": 2025,
+          "value": 2126,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -57657,8 +57657,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -14523,
-          "year": 2025,
+          "value": -14001,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -57969,8 +57969,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -258205,
-          "year": 2025,
+          "value": -318070,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -58259,8 +58259,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 13268,
-          "year": 2025,
+          "value": 15005,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -58434,8 +58434,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 177,
-          "year": 2025,
+          "value": 193,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -58644,8 +58644,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -255,
-          "year": 2025,
+          "value": -323,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -58942,8 +58942,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -119059,
-          "year": 2025,
+          "value": -126181,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -59237,8 +59237,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 1702358,
-          "year": 2025,
+          "value": -299961,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -59535,8 +59535,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 158634,
-          "year": 2025,
+          "value": 300004,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -59847,8 +59847,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 389911,
-          "year": 2025,
+          "value": 445523,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -60154,8 +60154,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 1230663,
-          "year": 2025,
+          "value": 1322668,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -60243,8 +60243,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -357,
-          "year": 2025,
+          "value": -444,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -60548,8 +60548,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -1338,
-          "year": 2025,
+          "value": -1501,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -60858,8 +60858,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -6987,
-          "year": 2025,
+          "value": -6004,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -61153,8 +61153,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -52,
-          "year": 2025,
+          "value": 0,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -61560,8 +61560,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -100467,
-          "year": 2025,
+          "value": -112899,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -61831,8 +61831,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -48171,
-          "year": 2025,
+          "value": -81789,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -62237,8 +62237,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -16291,
-          "year": 2025,
+          "value": -5233,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -62549,8 +62549,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": 6562,
-          "year": 2025,
+          "value": 9521,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
@@ -62847,8 +62847,8 @@
           "source": "World Bank"
         },
         "wb_net_migration": {
-          "value": -54555,
-          "year": 2025,
+          "value": -97380,
+          "year": 2023,
           "source": "World Bank"
         },
         "wb_urban_population_pct": {
