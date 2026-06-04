@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import fs from 'fs';
 import path from 'path';
+import { getSortedPostsData } from '@/lib/posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const dbPath = path.join(process.cwd(), 'src', 'data', 'database.json');
@@ -47,6 +48,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
   }
+
+  // Add blog listing page
+  routes.push({
+    url: `${baseUrl}/blog`,
+    lastModified: new Date(),
+    changeFrequency: 'daily',
+    priority: 0.9,
+  });
+
+  // Add individual blog posts
+  const posts = getSortedPostsData();
+  posts.forEach(post => {
+    routes.push({
+      url: `${baseUrl}/blog/${post.slug}`,
+      // Use the post date if available, otherwise fallback to current date
+      lastModified: new Date(post.date || new Date()),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    });
+  });
 
   return routes;
 }
