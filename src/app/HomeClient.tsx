@@ -121,7 +121,7 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
     <div className="space-y-12 pb-20">
       {/* Hero Section */}
       <section className="text-center py-16 px-4 relative">
-        <div className="absolute inset-0 bg-blue-500/10 blur-[120px] rounded-full w-1/2 h-1/2 top-1/4 left-1/4 -z-10"></div>
+        <div className="absolute inset-0 bg-blue-500/10 blur-[120px] rounded-full w-1/2 h-1/2 top-1/4 left-1/4 -z-10 hidden md:block"></div>
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-glow">
           Build your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">life anew.</span>
         </h1>
