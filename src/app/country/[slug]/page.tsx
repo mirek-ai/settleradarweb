@@ -2,8 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { 
   ArrowLeft, MapPin, Building, Shield, Wind, TrendingUp, Landmark, Sparkles, 
-  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe
+  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe, BookOpen
 } from 'lucide-react';
+import { getSortedPostsData } from '@/lib/posts';
 import fs from 'fs';
 import path from 'path';
 import { Metadata } from 'next';
@@ -56,6 +57,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const resolvedParams = await params;
   const country = db.countries.find((c: any) => c.slug === resolvedParams.slug);
   
+  const allPosts = getSortedPostsData();
+  const relatedPosts = allPosts.filter(p => p.country && p.country.toLowerCase() === resolvedParams.slug.toLowerCase());
+
   if (!country) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[50vh]">
@@ -199,6 +203,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <a href="#climate" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Sun className="w-4 h-4 text-amber-500" /> Climate Profile
           </a>
+          {relatedPosts.length > 0 && (
+            <a href="#articles" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+              <BookOpen className="w-4 h-4 text-blue-500" /> Guides & Articles
+            </a>
+          )}
         </div>
       </aside>
 
@@ -600,6 +609,25 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
           )}
         </section>
+
+        {/* RELATED ARTICLES */}
+        {relatedPosts.length > 0 && (
+          <section id="articles">
+            <div className="flex items-center gap-2 mb-6">
+              <BookOpen className="w-6 h-6 text-blue-500" />
+              <h2 className="text-3xl font-bold tracking-tight">Relocation Guides & Articles</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {relatedPosts.map((post) => (
+                <Link href={`/blog/${post.slug}`} key={post.slug} className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group block border border-white/20 hover:border-blue-500/30">
+                  <p className="text-sm text-blue-500 font-semibold mb-2">{post.date}</p>
+                  <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white line-clamp-3 group-hover:text-blue-500 transition-colors">{post.title}</h3>
+                  <p className="text-slate-500 text-sm line-clamp-3">{post.excerpt}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
       </main>
     </div>
