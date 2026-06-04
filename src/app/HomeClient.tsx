@@ -354,7 +354,7 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
                               srcSet={`https://flagcdn.com/w80/${country.iso_alpha2}.png 2x`}
                               width="40" 
                               alt={`${country.name} flag`} 
-                              className="rounded-sm border border-black/10 dark:border-white/10 shadow-sm" 
+                              className="w-10 h-auto rounded-sm border border-black/10 dark:border-white/10 shadow-sm" 
                             />
                           ) : (
                             <span className="text-3xl drop-shadow-md">{country.flag_emoji}</span>
@@ -469,7 +469,7 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
                           srcSet={`https://flagcdn.com/w80/${country.iso_alpha2}.png 2x`}
                           width="32" 
                           alt={`${country.name} flag`} 
-                          className="rounded-sm border border-black/10 dark:border-white/10 shadow-sm" 
+                          className="w-8 h-auto rounded-sm border border-black/10 dark:border-white/10 shadow-sm" 
                         />
                       ) : (
                         <span className="text-2xl drop-shadow-md">{country.flag_emoji}</span>
