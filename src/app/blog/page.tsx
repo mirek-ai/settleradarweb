@@ -35,7 +35,7 @@ export default function BlogIndex() {
               )}
               <div className="p-6">
                 <p className="text-sm text-primary font-semibold mb-2">{post.date}</p>
-                <h2 className="text-xl font-bold mb-3 text-foreground line-clamp-2">{post.title}</h2>
+                <h2 className="text-xl font-bold mb-3 text-foreground line-clamp-3">{post.title}</h2>
                 <p className="text-foreground/70 line-clamp-3 text-sm">{post.excerpt}</p>
               </div>
             </Link>

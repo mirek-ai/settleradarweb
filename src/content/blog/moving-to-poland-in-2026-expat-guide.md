@@ -3,7 +3,7 @@ title: "Moving to Poland in 2026: Complete Expat Relocation Guide"
 description: "A no-nonsense guide for expats moving to Poland in 2026. Discover essential information on visas, cost of living, taxes, healthcare, and top cities to live."
 date: "2026-06-04"
 tags: ["poland", "seo-geo", "relokacja", "expat guide", "living in poland", "moving to poland"]
-coverImage: "/public/images/blog/moving-to-poland-in-2026-expat-guide.jpg"
+coverImage: "/images/blog/moving-to-poland-in-2026-expat-guide.jpg"
 author: "Miroslaw Kucharzyk"
 country: "poland"
 ---
