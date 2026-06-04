@@ -276,6 +276,16 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   Advanced, data-driven relocation profile based on verified indicators from the World Bank, WHO, Heritage Foundation, and Open-Meteo.
                 </p>
               )}
+              {relatedPosts.length > 0 && (
+                <div className="mt-6">
+                  <a 
+                    href="#articles" 
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 hover:bg-blue-500 hover:text-white border border-blue-500/20 rounded-full text-sm font-bold transition-all shadow-sm hover:shadow-md"
+                  >
+                    <BookOpen className="w-4 h-4" /> Relocation Guides & Articles ({relatedPosts.length})
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </section>
