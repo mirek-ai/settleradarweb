@@ -43,10 +43,10 @@ export function Navigation() {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 glass-panel border-b border-glass-border p-4 flex flex-col gap-4 shadow-xl md:hidden animate-in slide-in-from-top-2 fade-in duration-200 z-50">
-          <Link href="/" className="p-3 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-colors">Discover</Link>
-          <Link href="/compare" className="p-3 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-colors">Compare</Link>
-          <Link href="/blog" className="p-3 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-colors">Blog</Link>
+        <div className="absolute top-full left-0 right-0 bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 p-4 flex flex-col gap-4 shadow-2xl md:hidden animate-in slide-in-from-top-2 fade-in duration-200 z-50">
+          <Link href="/" className="p-3 font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-colors text-right">Discover</Link>
+          <Link href="/compare" className="p-3 font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-colors text-right">Compare</Link>
+          <Link href="/blog" className="p-3 font-bold text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-colors text-right">Blog</Link>
         </div>
       )}
     </>
