@@ -120,7 +120,7 @@ export default function RootLayout({
                 </div>
                 <span className="text-xl font-bold tracking-tight">Settle<span className="text-blue-500 text-glow">Radar</span></span>
               </Link>
-              <div className="hidden md:flex items-center gap-6 text-sm font-medium">
+              <div className="flex items-center gap-4 md:gap-6 text-xs md:text-sm font-medium">
                 <Link href="/" className="hover:opacity-70 transition-opacity">Discover</Link>
                 <Link href="/compare" className="hover:opacity-70 transition-opacity">Compare</Link>
                 <Link href="/blog" className="hover:opacity-70 transition-opacity">Blog</Link>
