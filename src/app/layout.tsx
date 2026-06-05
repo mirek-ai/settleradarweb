@@ -8,6 +8,7 @@ import { CookieBanner } from "@/components/CookieBanner";
 import { Navigation } from "@/components/Navigation";
 import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -146,6 +147,7 @@ export default function RootLayout({
 
           <CookieBanner />
           <GoogleAnalytics gaId="G-03P3QS7E3H" />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
