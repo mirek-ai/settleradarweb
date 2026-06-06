@@ -66,6 +66,7 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
             .replace(/^#\s+.*$/m, '') // Remove the duplicated H1 title from markdown
             .replace(/\[\^(\d+)\](?!:)/g, '<sup><a href="#ref-$1" class="text-primary no-underline hover:underline">[$1]</a></sup>')
             .replace(/\[\^(\d+)\]:/g, '<br/><a id="ref-$1"></a>**[$1]** ')
+            .replace(/^(\d+)\.\s+(?=\[)/gm, '$1. <a id="ref-$1" class="scroll-mt-24"></a>')
           }
         </ReactMarkdown>
       </div>
