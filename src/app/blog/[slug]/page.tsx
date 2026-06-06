@@ -84,7 +84,7 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
               Compare visas, check exact tax rates, calculate cost of living, and see how {postData.country.charAt(0).toUpperCase() + postData.country.slice(1)} ranks against other countries on SettleRadar.
             </p>
             <Link 
-              href={`/country/${postData.country.toLowerCase()}`}
+              href={`/country/${postData.country.toLowerCase().replace(/\s+/g, '-')}`}
               className="inline-flex items-center px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-blue-600 transition-all shadow-md hover:shadow-xl hover:scale-105"
             >
               Analyze {postData.country.charAt(0).toUpperCase() + postData.country.slice(1)} Data

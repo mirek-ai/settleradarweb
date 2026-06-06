@@ -59,7 +59,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const country = db.countries.find((c: any) => c.slug === resolvedParams.slug);
   
   const allPosts = getSortedPostsData();
-  const relatedPosts = allPosts.filter(p => p.country && p.country.toLowerCase() === resolvedParams.slug.toLowerCase());
+  const relatedPosts = allPosts.filter(p => p.country && p.country.toLowerCase().replace(/\s+/g, '-') === resolvedParams.slug.toLowerCase());
 
   if (!country) {
     return (
