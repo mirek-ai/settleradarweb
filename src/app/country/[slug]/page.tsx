@@ -632,10 +632,22 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedPosts.map((post) => (
-                <Link href={`/blog/${post.slug}`} key={post.slug} className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group block border border-white/20 hover:border-blue-500/30">
-                  <p className="text-sm text-blue-500 font-semibold mb-2">{formatDate(post.date)}</p>
-                  <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white line-clamp-3 group-hover:text-blue-500 transition-colors">{post.title}</h3>
-                  <p className="text-slate-500 text-sm line-clamp-3">{post.excerpt}</p>
+                <Link href={`/blog/${post.slug}`} key={post.slug} className="glass-panel rounded-3xl overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group flex flex-col border border-white/20 hover:border-blue-500/30">
+                  {post.coverImage && (
+                    <div className="relative w-full h-48 shrink-0">
+                      <Image 
+                        src={post.coverImage} 
+                        alt={post.title} 
+                        fill 
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="p-6 flex-1">
+                    <p className="text-sm text-blue-500 font-semibold mb-2">{formatDate(post.date)}</p>
+                    <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white line-clamp-3 group-hover:text-blue-500 transition-colors">{post.title}</h3>
+                    <p className="text-slate-500 text-sm line-clamp-3">{post.excerpt}</p>
+                  </div>
                 </Link>
               ))}
             </div>
