@@ -96,6 +96,33 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const pol = country.politics || {};
   const climate = country.climate;
 
+  const faqQuestions = [
+    taxes ? {
+      '@type': 'Question',
+      name: `What is the tax burden in ${country.name}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `The tax burden in ${country.name} is approximately ${taxes.toFixed(1)}%, according to World Bank data.`
+      }
+    } : null,
+    homicides ? {
+      '@type': 'Question',
+      name: `Is ${country.name} safe?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `The homicide rate in ${country.name} is ${homicides.toFixed(1)} per 100,000 people (World Bank).`
+      }
+    } : null,
+    happiness ? {
+      '@type': 'Question',
+      name: `Are people happy in ${country.name}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `The World Happiness Report scores ${country.name} at ${happiness.toFixed(1)} out of 10.`
+      }
+    } : null
+  ].filter(Boolean);
+
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -113,36 +140,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         ...(freedom ? [{ '@type': 'PropertyValue', name: 'Economic Freedom', value: freedom }] : [])
       ]
     },
-    {
+    ...(faqQuestions.length > 0 ? [{
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      mainEntity: [
-        taxes ? {
-          '@type': 'Question',
-          name: `What is the tax burden in ${country.name}?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: `The tax burden in ${country.name} is approximately ${taxes.toFixed(1)}%, according to World Bank data.`
-          }
-        } : null,
-        homicides ? {
-          '@type': 'Question',
-          name: `Is ${country.name} safe?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: `The homicide rate in ${country.name} is ${homicides.toFixed(1)} per 100,000 people (World Bank).`
-          }
-        } : null,
-        happiness ? {
-          '@type': 'Question',
-          name: `Are people happy in ${country.name}?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: `The World Happiness Report scores ${country.name} at ${happiness.toFixed(1)} out of 10.`
-          }
-        } : null
-      ].filter(Boolean)
-    },
+      mainEntity: faqQuestions
+    }] : []),
     {
       '@context': 'https://schema.org',
       '@type': 'Dataset',
