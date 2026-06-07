@@ -14,7 +14,7 @@ export default async function Home() {
 
   // Pre-filter valid countries and map to a lightweight object to avoid sending the massive 1.5MB JSON to the client!
   const baseCountries = db.countries
-    .filter((country: any) => Object.keys(country.indicators || {}).length > 10)
+    .filter((country: any) => Object.keys(country.indicators || {}).length > 10 && !country.is_territory)
     .map((country: any) => ({
       id: country.id,
       iso_alpha2: country.iso_alpha2,

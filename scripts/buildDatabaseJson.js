@@ -46,7 +46,13 @@ async function buildDatabaseJson() {
     `);
     const expats = resExpats.rows;
     
-    // 2. Ładowanie istniejącego database.json (by zachować klimaty i wizy)
+    const resClimate = await client.query('SELECT * FROM app.climate_normals ORDER BY month ASC');
+    const climateData = resClimate.rows;
+
+    const resTech = await client.query('SELECT * FROM app.country_tech_nomad');
+    const techData = resTech.rows;
+
+    // 2. Ładowanie istniejącego database.json (by zachować to, czego nie ma w bazie, jeśli coś jeszcze zostało)
     const dataDir = path.join(__dirname, '..', 'src', 'data');
     const outputPath = path.join(dataDir, 'database.json');
     
@@ -82,6 +88,29 @@ async function buildDatabaseJson() {
 
         const existingCountry = existingMap.get(country.iso_alpha3) || {};
 
+        // Budowa obiektu klimatycznego z Postgresa
+        const cClimate = climateData.filter(c => c.country_iso3 === country.iso_alpha3);
+        let climateObj = undefined;
+        if (cClimate.length === 12) {
+            climateObj = cClimate.map(c => ({
+              monthName: new Date(2023, c.month - 1, 1).toLocaleString('en-US', { month: 'short' }),
+              avgMaxTemp: Math.round(c.avg_temp_max),
+              avgMinTemp: Math.round(c.avg_temp_min),
+              rainDays: Math.round(c.rain_days),
+              snowDays: 0
+            }));
+        }
+
+        // Budowa obiektu wizowego
+        const tech = techData.find(t => t.country_name === country.name);
+        let nomadVisaObj = undefined;
+        if (tech && tech.has_nomad_visa) {
+            nomadVisaObj = {
+                available: true,
+                url: tech.visa_url || null
+            };
+        }
+
         return {
           id: country.iso_alpha3,
           iso_alpha2: alpha2Map[country.iso_alpha3] || null,
@@ -104,9 +133,8 @@ async function buildDatabaseJson() {
             .map(e => ({ origin_iso3: e.origin_iso3, origin_alpha2: e.origin_alpha2, name: e.origin_name, count: e.migrant_count, year: e.year }))
             .slice(0, 5),
           
-          // ZACHOWAJ TE POLA Z ISTNIEJĄCEGO PLIKU!
-          climate: existingCountry.climate || undefined,
-          nomad_visa: existingCountry.nomad_visa || undefined
+          climate: climateObj || existingCountry.climate || undefined,
+          nomad_visa: nomadVisaObj || existingCountry.nomad_visa || undefined
         };
       })
     };
