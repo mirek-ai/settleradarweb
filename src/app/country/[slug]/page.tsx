@@ -16,16 +16,20 @@ export async function generateStaticParams() {
   const dbPath = path.join(process.cwd(), 'src', 'data', 'database.json');
   const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
   
-  return db.countries.map((country: any) => ({
-    slug: country.slug,
-  }));
+  return db.countries
+    .filter((c: any) => Object.keys(c.indicators || {}).length > 10 && c.is_territory !== true)
+    .map((country: any) => ({
+      slug: country.slug,
+    }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
   const dbPath = path.join(process.cwd(), 'src', 'data', 'database.json');
   const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
-  const country = db.countries.find((c: any) => c.slug === resolvedParams.slug);
+  const country = db.countries
+    .filter((c: any) => Object.keys(c.indicators || {}).length > 10 && c.is_territory !== true)
+    .find((c: any) => c.slug === resolvedParams.slug);
 
   if (!country) {
     return { title: 'Country Not Found | SettleRadar' };
@@ -56,7 +60,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
 
   const resolvedParams = await params;
-  const country = db.countries.find((c: any) => c.slug === resolvedParams.slug);
+  const country = db.countries
+    .filter((c: any) => Object.keys(c.indicators || {}).length > 10 && c.is_territory !== true)
+    .find((c: any) => c.slug === resolvedParams.slug);
   
   const allPosts = getSortedPostsData();
   const relatedPosts = allPosts.filter(p => p.country && p.country.toLowerCase().replace(/\s+/g, '-') === resolvedParams.slug.toLowerCase());

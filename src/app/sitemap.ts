@@ -24,7 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Add individual country pages
-  db.countries.forEach((c: any) => {
+  const validCountries = db.countries.filter((c: any) => Object.keys(c.indicators || {}).length > 10 && c.is_territory !== true);
+  validCountries.forEach((c: any) => {
     routes.push({
       url: `${baseUrl}/country/${c.slug}`,
       lastModified: new Date(),
