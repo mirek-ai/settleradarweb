@@ -34,8 +34,38 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
     notFound();
   }
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: postData.title,
+    image: postData.coverImage ? `https://settleradar.com${postData.coverImage}` : undefined,
+    datePublished: postData.date,
+    author: {
+      '@type': 'Person',
+      name: (postData as any).author || 'SettleRadar',
+    },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://settleradar.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://settleradar.com/blog' },
+      { '@type': 'ListItem', position: 3, name: postData.title, item: `https://settleradar.com/blog/${postData.slug}` }
+    ]
+  };
+
   return (
     <article className="container mx-auto px-4 py-12 max-w-3xl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Link href="/blog" className="inline-flex items-center text-primary hover:underline mb-8">
         <ArrowLeft className="w-4 h-4 mr-2" /> Back to Blog
       </Link>

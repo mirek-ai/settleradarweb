@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Search, Globe, TrendingUp, ArrowUpDown, MapPin, Shield, Wind, Landmark, CheckCircle, Smile } from 'lucide-react';
 import { useState } from 'react';
 
@@ -349,10 +350,10 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
                       <td className="py-4 px-6">
                         <div className="flex items-center gap-4">
                           {country.iso_alpha2 ? (
-                            <img 
-                              src={`https://flagcdn.com/w40/${country.iso_alpha2}.png`} 
-                              srcSet={`https://flagcdn.com/w80/${country.iso_alpha2}.png 2x`}
-                              width="40" 
+                            <Image 
+                              src={`/flags/${country.iso_alpha2}.png`} 
+                              width={40}
+                              height={28}
                               alt={`${country.name} flag`} 
                               className="w-10 h-auto rounded-sm border border-black/10 dark:border-white/10 shadow-sm" 
                             />
@@ -464,10 +465,10 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       {country.iso_alpha2 ? (
-                        <img 
-                          src={`https://flagcdn.com/w40/${country.iso_alpha2}.png`} 
-                          srcSet={`https://flagcdn.com/w80/${country.iso_alpha2}.png 2x`}
-                          width="32" 
+                        <Image 
+                          src={`/flags/${country.iso_alpha2}.png`} 
+                          width={32}
+                          height={22}
                           alt={`${country.name} flag`} 
                           className="w-8 h-auto rounded-sm border border-black/10 dark:border-white/10 shadow-sm" 
                         />

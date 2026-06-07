@@ -2,14 +2,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getSortedPostsData } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
+import Pagination from '@/components/Pagination';
 
 export const metadata = {
   title: 'Blog | SettleRadar',
   description: 'Expat guides, tax comparisons, and moving abroad tips.',
 };
 
+const POSTS_PER_PAGE = 6;
+
 export default function BlogIndex() {
-  const posts = getSortedPostsData();
+  const allPosts = getSortedPostsData();
+  const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
+  const posts = allPosts.slice(0, POSTS_PER_PAGE);
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-5xl">
@@ -21,27 +26,35 @@ export default function BlogIndex() {
       {posts.length === 0 ? (
         <p>No posts yet.</p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {posts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="glass-card rounded-2xl overflow-hidden block">
-              {post.coverImage && (
-                <div className="relative w-full h-48">
-                  <Image 
-                    src={post.coverImage} 
-                    alt={post.title} 
-                    fill 
-                    className="object-cover"
-                  />
+        <>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {posts.map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="glass-card rounded-2xl overflow-hidden block group">
+                {post.coverImage && (
+                  <div className="relative w-full h-48 overflow-hidden">
+                    <Image 
+                      src={post.coverImage} 
+                      alt={post.title} 
+                      fill 
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+                <div className="p-6">
+                  <p className="text-sm text-primary font-semibold mb-2">{formatDate(post.date)}</p>
+                  <h2 className="text-xl font-bold mb-3 text-foreground line-clamp-3 group-hover:text-primary transition-colors">{post.title}</h2>
+                  <p className="text-foreground/70 line-clamp-3 text-sm">{post.excerpt}</p>
                 </div>
-              )}
-              <div className="p-6">
-                <p className="text-sm text-primary font-semibold mb-2">{formatDate(post.date)}</p>
-                <h2 className="text-xl font-bold mb-3 text-foreground line-clamp-3">{post.title}</h2>
-                <p className="text-foreground/70 line-clamp-3 text-sm">{post.excerpt}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
+              </Link>
+            ))}
+          </div>
+          
+          <Pagination 
+            currentPage={1} 
+            totalPages={totalPages} 
+            basePath="/blog" 
+          />
+        </>
       )}
     </div>
   );

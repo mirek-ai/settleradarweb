@@ -114,7 +114,7 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
         <th className="p-3 text-center w-1/3">
           <div className="flex flex-col items-center gap-1 justify-center">
             {countryA.iso_alpha2 ? (
-              <Image src={`https://flagcdn.com/w40/${countryA.iso_alpha2.toLowerCase()}.png`} width={24} height={18} className="shadow-sm rounded-sm" alt={countryA.name} />
+              <Image src={`/flags/${countryA.iso_alpha2.toLowerCase()}.png`} width={24} height={18} className="shadow-sm rounded-sm" alt={countryA.name} />
             ) : <span className="text-sm">{countryA.flag_emoji}</span>}
             <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest">{countryA.name}</span>
           </div>
@@ -125,7 +125,7 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
         <th className="p-3 text-center w-1/3">
           <div className="flex flex-col items-center gap-1 justify-center">
             {countryB.iso_alpha2 ? (
-              <Image src={`https://flagcdn.com/w40/${countryB.iso_alpha2.toLowerCase()}.png`} width={24} height={18} className="shadow-sm rounded-sm" alt={countryB.name} />
+              <Image src={`/flags/${countryB.iso_alpha2.toLowerCase()}.png`} width={24} height={18} className="shadow-sm rounded-sm" alt={countryB.name} />
             ) : <span className="text-sm">{countryB.flag_emoji}</span>}
             <span className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">{countryB.name}</span>
           </div>
@@ -181,7 +181,7 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
         <div className="w-1/3 flex flex-col items-center text-center">
           {countryA.iso_alpha2 ? (
             <div className="relative w-24 h-16 md:w-40 md:h-28 mb-4 shadow-lg rounded-xl overflow-hidden border border-white/10">
-              <Image src={`https://flagcdn.com/w320/${countryA.iso_alpha2}.png`} fill className="object-cover" alt={countryA.name} />
+              <Image src={`/flags/${countryA.iso_alpha2}.png`} fill className="object-cover" alt={countryA.name} />
             </div>
           ) : <div className="text-6xl mb-4">{countryA.flag_emoji}</div>}
           <h2 className="text-2xl md:text-4xl font-black text-blue-600 dark:text-blue-400">{countryA.name}</h2>
@@ -196,7 +196,7 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
         <div className="w-1/3 flex flex-col items-center text-center">
           {countryB.iso_alpha2 ? (
             <div className="relative w-24 h-16 md:w-40 md:h-28 mb-4 shadow-lg rounded-xl overflow-hidden border border-white/10">
-              <Image src={`https://flagcdn.com/w320/${countryB.iso_alpha2}.png`} fill className="object-cover" alt={countryB.name} />
+              <Image src={`/flags/${countryB.iso_alpha2}.png`} fill className="object-cover" alt={countryB.name} />
             </div>
           ) : <div className="text-6xl mb-4">{countryB.flag_emoji}</div>}
           <h2 className="text-2xl md:text-4xl font-black text-emerald-600 dark:text-emerald-400">{countryB.name}</h2>
@@ -331,7 +331,7 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
                       <div key={j} className="flex items-center justify-between">
                         <div className="flex items-center gap-2 truncate">
                           {e.origin_alpha2 ? (
-                            <Image src={`https://flagcdn.com/w20/${e.origin_alpha2.toLowerCase()}.png`} width={16} height={12} className="rounded-sm object-cover" alt={e.name} />
+                            <Image src={`/flags/${e.origin_alpha2.toLowerCase()}.png`} width={16} height={12} className="rounded-sm object-cover" alt={e.name} />
                           ) : <span className="text-xs">🏳️</span>}
                           <span className="text-sm font-bold text-slate-700 dark:text-slate-300 truncate w-24" title={e.name}>{e.name}</span>
                         </div>
