@@ -1,0 +1,11 @@
+# SettleRadar AI Assistant Rules
+
+These rules must be followed by any AI assistant working on this codebase to ensure consistency and prevent regressions.
+
+## 1. Territory Filtering (CRITICAL)
+- **Rule**: Non-sovereign territories (e.g., Guam, Puerto Rico, New Caledonia) must **NEVER** be displayed in the main ranking tables (`src/app/page.tsx`) or the Digital Nomad Visas tables (`src/app/digital-nomad-visas/page.tsx`).
+- **Implementation**: You must explicitly filter them out using the `is_territory` flag from the database. 
+- **Code Pattern**: Always use `!country.is_territory` or `country.is_territory !== true` in the `baseCountries` filter array. Do not rely solely on indicator length (`Object.keys(country.indicators).length > 10`), as territories might accumulate enough data to pass this threshold.
+
+## 2. UI Consistency 
+- The Digital Nomad Visas page and the Home page share the same core ranking structure. When making structural changes or adding filtering logic to one, always ensure the other remains consistent.
