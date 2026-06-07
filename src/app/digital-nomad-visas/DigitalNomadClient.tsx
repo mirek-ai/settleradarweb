@@ -116,19 +116,24 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                       Destination <ArrowUpDown className={`w-3 h-3 ${sortBy === 'name' ? 'text-blue-400' : 'opacity-30'}`} />
                     </button>
                   </th>
-                  <th className="py-5 px-6">
-                    <button onClick={() => handleSort('taxes')} className="flex items-center gap-2 hover:text-slate-900 dark:text-white">
-                      Tax Burden <ArrowUpDown className={`w-3 h-3 ${sortBy === 'taxes' ? 'text-blue-400' : 'opacity-30'}`} />
-                    </button>
-                  </th>
                   <th className="py-5 px-6 hidden md:table-cell">
                     <button onClick={() => handleSort('freedom')} className="flex items-center gap-2 hover:text-slate-900 dark:text-white">
                       Econ. Freedom <ArrowUpDown className={`w-3 h-3 ${sortBy === 'freedom' ? 'text-blue-400' : 'opacity-30'}`} />
                     </button>
                   </th>
-                  <th className="py-5 px-6 hidden lg:table-cell">
+                  <th className="py-5 px-6 hidden md:table-cell">
                     <button onClick={() => handleSort('happiness')} className="flex items-center gap-2 hover:text-slate-900 dark:text-white">
                       Happiness <ArrowUpDown className={`w-3 h-3 ${sortBy === 'happiness' ? 'text-pink-400' : 'opacity-30'}`} />
+                    </button>
+                  </th>
+                  <th className="py-5 px-6">
+                    <button onClick={() => handleSort('taxes')} className="flex items-center gap-2 hover:text-slate-900 dark:text-white">
+                      Tax Burden <ArrowUpDown className={`w-3 h-3 ${sortBy === 'taxes' ? 'text-blue-400' : 'opacity-30'}`} />
+                    </button>
+                  </th>
+                  <th className="py-5 px-6 hidden sm:table-cell">
+                    <button onClick={() => handleSort('name')} className="flex items-center gap-2 hover:text-slate-900 dark:text-white">
+                      Nomad Visa <ArrowUpDown className={`w-3 h-3 opacity-30`} />
                     </button>
                   </th>
                   <th className="py-5 px-6 hidden lg:table-cell">
@@ -141,12 +146,13 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                       Air (PM2.5) <ArrowUpDown className={`w-3 h-3 ${sortBy === 'air' ? 'text-blue-400' : 'opacity-30'}`} />
                     </button>
                   </th>
-                  <th className="py-5 px-6 text-right">Links</th>
+                  <th className="py-5 px-6 text-right">Action</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-black/5 dark:divide-white/5">
                 {processedCountries.map((country) => {
                   const taxes = country.indicators?.['wb_taxes']?.value;
+                  const inflation = country.indicators?.['wb_inflation']?.value;
                   const freedom = country.indicators?.['heritage_economic_freedom']?.value;
                   const happiness = country.indicators?.['whr_happiness_index']?.value;
                   const homicides = country.indicators?.['wb_homicides']?.value;
@@ -172,19 +178,12 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                               {country.name}
                             </div>
                             <div className="text-xs text-slate-600 dark:text-slate-400 flex items-center gap-1 mt-1">
+                              <span className="font-mono bg-black/5 dark:bg-white/5 px-1.5 py-0.5 rounded">{country.id}</span>
+                              <span className="text-slate-900 dark:text-white/20">•</span>
                               <span className="truncate">{country.region}</span>
                             </div>
                           </div>
                         </div>
-                      </td>
-                      <td className="py-4 px-6">
-                        {taxes != null ? (
-                          <span className={`px-3 py-1 rounded-md text-sm font-bold border ${getTaxBadge(taxes)}`}>
-                            {taxes.toFixed(1)} <span className="text-xs font-normal">%</span>
-                          </span>
-                        ) : (
-                          <span className="text-slate-600 text-sm font-mono">--</span>
-                        )}
                       </td>
                       <td className="py-4 px-6 hidden md:table-cell">
                         {freedom ? (
@@ -201,11 +200,29 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                           <span className="text-slate-600 text-sm font-mono">--</span>
                         )}
                       </td>
-                      <td className="py-4 px-6 hidden lg:table-cell">
+                      <td className="py-4 px-6 hidden md:table-cell">
                         {happiness ? (
                           <div className="flex items-center gap-2">
                             <Smile className={`w-4 h-4 ${happiness >= 7 ? 'text-emerald-400' : happiness >= 6 ? 'text-yellow-400' : 'text-red-400'}`} />
                             <span className="text-sm font-bold text-slate-700 dark:text-slate-300">{happiness.toFixed(1)} <span className="text-xs text-slate-500 font-normal">/10</span></span>
+                          </div>
+                        ) : (
+                          <span className="text-slate-600 text-sm font-mono">--</span>
+                        )}
+                      </td>
+                      <td className="py-4 px-6">
+                        {taxes != null ? (
+                          <span className={`px-3 py-1 rounded-md text-sm font-bold border ${getTaxBadge(taxes)}`}>
+                            {taxes.toFixed(1)} <span className="text-xs font-normal">%</span>
+                          </span>
+                        ) : (
+                          <span className="text-slate-600 text-sm font-mono">--</span>
+                        )}
+                      </td>
+                      <td className="py-4 px-6 hidden sm:table-cell">
+                        {country.nomad_visa ? (
+                          <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-bold">
+                            <CheckCircle className="w-4 h-4" /> Yes
                           </div>
                         ) : (
                           <span className="text-slate-600 text-sm font-mono">--</span>
@@ -232,24 +249,12 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                         )}
                       </td>
                       <td className="py-4 px-6 text-right">
-                        <div className="flex flex-col gap-2 items-end">
-                          <Link 
-                            href={`/country/${country.slug}`}
-                            className="inline-flex items-center justify-center px-4 py-1.5 text-xs font-bold text-blue-700 dark:text-white bg-blue-50 hover:bg-blue-100 dark:bg-blue-600 dark:hover:bg-blue-500 border border-blue-200 dark:border-blue-400/50 rounded-lg transition-all shadow-sm"
-                          >
-                            Analyze
-                          </Link>
-                          {country.nomad_visa?.url && (
-                            <a 
-                              href={country.nomad_visa.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center justify-center px-4 py-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all"
-                            >
-                              <ExternalLink className="w-3 h-3 mr-1" /> Official Info
-                            </a>
-                          )}
-                        </div>
+                        <Link 
+                          href={`/country/${country.slug}`}
+                          className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-blue-700 dark:text-white bg-blue-50 hover:bg-blue-100 dark:bg-blue-600 dark:hover:bg-blue-500 border border-blue-200 dark:border-blue-400/50 rounded-xl transition-all shadow-sm dark:shadow-[0_0_15px_rgba(59,130,246,0.3)] dark:hover:shadow-[0_0_25px_rgba(59,130,246,0.5)]"
+                        >
+                          Analyze
+                        </Link>
                       </td>
                     </tr>
                   );

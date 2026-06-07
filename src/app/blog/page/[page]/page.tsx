@@ -10,7 +10,7 @@ export const metadata = {
   description: 'Expat guides, tax comparisons, and moving abroad tips.',
 };
 
-const POSTS_PER_PAGE = 6;
+const POSTS_PER_PAGE = 15;
 
 export async function generateStaticParams() {
   const allPosts = getSortedPostsData();
