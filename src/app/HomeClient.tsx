@@ -119,25 +119,28 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
     });
 
   return (
-    <div className="space-y-12 pb-20">
+    <div className={`pb-20 transition-all duration-300 ${searchQuery ? 'space-y-4 md:space-y-12' : 'space-y-12'}`}>
       {/* Hero Section */}
-      <section className="text-center py-16 px-4 relative">
+      <section className={`text-center px-4 relative transition-all duration-300 ${searchQuery ? 'py-4 md:py-16' : 'py-16'}`}>
         <div className="absolute inset-0 bg-blue-500/10 blur-[120px] rounded-full w-1/2 h-1/2 top-1/4 left-1/4 -z-10 hidden md:block"></div>
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-glow">
-          Build your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">life anew.</span>
-        </h1>
-        <p className="text-lg md:text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto mb-6 leading-relaxed">
-          The ultimate terminal for expats, digital nomads, and investors. Compare taxes, safety, and economic freedom across {totalValidCountries} destinations globally.
-        </p>
-        <p className="text-sm md:text-base font-medium text-slate-500 dark:text-slate-400 max-w-3xl mx-auto mb-10 flex flex-wrap justify-center items-center gap-2">
-          <span>Powered by verified open data from:</span>
-          <span className="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-700 dark:text-slate-300">World Bank</span>
-          <span className="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-700 dark:text-slate-300">WHO</span>
-          <span className="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-700 dark:text-slate-300">Heritage Foundation</span>
-          <span className="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-700 dark:text-slate-300">UNODC</span>
-        </p>
         
-        <div className="max-w-2xl mx-auto relative group mb-12">
+        <div className={searchQuery ? 'hidden md:block' : 'block'}>
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-glow">
+            Build your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">life anew.</span>
+          </h1>
+          <p className="text-lg md:text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto mb-6 leading-relaxed">
+            The ultimate terminal for expats, digital nomads, and investors. Compare taxes, safety, and economic freedom across {totalValidCountries} destinations globally.
+          </p>
+          <p className="text-sm md:text-base font-medium text-slate-500 dark:text-slate-400 max-w-3xl mx-auto mb-10 flex flex-wrap justify-center items-center gap-2">
+            <span>Powered by verified open data from:</span>
+            <span className="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-700 dark:text-slate-300">World Bank</span>
+            <span className="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-700 dark:text-slate-300">WHO</span>
+            <span className="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-700 dark:text-slate-300">Heritage Foundation</span>
+            <span className="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-700 dark:text-slate-300">UNODC</span>
+          </p>
+        </div>
+        
+        <div className={`max-w-2xl mx-auto relative group transition-all duration-300 ${searchQuery ? 'mb-2 md:mb-12' : 'mb-12'}`}>
           <div className="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
             <Search className="h-6 w-6 text-slate-600 dark:text-slate-400" />
           </div>
