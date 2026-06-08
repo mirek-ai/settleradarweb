@@ -205,14 +205,14 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
                       <span>Max Tax Burden</span>
                       <span className="text-blue-500">{filters.tax_max}%</span>
                     </label>
-                    <input type="range" min="0" max="50" step="1" value={filters.tax_max} onChange={(e) => setFilters({...filters, tax_max: Number(e.target.value)})} className="w-full accent-blue-500 cursor-pointer" />
+                    <input type="range" min="0" max="50" step="1" value={filters.tax_max} onChange={(e) => setFilters({...filters, tax_max: Number(e.target.value)})} className="w-full accent-blue-500 cursor-pointer" aria-label="Maximum Tax Burden percentage" />
                   </div>
                   <div>
                     <label className="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
                       <span>Min Economic Freedom</span>
                       <span className="text-emerald-500">{filters.freedom_min} pts</span>
                     </label>
-                    <input type="range" min="0" max="100" step="1" value={filters.freedom_min} onChange={(e) => setFilters({...filters, freedom_min: Number(e.target.value)})} className="w-full accent-emerald-500 cursor-pointer" />
+                    <input type="range" min="0" max="100" step="1" value={filters.freedom_min} onChange={(e) => setFilters({...filters, freedom_min: Number(e.target.value)})} className="w-full accent-emerald-500 cursor-pointer" aria-label="Minimum Economic Freedom score" />
                   </div>
                 </div>
               </div>
@@ -227,14 +227,14 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
                       <span>Max Homicides (per 100k)</span>
                       <span className="text-blue-500">{filters.homicides_max}</span>
                     </label>
-                    <input type="range" min="0" max="20" step="0.5" value={filters.homicides_max} onChange={(e) => setFilters({...filters, homicides_max: Number(e.target.value)})} className="w-full accent-blue-500 cursor-pointer" />
+                    <input type="range" min="0" max="20" step="0.5" value={filters.homicides_max} onChange={(e) => setFilters({...filters, homicides_max: Number(e.target.value)})} className="w-full accent-blue-500 cursor-pointer" aria-label="Maximum Homicides per 100k people" />
                   </div>
                   <div>
                     <label className="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
                       <span>Max Inflation Rate</span>
                       <span className="text-emerald-500">{filters.inflation_max}%</span>
                     </label>
-                    <input type="range" min="-5" max="30" step="0.5" value={filters.inflation_max} onChange={(e) => setFilters({...filters, inflation_max: Number(e.target.value)})} className="w-full accent-emerald-500 cursor-pointer" />
+                    <input type="range" min="-5" max="30" step="0.5" value={filters.inflation_max} onChange={(e) => setFilters({...filters, inflation_max: Number(e.target.value)})} className="w-full accent-emerald-500 cursor-pointer" aria-label="Maximum Inflation Rate percentage" />
                   </div>
                 </div>
               </div>
@@ -249,14 +249,14 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
                       <span>Max PM2.5 Air Pollution</span>
                       <span className="text-blue-500">{filters.air_max}</span>
                     </label>
-                    <input type="range" min="0" max="50" step="1" value={filters.air_max} onChange={(e) => setFilters({...filters, air_max: Number(e.target.value)})} className="w-full accent-blue-500 cursor-pointer" />
+                    <input type="range" min="0" max="50" step="1" value={filters.air_max} onChange={(e) => setFilters({...filters, air_max: Number(e.target.value)})} className="w-full accent-blue-500 cursor-pointer" aria-label="Maximum PM2.5 Air Pollution level" />
                   </div>
                   <div>
                     <label className="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
                       <span>Min Economic Freedom</span>
                       <span className="text-emerald-500">{filters.freedom_min} pts</span>
                     </label>
-                    <input type="range" min="0" max="100" step="1" value={filters.freedom_min} onChange={(e) => setFilters({...filters, freedom_min: Number(e.target.value)})} className="w-full accent-emerald-500 cursor-pointer" />
+                    <input type="range" min="0" max="100" step="1" value={filters.freedom_min} onChange={(e) => setFilters({...filters, freedom_min: Number(e.target.value)})} className="w-full accent-emerald-500 cursor-pointer" aria-label="Minimum Economic Freedom score" />
                   </div>
                 </div>
               </div>
@@ -272,7 +272,7 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
                     <span>Min Happiness Score</span>
                     <span className="text-pink-500">{filters.happiness_min} / 10</span>
                   </label>
-                  <input type="range" min="0" max="10" step="0.1" value={filters.happiness_min} onChange={(e) => setFilters({...filters, happiness_min: Number(e.target.value)})} className="w-full accent-pink-500 cursor-pointer" />
+                  <input type="range" min="0" max="10" step="0.1" value={filters.happiness_min} onChange={(e) => setFilters({...filters, happiness_min: Number(e.target.value)})} className="w-full accent-pink-500 cursor-pointer" aria-label="Minimum Happiness Score out of 10" />
                 </div>
               </div>
             )}
