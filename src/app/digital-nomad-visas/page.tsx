@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function DigitalNomadVisasHub() {
   const nomadCountries = db.countries
-    .filter(c => Object.keys(c.indicators || {}).length > 10 && !c.is_territory)
+    .filter(c => Object.keys(c.indicators || {}).length > 10 && c.is_territory !== true)
     .filter(c => c.nomad_visa?.available)
     .sort((a, b) => a.name.localeCompare(b.name));
 
