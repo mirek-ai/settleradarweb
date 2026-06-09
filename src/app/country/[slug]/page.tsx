@@ -619,6 +619,20 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           </div>
           
           {climate ? (
+            <div className="space-y-6">
+              {country.climate_summary && (
+                <div className="glass-panel p-8 rounded-3xl relative overflow-hidden group border border-white/20 hover:border-amber-500/30 transition-colors">
+                  <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform">
+                    <Sun className="w-48 h-48 text-amber-500" />
+                  </div>
+                  <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed relative z-10 font-medium">
+                    {country.climate_summary}
+                  </p>
+                  <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
+                    <ThermometerSun className="w-4 h-4 text-amber-500" /> Powered by Open-Meteo & AI
+                  </div>
+                </div>
+              )}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {climate.map((m: any, idx: number) => {
                 let colorClass = 'text-blue-500';
@@ -648,6 +662,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   </div>
                 );
               })}
+            </div>
             </div>
           ) : (
             <div className="glass-panel p-12 text-center rounded-3xl">

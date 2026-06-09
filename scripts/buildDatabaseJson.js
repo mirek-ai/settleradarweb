@@ -134,6 +134,7 @@ async function buildDatabaseJson() {
             .slice(0, 5),
           
           climate: climateObj || existingCountry.climate || undefined,
+          climate_summary: country.climate_summary || null,
           nomad_visa: nomadVisaObj || existingCountry.nomad_visa || undefined,
           digital_freedom_text: country.digital_freedom_text || null
         };
