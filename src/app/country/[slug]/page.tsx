@@ -203,6 +203,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <a href="#politics" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Gavel className="w-4 h-4 text-purple-500" /> Politics & Power
           </a>
+          <a href="#freedom" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+            <Shield className="w-4 h-4 text-emerald-500" /> Digital Freedom
+          </a>
           <a href="#demographics" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Users className="w-4 h-4 text-fuchsia-500" /> Demographics
           </a>
@@ -434,6 +437,31 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               <p className="text-slate-500 font-medium">Political structure data is currently being collected for {country.name}.</p>
             </div>
           )}
+        </section>
+
+        {/* DIGITAL FREEDOM */}
+        <section id="freedom">
+          <div className="flex items-center gap-2 mb-6">
+            <Shield className="w-6 h-6 text-emerald-500" />
+            <h2 className="text-3xl font-bold tracking-tight">Digital Freedom & Remote Work</h2>
+          </div>
+          <div className="glass-panel p-8 rounded-3xl relative overflow-hidden group border border-white/20 hover:border-emerald-500/30 transition-colors">
+            <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform">
+              <Shield className="w-48 h-48 text-emerald-500" />
+            </div>
+            {country.digital_freedom_text ? (
+              <>
+                <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed relative z-10 font-medium">
+                  {country.digital_freedom_text}
+                </p>
+                <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
+                  <Activity className="w-4 h-4 text-emerald-500" /> Powered by OONI Network Measurements
+                </div>
+              </>
+            ) : (
+              <p className="text-slate-500 font-medium relative z-10">Censorship and network interference data is currently being collected for {country.name}.</p>
+            )}
+          </div>
         </section>
 
         {/* DEMOGRAPHICS (BENTO GRID) */}
