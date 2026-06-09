@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import { ArrowLeft, Swords, Activity, HeartPulse, GraduationCap, Scale, Sun, Users, Landmark, Wind, Droplets, CloudSnow, ThermometerSun } from 'lucide-react';
+import { ArrowLeft, Swords, Activity, HeartPulse, GraduationCap, Scale, Sun, Users, Landmark, Wind, Droplets, CloudSnow, ThermometerSun, Shield } from 'lucide-react';
 import CompareChart from './CompareChart';
 import ClimateChart from './ClimateChart';
 import { Metadata } from 'next';
@@ -299,14 +299,56 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      {/* ═══════ SIDE BY SIDE SECTIONS (CLIMATE & EXPATS) ═══════ */}
+      {/* ═══════ SIDE BY SIDE SECTIONS (CLIMATE & EXPATS & DIGITAL FREEDOM) ═══════ */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+
+        {/* DIGITAL FREEDOM */}
+        {(countryA.digital_freedom_text || countryB.digital_freedom_text) && (
+          <div className="glass-panel p-8 rounded-3xl border border-white/20 dark:border-white/10 md:col-span-2">
+            <div className="flex items-center gap-2 mb-6 justify-center">
+              <Shield className="w-6 h-6 text-indigo-500" />
+              <h2 className="text-2xl font-bold tracking-tight">Digital Freedom & Remote Work</h2>
+            </div>
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="flex-1 bg-black/5 dark:bg-white/5 rounded-2xl p-6 relative">
+                <h4 className="font-black text-xl mb-3 text-blue-500">{countryA.name}</h4>
+                <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                  {countryA.digital_freedom_text || "No digital freedom data available yet."}
+                </p>
+              </div>
+              <div className="flex-1 bg-black/5 dark:bg-white/5 rounded-2xl p-6 relative">
+                <h4 className="font-black text-xl mb-3 text-emerald-500">{countryB.name}</h4>
+                <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                  {countryB.digital_freedom_text || "No digital freedom data available yet."}
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* CLIMATE */}
         <div className="glass-panel p-8 rounded-3xl border border-white/20 dark:border-white/10 md:col-span-2">
           <div className="flex items-center gap-2 mb-6 justify-center">
             <Sun className="w-6 h-6 text-amber-500" />
             <h2 className="text-2xl font-bold tracking-tight">Month-by-Month Climate Profile</h2>
           </div>
+          
+          {(countryA.climate_summary || countryB.climate_summary) && (
+            <div className="flex flex-col md:flex-row gap-6 mb-8">
+              <div className="flex-1 bg-black/5 dark:bg-white/5 rounded-2xl p-6 relative">
+                <h4 className="font-black text-xl mb-3 text-blue-500">{countryA.name}</h4>
+                <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                  {countryA.climate_summary || "No AI climate summary available yet."}
+                </p>
+              </div>
+              <div className="flex-1 bg-black/5 dark:bg-white/5 rounded-2xl p-6 relative">
+                <h4 className="font-black text-xl mb-3 text-emerald-500">{countryB.name}</h4>
+                <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                  {countryB.climate_summary || "No AI climate summary available yet."}
+                </p>
+              </div>
+            </div>
+          )}
           <ClimateChart 
             countryA={countryA.name} 
             countryB={countryB.name} 
