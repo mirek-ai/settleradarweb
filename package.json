@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "sync-db": "node scripts/buildDatabaseJson.js",
-    "build": "node scripts/buildDatabaseJson.js && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
