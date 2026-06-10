@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T19:31:50.418Z",
+  "updatedAt": "2026-06-10T19:32:13.732Z",
   "countries": [
     {
       "id": "AFG",
@@ -47845,96 +47845,96 @@
           "monthName": "Jan",
           "avgMaxTemp": 2,
           "avgMinTemp": -3,
-          "rainDays": 20,
-          "sunshineHours": 0,
+          "rainDays": 13,
+          "sunshineHours": 91,
           "snowDays": 0
         },
         {
           "monthName": "Feb",
           "avgMaxTemp": 4,
           "avgMinTemp": -2,
-          "rainDays": 16,
-          "sunshineHours": 0,
+          "rainDays": 11,
+          "sunshineHours": 127,
           "snowDays": 0
         },
         {
           "monthName": "Mar",
           "avgMaxTemp": 9,
           "avgMinTemp": 0,
-          "rainDays": 19,
-          "sunshineHours": 0,
+          "rainDays": 10,
+          "sunshineHours": 227,
           "snowDays": 0
         },
         {
           "monthName": "Apr",
           "avgMaxTemp": 14,
           "avgMinTemp": 4,
-          "rainDays": 18,
-          "sunshineHours": 0,
+          "rainDays": 9,
+          "sunshineHours": 286,
           "snowDays": 0
         },
         {
           "monthName": "May",
           "avgMaxTemp": 19,
           "avgMinTemp": 9,
-          "rainDays": 20,
-          "sunshineHours": 0,
+          "rainDays": 12,
+          "sunshineHours": 342,
           "snowDays": 0
         },
         {
           "monthName": "Jun",
           "avgMaxTemp": 24,
           "avgMinTemp": 14,
-          "rainDays": 17,
-          "sunshineHours": 0,
+          "rainDays": 11,
+          "sunshineHours": 363,
           "snowDays": 0
         },
         {
           "monthName": "Jul",
           "avgMaxTemp": 25,
           "avgMinTemp": 16,
-          "rainDays": 24,
-          "sunshineHours": 0,
+          "rainDays": 14,
+          "sunshineHours": 358,
           "snowDays": 0
         },
         {
           "monthName": "Aug",
           "avgMaxTemp": 25,
           "avgMinTemp": 15,
-          "rainDays": 19,
-          "sunshineHours": 0,
+          "rainDays": 11,
+          "sunshineHours": 340,
           "snowDays": 0
         },
         {
           "monthName": "Sep",
           "avgMaxTemp": 20,
           "avgMinTemp": 11,
-          "rainDays": 15,
-          "sunshineHours": 0,
+          "rainDays": 10,
+          "sunshineHours": 263,
           "snowDays": 0
         },
         {
           "monthName": "Oct",
           "avgMaxTemp": 14,
           "avgMinTemp": 7,
-          "rainDays": 17,
-          "sunshineHours": 0,
+          "rainDays": 13,
+          "sunshineHours": 184,
           "snowDays": 0
         },
         {
           "monthName": "Nov",
           "avgMaxTemp": 7,
           "avgMinTemp": 3,
-          "rainDays": 17,
-          "sunshineHours": 0,
+          "rainDays": 10,
+          "sunshineHours": 103,
           "snowDays": 0
         },
         {
           "monthName": "Dec",
           "avgMaxTemp": 4,
           "avgMinTemp": 0,
-          "rainDays": 19,
-          "sunshineHours": 0,
+          "rainDays": 12,
+          "sunshineHours": 67,
           "snowDays": 0
         }
       ],
