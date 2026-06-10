@@ -582,6 +582,18 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               <p className="text-sm font-medium text-slate-500 mt-1">Population over 65 years old</p>
             </div>
             
+            {/* Bento Block: Urbanization */}
+            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 flex flex-col justify-center hover:border-blue-500/30 transition-colors group">
+              <div className="flex justify-between items-center mb-2">
+                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Urbanization</p>
+                <Building className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+              </div>
+              <div className="text-4xl font-extrabold text-slate-900 dark:text-white">
+                {urban != null ? `${urban.toFixed(1)}%` : '--'}
+              </div>
+              <p className="text-sm font-medium text-slate-500 mt-1">People living in cities</p>
+            </div>
+            
             {/* Bento Block: Migration */}
             <div className="glass-panel p-6 rounded-3xl md:col-span-1 row-span-1 border border-white/20 flex flex-col justify-center hover:border-blue-500/30 transition-colors group">
               <div className="flex justify-between items-center mb-2">
