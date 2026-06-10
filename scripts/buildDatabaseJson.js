@@ -120,6 +120,9 @@ async function buildDatabaseJson() {
           capital: country.capital_city,
           flag_emoji: country.flag_emoji,
           is_territory: sovereigntyMap[country.iso_alpha3] === false,
+          currency_code: country.currency_code || existingCountry.currency_code || null,
+          currency_name: country.currency_name || existingCountry.currency_name || null,
+          currency_symbol: country.currency_symbol || existingCountry.currency_symbol || null,
           politics: pol ? {
             ruling_party: pol.ruling_party,
             government_type: pol.government_type,

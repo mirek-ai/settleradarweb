@@ -262,12 +262,15 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                     <Users className="w-3.5 h-3.5" /> {formatNumber(population / 1000000)}M people
                   </span>
                 )}
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
-                  {country.id}
-                </span>
+
                 {country.capital && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20">
                     <Building className="w-3.5 h-3.5" /> Capital: {country.capital}
+                  </span>
+                )}
+                {country.currency_name && (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-violet-500/10 text-violet-600 dark:text-violet-400 border border-violet-500/20">
+                    <Landmark className="w-3.5 h-3.5" /> Currency: {country.currency_name} ({country.currency_symbol || country.currency_code})
                   </span>
                 )}
               </div>
@@ -379,6 +382,30 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {happiness != null ? happiness.toFixed(2) : '--'}<span className="text-base font-medium text-slate-500 ml-1">/ 10</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">World Happiness Report (Cantril Ladder).</p>
+            </div>
+
+            {/* Fact 7 */}
+            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-emerald-500/10 group-hover:text-emerald-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Wind className="w-6 h-6" />
+              </div>
+              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Air Quality (PM2.5)</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                {air != null ? air.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">µg/m³</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-2">World Bank Data. Lower is better.</p>
+            </div>
+
+            {/* Fact 8 */}
+            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-fuchsia-500/10 group-hover:text-fuchsia-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <GraduationCap className="w-6 h-6" />
+              </div>
+              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Education Spending</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                {education != null ? education.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">% of GDP</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-2">UNESCO Data. Indicates focus on public schooling.</p>
             </div>
           </div>
         </section>
@@ -629,7 +656,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                     {country.climate_summary}
                   </p>
                   <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
-                    <ThermometerSun className="w-4 h-4 text-amber-500" /> Powered by Open-Meteo & AI
+                    <ThermometerSun className="w-4 h-4 text-amber-500" /> Powered by Open-Meteo Data
                   </div>
                 </div>
               )}
