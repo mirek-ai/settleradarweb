@@ -697,6 +697,12 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                             ? `${m.snowDays} snow days` 
                             : `${m.rainDays} rain days`}
                       </span>
+                      {m.sunshineHours != null && (
+                        <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1 mt-0.5">
+                          <Sun className={`w-3.5 h-3.5 ${m.sunshineHours > 0 ? 'text-amber-500' : 'text-slate-300'}`} /> 
+                          {m.sunshineHours > 0 ? `${m.sunshineHours}h sun` : 'No data'}
+                        </span>
+                      )}
                     </div>
                   </div>
                 );

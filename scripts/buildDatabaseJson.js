@@ -97,6 +97,7 @@ async function buildDatabaseJson() {
               avgMaxTemp: Math.round(c.avg_temp_max),
               avgMinTemp: Math.round(c.avg_temp_min),
               rainDays: Math.round(c.rain_days),
+              sunshineHours: Math.round(c.sunshine_hours),
               snowDays: 0
             }));
         }
