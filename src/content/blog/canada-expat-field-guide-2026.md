@@ -113,7 +113,7 @@ The PNP lets individual provinces and territories nominate candidates for PR bas
 **Key points:**
 - Every province except Quebec and Nunavut has a PNP[^17]
 - Many PNPs require a job offer, work experience in the province, or a connection to the province
-- Quebec operates its own separate immigration system "” the **Programme de l'expÃ©rience quÃ©bÃ©coise (PEQ)** and the **Programme rÃ©gulier des travailleurs qualifiÃ©s (PRTQ)** "” entirely outside Express Entry; French language is central to all Quebec pathways
+- Quebec operates its own separate immigration system "” the **Programme de l'expérience québécoise (PEQ)** and the **Programme régulier des travailleurs qualifiés (PRTQ)** "” entirely outside Express Entry; French language is central to all Quebec pathways
 - Processing: Express Entry"“linked PNP streams take approximately 6 months post-ITA; non-Express Entry PNPs take approximately 13 months[^18]
 - PNP application fees vary by province; BC PNP updated its fee to **CAD $1,750** from January 22, 2026[^19]
 
@@ -125,7 +125,7 @@ The PNP lets individual provinces and territories nominate candidates for PR bas
 
 ### Quebec
 
-Quebec selects its own immigrants. For skilled workers, the primary pathway is the **Certificat de sÃ©lection du QuÃ©bec (CSQ)** issued by the MinistÃ¨re de l'Immigration, de la Francisation et de l'IntÃ©gration (MIFI). French language proficiency is essentially mandatory. Once you have a CSQ, you then apply to IRCC for PR. Quebec targets approximately 55,000 immigrants per year across all categories.
+Quebec selects its own immigrants. For skilled workers, the primary pathway is the **Certificat de sélection du Québec (CSQ)** issued by the Ministère de l'Immigration, de la Francisation et de l'Intégration (MIFI). French language proficiency is essentially mandatory. Once you have a CSQ, you then apply to IRCC for PR. Quebec targets approximately 55,000 immigrants per year across all categories.
 
 ***
 
@@ -380,7 +380,7 @@ For career purposes: Montreal hosts Ubisoft's largest studio globally, Bombardie
 
 **Language reality:** Quebec is officially French-speaking. In central Montreal, English is widely spoken in professional environments. Outside the core, French is dominant. Getting to B1-B2 French significantly improves daily life quality and is **required** for Quebec's provincial immigration programs. For those pursuing PR through IRCC's federal programs (not Quebec), French proficiency generates very significant CRS bonus points "” enough to shift your draw eligibility from "unlikely" to "probable".
 
-**Best Montreal neighbourhoods for expats:** Plateau-Mont-Royal (cultural, walkable), Mile End (creative, tech, Jewish cultural heritage), Outremont (quieter, families), NDG (Notre-Dame-de-GrÃ¢ce, established English-speaking community).
+**Best Montreal neighbourhoods for expats:** Plateau-Mont-Royal (cultural, walkable), Mile End (creative, tech, Jewish cultural heritage), Outremont (quieter, families), NDG (Notre-Dame-de-Grâce, established English-speaking community).
 
 ### Calgary
 
@@ -443,7 +443,7 @@ Canada ranks mid-tier among OECD countries on broadband affordability but highly
 **Public transit by city:**
 - **Toronto (TTC):** Subway (4 lines), streetcar, bus. Monthly Presto: **CAD $156**. Regional GO Transit extends to Hamilton, Barrie, Oshawa, and Kitchener.[^25]
 - **Vancouver (TransLink):** SkyTrain (3 lines: Canada, Millennium, Expo), West Coast Express commuter rail, SeaBus, buses. Monthly pass: approximately **CAD $127 (2-zone)**
-- **Montreal (STM/RTM):** MÃ©tro (4 lines), bus, REM (new light rail to suburbs). Monthly OPUS card: **CAD $101**
+- **Montreal (STM/RTM):** Métro (4 lines), bus, REM (new light rail to suburbs). Monthly OPUS card: **CAD $101**
 - **Ottawa (OC Transpo):** LRT (O-Train Confederation Line), bus. Monthly pass: approximately **CAD $126**
 - **Calgary (CTrain):** Free within the downtown zone; zonal otherwise. Monthly pass: approximately **CAD $120**
 
@@ -586,7 +586,7 @@ The Express Entry picture in 2026 is unambiguous: **if you're not already in Can
 
 7. [OECD Trims Canada's GDP Growth, Ups Inflation Forecasts for This ...](https://fixedincome.fidelity.com/ftgw/fi/FINewsArticle?id=202603261010MIDNIGHTUSEQUITY_A3591574) - Fidelity's fixed income research tools can help you find the right bonds, CDs, bond funds, and money...
 
-8. [Question Period Note: OECD Economic Outlook](https://search.open.canada.ca/qpnotes/record/fin,FIN-2025-QP-00005) - En vertu de la Loi sur l'accÃ¨s Ã  l'information, le gouvernement publie de faÃ§on proactive les notes ...
+8. [Question Period Note: OECD Economic Outlook](https://search.open.canada.ca/qpnotes/record/fin,FIN-2025-QP-00005) - En vertu de la Loi sur l'accès Ã  l'information, le gouvernement publie de façon proactive les notes ...
 
 9. [Canada Average Hourly Wages - Trading Economics](https://tradingeconomics.com/canada/wages) - Wages in Canada decreased to 32.86 CAD/Hour in March from 32.99 CAD/Hour in February of 2026. Wages ...
 
