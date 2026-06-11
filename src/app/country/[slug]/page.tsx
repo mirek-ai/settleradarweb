@@ -80,6 +80,10 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const freedom = ind['heritage_economic_freedom']?.value; 
   const education = ind['unesco_education_spending']?.value;
   const life_expectancy = ind['who_life_expectancy']?.value;
+  const doctors = ind['who_medical_doctors']?.value;
+  const obesity = ind['who_obesity']?.value;
+  const out_of_pocket = ind['who_out_of_pocket_expenditure']?.value;
+  const health_summary = country.health_summary;
   const uhc = ind['who_uhc_index']?.value;
   const gini = ind['wb_gini']?.value;
   const inflation = ind['wb_inflation']?.value;
@@ -208,6 +212,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           </a>
           <a href="#demographics" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Users className="w-4 h-4 text-fuchsia-500" /> Demographics
+          </a>
+          <a href="#health" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+            <HeartPulse className="w-4 h-4 text-rose-500" /> Health & Lifestyle
           </a>
           <a href="#economy" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Activity className="w-4 h-4 text-emerald-500" /> Economic Freedom
@@ -607,6 +614,83 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
           </div>
         </section>
+
+        {/* HEALTH & LIFESTYLE */}
+        {(health_summary || life_expectancy || doctors || obesity || out_of_pocket) && (
+          <section id="health">
+            <div className="flex items-center gap-2 mb-6">
+              <HeartPulse className="w-6 h-6 text-rose-500" />
+              <h2 className="text-3xl font-bold tracking-tight">Health & Lifestyle</h2>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {health_summary && (
+                <div className="glass-panel p-8 rounded-3xl lg:col-span-2 relative overflow-hidden border border-white/20 hover:border-rose-500/30 transition-colors group">
+                  <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform">
+                    <HeartPulse className="w-48 h-48 text-rose-500" />
+                  </div>
+                  <div className="prose prose-slate dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10" dangerouslySetInnerHTML={{ __html: health_summary }} />
+                  <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
+                    <Sparkles className="w-4 h-4 text-rose-500" /> AI Insights based on WHO Data
+                  </div>
+                </div>
+              )}
+              
+              <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 ${!health_summary ? 'lg:col-span-3 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4' : ''}`}>
+                {life_expectancy != null && (
+                  <div className="glass-panel p-6 rounded-3xl flex flex-col justify-center border border-white/20 hover:border-rose-500/30 transition-colors group">
+                    <div className="flex justify-between items-center mb-2">
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Longevity</p>
+                      <Activity className="w-4 h-4 text-slate-400 group-hover:text-rose-500 transition-colors" />
+                    </div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                      {life_expectancy.toFixed(1)}<span className="text-sm font-medium text-slate-500 ml-1">years</span>
+                    </div>
+                    <p className="text-sm font-medium text-slate-500 mt-1">Life Expectancy</p>
+                  </div>
+                )}
+                
+                {doctors != null && (
+                  <div className="glass-panel p-6 rounded-3xl flex flex-col justify-center border border-white/20 hover:border-blue-500/30 transition-colors group">
+                    <div className="flex justify-between items-center mb-2">
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Care Access</p>
+                      <HeartPulse className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+                    </div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                      {doctors.toFixed(1)}
+                    </div>
+                    <p className="text-sm font-medium text-slate-500 mt-1">Doctors per 10k people</p>
+                  </div>
+                )}
+
+                {out_of_pocket != null && (
+                  <div className="glass-panel p-6 rounded-3xl flex flex-col justify-center border border-white/20 hover:border-amber-500/30 transition-colors group">
+                    <div className="flex justify-between items-center mb-2">
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Healthcare Cost</p>
+                      <Landmark className="w-4 h-4 text-slate-400 group-hover:text-amber-500 transition-colors" />
+                    </div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                      {out_of_pocket.toFixed(1)}%
+                    </div>
+                    <p className="text-sm font-medium text-slate-500 mt-1">Out-of-pocket expenditure</p>
+                  </div>
+                )}
+
+                {obesity != null && (
+                  <div className="glass-panel p-6 rounded-3xl flex flex-col justify-center border border-white/20 hover:border-orange-500/30 transition-colors group">
+                    <div className="flex justify-between items-center mb-2">
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Lifestyle</p>
+                      <Activity className="w-4 h-4 text-slate-400 group-hover:text-orange-500 transition-colors" />
+                    </div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                      {obesity.toFixed(1)}%
+                    </div>
+                    <p className="text-sm font-medium text-slate-500 mt-1">Adult Obesity Rate</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* ECONOMIC FREEDOM */}
         <section id="economy">
