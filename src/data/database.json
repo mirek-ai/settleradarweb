@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-06-11T14:58:25.048Z",
+  "updatedAt": "2026-06-11T15:04:22.787Z",
   "countries": [
     {
       "id": "AFG",
-      "iso_alpha2": null,
+      "iso_alpha2": "AF",
       "name": "Afghanistan",
       "slug": "afghanistan",
       "region": "Asia",
@@ -318,7 +318,7 @@
     },
     {
       "id": "ALB",
-      "iso_alpha2": null,
+      "iso_alpha2": "AL",
       "name": "Albania",
       "slug": "albania",
       "region": "Europe",
@@ -656,7 +656,7 @@
     },
     {
       "id": "DZA",
-      "iso_alpha2": null,
+      "iso_alpha2": "DZ",
       "name": "Algeria",
       "slug": "algeria",
       "region": "Africa",
@@ -982,7 +982,7 @@
     },
     {
       "id": "ASM",
-      "iso_alpha2": null,
+      "iso_alpha2": "AS",
       "name": "American Samoa",
       "slug": "american-samoa",
       "region": "Oceania",
@@ -1180,7 +1180,7 @@
     },
     {
       "id": "AND",
-      "iso_alpha2": null,
+      "iso_alpha2": "AD",
       "name": "Andorra",
       "slug": "andorra",
       "region": "Europe",
@@ -1425,7 +1425,7 @@
     },
     {
       "id": "AGO",
-      "iso_alpha2": null,
+      "iso_alpha2": "AO",
       "name": "Angola",
       "slug": "angola",
       "region": "Africa",
@@ -1749,7 +1749,7 @@
     },
     {
       "id": "AIA",
-      "iso_alpha2": null,
+      "iso_alpha2": "AI",
       "name": "Anguilla",
       "slug": "anguilla",
       "region": "Americas",
@@ -1900,7 +1900,7 @@
     },
     {
       "id": "ATA",
-      "iso_alpha2": null,
+      "iso_alpha2": "AQ",
       "name": "Antarctica",
       "slug": "antarctica",
       "region": "Antarctic",
@@ -2006,7 +2006,7 @@
     },
     {
       "id": "ATG",
-      "iso_alpha2": null,
+      "iso_alpha2": "AG",
       "name": "Antigua and Barbuda",
       "slug": "antigua-and-barbuda",
       "region": "Americas",
@@ -2253,7 +2253,7 @@
     },
     {
       "id": "ARG",
-      "iso_alpha2": null,
+      "iso_alpha2": "AR",
       "name": "Argentina",
       "slug": "argentina",
       "region": "Americas",
@@ -2588,7 +2588,7 @@
     },
     {
       "id": "ARM",
-      "iso_alpha2": null,
+      "iso_alpha2": "AM",
       "name": "Armenia",
       "slug": "armenia",
       "region": "Asia",
@@ -2912,7 +2912,7 @@
     },
     {
       "id": "ABW",
-      "iso_alpha2": null,
+      "iso_alpha2": "AW",
       "name": "Aruba",
       "slug": "aruba",
       "region": "Americas",
@@ -3120,7 +3120,7 @@
     },
     {
       "id": "AUS",
-      "iso_alpha2": null,
+      "iso_alpha2": "AU",
       "name": "Australia",
       "slug": "australia",
       "region": "Oceania",
@@ -3460,7 +3460,7 @@
     },
     {
       "id": "AUT",
-      "iso_alpha2": null,
+      "iso_alpha2": "AT",
       "name": "Austria",
       "slug": "austria",
       "region": "Europe",
@@ -3805,7 +3805,7 @@
     },
     {
       "id": "AZE",
-      "iso_alpha2": null,
+      "iso_alpha2": "AZ",
       "name": "Azerbaijan",
       "slug": "azerbaijan",
       "region": "Asia",
@@ -4143,7 +4143,7 @@
     },
     {
       "id": "BHS",
-      "iso_alpha2": null,
+      "iso_alpha2": "BS",
       "name": "Bahamas",
       "slug": "bahamas",
       "region": "Americas",
@@ -4410,7 +4410,7 @@
     },
     {
       "id": "BHR",
-      "iso_alpha2": null,
+      "iso_alpha2": "BH",
       "name": "Bahrain",
       "slug": "bahrain",
       "region": "Asia",
@@ -4745,7 +4745,7 @@
     },
     {
       "id": "BGD",
-      "iso_alpha2": null,
+      "iso_alpha2": "BD",
       "name": "Bangladesh",
       "slug": "bangladesh",
       "region": "Asia",
@@ -5083,7 +5083,7 @@
     },
     {
       "id": "BRB",
-      "iso_alpha2": null,
+      "iso_alpha2": "BB",
       "name": "Barbados",
       "slug": "barbados",
       "region": "Americas",
@@ -5422,7 +5422,7 @@
     },
     {
       "id": "BLR",
-      "iso_alpha2": null,
+      "iso_alpha2": "BY",
       "name": "Belarus",
       "slug": "belarus",
       "region": "Europe",
@@ -5760,7 +5760,7 @@
     },
     {
       "id": "BEL",
-      "iso_alpha2": null,
+      "iso_alpha2": "BE",
       "name": "Belgium",
       "slug": "belgium",
       "region": "Europe",
@@ -6105,7 +6105,7 @@
     },
     {
       "id": "BLZ",
-      "iso_alpha2": null,
+      "iso_alpha2": "BZ",
       "name": "Belize",
       "slug": "belize",
       "region": "Americas",
@@ -6442,7 +6442,7 @@
     },
     {
       "id": "BEN",
-      "iso_alpha2": null,
+      "iso_alpha2": "BJ",
       "name": "Benin",
       "slug": "benin",
       "region": "Africa",
@@ -6775,7 +6775,7 @@
     },
     {
       "id": "BMU",
-      "iso_alpha2": null,
+      "iso_alpha2": "BM",
       "name": "Bermuda",
       "slug": "bermuda",
       "region": "Americas",
@@ -6987,7 +6987,7 @@
     },
     {
       "id": "BTN",
-      "iso_alpha2": null,
+      "iso_alpha2": "BT",
       "name": "Bhutan",
       "slug": "bhutan",
       "region": "Asia",
@@ -7325,7 +7325,7 @@
     },
     {
       "id": "BOL",
-      "iso_alpha2": null,
+      "iso_alpha2": "BO",
       "name": "Bolivia",
       "slug": "bolivia",
       "region": "Americas",
@@ -7634,7 +7634,7 @@
     },
     {
       "id": "BIH",
-      "iso_alpha2": null,
+      "iso_alpha2": "BA",
       "name": "Bosnia and Herzegovina",
       "slug": "bosnia-and-herzegovina",
       "region": "Europe",
@@ -7979,7 +7979,7 @@
     },
     {
       "id": "BWA",
-      "iso_alpha2": null,
+      "iso_alpha2": "BW",
       "name": "Botswana",
       "slug": "botswana",
       "region": "Africa",
@@ -8319,7 +8319,7 @@
     },
     {
       "id": "BVT",
-      "iso_alpha2": null,
+      "iso_alpha2": "BV",
       "name": "Bouvet Island",
       "slug": "bouvet-island",
       "region": "Antarctic",
@@ -8425,7 +8425,7 @@
     },
     {
       "id": "BRA",
-      "iso_alpha2": null,
+      "iso_alpha2": "BR",
       "name": "Brazil",
       "slug": "brazil",
       "region": "Americas",
@@ -8760,7 +8760,7 @@
     },
     {
       "id": "IOT",
-      "iso_alpha2": null,
+      "iso_alpha2": "IO",
       "name": "British Indian Ocean Territory",
       "slug": "british-indian-ocean-territory",
       "region": "Africa",
@@ -8878,7 +8878,7 @@
     },
     {
       "id": "VGB",
-      "iso_alpha2": null,
+      "iso_alpha2": "VG",
       "name": "British Virgin Islands",
       "slug": "british-virgin-islands",
       "region": "Americas",
@@ -9071,7 +9071,7 @@
     },
     {
       "id": "BRN",
-      "iso_alpha2": null,
+      "iso_alpha2": "BN",
       "name": "Brunei",
       "slug": "brunei",
       "region": "Asia",
@@ -9300,7 +9300,7 @@
     },
     {
       "id": "BGR",
-      "iso_alpha2": null,
+      "iso_alpha2": "BG",
       "name": "Bulgaria",
       "slug": "bulgaria",
       "region": "Europe",
@@ -9631,7 +9631,7 @@
     },
     {
       "id": "BFA",
-      "iso_alpha2": null,
+      "iso_alpha2": "BF",
       "name": "Burkina Faso",
       "slug": "burkina-faso",
       "region": "Africa",
@@ -9971,7 +9971,7 @@
     },
     {
       "id": "BDI",
-      "iso_alpha2": null,
+      "iso_alpha2": "BI",
       "name": "Burundi",
       "slug": "burundi",
       "region": "Africa",
@@ -10297,7 +10297,7 @@
     },
     {
       "id": "KHM",
-      "iso_alpha2": null,
+      "iso_alpha2": "KH",
       "name": "Cambodia",
       "slug": "cambodia",
       "region": "Asia",
@@ -10623,7 +10623,7 @@
     },
     {
       "id": "CMR",
-      "iso_alpha2": null,
+      "iso_alpha2": "CM",
       "name": "Cameroon",
       "slug": "cameroon",
       "region": "Africa",
@@ -10968,7 +10968,7 @@
     },
     {
       "id": "CAN",
-      "iso_alpha2": null,
+      "iso_alpha2": "CA",
       "name": "Canada",
       "slug": "canada",
       "region": "Americas",
@@ -11301,7 +11301,7 @@
     },
     {
       "id": "CPV",
-      "iso_alpha2": null,
+      "iso_alpha2": "CV",
       "name": "Cape Verde",
       "slug": "cape-verde",
       "region": "Africa",
@@ -11544,7 +11544,7 @@
     },
     {
       "id": "BES",
-      "iso_alpha2": null,
+      "iso_alpha2": "BQ",
       "name": "Caribbean Netherlands",
       "slug": "caribbean-netherlands",
       "region": "Americas",
@@ -11662,7 +11662,7 @@
     },
     {
       "id": "CYM",
-      "iso_alpha2": null,
+      "iso_alpha2": "KY",
       "name": "Cayman Islands",
       "slug": "cayman-islands",
       "region": "Americas",
@@ -11869,7 +11869,7 @@
     },
     {
       "id": "CAF",
-      "iso_alpha2": null,
+      "iso_alpha2": "CF",
       "name": "Central African Republic",
       "slug": "central-african-republic",
       "region": "Africa",
@@ -12202,7 +12202,7 @@
     },
     {
       "id": "TCD",
-      "iso_alpha2": null,
+      "iso_alpha2": "TD",
       "name": "Chad",
       "slug": "chad",
       "region": "Africa",
@@ -12532,7 +12532,7 @@
     },
     {
       "id": "CHL",
-      "iso_alpha2": null,
+      "iso_alpha2": "CL",
       "name": "Chile",
       "slug": "chile",
       "region": "Americas",
@@ -12863,7 +12863,7 @@
     },
     {
       "id": "CHN",
-      "iso_alpha2": null,
+      "iso_alpha2": "CN",
       "name": "China",
       "slug": "china",
       "region": "Asia",
@@ -13187,7 +13187,7 @@
     },
     {
       "id": "CXR",
-      "iso_alpha2": null,
+      "iso_alpha2": "CX",
       "name": "Christmas Island",
       "slug": "christmas-island",
       "region": "Oceania",
@@ -13305,7 +13305,7 @@
     },
     {
       "id": "CCK",
-      "iso_alpha2": null,
+      "iso_alpha2": "CC",
       "name": "Cocos (Keeling) Islands",
       "slug": "cocos-keeling-islands",
       "region": "Oceania",
@@ -13423,7 +13423,7 @@
     },
     {
       "id": "COL",
-      "iso_alpha2": null,
+      "iso_alpha2": "CO",
       "name": "Colombia",
       "slug": "colombia",
       "region": "Americas",
@@ -13753,7 +13753,7 @@
     },
     {
       "id": "COM",
-      "iso_alpha2": null,
+      "iso_alpha2": "KM",
       "name": "Comoros",
       "slug": "comoros",
       "region": "Africa",
@@ -14076,7 +14076,7 @@
     },
     {
       "id": "COK",
-      "iso_alpha2": null,
+      "iso_alpha2": "CK",
       "name": "Cook Islands",
       "slug": "cook-islands",
       "region": "Oceania",
@@ -14256,7 +14256,7 @@
     },
     {
       "id": "CRI",
-      "iso_alpha2": null,
+      "iso_alpha2": "CR",
       "name": "Costa Rica",
       "slug": "costa-rica",
       "region": "Americas",
@@ -14598,7 +14598,7 @@
     },
     {
       "id": "HRV",
-      "iso_alpha2": null,
+      "iso_alpha2": "HR",
       "name": "Croatia",
       "slug": "croatia",
       "region": "Europe",
@@ -14947,7 +14947,7 @@
     },
     {
       "id": "CUB",
-      "iso_alpha2": null,
+      "iso_alpha2": "CU",
       "name": "Cuba",
       "slug": "cuba",
       "region": "Americas",
@@ -15258,7 +15258,7 @@
     },
     {
       "id": "CUW",
-      "iso_alpha2": null,
+      "iso_alpha2": "CW",
       "name": "Curaçao",
       "slug": "cura-ao",
       "region": "Americas",
@@ -15463,7 +15463,7 @@
     },
     {
       "id": "CYP",
-      "iso_alpha2": null,
+      "iso_alpha2": "CY",
       "name": "Cyprus",
       "slug": "cyprus",
       "region": "Europe",
@@ -15805,7 +15805,7 @@
     },
     {
       "id": "CZE",
-      "iso_alpha2": null,
+      "iso_alpha2": "CZ",
       "name": "Czechia",
       "slug": "czechia",
       "region": "Europe",
@@ -16141,7 +16141,7 @@
     },
     {
       "id": "COD",
-      "iso_alpha2": null,
+      "iso_alpha2": "CD",
       "name": "DR Congo",
       "slug": "dr-congo",
       "region": "Africa",
@@ -16380,7 +16380,7 @@
     },
     {
       "id": "DNK",
-      "iso_alpha2": null,
+      "iso_alpha2": "DK",
       "name": "Denmark",
       "slug": "denmark",
       "region": "Europe",
@@ -16718,7 +16718,7 @@
     },
     {
       "id": "DJI",
-      "iso_alpha2": null,
+      "iso_alpha2": "DJ",
       "name": "Djibouti",
       "slug": "djibouti",
       "region": "Africa",
@@ -17034,7 +17034,7 @@
     },
     {
       "id": "DMA",
-      "iso_alpha2": null,
+      "iso_alpha2": "DM",
       "name": "Dominica",
       "slug": "dominica",
       "region": "Americas",
@@ -17341,7 +17341,7 @@
     },
     {
       "id": "DOM",
-      "iso_alpha2": null,
+      "iso_alpha2": "DO",
       "name": "Dominican Republic",
       "slug": "dominican-republic",
       "region": "Americas",
@@ -17686,7 +17686,7 @@
     },
     {
       "id": "ECU",
-      "iso_alpha2": null,
+      "iso_alpha2": "EC",
       "name": "Ecuador",
       "slug": "ecuador",
       "region": "Americas",
@@ -18021,7 +18021,7 @@
     },
     {
       "id": "EGY",
-      "iso_alpha2": null,
+      "iso_alpha2": "EG",
       "name": "Egypt",
       "slug": "egypt",
       "region": "Africa",
@@ -18352,7 +18352,7 @@
     },
     {
       "id": "SLV",
-      "iso_alpha2": null,
+      "iso_alpha2": "SV",
       "name": "El Salvador",
       "slug": "el-salvador",
       "region": "Americas",
@@ -18690,7 +18690,7 @@
     },
     {
       "id": "GNQ",
-      "iso_alpha2": null,
+      "iso_alpha2": "GQ",
       "name": "Equatorial Guinea",
       "slug": "equatorial-guinea",
       "region": "Africa",
@@ -19008,7 +19008,7 @@
     },
     {
       "id": "ERI",
-      "iso_alpha2": null,
+      "iso_alpha2": "ER",
       "name": "Eritrea",
       "slug": "eritrea",
       "region": "Africa",
@@ -19316,7 +19316,7 @@
     },
     {
       "id": "EST",
-      "iso_alpha2": null,
+      "iso_alpha2": "EE",
       "name": "Estonia",
       "slug": "estonia",
       "region": "Europe",
@@ -19658,7 +19658,7 @@
     },
     {
       "id": "SWZ",
-      "iso_alpha2": null,
+      "iso_alpha2": "SZ",
       "name": "Eswatini",
       "slug": "eswatini",
       "region": "Africa",
@@ -19991,7 +19991,7 @@
     },
     {
       "id": "ETH",
-      "iso_alpha2": null,
+      "iso_alpha2": "ET",
       "name": "Ethiopia",
       "slug": "ethiopia",
       "region": "Africa",
@@ -20336,7 +20336,7 @@
     },
     {
       "id": "FLK",
-      "iso_alpha2": null,
+      "iso_alpha2": "FK",
       "name": "Falkland Islands",
       "slug": "falkland-islands",
       "region": "Americas",
@@ -20454,7 +20454,7 @@
     },
     {
       "id": "FRO",
-      "iso_alpha2": null,
+      "iso_alpha2": "FO",
       "name": "Faroe Islands",
       "slug": "faroe-islands",
       "region": "Europe",
@@ -20649,7 +20649,7 @@
     },
     {
       "id": "FJI",
-      "iso_alpha2": null,
+      "iso_alpha2": "FJ",
       "name": "Fiji",
       "slug": "fiji",
       "region": "Oceania",
@@ -20984,7 +20984,7 @@
     },
     {
       "id": "FIN",
-      "iso_alpha2": null,
+      "iso_alpha2": "FI",
       "name": "Finland",
       "slug": "finland",
       "region": "Europe",
@@ -21322,7 +21322,7 @@
     },
     {
       "id": "FRA",
-      "iso_alpha2": null,
+      "iso_alpha2": "FR",
       "name": "France",
       "slug": "france",
       "region": "Europe",
@@ -21667,7 +21667,7 @@
     },
     {
       "id": "GUF",
-      "iso_alpha2": null,
+      "iso_alpha2": "GF",
       "name": "French Guiana",
       "slug": "french-guiana",
       "region": "Americas",
@@ -21821,7 +21821,7 @@
     },
     {
       "id": "PYF",
-      "iso_alpha2": null,
+      "iso_alpha2": "PF",
       "name": "French Polynesia",
       "slug": "french-polynesia",
       "region": "Oceania",
@@ -22024,7 +22024,7 @@
     },
     {
       "id": "ATF",
-      "iso_alpha2": null,
+      "iso_alpha2": "TF",
       "name": "French Southern and Antarctic Lands",
       "slug": "french-southern-and-antarctic-lands",
       "region": "Antarctic",
@@ -22142,7 +22142,7 @@
     },
     {
       "id": "GAB",
-      "iso_alpha2": null,
+      "iso_alpha2": "GA",
       "name": "Gabon",
       "slug": "gabon",
       "region": "Africa",
@@ -22477,7 +22477,7 @@
     },
     {
       "id": "GMB",
-      "iso_alpha2": null,
+      "iso_alpha2": "GM",
       "name": "Gambia",
       "slug": "gambia",
       "region": "Africa",
@@ -22747,7 +22747,7 @@
     },
     {
       "id": "GEO",
-      "iso_alpha2": null,
+      "iso_alpha2": "GE",
       "name": "Georgia",
       "slug": "georgia",
       "region": "Asia",
@@ -23089,7 +23089,7 @@
     },
     {
       "id": "DEU",
-      "iso_alpha2": null,
+      "iso_alpha2": "DE",
       "name": "Germany",
       "slug": "germany",
       "region": "Europe",
@@ -23427,7 +23427,7 @@
     },
     {
       "id": "GHA",
-      "iso_alpha2": null,
+      "iso_alpha2": "GH",
       "name": "Ghana",
       "slug": "ghana",
       "region": "Africa",
@@ -23765,7 +23765,7 @@
     },
     {
       "id": "GIB",
-      "iso_alpha2": null,
+      "iso_alpha2": "GI",
       "name": "Gibraltar",
       "slug": "gibraltar",
       "region": "Europe",
@@ -23951,7 +23951,7 @@
     },
     {
       "id": "GRC",
-      "iso_alpha2": null,
+      "iso_alpha2": "GR",
       "name": "Greece",
       "slug": "greece",
       "region": "Europe",
@@ -24293,7 +24293,7 @@
     },
     {
       "id": "GRL",
-      "iso_alpha2": null,
+      "iso_alpha2": "GL",
       "name": "Greenland",
       "slug": "greenland",
       "region": "Americas",
@@ -24508,7 +24508,7 @@
     },
     {
       "id": "GRD",
-      "iso_alpha2": null,
+      "iso_alpha2": "GD",
       "name": "Grenada",
       "slug": "grenada",
       "region": "Americas",
@@ -24767,7 +24767,7 @@
     },
     {
       "id": "GLP",
-      "iso_alpha2": null,
+      "iso_alpha2": "GP",
       "name": "Guadeloupe",
       "slug": "guadeloupe",
       "region": "Americas",
@@ -24921,7 +24921,7 @@
     },
     {
       "id": "GUM",
-      "iso_alpha2": null,
+      "iso_alpha2": "GU",
       "name": "Guam",
       "slug": "guam",
       "region": "Oceania",
@@ -25110,7 +25110,7 @@
     },
     {
       "id": "GTM",
-      "iso_alpha2": null,
+      "iso_alpha2": "GT",
       "name": "Guatemala",
       "slug": "guatemala",
       "region": "Americas",
@@ -25448,7 +25448,7 @@
     },
     {
       "id": "GGY",
-      "iso_alpha2": null,
+      "iso_alpha2": "GG",
       "name": "Guernsey",
       "slug": "guernsey",
       "region": "Europe",
@@ -25566,7 +25566,7 @@
     },
     {
       "id": "GIN",
-      "iso_alpha2": null,
+      "iso_alpha2": "GN",
       "name": "Guinea",
       "slug": "guinea",
       "region": "Africa",
@@ -25889,7 +25889,7 @@
     },
     {
       "id": "GNB",
-      "iso_alpha2": null,
+      "iso_alpha2": "GW",
       "name": "Guinea-Bissau",
       "slug": "guinea-bissau",
       "region": "Africa",
@@ -26224,7 +26224,7 @@
     },
     {
       "id": "GUY",
-      "iso_alpha2": null,
+      "iso_alpha2": "GY",
       "name": "Guyana",
       "slug": "guyana",
       "region": "Americas",
@@ -26540,7 +26540,7 @@
     },
     {
       "id": "HTI",
-      "iso_alpha2": null,
+      "iso_alpha2": "HT",
       "name": "Haiti",
       "slug": "haiti",
       "region": "Americas",
@@ -26861,7 +26861,7 @@
     },
     {
       "id": "HMD",
-      "iso_alpha2": null,
+      "iso_alpha2": "HM",
       "name": "Heard Island and McDonald Islands",
       "slug": "heard-island-and-mcdonald-islands",
       "region": "Antarctic",
@@ -26967,7 +26967,7 @@
     },
     {
       "id": "HND",
-      "iso_alpha2": null,
+      "iso_alpha2": "HN",
       "name": "Honduras",
       "slug": "honduras",
       "region": "Americas",
@@ -27305,7 +27305,7 @@
     },
     {
       "id": "HKG",
-      "iso_alpha2": null,
+      "iso_alpha2": "HK",
       "name": "Hong Kong",
       "slug": "hong-kong",
       "region": "Asia",
@@ -27504,7 +27504,7 @@
     },
     {
       "id": "HUN",
-      "iso_alpha2": null,
+      "iso_alpha2": "HU",
       "name": "Hungary",
       "slug": "hungary",
       "region": "Europe",
@@ -27853,7 +27853,7 @@
     },
     {
       "id": "ISL",
-      "iso_alpha2": null,
+      "iso_alpha2": "IS",
       "name": "Iceland",
       "slug": "iceland",
       "region": "Europe",
@@ -28190,7 +28190,7 @@
     },
     {
       "id": "IND",
-      "iso_alpha2": null,
+      "iso_alpha2": "IN",
       "name": "India",
       "slug": "india",
       "region": "Asia",
@@ -28535,7 +28535,7 @@
     },
     {
       "id": "IDN",
-      "iso_alpha2": null,
+      "iso_alpha2": "ID",
       "name": "Indonesia",
       "slug": "indonesia",
       "region": "Asia",
@@ -28877,7 +28877,7 @@
     },
     {
       "id": "IRN",
-      "iso_alpha2": null,
+      "iso_alpha2": "IR",
       "name": "Iran",
       "slug": "iran",
       "region": "Asia",
@@ -29186,7 +29186,7 @@
     },
     {
       "id": "IRQ",
-      "iso_alpha2": null,
+      "iso_alpha2": "IQ",
       "name": "Iraq",
       "slug": "iraq",
       "region": "Asia",
@@ -29485,7 +29485,7 @@
     },
     {
       "id": "IRL",
-      "iso_alpha2": null,
+      "iso_alpha2": "IE",
       "name": "Ireland",
       "slug": "ireland",
       "region": "Europe",
@@ -29818,7 +29818,7 @@
     },
     {
       "id": "IMN",
-      "iso_alpha2": null,
+      "iso_alpha2": "IM",
       "name": "Isle of Man",
       "slug": "isle-of-man",
       "region": "Europe",
@@ -30001,7 +30001,7 @@
     },
     {
       "id": "ISR",
-      "iso_alpha2": null,
+      "iso_alpha2": "IL",
       "name": "Israel",
       "slug": "israel",
       "region": "Asia",
@@ -30332,7 +30332,7 @@
     },
     {
       "id": "ITA",
-      "iso_alpha2": null,
+      "iso_alpha2": "IT",
       "name": "Italy",
       "slug": "italy",
       "region": "Europe",
@@ -30674,7 +30674,7 @@
     },
     {
       "id": "CIV",
-      "iso_alpha2": null,
+      "iso_alpha2": "CI",
       "name": "Ivory Coast",
       "slug": "ivory-coast",
       "region": "Africa",
@@ -30918,7 +30918,7 @@
     },
     {
       "id": "JAM",
-      "iso_alpha2": null,
+      "iso_alpha2": "JM",
       "name": "Jamaica",
       "slug": "jamaica",
       "region": "Americas",
@@ -31251,7 +31251,7 @@
     },
     {
       "id": "JPN",
-      "iso_alpha2": null,
+      "iso_alpha2": "JP",
       "name": "Japan",
       "slug": "japan",
       "region": "Asia",
@@ -31572,7 +31572,7 @@
     },
     {
       "id": "JEY",
-      "iso_alpha2": null,
+      "iso_alpha2": "JE",
       "name": "Jersey",
       "slug": "jersey",
       "region": "Europe",
@@ -31690,7 +31690,7 @@
     },
     {
       "id": "JOR",
-      "iso_alpha2": null,
+      "iso_alpha2": "JO",
       "name": "Jordan",
       "slug": "jordan",
       "region": "Asia",
@@ -32021,7 +32021,7 @@
     },
     {
       "id": "KAZ",
-      "iso_alpha2": null,
+      "iso_alpha2": "KZ",
       "name": "Kazakhstan",
       "slug": "kazakhstan",
       "region": "Asia",
@@ -32352,7 +32352,7 @@
     },
     {
       "id": "KEN",
-      "iso_alpha2": null,
+      "iso_alpha2": "KE",
       "name": "Kenya",
       "slug": "kenya",
       "region": "Africa",
@@ -32683,7 +32683,7 @@
     },
     {
       "id": "KIR",
-      "iso_alpha2": null,
+      "iso_alpha2": "KI",
       "name": "Kiribati",
       "slug": "kiribati",
       "region": "Oceania",
@@ -33008,7 +33008,7 @@
     },
     {
       "id": "UNK",
-      "iso_alpha2": null,
+      "iso_alpha2": "XK",
       "name": "Kosovo",
       "slug": "kosovo",
       "region": "Europe",
@@ -33192,7 +33192,7 @@
     },
     {
       "id": "KWT",
-      "iso_alpha2": null,
+      "iso_alpha2": "KW",
       "name": "Kuwait",
       "slug": "kuwait",
       "region": "Asia",
@@ -33527,7 +33527,7 @@
     },
     {
       "id": "KGZ",
-      "iso_alpha2": null,
+      "iso_alpha2": "KG",
       "name": "Kyrgyzstan",
       "slug": "kyrgyzstan",
       "region": "Asia",
@@ -33805,7 +33805,7 @@
     },
     {
       "id": "LAO",
-      "iso_alpha2": null,
+      "iso_alpha2": "LA",
       "name": "Laos",
       "slug": "laos",
       "region": "Asia",
@@ -34109,7 +34109,7 @@
     },
     {
       "id": "LVA",
-      "iso_alpha2": null,
+      "iso_alpha2": "LV",
       "name": "Latvia",
       "slug": "latvia",
       "region": "Europe",
@@ -34451,7 +34451,7 @@
     },
     {
       "id": "LBN",
-      "iso_alpha2": null,
+      "iso_alpha2": "LB",
       "name": "Lebanon",
       "slug": "lebanon",
       "region": "Asia",
@@ -34782,7 +34782,7 @@
     },
     {
       "id": "LSO",
-      "iso_alpha2": null,
+      "iso_alpha2": "LS",
       "name": "Lesotho",
       "slug": "lesotho",
       "region": "Africa",
@@ -35122,7 +35122,7 @@
     },
     {
       "id": "LBR",
-      "iso_alpha2": null,
+      "iso_alpha2": "LR",
       "name": "Liberia",
       "slug": "liberia",
       "region": "Africa",
@@ -35457,7 +35457,7 @@
     },
     {
       "id": "LBY",
-      "iso_alpha2": null,
+      "iso_alpha2": "LY",
       "name": "Libya",
       "slug": "libya",
       "region": "Africa",
@@ -35743,7 +35743,7 @@
     },
     {
       "id": "LIE",
-      "iso_alpha2": null,
+      "iso_alpha2": "LI",
       "name": "Liechtenstein",
       "slug": "liechtenstein",
       "region": "Europe",
@@ -35988,7 +35988,7 @@
     },
     {
       "id": "LTU",
-      "iso_alpha2": null,
+      "iso_alpha2": "LT",
       "name": "Lithuania",
       "slug": "lithuania",
       "region": "Europe",
@@ -36326,7 +36326,7 @@
     },
     {
       "id": "LUX",
-      "iso_alpha2": null,
+      "iso_alpha2": "LU",
       "name": "Luxembourg",
       "slug": "luxembourg",
       "region": "Europe",
@@ -36666,7 +36666,7 @@
     },
     {
       "id": "MAC",
-      "iso_alpha2": null,
+      "iso_alpha2": "MO",
       "name": "Macau",
       "slug": "macau",
       "region": "Asia",
@@ -36848,7 +36848,7 @@
     },
     {
       "id": "MDG",
-      "iso_alpha2": null,
+      "iso_alpha2": "MG",
       "name": "Madagascar",
       "slug": "madagascar",
       "region": "Africa",
@@ -37181,7 +37181,7 @@
     },
     {
       "id": "MWI",
-      "iso_alpha2": null,
+      "iso_alpha2": "MW",
       "name": "Malawi",
       "slug": "malawi",
       "region": "Africa",
@@ -37519,7 +37519,7 @@
     },
     {
       "id": "MYS",
-      "iso_alpha2": null,
+      "iso_alpha2": "MY",
       "name": "Malaysia",
       "slug": "malaysia",
       "region": "Asia",
@@ -37868,7 +37868,7 @@
     },
     {
       "id": "MDV",
-      "iso_alpha2": null,
+      "iso_alpha2": "MV",
       "name": "Maldives",
       "slug": "maldives",
       "region": "Asia",
@@ -38208,7 +38208,7 @@
     },
     {
       "id": "MLI",
-      "iso_alpha2": null,
+      "iso_alpha2": "ML",
       "name": "Mali",
       "slug": "mali",
       "region": "Africa",
@@ -38548,7 +38548,7 @@
     },
     {
       "id": "MLT",
-      "iso_alpha2": null,
+      "iso_alpha2": "MT",
       "name": "Malta",
       "slug": "malta",
       "region": "Europe",
@@ -38892,7 +38892,7 @@
     },
     {
       "id": "MHL",
-      "iso_alpha2": null,
+      "iso_alpha2": "MH",
       "name": "Marshall Islands",
       "slug": "marshall-islands",
       "region": "Oceania",
@@ -39123,7 +39123,7 @@
     },
     {
       "id": "MTQ",
-      "iso_alpha2": null,
+      "iso_alpha2": "MQ",
       "name": "Martinique",
       "slug": "martinique",
       "region": "Americas",
@@ -39277,7 +39277,7 @@
     },
     {
       "id": "MRT",
-      "iso_alpha2": null,
+      "iso_alpha2": "MR",
       "name": "Mauritania",
       "slug": "mauritania",
       "region": "Africa",
@@ -39612,7 +39612,7 @@
     },
     {
       "id": "MUS",
-      "iso_alpha2": null,
+      "iso_alpha2": "MU",
       "name": "Mauritius",
       "slug": "mauritius",
       "region": "Africa",
@@ -39956,7 +39956,7 @@
     },
     {
       "id": "MYT",
-      "iso_alpha2": null,
+      "iso_alpha2": "YT",
       "name": "Mayotte",
       "slug": "mayotte",
       "region": "Africa",
@@ -40096,7 +40096,7 @@
     },
     {
       "id": "MEX",
-      "iso_alpha2": null,
+      "iso_alpha2": "MX",
       "name": "Mexico",
       "slug": "mexico",
       "region": "Americas",
@@ -40431,7 +40431,7 @@
     },
     {
       "id": "FSM",
-      "iso_alpha2": null,
+      "iso_alpha2": "FM",
       "name": "Micronesia",
       "slug": "micronesia",
       "region": "Oceania",
@@ -40720,7 +40720,7 @@
     },
     {
       "id": "MDA",
-      "iso_alpha2": null,
+      "iso_alpha2": "MD",
       "name": "Moldova",
       "slug": "moldova",
       "region": "Europe",
@@ -41029,7 +41029,7 @@
     },
     {
       "id": "MCO",
-      "iso_alpha2": null,
+      "iso_alpha2": "MC",
       "name": "Monaco",
       "slug": "monaco",
       "region": "Europe",
@@ -41238,7 +41238,7 @@
     },
     {
       "id": "MNG",
-      "iso_alpha2": null,
+      "iso_alpha2": "MN",
       "name": "Mongolia",
       "slug": "mongolia",
       "region": "Asia",
@@ -41562,7 +41562,7 @@
     },
     {
       "id": "MNE",
-      "iso_alpha2": null,
+      "iso_alpha2": "ME",
       "name": "Montenegro",
       "slug": "montenegro",
       "region": "Europe",
@@ -41896,7 +41896,7 @@
     },
     {
       "id": "MSR",
-      "iso_alpha2": null,
+      "iso_alpha2": "MS",
       "name": "Montserrat",
       "slug": "montserrat",
       "region": "Americas",
@@ -42054,7 +42054,7 @@
     },
     {
       "id": "MAR",
-      "iso_alpha2": null,
+      "iso_alpha2": "MA",
       "name": "Morocco",
       "slug": "morocco",
       "region": "Africa",
@@ -42392,7 +42392,7 @@
     },
     {
       "id": "MOZ",
-      "iso_alpha2": null,
+      "iso_alpha2": "MZ",
       "name": "Mozambique",
       "slug": "mozambique",
       "region": "Africa",
@@ -42737,7 +42737,7 @@
     },
     {
       "id": "MMR",
-      "iso_alpha2": null,
+      "iso_alpha2": "MM",
       "name": "Myanmar",
       "slug": "myanmar",
       "region": "Asia",
@@ -43015,7 +43015,7 @@
     },
     {
       "id": "NAM",
-      "iso_alpha2": null,
+      "iso_alpha2": "NA",
       "name": "Namibia",
       "slug": "namibia",
       "region": "Africa",
@@ -43352,7 +43352,7 @@
     },
     {
       "id": "NRU",
-      "iso_alpha2": null,
+      "iso_alpha2": "NR",
       "name": "Nauru",
       "slug": "nauru",
       "region": "Oceania",
@@ -43595,7 +43595,7 @@
     },
     {
       "id": "NPL",
-      "iso_alpha2": null,
+      "iso_alpha2": "NP",
       "name": "Nepal",
       "slug": "nepal",
       "region": "Asia",
@@ -43940,7 +43940,7 @@
     },
     {
       "id": "NLD",
-      "iso_alpha2": null,
+      "iso_alpha2": "NL",
       "name": "Netherlands",
       "slug": "netherlands",
       "region": "Europe",
@@ -44285,7 +44285,7 @@
     },
     {
       "id": "NCL",
-      "iso_alpha2": null,
+      "iso_alpha2": "NC",
       "name": "New Caledonia",
       "slug": "new-caledonia",
       "region": "Oceania",
@@ -44481,7 +44481,7 @@
     },
     {
       "id": "NZL",
-      "iso_alpha2": null,
+      "iso_alpha2": "NZ",
       "name": "New Zealand",
       "slug": "new-zealand",
       "region": "Oceania",
@@ -44816,7 +44816,7 @@
     },
     {
       "id": "NIC",
-      "iso_alpha2": null,
+      "iso_alpha2": "NI",
       "name": "Nicaragua",
       "slug": "nicaragua",
       "region": "Americas",
@@ -45154,7 +45154,7 @@
     },
     {
       "id": "NER",
-      "iso_alpha2": null,
+      "iso_alpha2": "NE",
       "name": "Niger",
       "slug": "niger",
       "region": "Africa",
@@ -45489,7 +45489,7 @@
     },
     {
       "id": "NGA",
-      "iso_alpha2": null,
+      "iso_alpha2": "NG",
       "name": "Nigeria",
       "slug": "nigeria",
       "region": "Africa",
@@ -45829,7 +45829,7 @@
     },
     {
       "id": "NIU",
-      "iso_alpha2": null,
+      "iso_alpha2": "NU",
       "name": "Niue",
       "slug": "niue",
       "region": "Oceania",
@@ -46009,7 +46009,7 @@
     },
     {
       "id": "NFK",
-      "iso_alpha2": null,
+      "iso_alpha2": "NF",
       "name": "Norfolk Island",
       "slug": "norfolk-island",
       "region": "Oceania",
@@ -46127,7 +46127,7 @@
     },
     {
       "id": "PRK",
-      "iso_alpha2": null,
+      "iso_alpha2": "KP",
       "name": "North Korea",
       "slug": "north-korea",
       "region": "Asia",
@@ -46401,7 +46401,7 @@
     },
     {
       "id": "MKD",
-      "iso_alpha2": null,
+      "iso_alpha2": "MK",
       "name": "North Macedonia",
       "slug": "north-macedonia",
       "region": "Europe",
@@ -46750,7 +46750,7 @@
     },
     {
       "id": "MNP",
-      "iso_alpha2": null,
+      "iso_alpha2": "MP",
       "name": "Northern Mariana Islands",
       "slug": "northern-mariana-islands",
       "region": "Oceania",
@@ -46919,7 +46919,7 @@
     },
     {
       "id": "NOR",
-      "iso_alpha2": null,
+      "iso_alpha2": "NO",
       "name": "Norway",
       "slug": "norway",
       "region": "Europe",
@@ -47268,7 +47268,7 @@
     },
     {
       "id": "OMN",
-      "iso_alpha2": null,
+      "iso_alpha2": "OM",
       "name": "Oman",
       "slug": "oman",
       "region": "Asia",
@@ -47603,7 +47603,7 @@
     },
     {
       "id": "PAK",
-      "iso_alpha2": null,
+      "iso_alpha2": "PK",
       "name": "Pakistan",
       "slug": "pakistan",
       "region": "Asia",
@@ -47936,7 +47936,7 @@
     },
     {
       "id": "PLW",
-      "iso_alpha2": null,
+      "iso_alpha2": "PW",
       "name": "Palau",
       "slug": "palau",
       "region": "Oceania",
@@ -48172,7 +48172,7 @@
     },
     {
       "id": "PSE",
-      "iso_alpha2": null,
+      "iso_alpha2": "PS",
       "name": "Palestine",
       "slug": "palestine",
       "region": "Asia",
@@ -48391,7 +48391,7 @@
     },
     {
       "id": "PAN",
-      "iso_alpha2": null,
+      "iso_alpha2": "PA",
       "name": "Panama",
       "slug": "panama",
       "region": "Americas",
@@ -48714,7 +48714,7 @@
     },
     {
       "id": "PNG",
-      "iso_alpha2": null,
+      "iso_alpha2": "PG",
       "name": "Papua New Guinea",
       "slug": "papua-new-guinea",
       "region": "Oceania",
@@ -49037,7 +49037,7 @@
     },
     {
       "id": "PRY",
-      "iso_alpha2": null,
+      "iso_alpha2": "PY",
       "name": "Paraguay",
       "slug": "paraguay",
       "region": "Americas",
@@ -49375,7 +49375,7 @@
     },
     {
       "id": "PER",
-      "iso_alpha2": null,
+      "iso_alpha2": "PE",
       "name": "Peru",
       "slug": "peru",
       "region": "Americas",
@@ -49699,7 +49699,7 @@
     },
     {
       "id": "PHL",
-      "iso_alpha2": null,
+      "iso_alpha2": "PH",
       "name": "Philippines",
       "slug": "philippines",
       "region": "Asia",
@@ -49970,7 +49970,7 @@
     },
     {
       "id": "PCN",
-      "iso_alpha2": null,
+      "iso_alpha2": "PN",
       "name": "Pitcairn Islands",
       "slug": "pitcairn-islands",
       "region": "Oceania",
@@ -50088,7 +50088,7 @@
     },
     {
       "id": "POL",
-      "iso_alpha2": null,
+      "iso_alpha2": "PL",
       "name": "Poland",
       "slug": "poland",
       "region": "Europe",
@@ -50426,7 +50426,7 @@
     },
     {
       "id": "PRT",
-      "iso_alpha2": null,
+      "iso_alpha2": "PT",
       "name": "Portugal",
       "slug": "portugal",
       "region": "Europe",
@@ -50768,7 +50768,7 @@
     },
     {
       "id": "PRI",
-      "iso_alpha2": null,
+      "iso_alpha2": "PR",
       "name": "Puerto Rico",
       "slug": "puerto-rico",
       "region": "Americas",
@@ -50996,7 +50996,7 @@
     },
     {
       "id": "QAT",
-      "iso_alpha2": null,
+      "iso_alpha2": "QA",
       "name": "Qatar",
       "slug": "qatar",
       "region": "Asia",
@@ -51324,7 +51324,7 @@
     },
     {
       "id": "COG",
-      "iso_alpha2": null,
+      "iso_alpha2": "CG",
       "name": "Republic of the Congo",
       "slug": "republic-of-the-congo",
       "region": "Africa",
@@ -51563,7 +51563,7 @@
     },
     {
       "id": "ROU",
-      "iso_alpha2": null,
+      "iso_alpha2": "RO",
       "name": "Romania",
       "slug": "romania",
       "region": "Europe",
@@ -51905,7 +51905,7 @@
     },
     {
       "id": "RUS",
-      "iso_alpha2": null,
+      "iso_alpha2": "RU",
       "name": "Russia",
       "slug": "russia",
       "region": "Europe",
@@ -52214,7 +52214,7 @@
     },
     {
       "id": "RWA",
-      "iso_alpha2": null,
+      "iso_alpha2": "RW",
       "name": "Rwanda",
       "slug": "rwanda",
       "region": "Africa",
@@ -52545,7 +52545,7 @@
     },
     {
       "id": "REU",
-      "iso_alpha2": null,
+      "iso_alpha2": "RE",
       "name": "Réunion",
       "slug": "r-union",
       "region": "Africa",
@@ -52699,7 +52699,7 @@
     },
     {
       "id": "BLM",
-      "iso_alpha2": null,
+      "iso_alpha2": "BL",
       "name": "Saint Barthélemy",
       "slug": "saint-barth-lemy",
       "region": "Americas",
@@ -52817,7 +52817,7 @@
     },
     {
       "id": "SHN",
-      "iso_alpha2": null,
+      "iso_alpha2": "SH",
       "name": "Saint Helena, Ascension and Tristan da Cunha",
       "slug": "saint-helena-ascension-and-tristan-da-cunha",
       "region": "Africa",
@@ -52950,7 +52950,7 @@
     },
     {
       "id": "KNA",
-      "iso_alpha2": null,
+      "iso_alpha2": "KN",
       "name": "Saint Kitts and Nevis",
       "slug": "saint-kitts-and-nevis",
       "region": "Americas",
@@ -53200,7 +53200,7 @@
     },
     {
       "id": "LCA",
-      "iso_alpha2": null,
+      "iso_alpha2": "LC",
       "name": "Saint Lucia",
       "slug": "saint-lucia",
       "region": "Americas",
@@ -53532,7 +53532,7 @@
     },
     {
       "id": "MAF",
-      "iso_alpha2": null,
+      "iso_alpha2": "MF",
       "name": "Saint Martin",
       "slug": "saint-martin",
       "region": "Americas",
@@ -53686,7 +53686,7 @@
     },
     {
       "id": "SPM",
-      "iso_alpha2": null,
+      "iso_alpha2": "PM",
       "name": "Saint Pierre and Miquelon",
       "slug": "saint-pierre-and-miquelon",
       "region": "Americas",
@@ -53819,7 +53819,7 @@
     },
     {
       "id": "VCT",
-      "iso_alpha2": null,
+      "iso_alpha2": "VC",
       "name": "Saint Vincent and the Grenadines",
       "slug": "saint-vincent-and-the-grenadines",
       "region": "Americas",
@@ -54142,7 +54142,7 @@
     },
     {
       "id": "WSM",
-      "iso_alpha2": null,
+      "iso_alpha2": "WS",
       "name": "Samoa",
       "slug": "samoa",
       "region": "Oceania",
@@ -54470,7 +54470,7 @@
     },
     {
       "id": "SMR",
-      "iso_alpha2": null,
+      "iso_alpha2": "SM",
       "name": "San Marino",
       "slug": "san-marino",
       "region": "Europe",
@@ -54703,7 +54703,7 @@
     },
     {
       "id": "SAU",
-      "iso_alpha2": null,
+      "iso_alpha2": "SA",
       "name": "Saudi Arabia",
       "slug": "saudi-arabia",
       "region": "Asia",
@@ -55036,7 +55036,7 @@
     },
     {
       "id": "SEN",
-      "iso_alpha2": null,
+      "iso_alpha2": "SN",
       "name": "Senegal",
       "slug": "senegal",
       "region": "Africa",
@@ -55381,7 +55381,7 @@
     },
     {
       "id": "SRB",
-      "iso_alpha2": null,
+      "iso_alpha2": "RS",
       "name": "Serbia",
       "slug": "serbia",
       "region": "Europe",
@@ -55726,7 +55726,7 @@
     },
     {
       "id": "SYC",
-      "iso_alpha2": null,
+      "iso_alpha2": "SC",
       "name": "Seychelles",
       "slug": "seychelles",
       "region": "Africa",
@@ -56055,7 +56055,7 @@
     },
     {
       "id": "SLE",
-      "iso_alpha2": null,
+      "iso_alpha2": "SL",
       "name": "Sierra Leone",
       "slug": "sierra-leone",
       "region": "Africa",
@@ -56390,7 +56390,7 @@
     },
     {
       "id": "SGP",
-      "iso_alpha2": null,
+      "iso_alpha2": "SG",
       "name": "Singapore",
       "slug": "singapore",
       "region": "Asia",
@@ -56725,7 +56725,7 @@
     },
     {
       "id": "SXM",
-      "iso_alpha2": null,
+      "iso_alpha2": "SX",
       "name": "Sint Maarten",
       "slug": "sint-maarten",
       "region": "Americas",
@@ -56894,7 +56894,7 @@
     },
     {
       "id": "SVK",
-      "iso_alpha2": null,
+      "iso_alpha2": "SK",
       "name": "Slovakia",
       "slug": "slovakia",
       "region": "Europe",
@@ -57239,7 +57239,7 @@
     },
     {
       "id": "SVN",
-      "iso_alpha2": null,
+      "iso_alpha2": "SI",
       "name": "Slovenia",
       "slug": "slovenia",
       "region": "Europe",
@@ -57579,7 +57579,7 @@
     },
     {
       "id": "SLB",
-      "iso_alpha2": null,
+      "iso_alpha2": "SB",
       "name": "Solomon Islands",
       "slug": "solomon-islands",
       "region": "Oceania",
@@ -57914,7 +57914,7 @@
     },
     {
       "id": "SOM",
-      "iso_alpha2": null,
+      "iso_alpha2": "SO",
       "name": "Somalia",
       "slug": "somalia",
       "region": "Africa",
@@ -58200,7 +58200,7 @@
     },
     {
       "id": "ZAF",
-      "iso_alpha2": null,
+      "iso_alpha2": "ZA",
       "name": "South Africa",
       "slug": "south-africa",
       "region": "Africa",
@@ -58542,7 +58542,7 @@
     },
     {
       "id": "SGS",
-      "iso_alpha2": null,
+      "iso_alpha2": "GS",
       "name": "South Georgia",
       "slug": "south-georgia",
       "region": "Antarctic",
@@ -58660,7 +58660,7 @@
     },
     {
       "id": "KOR",
-      "iso_alpha2": null,
+      "iso_alpha2": "KR",
       "name": "South Korea",
       "slug": "south-korea",
       "region": "Asia",
@@ -58964,7 +58964,7 @@
     },
     {
       "id": "SSD",
-      "iso_alpha2": null,
+      "iso_alpha2": "SS",
       "name": "South Sudan",
       "slug": "south-sudan",
       "region": "Africa",
@@ -59227,7 +59227,7 @@
     },
     {
       "id": "ESP",
-      "iso_alpha2": null,
+      "iso_alpha2": "ES",
       "name": "Spain",
       "slug": "spain",
       "region": "Europe",
@@ -59569,7 +59569,7 @@
     },
     {
       "id": "LKA",
-      "iso_alpha2": null,
+      "iso_alpha2": "LK",
       "name": "Sri Lanka",
       "slug": "sri-lanka",
       "region": "Asia",
@@ -59918,7 +59918,7 @@
     },
     {
       "id": "SDN",
-      "iso_alpha2": null,
+      "iso_alpha2": "SD",
       "name": "Sudan",
       "slug": "sudan",
       "region": "Africa",
@@ -60258,7 +60258,7 @@
     },
     {
       "id": "SUR",
-      "iso_alpha2": null,
+      "iso_alpha2": "SR",
       "name": "Suriname",
       "slug": "suriname",
       "region": "Americas",
@@ -60586,7 +60586,7 @@
     },
     {
       "id": "SJM",
-      "iso_alpha2": null,
+      "iso_alpha2": "SJ",
       "name": "Svalbard and Jan Mayen",
       "slug": "svalbard-and-jan-mayen",
       "region": "Europe",
@@ -60704,7 +60704,7 @@
     },
     {
       "id": "SWE",
-      "iso_alpha2": null,
+      "iso_alpha2": "SE",
       "name": "Sweden",
       "slug": "sweden",
       "region": "Europe",
@@ -61035,7 +61035,7 @@
     },
     {
       "id": "CHE",
-      "iso_alpha2": null,
+      "iso_alpha2": "CH",
       "name": "Switzerland",
       "slug": "switzerland",
       "region": "Europe",
@@ -61380,7 +61380,7 @@
     },
     {
       "id": "SYR",
-      "iso_alpha2": null,
+      "iso_alpha2": "SY",
       "name": "Syria",
       "slug": "syria",
       "region": "Asia",
@@ -61659,7 +61659,7 @@
     },
     {
       "id": "STP",
-      "iso_alpha2": null,
+      "iso_alpha2": "ST",
       "name": "São Tomé and Príncipe",
       "slug": "s-o-tom-and-pr-ncipe",
       "region": "Africa",
@@ -61953,7 +61953,7 @@
     },
     {
       "id": "TWN",
-      "iso_alpha2": null,
+      "iso_alpha2": "TW",
       "name": "Taiwan",
       "slug": "taiwan",
       "region": "Asia",
@@ -62151,7 +62151,7 @@
     },
     {
       "id": "TJK",
-      "iso_alpha2": null,
+      "iso_alpha2": "TJ",
       "name": "Tajikistan",
       "slug": "tajikistan",
       "region": "Asia",
@@ -62482,7 +62482,7 @@
     },
     {
       "id": "TZA",
-      "iso_alpha2": null,
+      "iso_alpha2": "TZ",
       "name": "Tanzania",
       "slug": "tanzania",
       "region": "Africa",
@@ -62791,7 +62791,7 @@
     },
     {
       "id": "THA",
-      "iso_alpha2": null,
+      "iso_alpha2": "TH",
       "name": "Thailand",
       "slug": "thailand",
       "region": "Asia",
@@ -63133,7 +63133,7 @@
     },
     {
       "id": "TLS",
-      "iso_alpha2": null,
+      "iso_alpha2": "TL",
       "name": "Timor-Leste",
       "slug": "timor-leste",
       "region": "Asia",
@@ -63468,7 +63468,7 @@
     },
     {
       "id": "TGO",
-      "iso_alpha2": null,
+      "iso_alpha2": "TG",
       "name": "Togo",
       "slug": "togo",
       "region": "Africa",
@@ -63808,7 +63808,7 @@
     },
     {
       "id": "TKL",
-      "iso_alpha2": null,
+      "iso_alpha2": "TK",
       "name": "Tokelau",
       "slug": "tokelau",
       "region": "Oceania",
@@ -63961,7 +63961,7 @@
     },
     {
       "id": "TON",
-      "iso_alpha2": null,
+      "iso_alpha2": "TO",
       "name": "Tonga",
       "slug": "tonga",
       "region": "Oceania",
@@ -64296,7 +64296,7 @@
     },
     {
       "id": "TTO",
-      "iso_alpha2": null,
+      "iso_alpha2": "TT",
       "name": "Trinidad and Tobago",
       "slug": "trinidad-and-tobago",
       "region": "Americas",
@@ -64617,7 +64617,7 @@
     },
     {
       "id": "TUN",
-      "iso_alpha2": null,
+      "iso_alpha2": "TN",
       "name": "Tunisia",
       "slug": "tunisia",
       "region": "Africa",
@@ -64962,7 +64962,7 @@
     },
     {
       "id": "TUR",
-      "iso_alpha2": null,
+      "iso_alpha2": "TR",
       "name": "Turkey",
       "slug": "turkey",
       "region": "Asia",
@@ -65300,7 +65300,7 @@
     },
     {
       "id": "TKM",
-      "iso_alpha2": null,
+      "iso_alpha2": "TM",
       "name": "Turkmenistan",
       "slug": "turkmenistan",
       "region": "Asia",
@@ -65623,7 +65623,7 @@
     },
     {
       "id": "TCA",
-      "iso_alpha2": null,
+      "iso_alpha2": "TC",
       "name": "Turks and Caicos Islands",
       "slug": "turks-and-caicos-islands",
       "region": "Americas",
@@ -65816,7 +65816,7 @@
     },
     {
       "id": "TUV",
-      "iso_alpha2": null,
+      "iso_alpha2": "TV",
       "name": "Tuvalu",
       "slug": "tuvalu",
       "region": "Oceania",
@@ -66040,7 +66040,7 @@
     },
     {
       "id": "UGA",
-      "iso_alpha2": null,
+      "iso_alpha2": "UG",
       "name": "Uganda",
       "slug": "uganda",
       "region": "Africa",
@@ -66378,7 +66378,7 @@
     },
     {
       "id": "UKR",
-      "iso_alpha2": null,
+      "iso_alpha2": "UA",
       "name": "Ukraine",
       "slug": "ukraine",
       "region": "Europe",
@@ -66699,7 +66699,7 @@
     },
     {
       "id": "ARE",
-      "iso_alpha2": null,
+      "iso_alpha2": "AE",
       "name": "United Arab Emirates",
       "slug": "united-arab-emirates",
       "region": "Asia",
@@ -67048,7 +67048,7 @@
     },
     {
       "id": "GBR",
-      "iso_alpha2": null,
+      "iso_alpha2": "GB",
       "name": "United Kingdom",
       "slug": "united-kingdom",
       "region": "Europe",
@@ -67388,7 +67388,7 @@
     },
     {
       "id": "USA",
-      "iso_alpha2": null,
+      "iso_alpha2": "US",
       "name": "United States",
       "slug": "united-states",
       "region": "Americas",
@@ -67692,7 +67692,7 @@
     },
     {
       "id": "UMI",
-      "iso_alpha2": null,
+      "iso_alpha2": "UM",
       "name": "United States Minor Outlying Islands",
       "slug": "united-states-minor-outlying-islands",
       "region": "Americas",
@@ -67712,7 +67712,7 @@
     },
     {
       "id": "VIR",
-      "iso_alpha2": null,
+      "iso_alpha2": "VI",
       "name": "United States Virgin Islands",
       "slug": "united-states-virgin-islands",
       "region": "Americas",
@@ -67920,7 +67920,7 @@
     },
     {
       "id": "URY",
-      "iso_alpha2": null,
+      "iso_alpha2": "UY",
       "name": "Uruguay",
       "slug": "uruguay",
       "region": "Americas",
@@ -68250,7 +68250,7 @@
     },
     {
       "id": "UZB",
-      "iso_alpha2": null,
+      "iso_alpha2": "UZ",
       "name": "Uzbekistan",
       "slug": "uzbekistan",
       "region": "Asia",
@@ -68588,7 +68588,7 @@
     },
     {
       "id": "VUT",
-      "iso_alpha2": null,
+      "iso_alpha2": "VU",
       "name": "Vanuatu",
       "slug": "vanuatu",
       "region": "Oceania",
@@ -68923,7 +68923,7 @@
     },
     {
       "id": "VAT",
-      "iso_alpha2": null,
+      "iso_alpha2": "VA",
       "name": "Vatican City",
       "slug": "vatican-city",
       "region": "Europe",
@@ -69041,7 +69041,7 @@
     },
     {
       "id": "VEN",
-      "iso_alpha2": null,
+      "iso_alpha2": "VE",
       "name": "Venezuela",
       "slug": "venezuela",
       "region": "Americas",
@@ -69345,7 +69345,7 @@
     },
     {
       "id": "VNM",
-      "iso_alpha2": null,
+      "iso_alpha2": "VN",
       "name": "Vietnam",
       "slug": "vietnam",
       "region": "Asia",
@@ -69649,7 +69649,7 @@
     },
     {
       "id": "WLF",
-      "iso_alpha2": null,
+      "iso_alpha2": "WF",
       "name": "Wallis and Futuna",
       "slug": "wallis-and-futuna",
       "region": "Oceania",
@@ -69767,7 +69767,7 @@
     },
     {
       "id": "ESH",
-      "iso_alpha2": null,
+      "iso_alpha2": "EH",
       "name": "Western Sahara",
       "slug": "western-sahara",
       "region": "Africa",
@@ -69921,7 +69921,7 @@
     },
     {
       "id": "YEM",
-      "iso_alpha2": null,
+      "iso_alpha2": "YE",
       "name": "Yemen",
       "slug": "yemen",
       "region": "Asia",
@@ -70246,7 +70246,7 @@
     },
     {
       "id": "ZMB",
-      "iso_alpha2": null,
+      "iso_alpha2": "ZM",
       "name": "Zambia",
       "slug": "zambia",
       "region": "Africa",
@@ -70577,7 +70577,7 @@
     },
     {
       "id": "ZWE",
-      "iso_alpha2": null,
+      "iso_alpha2": "ZW",
       "name": "Zimbabwe",
       "slug": "zimbabwe",
       "region": "Africa",
@@ -70922,7 +70922,7 @@
     },
     {
       "id": "ALA",
-      "iso_alpha2": null,
+      "iso_alpha2": "AX",
       "name": "Åland Islands",
       "slug": "land-islands",
       "region": "Europe",
