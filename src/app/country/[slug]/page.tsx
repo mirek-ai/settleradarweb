@@ -625,7 +625,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform">
                     <HeartPulse className="w-48 h-48 text-rose-500" />
                   </div>
-                  <div className="prose prose-slate dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10" dangerouslySetInnerHTML={{ __html: health_summary }} />
+                  <div className="prose prose-slate max-w-none dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10" dangerouslySetInnerHTML={{ __html: health_summary }} />
                   <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
                     <Sparkles className="w-4 h-4 text-rose-500" /> Based on WHO Data
                   </div>
@@ -702,7 +702,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
 
             {economic_summary && (
-              <div className="prose prose-slate dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10 mb-10" dangerouslySetInnerHTML={{ __html: economic_summary }} />
+              <div className="prose prose-slate max-w-none dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10 mb-10" dangerouslySetInnerHTML={{ __html: economic_summary }} />
             )}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 relative z-10">
