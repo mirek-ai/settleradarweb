@@ -630,7 +630,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   </div>
                   <div className="prose prose-slate dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10" dangerouslySetInnerHTML={{ __html: health_summary }} />
                   <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
-                    <Sparkles className="w-4 h-4 text-rose-500" /> AI Insights based on WHO Data
+                    <Sparkles className="w-4 h-4 text-rose-500" /> Based on WHO Data
                   </div>
                 </div>
               )}
