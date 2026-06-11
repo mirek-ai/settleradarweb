@@ -752,54 +752,59 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           
           {climate ? (
             <div className="space-y-6">
+            <div className="glass-panel p-6 md:p-8 rounded-3xl relative overflow-hidden group border border-white/20 hover:border-amber-500/30 transition-colors shadow-lg">
+              <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform pointer-events-none">
+                <Sun className="w-48 h-48 text-amber-500" />
+              </div>
+              
               {country.climate_summary && (
-                <div className="glass-panel p-8 rounded-3xl relative overflow-hidden group border border-white/20 hover:border-amber-500/30 transition-colors">
-                  <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform">
-                    <Sun className="w-48 h-48 text-amber-500" />
-                  </div>
-                  <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed relative z-10 font-medium">
+                  <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed relative z-10 font-medium mb-10">
                     {country.climate_summary}
                   </p>
-                  <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
-                    <ThermometerSun className="w-4 h-4 text-amber-500" /> Powered by Open-Meteo Data
-                  </div>
-                </div>
               )}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {climate.map((m: any, idx: number) => {
-                let colorClass = 'text-blue-500';
-                if (m.avgMaxTemp >= 25) colorClass = 'text-rose-500';
-                else if (m.avgMaxTemp >= 15) colorClass = 'text-amber-500';
-                else if (m.avgMaxTemp >= 5) colorClass = 'text-emerald-500';
-                
-                return (
-                  <div key={idx} className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
-                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">{m.monthName}</div>
-                    <div className={`text-3xl font-black ${colorClass} mb-1 flex items-start justify-center gap-1`}>
-                      {m.avgMaxTemp} <span className="text-base font-semibold mt-1">°C</span>
-                    </div>
-                    <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
-                      <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
-                        <ThermometerSun className="w-3.5 h-3.5" /> min {m.avgMinTemp}°
-                      </span>
-                      <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
-                        {m.snowDays > 0 ? <CloudSnow className="w-3.5 h-3.5 text-sky-400" /> : <Droplets className="w-3.5 h-3.5 text-blue-400" />}
-                        {m.snowDays > 0 && m.rainDays > 0 
-                          ? `${m.snowDays} snow, ${m.rainDays} rain` 
-                          : m.snowDays > 0 
-                            ? `${m.snowDays} snow days` 
-                            : `${m.rainDays} rain days`}
-                      </span>
-                      {m.sunshineHours != null && (
-                        <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1 mt-0.5">
-                          <Sun className={`w-3.5 h-3.5 ${m.sunshineHours > 0 ? 'text-amber-500' : 'text-slate-300'}`} /> 
-                          {m.sunshineHours > 0 ? `${m.sunshineHours}h sun` : 'No data'}
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 relative z-10">
+                {climate.map((m: any, idx: number) => {
+                  let colorClass = 'text-blue-500';
+                  if (m.avgMaxTemp >= 25) colorClass = 'text-rose-500';
+                  else if (m.avgMaxTemp >= 15) colorClass = 'text-amber-500';
+                  else if (m.avgMaxTemp >= 5) colorClass = 'text-emerald-500';
+                  
+                  return (
+                    <div key={idx} className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">{m.monthName}</div>
+                      <div className={`text-3xl font-black ${colorClass} mb-1 flex items-start justify-center gap-1`}>
+                        {m.avgMaxTemp} <span className="text-base font-semibold mt-1">°C</span>
+                      </div>
+                      <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
+                        <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
+                          <ThermometerSun className="w-3.5 h-3.5" /> min {m.avgMinTemp}°
                         </span>
-                      )}
+                        <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
+                          {m.snowDays > 0 ? <CloudSnow className="w-3.5 h-3.5 text-sky-400" /> : <Droplets className="w-3.5 h-3.5 text-blue-400" />}
+                          {m.snowDays > 0 && m.rainDays > 0 
+                            ? `${m.snowDays} snow, ${m.rainDays} rain` 
+                            : m.snowDays > 0 
+                              ? `${m.snowDays} snow days` 
+                              : `${m.rainDays} rain days`}
+                        </span>
+                        {m.sunshineHours != null && (
+                          <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1 mt-0.5">
+                            <Sun className={`w-3.5 h-3.5 ${m.sunshineHours > 0 ? 'text-amber-500' : 'text-slate-300'}`} /> 
+                            {m.sunshineHours > 0 ? `${m.sunshineHours}h sun` : 'No data'}
+                          </span>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
+
+              <div className="mt-10 border-t border-slate-200/50 dark:border-slate-800/50 pt-6 relative z-10">
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
+                  <ThermometerSun className="w-4 h-4 text-amber-500" /> Powered by Open-Meteo Data
+                </div>
+              </div>
             </div>
             </div>
           ) : (
