@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description,
       url: canonicalUrl,
       type: 'website',
-      images: country.iso_alpha2 ? [`https://settleradar.com/flags/${country.iso_alpha2.toLowerCase()}.png`] : [],
+      images: country.slug ? [`https://settleradar.com/flags/moving-to-${country.slug}.png`] : [],
     }
   };
 }
@@ -247,7 +247,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             {country.iso_alpha2 ? (
               <div className="relative w-32 h-24 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/10 overflow-hidden shrink-0 bg-slate-100 dark:bg-slate-800">
                 <Image 
-                  src={`/flags/${country.iso_alpha2.toLowerCase()}.png`} 
+                  src={`/flags/moving-to-${country.slug}.png`} 
                   fill
                   sizes="128px"
                   style={{ objectFit: 'cover' }}

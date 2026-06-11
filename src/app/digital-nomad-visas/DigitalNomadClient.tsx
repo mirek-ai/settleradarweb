@@ -164,7 +164,7 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                         <div className="flex items-center gap-4">
                           {country.iso_alpha2 ? (
                             <Image 
-                              src={`/flags/${country.iso_alpha2}.png`} 
+                              src={`/flags/moving-to-${country.slug}.png`} 
                               width={40}
                               height={28}
                               alt={`${country.name} flag`} 
@@ -277,7 +277,7 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                     <div className="flex items-center gap-3">
                       {country.iso_alpha2 ? (
                         <Image 
-                          src={`/flags/${country.iso_alpha2}.png`} 
+                          src={`/flags/moving-to-${country.slug}.png`} 
                           width={32}
                           height={22}
                           alt={`${country.name} flag`} 

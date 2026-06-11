@@ -18,14 +18,22 @@ async function buildDatabaseJson() {
 
     // 0. Pobieranie statusu terytoriów z zewnętrznego API
     console.log('Pobieranie statusu niepodległości z REST Countries API...');
-    const restRes = await fetch('https://restcountries.com/v3.1/all?fields=cca3,cca2,independent');
-    const restData = await restRes.json();
     const sovereigntyMap = {};
     const alpha2Map = {};
-    restData.forEach(c => {
-      sovereigntyMap[c.cca3] = c.independent;
-      alpha2Map[c.cca3] = c.cca2.toLowerCase();
-    });
+    try {
+      const restRes = await fetch('https://restcountries.com/v3.1/all?fields=cca3,cca2,independent');
+      const restData = await restRes.json();
+      if (Array.isArray(restData)) {
+        restData.forEach(c => {
+          sovereigntyMap[c.cca3] = c.independent;
+          alpha2Map[c.cca3] = c.cca2.toLowerCase();
+        });
+      } else {
+        console.warn('API REST Countries zwróciło nieoczekiwany format danych.');
+      }
+    } catch (e) {
+      console.warn('Błąd połączenia z REST Countries, pomijam...', e.message);
+    }
 
     // 1. Pobieranie danych z Postgres
     const resCountries = await client.query('SELECT * FROM app.countries WHERE is_active = true ORDER BY name');
@@ -39,7 +47,7 @@ async function buildDatabaseJson() {
     const indicators = resIndicators.rows;
     
     const resExpats = await client.query(`
-      SELECT e.destination_iso3, e.origin_iso3, e.migrant_count, e.year, c.name as origin_name, c.iso_alpha2 as origin_alpha2
+      SELECT e.destination_iso3, e.origin_iso3, e.migrant_count, e.year, c.name as origin_name, c.iso_alpha2 as origin_alpha2, c.slug as origin_slug
       FROM app.country_expats e 
       JOIN app.countries c ON e.origin_iso3 = c.iso_alpha3
       ORDER BY e.migrant_count DESC
@@ -114,7 +122,10 @@ async function buildDatabaseJson() {
 
         return {
           id: country.iso_alpha3,
-          iso_alpha2: alpha2Map[country.iso_alpha3] || null,
+          iso_alpha2: alpha2Map[country.iso_alpha3] || 
+                      (existingCountry.iso_alpha2 && existingCountry.iso_alpha2.toLowerCase()) || 
+                      (country.iso_alpha2 && country.iso_alpha2.toLowerCase()) || 
+                      null,
           name: country.name,
           slug: country.slug,
           region: country.region,
@@ -134,11 +145,12 @@ async function buildDatabaseJson() {
           
           expats: expats
             .filter(e => e.destination_iso3 === country.iso_alpha3)
-            .map(e => ({ origin_iso3: e.origin_iso3, origin_alpha2: e.origin_alpha2, name: e.origin_name, count: e.migrant_count, year: e.year }))
+            .map(e => ({ origin_iso3: e.origin_iso3, origin_alpha2: e.origin_alpha2, origin_slug: e.origin_slug, name: e.origin_name, count: e.migrant_count, year: e.year }))
             .slice(0, 5),
           
           climate: climateObj || existingCountry.climate || undefined,
           climate_summary: country.climate_summary || existingCountry.climate_summary || null,
+          health_summary: country.health_summary || existingCountry.health_summary || null,
           nomad_visa: nomadVisaObj || existingCountry.nomad_visa || undefined,
           digital_freedom_text: country.digital_freedom_text || null
         };
