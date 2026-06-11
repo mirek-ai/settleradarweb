@@ -9,6 +9,7 @@ import {
 import { getSortedPostsData } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 const formatNumber = (num: number) => new Intl.NumberFormat('en-US', { maximumFractionDigits: 1 }).format(num);
 
@@ -61,19 +62,14 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
 
   const resolvedParams = await params;
   const country = db.countries
-    .filter((c: any) => Object.keys(c.indicators || {}).length > 10 && c.is_territory !== true)
+    .filter((c: any) => Object.keys(c.indicators || {}).length > 5)
     .find((c: any) => c.slug === resolvedParams.slug);
   
   const allPosts = getSortedPostsData();
   const relatedPosts = allPosts.filter(p => p.country && p.country.toLowerCase().replace(/\s+/g, '-') === resolvedParams.slug.toLowerCase());
 
   if (!country) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-[50vh]">
-        <h1 className="text-4xl font-bold mb-4">Country Not Found</h1>
-        <Link href="/" className="text-blue-500 hover:underline flex items-center gap-2"><ArrowLeft className="w-4 h-4" /> Back to Radar</Link>
-      </div>
-    );
+    notFound();
   }
 
   const ind = country.indicators || {};
@@ -712,7 +708,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   
                   <div className="prose prose-slate dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10" dangerouslySetInnerHTML={{ __html: economic_summary }} />
                   <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
-                    <Sparkles className="w-4 h-4 text-indigo-500" /> AI Insights based on Heritage Data
+                    <Sparkles className="w-4 h-4 text-indigo-500" /> Insights based on Heritage Data
                   </div>
                 </div>
               )}
