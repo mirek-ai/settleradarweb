@@ -696,29 +696,16 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             <h2 className="text-3xl font-bold tracking-tight">Economic Freedom & Business Climate</h2>
           </div>
 
-          {economic_summary && (
-            <div className="glass-panel p-8 rounded-3xl relative overflow-hidden border border-white/20 hover:border-indigo-500/30 transition-colors group">
-              <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform">
-                <Briefcase className="w-48 h-48 text-indigo-500" />
-              </div>
-              <div className="prose prose-slate dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10" dangerouslySetInnerHTML={{ __html: economic_summary }} />
-              <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
-                <Sparkles className="w-4 h-4 text-indigo-500" /> Insights based on Heritage Data
-              </div>
+          <div className="glass-panel p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-lg border border-white/20 dark:border-white/10 hover:border-indigo-500/30 transition-colors group">
+            <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform pointer-events-none">
+              <Briefcase className="w-48 h-48 text-indigo-500" />
             </div>
-          )}
 
-          <div className="glass-panel rounded-3xl overflow-hidden shadow-lg border border-white/20 dark:border-white/10">
-            <div className="p-6 md:p-8">
-              <div className="flex items-center gap-2 mb-6">
-                <Landmark className="w-5 h-5 text-slate-400" />
-                <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200">Heritage Foundation Index</h3>
-              </div>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
-                Evaluated across 12 quantitative factors. Scores span 0–100, where higher scores indicate greater economic liberty, lighter tax burdens, and stronger property rights.
-              </p>
+            {economic_summary && (
+              <div className="prose prose-slate dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10 mb-10" dangerouslySetInnerHTML={{ __html: economic_summary }} />
+            )}
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 relative z-10">
                 {heritageMetrics.map((metric, idx) => {
                   const score = ind[metric.key]?.value;
                   if (score == null) return null;
@@ -744,7 +731,15 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   );
                 })}
               </div>
-            </div>
+
+              <div className="mt-10 border-t border-slate-200/50 dark:border-slate-800/50 pt-6 relative z-10">
+                <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 leading-relaxed">
+                  Evaluated across 12 quantitative factors. Scores span 0–100, where higher scores indicate greater economic liberty, lighter tax burdens, and stronger property rights.
+                </p>
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
+                  <Sparkles className="w-4 h-4 text-indigo-500" /> Insights based on Heritage Data
+                </div>
+              </div>
           </div>
         </section>
 
