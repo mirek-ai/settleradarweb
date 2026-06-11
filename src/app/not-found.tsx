@@ -26,8 +26,8 @@ export default function NotFound() {
   try {
     const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
     
-    // Niestandardowa selekcja ratunkowa: Monako, ZEA, Kajmany... i Polska!
-    const targetNames = ['Monaco', 'United Arab Emirates', 'Cayman Islands', 'Poland'];
+    // Niestandardowa selekcja ratunkowa: Rumunia, ZEA, Portugalia... i Polska!
+    const targetNames = ['Romania', 'United Arab Emirates', 'Portugal', 'Poland'];
     
     recommendedCountries = db.countries
       .filter((c: any) => targetNames.includes(c.name))
