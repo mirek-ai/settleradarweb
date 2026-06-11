@@ -35,10 +35,24 @@ export default async function Home() {
 
   const totalValidCountries = baseCountries.length;
 
+  // Wyodrębnienie wartościowych terytoriów (min 6 wskaźników) do osobnej sekcji
+  const territories = db.countries
+    .filter((country: any) => Object.keys(country.indicators || {}).length > 5 && country.is_territory === true)
+    .map((country: any) => ({
+      id: country.id,
+      iso_alpha2: country.iso_alpha2,
+      name: country.name,
+      slug: country.slug,
+      region: country.region,
+      flag_emoji: country.flag_emoji,
+    }))
+    .sort((a: any, b: any) => a.name.localeCompare(b.name));
+
   return (
     <HomeClient 
       baseCountries={baseCountries} 
       totalValidCountries={totalValidCountries} 
+      territories={territories}
     />
   );
 }

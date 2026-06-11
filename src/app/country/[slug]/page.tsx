@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import Link from 'next/link';
 import Image from 'next/image';
 import { 
@@ -6,8 +8,6 @@ import {
 } from 'lucide-react';
 import { getSortedPostsData } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
-import fs from 'fs';
-import path from 'path';
 import { Metadata } from 'next';
 
 const formatNumber = (num: number) => new Intl.NumberFormat('en-US', { maximumFractionDigits: 1 }).format(num);
@@ -17,7 +17,7 @@ export async function generateStaticParams() {
   const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
   
   return db.countries
-    .filter((c: any) => Object.keys(c.indicators || {}).length > 10 && c.is_territory !== true)
+    .filter((c: any) => Object.keys(c.indicators || {}).length > 5)
     .map((country: any) => ({
       slug: country.slug,
     }));
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const dbPath = path.join(process.cwd(), 'src', 'data', 'database.json');
   const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
   const country = db.countries
-    .filter((c: any) => Object.keys(c.indicators || {}).length > 10 && c.is_territory !== true)
+    .filter((c: any) => Object.keys(c.indicators || {}).length > 5)
     .find((c: any) => c.slug === resolvedParams.slug);
 
   if (!country) {
@@ -84,6 +84,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const obesity = ind['who_obesity']?.value;
   const out_of_pocket = ind['who_out_of_pocket_expenditure']?.value;
   const health_summary = country.health_summary;
+  const economic_summary = country.economic_summary;
   const uhc = ind['who_uhc_index']?.value;
   const gini = ind['wb_gini']?.value;
   const inflation = ind['wb_inflation']?.value;
@@ -235,18 +236,18 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         
         {/* HERO SECTION */}
         <section id="hero" className="relative glass-panel rounded-3xl p-8 md:p-12 overflow-hidden border border-white/20 dark:border-white/10 shadow-2xl">
-          <div className="absolute top-0 right-0 -z-10 w-full h-full bg-gradient-to-br from-blue-500/10 via-emerald-500/10 to-transparent dark:from-blue-500/20 dark:via-emerald-500/10"></div>
-          
-          <div className="lg:hidden mb-8">
-            <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-colors backdrop-blur-md">
-              <ArrowLeft className="w-4 h-4" /> Back to Terminal
-            </Link>
-          </div>
+            <div className="absolute top-0 right-0 -z-10 w-full h-full bg-gradient-to-br from-blue-500/10 via-emerald-500/10 to-transparent dark:from-blue-500/20 dark:via-emerald-500/10"></div>
+            
+            <div className="lg:hidden mb-8">
+              <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-colors backdrop-blur-md">
+                <ArrowLeft className="w-4 h-4" /> Back to Terminal
+              </Link>
+            </div>
 
-          <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
-            {country.iso_alpha2 ? (
-              <div className="relative w-32 h-24 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/10 overflow-hidden shrink-0 bg-slate-100 dark:bg-slate-800">
-                <Image 
+            <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
+              {country.iso_alpha2 ? (
+                <div className="relative w-32 h-24 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/10 overflow-hidden shrink-0 bg-slate-100 dark:bg-slate-800">
+                  <Image 
                   src={`/flags/moving-to-${country.slug}.png`} 
                   fill
                   sizes="128px"
@@ -703,6 +704,18 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               <p className="text-sm text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
                 Evaluated across 12 quantitative factors by the <strong>Heritage Foundation</strong>. Scores span 0–100, where higher scores indicate greater economic liberty, lighter tax burdens, and stronger property rights.
               </p>
+
+              {economic_summary && (
+                <div className="relative mb-10 overflow-hidden bg-gradient-to-br from-indigo-500/5 to-purple-500/5 dark:from-indigo-500/10 dark:to-purple-500/10 rounded-2xl p-6 border border-indigo-500/10 dark:border-indigo-500/20">
+                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-indigo-500/10 dark:bg-indigo-500/20 rounded-full blur-3xl"></div>
+                  <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-500/10 dark:bg-purple-500/20 rounded-full blur-3xl"></div>
+                  
+                  <div className="prose prose-slate dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10" dangerouslySetInnerHTML={{ __html: economic_summary }} />
+                  <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
+                    <Sparkles className="w-4 h-4 text-indigo-500" /> AI Insights based on Heritage Data
+                  </div>
+                </div>
+              )}
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                 {heritageMetrics.map((metric, idx) => {

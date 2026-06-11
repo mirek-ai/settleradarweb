@@ -16,24 +16,14 @@ async function buildDatabaseJson() {
   try {
     await client.connect();
 
-    // 0. Pobieranie statusu terytoriów z zewnętrznego API
-    console.log('Pobieranie statusu niepodległości z REST Countries API...');
-    const sovereigntyMap = {};
-    const alpha2Map = {};
-    try {
-      const restRes = await fetch('https://restcountries.com/v3.1/all?fields=cca3,cca2,independent');
-      const restData = await restRes.json();
-      if (Array.isArray(restData)) {
-        restData.forEach(c => {
-          sovereigntyMap[c.cca3] = c.independent;
-          alpha2Map[c.cca3] = c.cca2.toLowerCase();
-        });
-      } else {
-        console.warn('API REST Countries zwróciło nieoczekiwany format danych.');
-      }
-    } catch (e) {
-      console.warn('Błąd połączenia z REST Countries, pomijam...', e.message);
-    }
+    // 0. Zastąpienie zewnętrznego API twardą listą terytoriów (API REST Countries zostało wyłączone)
+    console.log('Ładowanie lokalnej mapy terytoriów zależnych...');
+    const territoryIso3 = [
+      "ABW", "AIA", "ALA", "ASM", "ATA", "ATF", "BES", "BLM", "BMU", "BVT", "CCK", "COK", "CUW", "CXR", 
+      "CYM", "ESH", "FLK", "FRO", "GGY", "GIB", "GLP", "GUM", "HKG", "HMD", "IOT", "JEY", "MAC", "MAF", 
+      "MNP", "MSR", "MTQ", "MYT", "NCL", "NFK", "NIU", "PCN", "PRI", "PYF", "REU", "SGS", "SHN", "SJM", 
+      "SPM", "TCA", "TKL", "UMI", "VGB", "VIR", "WLF", "GRL", "UNK", "PSE"
+    ];
 
     // 1. Pobieranie danych z Postgres
     const resCountries = await client.query('SELECT * FROM app.countries WHERE is_active = true ORDER BY name');
@@ -122,8 +112,7 @@ async function buildDatabaseJson() {
 
         return {
           id: country.iso_alpha3,
-          iso_alpha2: alpha2Map[country.iso_alpha3] || 
-                      (existingCountry.iso_alpha2 && existingCountry.iso_alpha2.toLowerCase()) || 
+          iso_alpha2: (existingCountry.iso_alpha2 && existingCountry.iso_alpha2.toLowerCase()) || 
                       (country.iso_alpha2 && country.iso_alpha2.toLowerCase()) || 
                       null,
           name: country.name,
@@ -131,7 +120,7 @@ async function buildDatabaseJson() {
           region: country.region,
           capital: country.capital_city,
           flag_emoji: country.flag_emoji,
-          is_territory: sovereigntyMap[country.iso_alpha3] === false,
+          is_territory: territoryIso3.includes(country.iso_alpha3),
           currency_code: country.currency_code || existingCountry.currency_code || null,
           currency_name: country.currency_name || existingCountry.currency_name || null,
           currency_symbol: country.currency_symbol || existingCountry.currency_symbol || null,
@@ -151,6 +140,7 @@ async function buildDatabaseJson() {
           climate: climateObj || existingCountry.climate || undefined,
           climate_summary: country.climate_summary || existingCountry.climate_summary || null,
           health_summary: country.health_summary || existingCountry.health_summary || null,
+          economic_summary: country.economic_summary || existingCountry.economic_summary || null,
           nomad_visa: nomadVisaObj || existingCountry.nomad_visa || undefined,
           digital_freedom_text: country.digital_freedom_text || null
         };

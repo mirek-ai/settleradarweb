@@ -26,9 +26,10 @@ type ScenarioKey = 'all' | 'tax-haven' | 'safe-haven' | 'nomad' | 'nomad-visa' |
 interface HomeClientProps {
   baseCountries: any[];
   totalValidCountries: number;
+  territories?: any[];
 }
 
-export default function HomeClient({ baseCountries, totalValidCountries }: HomeClientProps) {
+export default function HomeClient({ baseCountries, totalValidCountries, territories = [] }: HomeClientProps) {
   const [sortBy, setSortBy] = useState<SortKey>('freedom');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [searchQuery, setSearchQuery] = useState('');
@@ -561,6 +562,38 @@ export default function HomeClient({ baseCountries, totalValidCountries }: HomeC
             )}
           </div>
       </section>
+
+      {/* Territories & Special Regions Section */}
+      {territories.length > 0 && searchQuery === '' && (
+        <section className="max-w-4xl mx-auto px-4 mt-12 pb-8 animate-in fade-in duration-500">
+          <div className="text-center mb-6">
+            <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest">Territories & Special Regions</h3>
+            <p className="text-xs text-slate-400 mt-1">High-value destinations outside the standard 194 index.</p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-2.5">
+            {territories.map((t: any) => (
+              <Link 
+                key={t.id} 
+                href={`/country/${t.slug}`}
+                className="flex items-center gap-2 px-3 py-1.5 bg-slate-50 dark:bg-slate-900/40 rounded-lg text-sm text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-800 transition-all border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:-translate-y-0.5"
+              >
+                {t.iso_alpha2 ? (
+                  <Image 
+                    src={`/flags/moving-to-${t.slug}.png`} 
+                    width={18}
+                    height={13}
+                    alt={`${t.name} flag`} 
+                    className="w-4 h-auto rounded-[2px] border border-black/10 dark:border-white/10 shadow-[0_1px_2px_rgba(0,0,0,0.1)] opacity-90" 
+                  />
+                ) : (
+                  <span>{t.flag_emoji}</span>
+                )}
+                <span className="font-medium">{t.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
