@@ -141,6 +141,7 @@ async function buildDatabaseJson() {
           climate_summary: country.climate_summary || existingCountry.climate_summary || null,
           health_summary: country.health_summary || existingCountry.health_summary || null,
           economic_summary: country.economic_summary || existingCountry.economic_summary || null,
+          demographics_summary: country.demographics_summary || existingCountry.demographics_summary || null,
           nomad_visa: nomadVisaObj || existingCountry.nomad_visa || undefined,
           digital_freedom_text: country.digital_freedom_text || null
         };

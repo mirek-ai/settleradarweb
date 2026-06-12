@@ -105,6 +105,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const out_of_pocket = ind['who_out_of_pocket_expenditure']?.value;
   const health_summary = country.health_summary;
   const economic_summary = country.economic_summary;
+  const demographics_summary = country.demographics_summary;
   const uhc = ind['who_uhc_index']?.value;
   const gini = ind['wb_gini']?.value;
   const inflation = ind['wb_inflation']?.value;
@@ -521,11 +522,20 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         </section>
 
         {/* DEMOGRAPHICS (BENTO GRID) */}
-        <section id="demographics">
-          <div className="flex items-center gap-2 mb-6">
+        <section id="demographics" className="space-y-6">
+          <div className="flex items-center gap-2 mb-2">
             <Users className="w-6 h-6 text-blue-500" />
             <h2 className="text-3xl font-bold tracking-tight">Society & Demographics</h2>
           </div>
+
+          {demographics_summary && (
+            <div className="glass-panel p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-lg border border-white/20 dark:border-white/10 hover:border-blue-500/30 transition-colors group">
+              <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform pointer-events-none">
+                <Users className="w-48 h-48 text-blue-500" />
+              </div>
+              <div className="prose prose-slate max-w-none dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10" dangerouslySetInnerHTML={{ __html: demographics_summary }} />
+            </div>
+          )}
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[160px]">
             {/* Bento Block: Gender Ratio */}
