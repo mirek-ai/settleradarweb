@@ -110,6 +110,40 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* Global SEO Schemas (Organization & WebSite with Sitelinks Search Box) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "name": "SettleRadar",
+                  "url": "https://settleradar.com",
+                  "logo": "https://settleradar.com/icon.png",
+                  "sameAs": [
+                    "https://twitter.com/settleradar"
+                  ]
+                },
+                {
+                  "@type": "WebSite",
+                  "name": "SettleRadar",
+                  "url": "https://settleradar.com",
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://settleradar.com/compare?country={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                  }
+                }
+              ]
+            })
+          }}
+        />
       </head>
       <body suppressHydrationWarning className="min-h-full flex flex-col font-sans bg-background text-foreground transition-colors duration-300">
         <ThemeProvider>
