@@ -909,28 +909,36 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         )}
 
         {/* COMPARE CTA */}
-        <section className="mt-8 glass-panel rounded-3xl p-8 md:p-12 border border-slate-200/50 dark:border-slate-800/50 bg-gradient-to-br from-indigo-50/50 to-blue-50/50 dark:from-indigo-900/10 dark:to-blue-900/10 text-center shadow-xl relative overflow-hidden group">
-          <div className="absolute -top-12 -left-12 opacity-5 group-hover:scale-110 transition-transform pointer-events-none">
-             <Swords className="w-64 h-64 text-indigo-500" />
-          </div>
-          <div className="relative z-10">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">
-              Is {country.name} the right choice for you?
-            </h3>
-            <p className="text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
-              Don't guess. Compare {country.name} head-to-head against other popular expat destinations. See exact differences in taxes, cost of living, climate, and safety.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link 
-                href={`/compare?country=${country.slug}`}
-                className="inline-flex w-full sm:w-auto justify-center items-center px-8 py-4 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 text-lg"
-              >
-                Compare {country.name} Now
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
-            </div>
-          </div>
-        </section>
+        {(() => {
+          const defaultCompareSlug = country.slug === 'poland' ? 'spain' : 'poland';
+          const defaultCompareName = country.slug === 'poland' ? 'Spain' : 'Poland';
+          const compareUrl = [country.slug, defaultCompareSlug].sort().join('/');
+
+          return (
+            <section className="mt-8 glass-panel rounded-3xl p-8 md:p-12 border border-slate-200/50 dark:border-slate-800/50 bg-gradient-to-br from-indigo-50/50 to-blue-50/50 dark:from-indigo-900/10 dark:to-blue-900/10 text-center shadow-xl relative overflow-hidden group">
+              <div className="absolute -top-12 -left-12 opacity-5 group-hover:scale-110 transition-transform pointer-events-none">
+                 <Swords className="w-64 h-64 text-indigo-500" />
+              </div>
+              <div className="relative z-10">
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">
+                  Is {country.name} the right choice for you?
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
+                  Don't guess. Compare {country.name} head-to-head against other popular expat destinations. See exact differences in taxes, cost of living, climate, and safety.
+                </p>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <Link 
+                    href={`/compare/${compareUrl}`}
+                    className="inline-flex w-full sm:w-auto justify-center items-center px-8 py-4 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 text-lg"
+                  >
+                    Compare {country.name} vs {defaultCompareName}
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Link>
+                </div>
+              </div>
+            </section>
+          );
+        })()}
 
       </main>
     </div>
