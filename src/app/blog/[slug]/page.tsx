@@ -136,10 +136,10 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
                 View {cName} Profile
               </Link>
               <Link 
-                href={`/compare?country=${cSlug}`}
+                href={`/compare/${cSlug}/poland`}
                 className="inline-flex w-full sm:w-auto justify-center items-center px-8 py-3.5 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5"
               >
-                Compare {cName}
+                Compare {cName} to Poland
                 <ArrowRight className="w-5 h-5 ml-2 text-slate-400" />
               </Link>
             </div>
