@@ -85,7 +85,19 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
       <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground leading-tight">
         {postData.title}
       </h1>
-      <p className="text-primary font-semibold mb-10">{formatDate(postData.date)}</p>
+      <div className="flex items-center gap-4 mb-10">
+        <p className="text-primary font-semibold m-0">{formatDate(postData.date)}</p>
+        <div className="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-700"></div>
+        <a 
+          href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`Reading: "${postData.title}"\n\n`)}&url=${encodeURIComponent(`https://settleradar.com/blog/${postData.slug}`)}&via=settleradar`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-white transition-colors bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-800 dark:hover:bg-slate-600 px-3 py-1.5 rounded-full"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" className="w-3 h-3 fill-current"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+          Share
+        </a>
+      </div>
       
       <div className="prose prose-lg dark:prose-invert prose-blue max-w-none prose-table:w-full prose-table:text-left prose-th:bg-foreground/5 prose-th:p-4 prose-td:p-4 prose-tr:border-b prose-tr:border-foreground/10">
         <ReactMarkdown 

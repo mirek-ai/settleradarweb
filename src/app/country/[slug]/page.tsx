@@ -303,8 +303,19 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   </span>
                 )}
               </div>
-              <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-4">
-                Moving to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">{country.name}</span>
+              <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-4 flex flex-col sm:flex-row sm:items-center gap-4">
+                <span>
+                  Moving to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">{country.name}</span>
+                </span>
+                <a 
+                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`Exploring ${country.name} as my next relocation destination! 🌍✈️\n\n`)}&url=${encodeURIComponent(`https://settleradar.com/country/${country.slug}`)}&via=settleradar`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-fit items-center gap-2 text-xs font-bold text-slate-500 hover:text-white transition-colors bg-slate-100 dark:bg-slate-800/80 hover:bg-[#1DA1F2] dark:hover:bg-[#1DA1F2] px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 hover:border-[#1DA1F2] shadow-sm mt-1 sm:mt-0"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true" className="w-3.5 h-3.5 fill-current"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                  Share
+                </a>
               </h1>
               {country.nomad_visa && (
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4 bg-emerald-100 dark:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/30 shadow-sm">
