@@ -8,7 +8,7 @@ const nomadCountries = [
   "Anguilla", "Antigua and Barbuda", "Argentina", "Bahamas", "Barbados", "Belize", "Bermuda", 
   "Brazil", "Cape Verde", "Cayman Islands", "Colombia", "Costa Rica", "Croatia", "Curaçao", 
   "Cyprus", "Czech Republic", "Dominica", "Ecuador", "Estonia", "Georgia", "Greece", "Grenada", 
-  "Hungary", "Iceland", "Indonesia", "Italy", "Latvia", "Malaysia", "Malta", "Mauritius", 
+  "Hungary", "Iceland", "Indonesia", "Italy", "Japan", "Latvia", "Malaysia", "Malta", "Mauritius", 
   "Mexico", "Montenegro", "Montserrat", "Namibia", "North Macedonia", "Norway", "Panama", 
   "Portugal", "Romania", "Saint Lucia", "Seychelles", "South Africa", "Spain", "Sri Lanka", 
   "Taiwan", "Thailand", "United Arab Emirates", "Uruguay"
@@ -62,8 +62,10 @@ async function syncData() {
             description: `This country offers a dedicated Digital Nomad Visa or equivalent remote work permit.`
           }
         };
+      } else {
+        const { nomad_visa, ...rest } = c;
+        return rest;
       }
-      return c;
     });
 
     fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
