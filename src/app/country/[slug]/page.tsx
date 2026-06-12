@@ -76,25 +76,25 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   
   const bestLife = db.countries.reduce((best: any, c: any) => {
     const v = c.indicators?.['who_life_expectancy']?.value;
-    if (v != null && (!best || v > best.v)) return { v, name: c.name };
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
     return best;
   }, null);
 
   const bestDoctors = db.countries.reduce((best: any, c: any) => {
     const v = c.indicators?.['who_medical_doctors']?.value;
-    if (v != null && (!best || v > best.v)) return { v, name: c.name };
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
     return best;
   }, null);
 
   const bestObesity = db.countries.reduce((best: any, c: any) => {
     const v = c.indicators?.['who_obesity']?.value;
-    if (v != null && (!best || v < best.v)) return { v, name: c.name };
+    if (v != null && (!best || v < best.v)) return { v, name: c.name, slug: c.slug };
     return best;
   }, null);
 
   const bestOOP = db.countries.reduce((best: any, c: any) => {
     const v = c.indicators?.['who_out_of_pocket_expenditure']?.value;
-    if (v != null && (!best || v < best.v)) return { v, name: c.name };
+    if (v != null && (!best || v < best.v)) return { v, name: c.name, slug: c.slug };
     return best;
   }, null);
   const freedom = ind['heritage_economic_freedom']?.value; 
@@ -667,7 +667,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       </span>
                       {bestLife && bestLife.v != null && (
                         <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global maximum">
-                          🏆 Top: {bestLife.v.toFixed(1)} yrs ({bestLife.name})
+                          🏆 Top: {bestLife.v.toFixed(1)} yrs (<Link href={`/country/${bestLife.slug}`} className="hover:text-rose-400 underline decoration-white/30 hover:decoration-rose-400 underline-offset-2 transition-colors">{bestLife.name}</Link>)
                         </span>
                       )}
                     </div>
@@ -686,7 +686,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       </span>
                       {bestDoctors && bestDoctors.v != null && (
                         <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global maximum">
-                          🏆 Top: {bestDoctors.v.toFixed(1)} ({bestDoctors.name})
+                          🏆 Top: {bestDoctors.v.toFixed(1)} (<Link href={`/country/${bestDoctors.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestDoctors.name}</Link>)
                         </span>
                       )}
                     </div>
@@ -705,7 +705,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       </span>
                       {bestOOP && bestOOP.v != null && (
                         <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global minimum (best)">
-                          🏆 Top: {bestOOP.v.toFixed(1)}% ({bestOOP.name})
+                          🏆 Top: {bestOOP.v.toFixed(1)}% (<Link href={`/country/${bestOOP.slug}`} className="hover:text-amber-400 underline decoration-white/30 hover:decoration-amber-400 underline-offset-2 transition-colors">{bestOOP.name}</Link>)
                         </span>
                       )}
                     </div>
@@ -724,7 +724,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       </span>
                       {bestObesity && bestObesity.v != null && (
                         <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global minimum (best)">
-                          🏆 Top: {bestObesity.v.toFixed(1)}% ({bestObesity.name})
+                          🏆 Top: {bestObesity.v.toFixed(1)}% (<Link href={`/country/${bestObesity.slug}`} className="hover:text-orange-400 underline decoration-white/30 hover:decoration-orange-400 underline-offset-2 transition-colors">{bestObesity.name}</Link>)
                         </span>
                       )}
                     </div>
