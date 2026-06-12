@@ -573,87 +573,87 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             )}
             
             {/* Bento Block: Internet */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 flex flex-col justify-center border border-white/20 hover:border-blue-500/30 transition-colors group">
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Connectivity</p>
-                <Activity className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Activity className="w-6 h-6" />
               </div>
-              <div className="text-4xl font-extrabold text-slate-900 dark:text-white">
-                {internet != null ? `${internet.toFixed(1)}%` : '--'}
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Connectivity</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                {internet != null ? internet.toFixed(1) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">%</span>
               </div>
-              <p className="text-sm font-medium text-slate-500 mt-1">Internet Users</p>
+              <p className="text-sm font-medium text-slate-500 mt-2">Internet Users</p>
             </div>
             
             {/* Bento Block: English */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 flex flex-col justify-center hover:border-blue-500/30 transition-colors group">
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Language</p>
-                <MessageCircle className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <MessageCircle className="w-6 h-6" />
               </div>
-              <div className="text-4xl font-extrabold text-slate-900 dark:text-white">
-                {english != null ? english.toFixed(0) : '--'}<span className="text-lg text-slate-400 ml-1">/800</span>
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Language</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                {english != null ? english.toFixed(0) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">/ 800</span>
               </div>
-              <p className="text-sm font-medium text-slate-500 mt-1">EF English Proficiency</p>
+              <p className="text-sm font-medium text-slate-500 mt-2">EF English Proficiency</p>
             </div>
 
             {/* Bento Block: Inequality */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 flex flex-col justify-center hover:border-blue-500/30 transition-colors group">
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Inequality</p>
-                <Scale className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Scale className="w-6 h-6" />
               </div>
-              <div className="text-4xl font-extrabold text-slate-900 dark:text-white">
-                {gini != null ? gini.toFixed(1) : '--'}<span className="text-lg text-slate-400 ml-1">/ 100</span>
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Inequality</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                {gini != null ? gini.toFixed(1) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">/ 100</span>
               </div>
-              <p className="text-sm font-medium text-slate-500 mt-1">GINI Index (Lower is more equal)</p>
+              <p className="text-sm font-medium text-slate-500 mt-2">GINI Index (Lower = more equal)</p>
             </div>
 
             {/* Bento Block: Women in Parliament */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 flex flex-col justify-center hover:border-blue-500/30 transition-colors group">
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Equality</p>
-                <Users className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Users className="w-6 h-6" />
               </div>
-              <div className="text-4xl font-extrabold text-slate-900 dark:text-white">
-                {womenInPar != null ? `${womenInPar.toFixed(1)}%` : '--'}
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Equality</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                {womenInPar != null ? womenInPar.toFixed(1) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">%</span>
               </div>
-              <p className="text-sm font-medium text-slate-500 mt-1">Women in Parliament</p>
+              <p className="text-sm font-medium text-slate-500 mt-2">Women in Parliament</p>
             </div>
             
             {/* Bento Block: Aging */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 flex flex-col justify-center hover:border-blue-500/30 transition-colors group">
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Aging Society</p>
-                <Users className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Users className="w-6 h-6" />
               </div>
-              <div className="text-4xl font-extrabold text-slate-900 dark:text-white">
-                {aging != null ? `${aging.toFixed(1)}%` : '--'}
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Aging Society</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                {aging != null ? aging.toFixed(1) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">%</span>
               </div>
-              <p className="text-sm font-medium text-slate-500 mt-1">Population over 65 years old</p>
+              <p className="text-sm font-medium text-slate-500 mt-2">Population over 65 years old</p>
             </div>
             
             {/* Bento Block: Urbanization */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 flex flex-col justify-center hover:border-blue-500/30 transition-colors group">
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Urbanization</p>
-                <Building className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Building className="w-6 h-6" />
               </div>
-              <div className="text-4xl font-extrabold text-slate-900 dark:text-white">
-                {urban != null ? `${urban.toFixed(1)}%` : '--'}
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Urbanization</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                {urban != null ? urban.toFixed(1) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">%</span>
               </div>
-              <p className="text-sm font-medium text-slate-500 mt-1">People living in cities</p>
+              <p className="text-sm font-medium text-slate-500 mt-2">People living in cities</p>
             </div>
             
             {/* Bento Block: Migration */}
-            <div className="glass-panel p-6 rounded-3xl md:col-span-1 row-span-1 border border-white/20 flex flex-col justify-center hover:border-blue-500/30 transition-colors group">
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Migration</p>
-                <Globe className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+            <div className="glass-panel p-6 rounded-3xl md:col-span-1 row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Globe className="w-6 h-6" />
               </div>
-              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Migration</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
                 {migration != null ? (migration > 0 ? `+${formatNumber(migration)}` : formatNumber(migration)) : '--'}
               </div>
-              <p className="text-sm font-medium text-slate-500 mt-1">Net Migration (5-yr total)</p>
+              <p className="text-sm font-medium text-slate-500 mt-2">Net Migration (5-yr total)</p>
             </div>
           </div>
         </section>
@@ -677,78 +677,70 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               
               <div className="flex flex-wrap gap-4 relative z-10">
                 {life_expectancy != null && (
-                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
-                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Longevity</div>
-                    <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
-                      {life_expectancy.toFixed(1)} <span className="text-base font-semibold mt-1">yrs</span>
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
+                    <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-rose-500/10 group-hover:text-rose-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                      <Activity className="w-6 h-6 text-rose-400" />
                     </div>
-                    <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
-                      <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
-                        <Activity className="w-3.5 h-3.5 text-rose-400" /> Life Expectancy
-                      </span>
-                      {bestLife && bestLife.v != null && (
-                        <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global maximum">
-                          🏆 Top: {bestLife.v.toFixed(1)} yrs (<Link href={`/country/${bestLife.slug}`} className="hover:text-rose-400 underline decoration-white/30 hover:decoration-rose-400 underline-offset-2 transition-colors">{bestLife.name}</Link>)
-                        </span>
-                      )}
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Longevity</div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                      {life_expectancy.toFixed(1)} <span className="text-base font-semibold text-slate-500 mb-1">yrs</span>
                     </div>
+                    {bestLife && bestLife.v != null && (
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                        🏆 Top: {bestLife.v.toFixed(1)} yrs (<Link href={`/country/${bestLife.slug}`} className="hover:text-rose-400 underline decoration-white/30 hover:decoration-rose-400 underline-offset-2 transition-colors">{bestLife.name}</Link>)
+                      </div>
+                    )}
                   </div>
                 )}
                 
                 {doctors != null && (
-                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
-                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Care Access</div>
-                    <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
-                      {doctors.toFixed(1)}
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
+                    <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                      <HeartPulse className="w-6 h-6 text-blue-400" />
                     </div>
-                    <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
-                      <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
-                        <HeartPulse className="w-3.5 h-3.5 text-blue-400" /> Doctors per 10k
-                      </span>
-                      {bestDoctors && bestDoctors.v != null && (
-                        <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global maximum">
-                          🏆 Top: {bestDoctors.v.toFixed(1)} (<Link href={`/country/${bestDoctors.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestDoctors.name}</Link>)
-                        </span>
-                      )}
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Care Access</div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                      {doctors.toFixed(1)} <span className="text-base font-semibold text-slate-500 mb-1">/ 10k</span>
                     </div>
+                    {bestDoctors && bestDoctors.v != null && (
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                        🏆 Top: {bestDoctors.v.toFixed(1)} (<Link href={`/country/${bestDoctors.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestDoctors.name}</Link>)
+                      </div>
+                    )}
                   </div>
                 )}
 
                 {out_of_pocket != null && (
-                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
-                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Health Cost</div>
-                    <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
-                      {out_of_pocket.toFixed(1)} <span className="text-base font-semibold mt-1">%</span>
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
+                    <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-amber-500/10 group-hover:text-amber-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                      <Landmark className="w-6 h-6 text-amber-400" />
                     </div>
-                    <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
-                      <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
-                        <Landmark className="w-3.5 h-3.5 text-amber-400" /> Out-of-pocket
-                      </span>
-                      {bestOOP && bestOOP.v != null && (
-                        <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global minimum (best)">
-                          🏆 Top: {bestOOP.v.toFixed(1)}% (<Link href={`/country/${bestOOP.slug}`} className="hover:text-amber-400 underline decoration-white/30 hover:decoration-amber-400 underline-offset-2 transition-colors">{bestOOP.name}</Link>)
-                        </span>
-                      )}
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Health Cost</div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                      {out_of_pocket.toFixed(1)} <span className="text-base font-semibold text-slate-500 mb-1">% OOP</span>
                     </div>
+                    {bestOOP && bestOOP.v != null && (
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                        🏆 Top: {bestOOP.v.toFixed(1)}% (<Link href={`/country/${bestOOP.slug}`} className="hover:text-amber-400 underline decoration-white/30 hover:decoration-amber-400 underline-offset-2 transition-colors">{bestOOP.name}</Link>)
+                      </div>
+                    )}
                   </div>
                 )}
 
                 {obesity != null && (
-                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
-                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Lifestyle</div>
-                    <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
-                      {obesity.toFixed(1)} <span className="text-base font-semibold mt-1">%</span>
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
+                    <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-orange-500/10 group-hover:text-orange-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                      <Activity className="w-6 h-6 text-orange-400" />
                     </div>
-                    <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
-                      <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
-                        <Activity className="w-3.5 h-3.5 text-orange-400" /> Adult Obesity
-                      </span>
-                      {bestObesity && bestObesity.v != null && (
-                        <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global minimum (best)">
-                          🏆 Top: {bestObesity.v.toFixed(1)}% (<Link href={`/country/${bestObesity.slug}`} className="hover:text-orange-400 underline decoration-white/30 hover:decoration-orange-400 underline-offset-2 transition-colors">{bestObesity.name}</Link>)
-                        </span>
-                      )}
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Lifestyle</div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                      {obesity.toFixed(1)} <span className="text-base font-semibold text-slate-500 mb-1">%</span>
                     </div>
+                    {bestObesity && bestObesity.v != null && (
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                        🏆 Top: {bestObesity.v.toFixed(1)}% (<Link href={`/country/${bestObesity.slug}`} className="hover:text-orange-400 underline decoration-white/30 hover:decoration-orange-400 underline-offset-2 transition-colors">{bestObesity.name}</Link>)
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
