@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { 
   ArrowLeft, ArrowRight, MapPin, Building, Shield, Wind, TrendingUp, Landmark, Sparkles, 
-  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe, BookOpen, Swords, Info
+  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe, BookOpen, Swords, Info, Percent
 } from 'lucide-react';
 import { getSortedPostsData } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
@@ -157,6 +157,12 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     return best;
   }, null);
 
+  const bestTaxBurden = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['heritage_tax_burden']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
   const bestGini = db.countries.reduce((best: any, c: any) => {
     const v = c.indicators?.['wb_gini']?.value;
     if (v != null && (!best || v < best.v)) return { v, name: c.name, slug: c.slug };
@@ -208,6 +214,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const malePct = ind['wb_male_population_pct']?.value;
   const womenInPar = ind['wb_women_in_parliament_pct']?.value;
   const taxes = ind['wb_taxes']?.value;
+  const taxBurden = ind['heritage_tax_burden']?.value;
   
   const pol = country.politics || {};
   const climate = country.climate;
@@ -571,6 +578,23 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               {bestEducation && bestEducation.v != null && (
                 <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
                   🏆 Top: {bestEducation.v.toFixed(1)}% (<Link href={`/country/${bestEducation.slug}`} className="hover:text-fuchsia-400 underline decoration-white/30 hover:decoration-fuchsia-400 underline-offset-2 transition-colors">{bestEducation.name}</Link>)
+                </div>
+              )}
+            </div>
+
+            {/* Fact 9 */}
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-rose-500/10 group-hover:text-rose-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Percent className="w-6 h-6" />
+              </div>
+              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Tax Burden Score</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                {taxBurden != null ? taxBurden.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">/ 100</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-2">Heritage Foundation. Higher score means lower taxes.</p>
+              {bestTaxBurden && bestTaxBurden.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum (lowest taxes)">
+                  🏆 Top: {bestTaxBurden.v.toFixed(1)} (<Link href={`/country/${bestTaxBurden.slug}`} className="hover:text-rose-400 underline decoration-white/30 hover:decoration-rose-400 underline-offset-2 transition-colors">{bestTaxBurden.name}</Link>)
                 </div>
               )}
             </div>
