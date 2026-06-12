@@ -122,6 +122,17 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     return best;
   }, null);
 
+  const bestInflation = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_inflation']?.value;
+    if (v != null) {
+      const distance = Math.abs(v - 2.0);
+      if (!best || distance < best.distance) {
+        return { v, name: c.name, slug: c.slug, distance };
+      }
+    }
+    return best;
+  }, null);
+
   const bestAir = db.countries.reduce((best: any, c: any) => {
     const v = c.indicators?.['wb_air_quality']?.value;
     if (v != null && (!best || v < best.v)) return { v, name: c.name, slug: c.slug };
@@ -504,6 +515,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {inflation != null ? inflation.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">%</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">Annual CPI. Indicates recent price stability.</p>
+              {bestInflation && bestInflation.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Closest to optimal 2.0% target">
+                  🏆 Optimal (2%): {bestInflation.v.toFixed(1)}% (<Link href={`/country/${bestInflation.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestInflation.name}</Link>)
+                </div>
+              )}
             </div>
 
             {/* Fact 6 */}
