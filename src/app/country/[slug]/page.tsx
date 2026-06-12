@@ -630,9 +630,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 <div className="prose prose-slate max-w-none dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10 mb-10" dangerouslySetInnerHTML={{ __html: health_summary }} />
               )}
               
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 relative z-10">
+              <div className="flex flex-wrap gap-4 relative z-10">
                 {life_expectancy != null && (
-                  <div className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Longevity</div>
                     <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
                       {life_expectancy.toFixed(1)} <span className="text-base font-semibold mt-1">yrs</span>
@@ -646,7 +646,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 )}
                 
                 {doctors != null && (
-                  <div className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Care Access</div>
                     <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
                       {doctors.toFixed(1)}
@@ -660,7 +660,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 )}
 
                 {out_of_pocket != null && (
-                  <div className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Health Cost</div>
                     <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
                       {out_of_pocket.toFixed(1)} <span className="text-base font-semibold mt-1">%</span>
@@ -674,7 +674,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 )}
 
                 {obesity != null && (
-                  <div className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Lifestyle</div>
                     <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
                       {obesity.toFixed(1)} <span className="text-base font-semibold mt-1">%</span>
