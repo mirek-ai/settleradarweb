@@ -111,15 +111,19 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
     if (!sumA && !sumB) return null;
     return (
       <tr className="border-b border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/20">
-        <td className="p-6 align-top text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed w-[40%]">
-          {sumA ? <div dangerouslySetInnerHTML={{ __html: sumA }} /> : <span className="text-slate-400 italic">No summary available.</span>}
-        </td>
-        <td className="p-6 text-center font-bold text-xs text-slate-400 uppercase tracking-widest align-top pt-8 bg-slate-50/50 dark:bg-slate-900/40 w-[20%]">
-          <Sparkles className="w-4 h-4 mx-auto mb-2 text-indigo-400" />
-          {label}
-        </td>
-        <td className="p-6 align-top text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed w-[40%]">
-          {sumB ? <div dangerouslySetInnerHTML={{ __html: sumB }} /> : <span className="text-slate-400 italic">No summary available.</span>}
+        <td colSpan={3} className="p-0">
+          <div className="flex items-center justify-center gap-2 py-3 bg-slate-50/50 dark:bg-slate-900/40 border-b border-slate-200/50 dark:border-slate-800/50 text-xs font-bold uppercase tracking-widest text-slate-400">
+             <Sparkles className="w-4 h-4 text-indigo-400" />
+             {label}
+          </div>
+          <div className="flex flex-col md:flex-row">
+            <div className="w-full md:w-1/2 p-6 align-top text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed border-b md:border-b-0 md:border-r border-slate-200/50 dark:border-slate-800/50">
+              {sumA ? <div dangerouslySetInnerHTML={{ __html: sumA }} /> : <span className="text-slate-400 italic">No summary available.</span>}
+            </div>
+            <div className="w-full md:w-1/2 p-6 align-top text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed">
+              {sumB ? <div dangerouslySetInnerHTML={{ __html: sumB }} /> : <span className="text-slate-400 italic">No summary available.</span>}
+            </div>
+          </div>
         </td>
       </tr>
     );
