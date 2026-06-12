@@ -107,25 +107,25 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
       </tr>
     );
   };
-  const renderSummaryRow = (label: string, sumA?: string, sumB?: string) => {
+  const renderSummaryCards = (label: string, sumA?: string, sumB?: string) => {
     if (!sumA && !sumB) return null;
     return (
-      <tr className="border-b border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/20">
-        <td colSpan={3} className="p-0">
-          <div className="flex items-center justify-center gap-2 py-3 bg-slate-50/50 dark:bg-slate-900/40 border-b border-slate-200/50 dark:border-slate-800/50 text-xs font-bold uppercase tracking-widest text-slate-400">
-             <Sparkles className="w-4 h-4 text-indigo-400" />
-             {label}
+      <div className="p-6 md:p-8 border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/20">
+        <div className="flex items-center justify-center gap-2 mb-6 text-xs font-bold uppercase tracking-widest text-slate-400">
+           <Sparkles className="w-4 h-4 text-indigo-400" />
+           {label}
+        </div>
+        <div className="flex flex-col md:flex-row gap-6">
+          <div className="flex-1 bg-black/5 dark:bg-white/5 rounded-2xl p-6 relative">
+            <h4 className="font-black text-xl mb-3 text-blue-500">{countryA.name}</h4>
+            <div className="text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed" dangerouslySetInnerHTML={{ __html: sumA || '<span class="text-slate-400 italic">No summary available.</span>' }} />
           </div>
-          <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/2 p-6 align-top text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed border-b md:border-b-0 md:border-r border-slate-200/50 dark:border-slate-800/50">
-              {sumA ? <div dangerouslySetInnerHTML={{ __html: sumA }} /> : <span className="text-slate-400 italic">No summary available.</span>}
-            </div>
-            <div className="w-full md:w-1/2 p-6 align-top text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed">
-              {sumB ? <div dangerouslySetInnerHTML={{ __html: sumB }} /> : <span className="text-slate-400 italic">No summary available.</span>}
-            </div>
+          <div className="flex-1 bg-black/5 dark:bg-white/5 rounded-2xl p-6 relative">
+            <h4 className="font-black text-xl mb-3 text-emerald-500">{countryB.name}</h4>
+            <div className="text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed" dangerouslySetInnerHTML={{ __html: sumB || '<span class="text-slate-400 italic">No summary available.</span>' }} />
           </div>
-        </td>
-      </tr>
+        </div>
+      </div>
     );
   };
 
@@ -248,11 +248,11 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
             <Activity className="w-5 h-5 text-blue-500" />
             <h3 className="font-bold uppercase tracking-wider">Economy & Labor</h3>
           </div>
+          {renderSummaryCards('Insights based on World Bank & Heritage Data', countryA.economic_summary, countryB.economic_summary)}
           <div className="overflow-x-auto">
             <table className="w-full min-w-[500px]">
             {renderTableHeader()}
             <tbody>
-              {renderSummaryRow('Insights based on World Bank & Heritage Data', countryA.economic_summary, countryB.economic_summary)}
               {renderRow('GDP per Capita (PPP)', gdpA, gdpB, '$')}
               {renderRow('Unemployment Rate', getVal(countryA, 'ilo_unemployment') || getVal(countryA, 'wb_unemployment'), getVal(countryB, 'ilo_unemployment') || getVal(countryB, 'wb_unemployment'), '%', true)}
               {renderRow('Inflation Rate', getVal(countryA, 'wb_inflation'), getVal(countryB, 'wb_inflation'), '%', true)}
@@ -269,11 +269,11 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
             <HeartPulse className="w-5 h-5 text-rose-500" />
             <h3 className="font-bold uppercase tracking-wider">Quality of Life & Health</h3>
           </div>
+          {renderSummaryCards('Insights based on WHO & World Bank Data', countryA.health_summary, countryB.health_summary)}
           <div className="overflow-x-auto">
             <table className="w-full min-w-[500px]">
             {renderTableHeader()}
             <tbody>
-              {renderSummaryRow('Insights based on WHO & World Bank Data', countryA.health_summary, countryB.health_summary)}
               {renderRow('Happiness Index', happinessA, happinessB, '')}
               {renderRow('Life Expectancy', getVal(countryA, 'who_life_expectancy'), getVal(countryB, 'who_life_expectancy'), '')}
               {renderRow('UHC Health Index', getVal(countryA, 'who_uhc_index'), getVal(countryB, 'who_uhc_index'), '')}
@@ -290,11 +290,11 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
             <Users className="w-5 h-5 text-fuchsia-500" />
             <h3 className="font-bold uppercase tracking-wider">Demographics</h3>
           </div>
+          {renderSummaryCards('Insights based on World Bank Data', countryA.demographics_summary, countryB.demographics_summary)}
           <div className="overflow-x-auto">
             <table className="w-full min-w-[500px]">
             {renderTableHeader()}
             <tbody>
-              {renderSummaryRow('Insights based on World Bank Data', countryA.demographics_summary, countryB.demographics_summary)}
               {renderRow('Total Population', getVal(countryA, 'wb_population'), getVal(countryB, 'wb_population'), '')}
               {renderRow('Urban Population', getVal(countryA, 'wb_urban_population_pct'), getVal(countryB, 'wb_urban_population_pct'), '%')}
               {renderRow('Population 65+', getVal(countryA, 'wb_population_65plus_pct'), getVal(countryB, 'wb_population_65plus_pct'), '%', true)}
