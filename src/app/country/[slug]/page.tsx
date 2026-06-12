@@ -73,6 +73,30 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   }
 
   const ind = country.indicators || {};
+  
+  const bestLife = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['who_life_expectancy']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name };
+    return best;
+  }, null);
+
+  const bestDoctors = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['who_medical_doctors']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name };
+    return best;
+  }, null);
+
+  const bestObesity = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['who_obesity']?.value;
+    if (v != null && (!best || v < best.v)) return { v, name: c.name };
+    return best;
+  }, null);
+
+  const bestOOP = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['who_out_of_pocket_expenditure']?.value;
+    if (v != null && (!best || v < best.v)) return { v, name: c.name };
+    return best;
+  }, null);
   const freedom = ind['heritage_economic_freedom']?.value; 
   const education = ind['unesco_education_spending']?.value;
   const life_expectancy = ind['who_life_expectancy']?.value;
@@ -641,6 +665,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
                         <Activity className="w-3.5 h-3.5 text-rose-400" /> Life Expectancy
                       </span>
+                      {bestLife && bestLife.v != null && (
+                        <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global maximum">
+                          🏆 Top: {bestLife.v.toFixed(1)} yrs ({bestLife.name})
+                        </span>
+                      )}
                     </div>
                   </div>
                 )}
@@ -655,6 +684,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
                         <HeartPulse className="w-3.5 h-3.5 text-blue-400" /> Doctors per 10k
                       </span>
+                      {bestDoctors && bestDoctors.v != null && (
+                        <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global maximum">
+                          🏆 Top: {bestDoctors.v.toFixed(1)} ({bestDoctors.name})
+                        </span>
+                      )}
                     </div>
                   </div>
                 )}
@@ -669,6 +703,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
                         <Landmark className="w-3.5 h-3.5 text-amber-400" /> Out-of-pocket
                       </span>
+                      {bestOOP && bestOOP.v != null && (
+                        <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global minimum (best)">
+                          🏆 Top: {bestOOP.v.toFixed(1)}% ({bestOOP.name})
+                        </span>
+                      )}
                     </div>
                   </div>
                 )}
@@ -683,6 +722,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       <span className="text-xs font-medium text-slate-500 flex items-center justify-center gap-1">
                         <Activity className="w-3.5 h-3.5 text-orange-400" /> Adult Obesity
                       </span>
+                      {bestObesity && bestObesity.v != null && (
+                        <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider flex items-center justify-center gap-1 mt-1" title="Global minimum (best)">
+                          🏆 Top: {bestObesity.v.toFixed(1)}% ({bestObesity.name})
+                        </span>
+                      )}
                     </div>
                   </div>
                 )}
