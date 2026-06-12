@@ -665,16 +665,16 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             <h2 className="text-3xl font-bold tracking-tight">Society & Demographics</h2>
           </div>
 
-          {demographics_summary && (
-            <div className="glass-panel p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-lg border border-white/20 dark:border-white/10 hover:border-blue-500/30 transition-colors group">
-              <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform pointer-events-none">
-                <Users className="w-48 h-48 text-blue-500" />
-              </div>
-              <div className="prose prose-slate max-w-none dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10" dangerouslySetInnerHTML={{ __html: demographics_summary }} />
+          <div className="glass-panel p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-lg border border-white/20 dark:border-white/10 hover:border-blue-500/30 transition-colors group">
+            <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform pointer-events-none">
+              <Users className="w-48 h-48 text-blue-500" />
             </div>
-          )}
+
+            {demographics_summary && (
+              <div className="prose prose-slate max-w-none dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10 mb-10" dangerouslySetInnerHTML={{ __html: demographics_summary }} />
+            )}
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
             {/* Bento Block: Gender Ratio */}
             {(femalePct != null && malePct != null) && (
               <div className="glass-panel p-6 rounded-3xl md:col-span-2 row-span-1 flex flex-col justify-center border border-white/20 hover:border-fuchsia-500/30 transition-colors">
@@ -810,6 +810,13 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   🏆 Top: {bestMigration.v > 0 ? `+${formatNumber(bestMigration.v)}` : formatNumber(bestMigration.v)} (<Link href={`/country/${bestMigration.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestMigration.name}</Link>)
                 </div>
               )}
+            </div>
+            </div>
+
+            <div className="mt-10 border-t border-slate-200/50 dark:border-slate-800/50 pt-6 relative z-10">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
+                <Sparkles className="w-4 h-4 text-blue-500" /> Insights based on World Bank Data
+              </div>
             </div>
           </div>
         </section>
