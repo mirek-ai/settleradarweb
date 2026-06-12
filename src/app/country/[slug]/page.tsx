@@ -97,6 +97,43 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     if (v != null && (!best || v < best.v)) return { v, name: c.name, slug: c.slug };
     return best;
   }, null);
+
+  const bestGDP = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_gdp_pc_ppp']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestUnemployment = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['ilo_unemployment']?.value || c.indicators?.['wb_unemployment']?.value;
+    if (v != null && (!best || v < best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestHomicides = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_homicides']?.value;
+    if (v != null && (!best || v < best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestHappiness = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['whr_happiness_index']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestAir = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_air_quality']?.value;
+    if (v != null && (!best || v < best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestEducation = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['unesco_education_spending']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
   const freedom = ind['heritage_economic_freedom']?.value; 
   const education = ind['unesco_education_spending']?.value;
   const life_expectancy = ind['who_life_expectancy']?.value;
@@ -363,6 +400,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {gdp != null ? `$${formatNumber(gdp)}` : '--'}<span className="text-base font-medium text-slate-500 ml-1">USD</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">Adjusts for purchasing power parity.</p>
+              {bestGDP && bestGDP.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: ${formatNumber(bestGDP.v)} (<Link href={`/country/${bestGDP.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestGDP.name}</Link>)
+                </div>
+              )}
             </div>
 
             {/* Fact 2 */}
@@ -375,6 +417,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {life_expectancy != null ? life_expectancy.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">years</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">WHO Data. UHC Index: {uhc != null ? uhc : '--'}/100.</p>
+              {bestLife && bestLife.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestLife.v.toFixed(1)} yrs (<Link href={`/country/${bestLife.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestLife.name}</Link>)
+                </div>
+              )}
             </div>
 
             {/* Fact 3 */}
@@ -387,6 +434,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {unemployment != null ? unemployment.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">%</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">ILO Estimate. Indicates job market health.</p>
+              {bestUnemployment && bestUnemployment.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                  🏆 Top: {bestUnemployment.v.toFixed(1)}% (<Link href={`/country/${bestUnemployment.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestUnemployment.name}</Link>)
+                </div>
+              )}
             </div>
 
             {/* Fact 4 */}
@@ -399,6 +451,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {homicides != null ? homicides.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">per 100k</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">World Bank Crime Data. Lower is safer.</p>
+              {bestHomicides && bestHomicides.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                  🏆 Top: {bestHomicides.v.toFixed(1)} (<Link href={`/country/${bestHomicides.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestHomicides.name}</Link>)
+                </div>
+              )}
             </div>
 
             {/* Fact 5 */}
@@ -423,6 +480,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {happiness != null ? happiness.toFixed(2) : '--'}<span className="text-base font-medium text-slate-500 ml-1">/ 10</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">World Happiness Report (Cantril Ladder).</p>
+              {bestHappiness && bestHappiness.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestHappiness.v.toFixed(2)} (<Link href={`/country/${bestHappiness.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestHappiness.name}</Link>)
+                </div>
+              )}
             </div>
 
             {/* Fact 7 */}
@@ -435,6 +497,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {air != null ? air.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">µg/m³</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">World Bank Data. Lower is better.</p>
+              {bestAir && bestAir.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                  🏆 Top: {bestAir.v.toFixed(1)} µg/m³ (<Link href={`/country/${bestAir.slug}`} className="hover:text-emerald-400 underline decoration-white/30 hover:decoration-emerald-400 underline-offset-2 transition-colors">{bestAir.name}</Link>)
+                </div>
+              )}
             </div>
 
             {/* Fact 8 */}
@@ -447,6 +514,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {education != null ? education.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">% of GDP</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">UNESCO Data. Indicates focus on public schooling.</p>
+              {bestEducation && bestEducation.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestEducation.v.toFixed(1)}% (<Link href={`/country/${bestEducation.slug}`} className="hover:text-fuchsia-400 underline decoration-white/30 hover:decoration-fuchsia-400 underline-offset-2 transition-colors">{bestEducation.name}</Link>)
+                </div>
+              )}
             </div>
           </div>
         </section>
