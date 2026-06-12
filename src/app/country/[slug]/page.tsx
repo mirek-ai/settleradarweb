@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { 
   ArrowLeft, ArrowRight, MapPin, Building, Shield, Wind, TrendingUp, Landmark, Sparkles, 
-  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe, BookOpen, Swords
+  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe, BookOpen, Swords, Info
 } from 'lucide-react';
 import { getSortedPostsData } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
@@ -282,8 +282,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     { label: 'Property Rights', key: 'heritage_property_rights', color: 'from-blue-400 to-blue-500', icon: <Building className="w-4 h-4 text-slate-400" /> },
     { label: 'Judicial Effectiveness', key: 'heritage_judicial_effectiveness', color: 'from-indigo-400 to-indigo-500', icon: <Scale className="w-4 h-4 text-slate-400" /> },
     { label: 'Government Integrity', key: 'heritage_government_integrity', color: 'from-violet-400 to-violet-500', icon: <Shield className="w-4 h-4 text-slate-400" /> },
-    { label: 'Tax Burden Score', key: 'heritage_tax_burden', color: 'from-purple-400 to-purple-500', icon: <Landmark className="w-4 h-4 text-slate-400" /> },
-    { label: 'Government Spending', key: 'heritage_government_spending', color: 'from-rose-400 to-rose-500', icon: <Activity className="w-4 h-4 text-slate-400" /> },
+    { label: 'Tax Burden Score', key: 'heritage_tax_burden', color: 'from-purple-400 to-purple-500', icon: <Landmark className="w-4 h-4 text-slate-400" />, tooltip: "Higher score indicates lighter tax burden. Note: Near-perfect scores can sometimes reflect failed states that cannot collect taxes, rather than efficient economies." },
+    { label: 'Government Spending', key: 'heritage_government_spending', color: 'from-rose-400 to-rose-500', icon: <Activity className="w-4 h-4 text-slate-400" />, tooltip: "Higher score indicates lower government spending. Note: Near-perfect scores often reflect failed states lacking basic public services rather than efficient governance." },
     { label: 'Fiscal Health', key: 'heritage_fiscal_health', color: 'from-emerald-400 to-emerald-500', icon: <TrendingUp className="w-4 h-4 text-slate-400" /> },
     { label: 'Business Freedom', key: 'heritage_business_freedom', color: 'from-amber-400 to-amber-500', icon: <Briefcase className="w-4 h-4 text-slate-400" /> },
     { label: 'Labor Freedom', key: 'heritage_labor_freedom', color: 'from-orange-400 to-orange-500', icon: <Users className="w-4 h-4 text-slate-400" /> },
@@ -941,6 +941,12 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                         <div className="flex items-center gap-2">
                           {metric.icon}
                           <span className="font-semibold text-slate-700 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{metric.label}</span>
+                          {/* @ts-ignore */}
+                          {metric.tooltip && (
+                            <div title={metric.tooltip} className="cursor-help">
+                              <Info className="w-3.5 h-3.5 text-slate-400 hover:text-indigo-400 transition-colors" />
+                            </div>
+                          )}
                         </div>
                         <span className="font-bold text-slate-900 dark:text-white">
                           {score.toFixed(1)} <span className="text-xs text-slate-500 font-normal">/ 100</span>
