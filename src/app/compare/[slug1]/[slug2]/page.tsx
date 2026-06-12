@@ -221,7 +221,7 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
       </div>
 
       {/* ═══════ RADAR CHART ═══════ */}
-      <div className="glass-panel p-6 rounded-3xl border border-white/20 dark:border-white/10 shadow-xl mx-auto max-w-3xl">
+      <div className="glass-panel p-6 rounded-3xl border border-white/20 dark:border-white/10 shadow-xl">
         <h3 className="text-xl font-bold text-center mb-2">Multidimensional Comparison</h3>
         <p className="text-center text-xs text-slate-500 mb-6 uppercase tracking-widest">Normalized 0-100 Scale</p>
         <CompareChart countryA={countryA.name} countryB={countryB.name} data={chartData} />
