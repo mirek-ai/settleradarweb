@@ -147,8 +147,8 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning className="min-h-full flex flex-col font-sans bg-background text-foreground transition-colors duration-300">
         <ThemeProvider>
-          {/* Main Glassmorphism Navbar */}
-          <nav className="sticky top-0 z-50 glass-panel border-b border-glass-border px-6 py-4">
+          {/* Main Navigation Navbar */}
+          <nav className="sticky top-0 z-50 bg-white/95 dark:bg-[#0f1115]/95 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 px-6 py-4">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2 group">
                 <div className="w-8 h-8 rounded-lg overflow-hidden shadow-[0_0_15px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-400 transition-all">
