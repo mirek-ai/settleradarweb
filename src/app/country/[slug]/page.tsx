@@ -548,7 +548,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
           )}
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[160px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Bento Block: Gender Ratio */}
             {(femalePct != null && malePct != null) && (
               <div className="glass-panel p-6 rounded-3xl md:col-span-2 row-span-1 flex flex-col justify-center border border-white/20 hover:border-fuchsia-500/30 transition-colors">
