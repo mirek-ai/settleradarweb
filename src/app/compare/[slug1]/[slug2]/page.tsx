@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Swords, Activity, HeartPulse, GraduationCap, Scale, Sun, Users, Landmark, Wind, Droplets, CloudSnow, ThermometerSun, Shield } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Swords, Activity, HeartPulse, GraduationCap, Scale, Sun, Users, Landmark, Wind, Droplets, CloudSnow, ThermometerSun, Shield, Sparkles } from 'lucide-react';
 import CompareChart from './CompareChart';
 import ClimateChart from './ClimateChart';
 import { Metadata } from 'next';
@@ -103,6 +103,23 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
         </td>
         <td className={`p-4 text-center font-bold text-lg ${winner === 'B' ? 'text-emerald-500' : 'text-slate-600 dark:text-slate-400'}`}>
           {fmt(valB)}
+        </td>
+      </tr>
+    );
+  };
+  const renderSummaryRow = (label: string, sumA?: string, sumB?: string) => {
+    if (!sumA && !sumB) return null;
+    return (
+      <tr className="border-b border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/20">
+        <td className="p-6 align-top text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed w-[40%]">
+          {sumA ? <div dangerouslySetInnerHTML={{ __html: sumA }} /> : <span className="text-slate-400 italic">No summary available.</span>}
+        </td>
+        <td className="p-6 text-center font-bold text-xs text-slate-400 uppercase tracking-widest align-top pt-8 bg-slate-50/50 dark:bg-slate-900/40 w-[20%]">
+          <Sparkles className="w-4 h-4 mx-auto mb-2 text-indigo-400" />
+          {label}
+        </td>
+        <td className="p-6 align-top text-sm prose prose-slate prose-sm dark:prose-invert max-w-none prose-p:leading-relaxed w-[40%]">
+          {sumB ? <div dangerouslySetInnerHTML={{ __html: sumB }} /> : <span className="text-slate-400 italic">No summary available.</span>}
         </td>
       </tr>
     );
@@ -231,6 +248,7 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
             <table className="w-full min-w-[500px]">
             {renderTableHeader()}
             <tbody>
+              {renderSummaryRow('AI Economy Summary', countryA.economic_summary, countryB.economic_summary)}
               {renderRow('GDP per Capita (PPP)', gdpA, gdpB, '$')}
               {renderRow('Unemployment Rate', getVal(countryA, 'ilo_unemployment') || getVal(countryA, 'wb_unemployment'), getVal(countryB, 'ilo_unemployment') || getVal(countryB, 'wb_unemployment'), '%', true)}
               {renderRow('Inflation Rate', getVal(countryA, 'wb_inflation'), getVal(countryB, 'wb_inflation'), '%', true)}
@@ -251,6 +269,7 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
             <table className="w-full min-w-[500px]">
             {renderTableHeader()}
             <tbody>
+              {renderSummaryRow('AI Health Summary', countryA.health_summary, countryB.health_summary)}
               {renderRow('Happiness Index', happinessA, happinessB, '')}
               {renderRow('Life Expectancy', getVal(countryA, 'who_life_expectancy'), getVal(countryB, 'who_life_expectancy'), '')}
               {renderRow('UHC Health Index', getVal(countryA, 'who_uhc_index'), getVal(countryB, 'who_uhc_index'), '')}
@@ -271,6 +290,7 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
             <table className="w-full min-w-[500px]">
             {renderTableHeader()}
             <tbody>
+              {renderSummaryRow('AI Demographics Summary', countryA.demographics_summary, countryB.demographics_summary)}
               {renderRow('Total Population', getVal(countryA, 'wb_population'), getVal(countryB, 'wb_population'), '')}
               {renderRow('Urban Population', getVal(countryA, 'wb_urban_population_pct'), getVal(countryB, 'wb_urban_population_pct'), '%')}
               {renderRow('Population 65+', getVal(countryA, 'wb_population_65plus_pct'), getVal(countryB, 'wb_population_65plus_pct'), '%', true)}
