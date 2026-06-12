@@ -313,10 +313,6 @@
       "climate_summary": "Perched at the crossroads of Central and South Asia, Afghanistan boasts a predominantly arid to semi-arid climate, with scorching summers and cool winters. The region experiences its peak heat from June through August, when temperatures soar above 30°C (86°F) and rainfall is minimal, making it an ideal season for relocation or a visit if seeking warm weather and dry conditions. For those desiring mild temperatures and a break from scorching spells, the spring months of April to May offer a refreshing reprieve with average highs around 24°C (75°F) and slightly fewer rainfall days.",
       "health_summary": "<p>Healthcare quality and lifestyle in Afghanistan present a mixed picture. Life expectancy stands at approximately 59.1 years, reflecting challenges in healthcare access and resources. With only 3.2 medical doctors per 10,000 people, the country faces significant gaps in medical support. Additionally, around 20.6% of adults are obese, highlighting issues related to diet and lifestyle that may be influenced by broader economic and social conditions.</p>",
       "economic_summary": "<p>Relocating to Afghanistan presents an intriguing mix for expats and entrepreneurs seeking new opportunities. While the overall economic freedom index is moderately low at 53.0, indicating significant room for improvement, the country offers a surprisingly light tax burden with a Tax Burden Score of 92.0. However, the harsh realities of property rights (at only 3.6) and limited business freedoms (with a score of 33.7) pose substantial challenges that could deter many investors. Despite these obstacles, the local labor market offers flexibility with a Labor Freedom score of 44.4, making it potentially easier to hire and manage staff. Nonetheless, the Government Integrity score of just 13.5 raises serious concerns about corruption and regulatory stability.</p>",
-      "nomad_visa": {
-        "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Afghanistan"
-      },
       "digital_freedom_text": "OONI data indicates minimal censorship for WhatsApp and Telegram, with no detected anomalies, while Tor faces significant interference (45.45% anomaly rate), suggesting potential restrictions on anonymity tools. VPNs show 0.00% anomalies, but high rates in other contexts may reflect network instability or test server issues rather than a confirmed legal ban; communication tools critical for remote work appear generally reliable, though Tor-related disruptions could impact certain platforms.",
       "seo_summary": "Relocating to Afghanistan is highly attractive for expats looking for tax optimization, offering a very competitive tax burden of 13.0%. With a very high English proficiency score of 446, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Pakistan."
     },
@@ -1925,7 +1921,8 @@
       "economic_summary": "<p>Anguilla presents an attractive destination for expats and entrepreneurs seeking a tranquil lifestyle with a supportive business environment. The country offers flexibility and ease of doing business, making it simpler to start and operate a company. However, due to limited economic freedom data, there are aspects such as property rights and tax burdens that remain undefined, which could vary significantly. It’s essential to conduct thorough research or consult local experts to ensure all bases are covered.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Anguilla"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Anguilla",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data for Anguilla shows no anomalies in messaging apps (WhatsApp, Telegram), Tor, or general internet censorship over the last 30 days, suggesting minimal government interference. While the 0.00% VPN anomaly rate aligns with no observed blocking, the context note clarifies that high rates in OONI tests could reflect test server issues rather than state-imposed restrictions. Communication tools critical for remote work, such as Slack and GitHub, appear reliable, with no detected disruptions.",
       "seo_summary": "It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Saint Kitts and Nevis."
@@ -2284,7 +2281,8 @@
       "economic_summary": "<p>Antigua and Barbuda present an enticing prospect for expats and entrepreneurs seeking a vibrant business climate. The country boasts a stable political environment, fostering a sense of security and reliability in property rights and labor markets. However, current economic freedom scores are not available, which means there's some uncertainty around the overall economic framework. For those looking to minimize their tax burden, Antigua and Barbuda may offer favorable conditions; though detailed tax information is limited, it’s known for being business-friendly with a focus on attracting international enterprises.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Antigua_and_Barbuda"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Antigua_and_Barbuda",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Antigua and Barbuda show no evidence of internet censorship, with 0.00% anomaly rates across all tested platforms, including WhatsApp, Telegram, Tor, and general censorship. VPNs appear unrestricted and legally available, as the 0.00% VPN anomaly rate suggests no government interference, though this may also reflect test server accessibility. Communication tools critical for remote work, such as Slack and GitHub, remain reliably accessible without disruption.",
       "seo_summary": "It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Guyana."
@@ -2623,7 +2621,8 @@
       "economic_summary": "<p>The economic environment in Argentina presents both opportunities and challenges for expats and entrepreneurs. While the overall Economic Freedom score is modest at 57.4, with areas like Property Rights and Government Integrity lagging behind, you can still find favorable conditions in Tax Burden (with a high score of 67.8) and Business Freedom (56.8), making it easier to start and operate businesses here. The lighter tax burden is particularly appealing but comes with the need to navigate other areas that require improvement for long-term success.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Argentina"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Argentina",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Argentina's digital freedom shows minimal general censorship (2.74% anomaly rate), with critical communication tools like WhatsApp and Telegram experiencing low interference (0.21% and 0.82%, ensuring reliable remote work access. VPNs appear legal and functional, as no anomalies were detected in OONI tests, though high rates in other contexts often reflect test server issues rather than government-enforced blocks. Tor faced moderate interference (1.4%), but core platforms like Slack/GitHub equivalents remain stable for remote operations.",
       "seo_summary": "Argentina is a solid destination for global professionals, featuring a moderate tax burden of 16.9%. With a very high English proficiency score of 575, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Paraguay."
@@ -4475,7 +4474,8 @@
       "economic_summary": "<p>The Bahamas offer an attractive economic environment for expats and entrepreneurs seeking a blend of natural beauty and business opportunity. With an Overall Economic Freedom score of 65.1, the country presents a favorable framework that supports growth and stability. However, be aware that key areas such as Property Rights, Tax Burden, Business Freedom, Labor Freedom, and Government Integrity are not fully covered by available data, which could leave some aspects of the business climate uncertain. Despite these gaps, the Bahamas' inviting environment makes it an excellent choice for those willing to explore a new commercial landscape with a solid foundation in place.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Bahamas"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Bahamas",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates no detected internet censorship in the Bahamas over the past 30 days, with zero anomalies for WhatsApp, Telegram, Tor, and general censorship, suggesting unrestricted access to communication tools critical for remote work. VPNs show no interference in tests, though high anomaly rates elsewhere would require careful interpretation as per OONI’s note, and there are no reported legal restrictions on VPN use. Reliability of platforms like Slack and GitHub appears stable with no observed disruptions.",
       "seo_summary": "Bahamas is a solid destination for global professionals, featuring a moderate tax burden of 19.4%. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Haiti."
@@ -5504,7 +5504,8 @@
       "economic_summary": "<p>Barbados offers a robust and inviting economic environment for expats and entrepreneurs with an Overall Economic Freedom score of 70.4, making it an attractive destination. The country boasts strong Property Rights (76.4) and a relatively light Tax Burden Score (83.2), indicating a business-friendly atmosphere where you can protect your assets and keep more of your hard-earned money. However, the Labor Freedom score at 54.3 suggests that labor regulations might be restrictive, which could pose challenges for those looking to employ local workers or establish employee-centric businesses.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Barbados"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Barbados",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data shows no detected anomalies for WhatsApp, Telegram, Tor, or VPN protocols in Barbados over the past 30 days, suggesting minimal direct censorship of these tools and no apparent legal barriers to VPN use. However, a 4.50% general censorship anomaly rate indicates some unclassified network interference, which could intermittently affect communication tools like Slack or GitHub, though specific remote work platforms remain functional without reported disruptions.",
       "seo_summary": "Barbados is a solid destination for global professionals, featuring a moderate tax burden of 25.2%. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Guyana."
@@ -6540,7 +6541,8 @@
       "economic_summary": "<p>In Belize, expats and entrepreneurs will find a moderately free economic environment with an Overall Economic Freedom score of 64.7, making it a balanced place to do business. The country boasts relatively strong Business Freedom at 67.2, which is excellent for startups and established companies alike. However, the higher Tax Burden Score (81.8) could impact cash flow significantly; fortunately, Belize offers lower personal tax rates compared to many other countries, so this might be offset by individual circumstances. While Property Rights and Government Integrity scores are lower at 46.3 and 46.2 respectively, they still provide a framework that can support long-term stability for businesses.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Belize"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Belize",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Belize shows no evidence of internet censorship or network interference in recent OONI data, with all major communication tools like WhatsApp, Telegram, Slack, and GitHub operating reliably. VPNs appear legal and functional, as OONI detected no anomalies in their availability, though the absence of anomalies does not confirm a complete lack of potential state monitoring or restrictions. Remote work infrastructure remains stable, with no reported disruptions to essential collaboration platforms.",
       "seo_summary": "Belize is a solid destination for global professionals, featuring a moderate tax burden of 23.8%. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Guatemala."
@@ -7095,7 +7097,8 @@
       "economic_summary": null,
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Bermuda"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Bermuda",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data shows no detected internet censorship or network interference in Bermuda over the past 30 days, with zero anomalies for messaging platforms, Tor, and general censorship. VPNs appear unrestricted and functional, as no anomalies were reported, though high anomaly rates in other contexts could reflect test server issues rather than government restrictions. Communication tools critical for remote work, including WhatsApp, Telegram, Slack, and GitHub, operated reliably with no observed disruptions.",
       "seo_summary": "It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from United Kingdom."
@@ -8891,7 +8894,8 @@
       "economic_summary": "<p>Brazil offers an economic environment with mixed signals for expats and entrepreneurs, scoring moderately on overall economic freedom at 52.4. This suggests a business climate that is reasonably open yet faces challenges in areas like government integrity. While property rights are somewhat weak, the tax burden score of 70.6 indicates a relatively favorable climate for businesses looking to minimize costs. Entrepreneurs will find some freedoms in starting and operating their businesses, with scores of 65.7 on business freedom, though labor conditions present more restrictive elements that may impact hiring practices.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Brazil"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Brazil",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates low levels of internet censorship in Brazil, with minimal anomalies affecting WhatsApp (0.53%) and Telegram (0.51%), though Tor faces noticeable interference (16.04%). While the 100% VPN anomaly rate likely reflects OONI's test server issues rather than a government ban, legally available VPNs remain accessible for circumventing potential blocks. Communication tools critical for remote work, such as Slack and GitHub, show no signs of systematic disruption, ensuring reliable connectivity.",
       "seo_summary": "Brazil is a solid destination for global professionals, featuring a moderate tax burden of 26.4%. With a very high English proficiency score of 482, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Portugal."
@@ -11712,7 +11716,8 @@
       "economic_summary": "<p>Relocating to Cape Verde offers an attractive economic environment with a solid overall Economic Freedom score of 71.4, indicating a dynamic and open market ripe for entrepreneurship. However, while the property rights and other specific freedom indices are not available, this high score suggests a supportive business climate where opportunities abound. Keep in mind that the absence of detailed tax burden and labor freedom scores means there might be room to explore these areas further as you establish your presence in the country.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Cape_Verde"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Cape_Verde",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Cape Verde exhibits minimal evidence of direct internet censorship, with no anomalies detected for WhatsApp, Telegram, Tor, or VPN protocols over the past 30 days, though a 2.25% general censorship anomaly rate suggests sporadic, undefined network interference. Communication tools critical for remote work, such as Slack and GitHub, appear reliable, and while the zero VPN anomaly rate indicates no major interference with standard protocols, the legal status of VPNs remains unaddressed by national law.",
       "seo_summary": "Cape Verde is a solid destination for global professionals, featuring a moderate tax burden of 21.6%."
@@ -12043,7 +12048,8 @@
       "economic_summary": "<p>Cayman Islands presents an inviting landscape for expats and entrepreneurs seeking a business-friendly environment. The islands offer a robust framework with strong property rights protections and flexible labor laws, making it relatively easy to establish and run a business. However, the absence of comprehensive tax data means potential investors may need to conduct additional research on local tax policies. Overall, Cayman Islands stands out for its stable economy, regulatory clarity, and a focus on fostering international business, creating an attractive destination for those looking to set sail in the global market.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Cayman_Islands"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Cayman_Islands",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "The Cayman Islands show no evidence of internet censorship, with 0.00% anomaly rates for major communication tools like WhatsApp, Telegram, and Tor, indicating unrestricted access. VPNs appear reliable, as OONI detected no interference, though legality remains unaddressed by the data; communication platforms critical for remote work, such as Slack and GitHub, function without disruption.",
       "seo_summary": "It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Jamaica."
@@ -13951,7 +13957,8 @@
       "economic_summary": "<p>Colombia offers a moderately free market with an Overall Economic Freedom score of 59.8, making it an intriguing prospect for expats and entrepreneurs. The Business Freedom score of 71.2 suggests a supportive environment for starting and operating a business, with flexible regulations that can help you set up quickly. However, the higher Tax Burden Score (68.6) might be a consideration, as it indicates a heavier tax load compared to some other countries. While property rights are somewhat challenged by a Property Rights score of 43.1, and government integrity lags at 41.6, these can still be manageable with the right legal strategies and due diligence.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Colombia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Colombia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Colombia shows minimal evidence of widespread internet censorship, with low anomaly rates for WhatsApp (0.20%), Telegram (0.12%), and Tor (0.33%), suggesting reliable access to key communication tools critical for remote work. VPNs appear unrestricted, as the 0.00% anomaly rate likely reflects normal operation rather than government blocking, though OONI notes test server issues could skew results. Overall, communication platforms like Slack or GitHub are likely dependable, though the 2.60% general censorship rate hints at isolated interference incidents.",
       "seo_summary": "Colombia is a solid destination for global professionals, featuring a moderate tax burden of 25.9%. With a very high English proficiency score of 480, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Ecuador."
@@ -14812,7 +14819,8 @@
       "economic_summary": "<p>Costa Rica offers an enticing blend for expats and entrepreneurs with its robust economic freedom score of 69.1, making it a vibrant hub where business opportunities flourish. The country's strong property rights (66.0) and high business freedom (79.9) scores present a favorable environment for startups and established enterprises alike. However, the labor freedom score of 55.9 indicates potential challenges in workforce flexibility, so it might be wise to prepare strategies that can navigate these areas effectively.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Costa_Rica"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Costa_Rica",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Costa Rica exhibits minimal evidence of widespread internet censorship, with no anomalies detected for Telegram, Tor, or VPNs over the past 30 days, though WhatsApp experienced a 2.35% anomaly rate, potentially indicating network interference. VPNs remain legal and accessible, as high OONI-detected anomalies for OpenVPN likely reflect test server issues rather than government-imposed restrictions. Communication tools critical for remote work, such as Slack or GitHub, appear to operate reliably, with no signs of targeted censorship.",
       "seo_summary": "Costa Rica is a solid destination for global professionals, featuring a moderate tax burden of 29.3%. With a very high English proficiency score of 516, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Nicaragua."
@@ -15167,7 +15175,8 @@
       "economic_summary": "<p>Croatia presents a robust economic environment with an overall Economic Freedom score of 67.5, ranking it among countries that favor business and entrepreneurship. Property rights are particularly strong, providing a solid foundation for investment, while the Business Freedom score of 79.6 suggests a streamlined regulatory framework that encourages enterprises to flourish. However, considerations like the lower Labor Freedom score (58.9) and Government Integrity score (52.6) might pose challenges in areas such as workforce flexibility and transparency, which could impact operational efficiency. </p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Croatia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Croatia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates minimal internet censorship in Croatia, with low anomaly rates for WhatsApp (0.00%), Telegram (0.38%), and Tor (0.00%), suggesting reliable access to key communication tools critical for remote work. While general censorship anomalies hover at 1.99%, VPNs show no interference (0.00% anomaly rate), though users should note that OONI’sVPN tests may reflect test server issues rather than government restrictions. Communications platforms like Slack or GitHub are likely stable, as anomalies remain negligible.",
       "seo_summary": "While living in Croatia comes with a higher tax burden of 35.1%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 617, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Bosnia and Herzegovina."
@@ -15691,7 +15700,8 @@
       "economic_summary": "<p>Curaçao presents a unique blend of opportunities for both expats and entrepreneurs seeking a vibrant business climate. With its strategic location between North America and South America, Curaçao offers excellent access to global markets. The island boasts a relatively stable political environment and strong financial services sector, making it an attractive destination for those aiming to establish or expand their businesses. However, the absence of detailed economic freedom scores points to areas that might require further investigation, such as regulatory frameworks and tax policies, before making a final decision.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Curaçao"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Curaçao",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Curaçao shows minimal evidence of internet censorship over the past 30 days, with no anomalies detected for WhatsApp, Telegram, or Tor, suggesting unrestricted access to these platforms. While general censorship anomalies were reported at 3.72%, VPN availability appears unaffected, as the 0.00% VPN anomaly rate likely reflects technical issues with OONI’s test servers rather than government-imposed restrictions. Communication tools critical for remote work, such as Slack or GitHub, are likely reliable, though occasional network interference may occur.",
       "seo_summary": "It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Netherlands."
@@ -16038,7 +16048,8 @@
       "economic_summary": "<p>Cyprus offers an attractive environment for expats and entrepreneurs seeking a balance between economic stability and quality of life. With an overall Economic Freedom score of 74.1, it boasts strong property rights and business freedom, making it relatively easy to start and operate a business. However, labor freedom is lower at 60.3, which might pose some challenges for companies relying heavily on local workers. The country’s tax burden is also quite favorable with an 80.8 score, indicating a lighter fiscal environment that can be particularly appealing.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Cyprus"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Cyprus",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Cyprus shows minimal direct censorship of major communication tools like Telegram and WhatsApp (0.00% anomalies), though a 0.40% anomaly in WhatsApp suggests occasional disruptions. VPN use appears unrestricted, with OONI detecting 0.00% anomalies, but general internet censorship anomalies at 2.70% hint at sporadic network interference. Remote work tools like Slack and GitHub likely remain reliable, as no targeted blocking was observed in the tested protocols.",
       "seo_summary": "While living in Cyprus comes with a higher tax burden of 39.9%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 537, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from United Kingdom."
@@ -17593,7 +17604,8 @@
       "economic_summary": "<p>Relocating to Dominica offers an intriguing mix for entrepreneurs and expats seeking a balanced business environment. With a commendable <strong>Overall Economic Freedom</strong> score, you'll find a supportive framework that encourages private enterprise. However, it’s important to note that while property rights are robust, other areas like labor freedom could benefit from improvement. The lighter tax burden is particularly appealing, making Dominica an attractive option for those looking to reduce their financial overheads.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Dominica"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Dominica",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates no detectable internet censorship in Dominica over the past 30 days, with zero anomalies reported for messaging platforms (WhatsApp, Telegram), Tor, or general censorship. While there is no evidence of legal restrictions on VPNs, the absence of anomalies suggests they are freely usable, and communication tools like Slack or GitHub remain reliable for remote work without interference.",
       "seo_summary": "It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Haiti."
@@ -18283,7 +18295,8 @@
       "economic_summary": "<p>Ecuador offers a moderately free economic environment with an Overall Economic Freedom score of 55.6, making it a viable destination for expats and entrepreneurs seeking better business opportunities. While the Tax Burden Score of 74.2 suggests relatively low taxes—a definite plus—other factors like Property Rights (33.2) and Government Integrity (33.0) present notable challenges. Business Freedom stands at a more encouraging 64.3, indicating a supportive climate for starting and operating a business. However, potential investors should be cautious with property investments and closely monitor government policies to navigate these complexities effectively.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Ecuador"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Ecuador",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Ecuador's digital freedom faces moderate challenges, with OONI data indicating a 6.59% general censorship anomaly rate and similar interference affecting WhatsApp (6.78%) and Telegram (6.51%), suggesting potential partial throttling or blocking of messaging apps. VPNs show a 0.00% anomaly rate, but this likely reflects test server limitations rather than unrestricted access or legality, while communication tools critical for remote work remain mostly reliable despite occasional network irregularities.",
       "seo_summary": "While living in Ecuador comes with a higher tax burden of 31.0%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 466, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Colombia."
@@ -19944,7 +19957,8 @@
       "economic_summary": "<p>Estonia offers a robust and inviting economic environment for expats and entrepreneurs, scoring strongly in key areas like overall economic freedom (78.7) and property rights (93.6), making it one of the most secure places to invest. Thanks to a light tax burden (Tax Burden Score: 77.9), you'll find it easier to finance business growth without excessive taxation. However, labor freedom is slightly lower at 59.0, which might pose some challenges in fully leveraging local talent. Despite this, the high government integrity score of 86.3 ensures a stable and trustworthy business climate.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Estonia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Estonia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Estonia exhibits minimal internet censorship, with low anomaly rates for messaging apps like WhatsApp (3.58%) and Telegram (3.35%), suggesting reliable access to remote work tools. VPNs remain legal and accessible, as the 0.00% anomaly rate for VPNs indicates no apparent government-level blocking, though OONI's test limitations should be considered. The general censorship anomaly rate of 4.01% reflects minor, sporadic network interference rather than systemic restrictions.",
       "seo_summary": "While living in Estonia comes with a higher tax burden of 38.3%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 561, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Ukraine."
@@ -23439,7 +23453,8 @@
       "economic_summary": "<p>Georgia offers an inviting economic environment for expats and entrepreneurs seeking a more balanced lifestyle. With an overall Economic Freedom score of 69.6, it presents a solid foundation with robust business freedoms that facilitate ease in starting and operating a company. However, be aware that higher Tax Burden scores (87.8) mean you'll face significant tax obligations, which can impact your financial planning. Additionally, while Property Rights and Labor Freedom are somewhat mixed with lower scores of 53.0 and 64.0 respectively, the overall business climate is favorable, making it a promising destination for those willing to navigate these challenges.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Georgia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Georgia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Georgia exhibits low general internet censorship with a 1.97% anomaly rate, and no evidence of a state-imposed VPN ban, though OONI data shows minimal protocol-specific irregularities that may not reflect government action. Essential communication tools like WhatsApp and Telegram face negligible disruption (0.52% and 0.19% anomalies, respectively), ensuring reliable remote work infrastructure.",
       "seo_summary": "Georgia is a solid destination for global professionals, featuring a moderate tax burden of 28.7%. With a very high English proficiency score of 541, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Ukraine."
@@ -24662,7 +24677,8 @@
       "economic_summary": "<p>Relocating to Greece offers a dynamic blend of traditional charm and modern business opportunities, with an overall economic freedom score of 63.2, making it a promising destination for entrepreneurs. Greece scores impressively in property rights and business freedom, offering robust protections for assets and a favorable environment for starting and operating businesses. However, the tax burden is relatively high at 59.9, which could impact profitability. The labor market, while flexible, faces challenges with lower labor freedom scores, suggesting that navigating employment regulations may require careful attention.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Greece"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Greece",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates low levels of internet censorship in Greece, with minimal anomalies for platforms like WhatsApp (0.51%) and Telegram (0.08%), suggesting reliable access to communication tools critical for remote work. While the 100% VPN anomaly rate may reflect technical issues with OONI’s test servers rather than a government-imposed block, the general censorship rate of 2.12% underscores a relatively open digital environment. Tools like Slack and GitHub appear dependable, though Tor faces slightly higher anomalies (1.6%), warranting cautious use for sensitive work.",
       "seo_summary": "While living in Greece comes with a higher tax burden of 44.8%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 592, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Albania."
@@ -25148,7 +25164,8 @@
       "economic_summary": "<p>Grenada offers a vibrant and welcoming environment for expats and entrepreneurs seeking to establish their businesses or relocate, thanks to its commitment to fostering a supportive business climate. The country prioritizes property rights and labor freedom, making it relatively easy to own assets and hire talented local workers. However, due to the lack of detailed economic freedom metrics, potential investors should carefully assess other factors such as tax policies, business regulations, and government stability before making any commitments.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Grenada"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Grenada",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Grenada shows minimal evidence of widespread internet censorship, with no detected anomalies for major communication tools like WhatsApp, Telegram, or Tor over the past 30 days. VPNs appear legally available, though OONI data suggests a 1.50% general censorship anomaly rate, which may reflect isolated network issues rather than a state-imposed ban. Communication platforms critical for remote work, such as Slack and GitHub, operate reliably without reported interference.",
       "seo_summary": "It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Trinidad and Tobago."
@@ -28281,7 +28298,8 @@
       "economic_summary": "<p>Hungary presents an intriguing opportunity for expats and entrepreneurs seeking a balance between accessibility and growth potential. The country's overall economic freedom score is 62.5, indicating stability with room for improvement. Notably, Hungary excels in property rights and business freedoms, making it relatively easy to establish and operate a business without significant bureaucratic hurdles. However, the labor market and government integrity scores are lower at 56.5 and 44.0 respectively, which could impact workforce efficiency and regulatory reliability. These factors suggest that while Hungary offers a promising environment for innovation and entrepreneurship, careful planning and strategic considerations will be key to success.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Hungary"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Hungary",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Hungary exhibits low levels of general internet censorship (2.26% anomaly rate), with reliable access to communication tools like WhatsApp (0.55% anomalies) and Telegram (0.28% anomalies), ensuring functional remote work infrastructure. While OONI reports a 100% anomaly rate for VPNs, this likely reflects test server issues rather than a government ban, as VPNs remain legal and usable for most users. Tor remains accessible (0.47% anomalies), further supporting unrestricted digital freedom.",
       "seo_summary": "While living in Hungary comes with a higher tax burden of 38.0%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 590, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Romania."
@@ -28623,7 +28641,8 @@
       "economic_summary": "<p>In Iceland, expats and entrepreneurs will find a highly favorable business climate with robust property rights and strong government integrity, making it one of the safest places to invest in Europe. Business freedom is exceptionally high, offering minimal regulatory hurdles for startups. However, while labor freedom isn’t as advanced, the overall economic environment scores impressively well, providing a solid foundation for businesses looking to thrive in this vibrant Scandinavian country.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Iceland"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Iceland",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Iceland demonstrates strong digital freedom with minimal internet censorship, as indicated by near-zero anomaly rates for WhatsApp, Telegram, and VPNs, though the general censorship anomaly rate (2.66%) suggests occasional sporadic network issues. VPNs remain legal and reliable, with no evidence of government bans, and communication tools critical for remote work (e.g., Slack, GitHub) operate without significant interference.",
       "seo_summary": "While living in Iceland comes with a higher tax burden of 31.5%, expats often benefit from its robust social infrastructure and high quality of life. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Poland."
@@ -29321,7 +29340,8 @@
       "economic_summary": "<p>Looking to relocate, Indonesia offers a moderately free economic environment with an overall score of 65.1, making it a balanced choice for entrepreneurs and expats seeking business opportunities. While property rights are somewhat underdeveloped at 39.7, the lighter tax burden (81.5) can significantly reduce financial overheads. Business freedom scores well at 69.2, but labor market flexibility is more limited with a score of 56.8, indicating potential challenges in workforce management. Government integrity remains an area for improvement at 42.0, so understanding local regulations and policies will be crucial.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Indonesia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Indonesia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Indonesia exhibits moderate internet censorship, with a general censorship anomaly rate of 4.37% and minimal interference against WhatsApp (0.32%) and Telegram (0.26%), suggesting most communication tools critical for remote work remain functional. OONI data shows no anomalies in VPN connectivity (0.00% anomaly rate), though this likely reflects test server reachability rather than definitive confirmation of unrestricted or legal use. Tor faces slightly higher interference (1.12%), potentially impacting anonymity, but core communication platforms appear reliably accessible.",
       "seo_summary": "Indonesia is a solid destination for global professionals, featuring a moderate tax burden of 15.1%. With a very high English proficiency score of 471, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from China."
@@ -31141,7 +31161,8 @@
       "economic_summary": "<p>Italy presents an intriguing blend of rich cultural heritage and a robust yet nuanced business environment, with an overall economic freedom score of 63.3, placing it as a solid choice for expats and entrepreneurs. While property rights are well-protected with a score of 84.8, indicating a stable investment climate, the tax burden is relatively high, making this aspect a potential deterrent. Business freedom stands strong at 74.5, encouraging entrepreneurial ventures, but labor laws and government integrity could pose challenges, scoring modestly at 70.6 and 60.8 respectively. These factors collectively offer a balanced framework for those considering Italy as their business playground.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Italy"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Italy",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates low to moderate internet censorship in Italy, with a 5.16% general censorship anomaly rate, while messaging platforms like WhatsApp (0.32% anomalies) and Telegram (0.18% anomalies) show minimal disruption. VPNs appear legal and accessible, as the 0.00% anomaly rate likely reflects no significant interference, though OONI notes this could also stem from test server issues; communication tools critical for remote work remain reliable overall.",
       "seo_summary": "While living in Italy comes with a higher tax burden of 40.2%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 513, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Romania."
@@ -32052,7 +32073,12 @@
       "health_summary": "<p>Japan boasts a high life expectancy of 84.5 years, reflecting its excellent healthcare system. With 26.5 medical doctors per 10,000 people, access to quality care is widely available. The low adult obesity rate of 5.9% contributes to overall good health and lifestyle. While specific out-of-pocket health expenditure data isn't provided, the emphasis on preventive care ensures that most Japanese citizens have access to vital healthcare services.</p>",
       "economic_summary": "<p>Japan offers a robust and stable economic environment with an overall Economic Freedom score of 70.3, making it an attractive destination for expats and entrepreneurs. The country excels in protecting property rights and maintaining government integrity, both scoring above average. However, while business freedom is strong, labor freedom leaves room for improvement. Additionally, the tax burden stands at a relatively high level compared to many other nations. Despite these considerations, Japan's advanced infrastructure, skilled workforce, and established market present significant opportunities for growth.</p>",
       "digital_freedom_text": "Japan exhibits minimal internet censorship, with low anomaly rates for messaging platforms like WhatsApp (0.97%) and Telegram (1.75%), and reliable access to communication tools critical for remote work. While OONI reports a 100% VPN anomaly rate, this likely reflects test server issues rather than a government-enforced block, as VPNs remain legal and widely available. Overall, digital freedom is robust, though occasional network anomalies may affect specific protocols.",
-      "seo_summary": "With a very high English proficiency score of 446, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from China."
+      "seo_summary": "With a very high English proficiency score of 446, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from China.",
+      "nomad_visa": {
+        "available": true,
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Japan",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
+      }
     },
     {
       "id": "JEY",
@@ -34965,7 +34991,8 @@
       "economic_summary": "<p>Latvia offers an economic environment that is both robust and accessible for expats and entrepreneurs, with a strong overall Economic Freedom score of 71.6. The country excels in property rights, making it easy to secure assets, and boasts impressive Business Freedom at 80.7, indicating a streamlined business setup process. However, the labor market presents some challenges, with a lower Labor Freedom index, suggesting areas for improvement in workforce flexibility and employment regulations.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Latvia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Latvia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Latvia exhibits minimal direct internet censorship, with low anomaly rates for WhatsApp (1.38%), Telegram (0.43%), and Tor (0.34%), suggesting reliable access to encrypted communication tools critical for remote work. VPNs are not explicitly banned, and the 0.00% VPN anomaly rate aligns with no apparent government-level blocking, though OONI notes anomalies could reflect test server issues rather than actual restrictions. Overall, Latvia maintains a relatively open digital environment, with no significant interference detected in key remote work platforms like Slack or GitHub over the reported period.",
       "seo_summary": "While living in Latvia comes with a higher tax burden of 34.1%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 599, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Belarus."
@@ -38436,7 +38463,8 @@
       "economic_summary": "<p>In Malaysia, expats and entrepreneurs will find a vibrant economic environment with an overall Economic Freedom score of 68.0, indicating a mix of robust business opportunities and some areas for improvement. The country excels in Business Freedom (79.6), making it relatively easy to start and operate a business, coupled with a favorable Tax Burden Score (83.5) that means you can keep more of your profits. However, Labor Freedom at 55.4 suggests the need for some adjustments if you're looking to fully leverage local talent, while Government Integrity scores lower at 52.9, which might raise concerns about transparency and accountability in certain sectors.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Malaysia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Malaysia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Malaysia's digital freedom appears largely unimpeded, with low general censorship (2.28%) and minimal interference against messaging platforms like WhatsApp (0.35%) and Telegram (0.46%), suggesting reliable access to communication tools critical for remote work. While OONI reports a 100% anomaly rate for VPNs, this likely reflects issues with specific test servers rather than a government ban, as Malaysia does not legally prohibit VPN use, though some network interference or protocol-specific blocks may occasionally occur.",
       "seo_summary": "Malaysia is a solid destination for global professionals, featuring a moderate tax burden of 16.8%. With a very high English proficiency score of 581, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Indonesia."
@@ -39478,7 +39506,8 @@
       "economic_summary": "<p>Malta presents an appealing destination for expats and entrepreneurs seeking a robust business climate with strong property rights and high business freedom. The overall economic environment scores well, offering a lighter tax burden compared to many other countries, making it particularly attractive for businesses looking to minimize costs. However, while the labor market and government integrity have areas for improvement, Malta's commitment to protecting assets through solid property laws and facilitating business start-ups remains a significant draw.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Malta"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Malta",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Malta shows minimal evidence of internet censorship, with no anomalies detected for WhatsApp, Telegram, Tor, or VPN protocols over the past 30 days, though a 1.91% general censorship anomaly rate suggests isolated instances of network interference. VPNs remain legal and accessible, with no government restrictions reported, while communication tools critical for remote work—such as Slack and GitHub—operated reliably without service disruptions.",
       "seo_summary": "While living in Malta comes with a higher tax burden of 33.3%, expats often benefit from its robust social infrastructure and high quality of life. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from United Kingdom."
@@ -40564,7 +40593,8 @@
       "economic_summary": "<p>Mauritius offers an economically vibrant environment with a strong foundation for business success, boasting an overall Economic Freedom score of 73.0—making it a viable destination for expats and entrepreneurs seeking opportunities in Africa. The country excels particularly in property rights, where a robust legal framework protects investors, and in tax burden, which is notably light at 89.6, encouraging business growth without heavy financial constraints. However, while the business climate is favorable with high Business Freedom of 81.5, potential challenges lie in labor freedom, currently lower at 69.6, and government integrity, scoring only 53.4, which could impact regulatory compliance and long-term stability.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Mauritius"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Mauritius",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Mauritius exhibits minimal internet censorship, with low anomaly rates for WhatsApp (0.33%) and no detected interference for Telegram, indicating reliable communication tools for remote work. While OONI data shows a 100% anomaly rate for VPNs, this likely reflects test server issues rather than a government ban, as legal restrictions on VPNs are not reported. Overall, digital freedom remains relatively unhindered, though users should exercise caution with specific protocols due to potential network inconsistencies.",
       "seo_summary": "Mauritius is a solid destination for global professionals, featuring a moderate tax burden of 24.7%. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Bangladesh."
@@ -41047,7 +41077,8 @@
       "economic_summary": "<p>Mexico offers an economic freedom score of 59.8 on a scale from 0 to 100, positioning it as a moderately free economy. The business environment is particularly favorable with a Business Freedom score of 67.0, making it relatively easy to start and operate a business here. However, the high Tax Burden Score suggests a heavier tax regime compared to some other countries. While property rights and government integrity scores are lower at 37.6 and 28.8 respectively, these can be mitigated with sound legal advice and strategic planning.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Mexico"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Mexico",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates minimal censorship in Mexico, with low anomaly rates for WhatsApp (0.78%), Telegram (0.29%), and general internet access (2.32%), suggesting reliable communication tools for remote work. While the 100% VPN anomaly rate likely reflects issues with OONI’s test servers rather than a government ban, VPNs remain legal and widely available. Messaging apps and collaboration platforms like Slack or GitHub appear stable, with no significant large-scale interference observed.",
       "seo_summary": "Mexico is a solid destination for global professionals, featuring a moderate tax burden of 19.2%. With a very high English proficiency score of 440, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Guatemala."
@@ -42526,7 +42557,8 @@
       "economic_summary": "<p>Moving to Montenegro offers a promising economic environment for expats and entrepreneurs, with an overall Economic Freedom score of 63.8, making it relatively open and conducive to business operations. The country excels in certain areas: Property Rights and Business Freedom scores are quite favorable, indicating strong legal protections and ease of starting a business. However, the high Tax Burden Score (though noted as a lighter tax environment) and less robust Labor Freedom score suggest some inefficiencies that could impact long-term planning. Government Integrity, at 49.9, is an area for improvement but provides a backdrop of ongoing reforms.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Montenegro"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Montenegro",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Montenegro exhibits minimal internet censorship, with no anomalies detected for WhatsApp, Telegram, or VPNs over the past 30 days, suggesting unrestricted access to essential communication tools critical for remote work. While the general censorship anomaly rate is slightly elevated at 2.05%, it likely reflects minor network irregularities rather than systemic blocks. VPNs appear legal and functional, as OONI data shows no interference, though occasional protocol-specific anomalies (like the 0.32% Tor rate) could hint at limited, non-systemic network disruptions.",
       "seo_summary": "It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Bosnia and Herzegovina."
@@ -42690,7 +42722,8 @@
       "economic_summary": "<p>Relocating to Montserrat as an expat or entrepreneur offers a unique blend of natural beauty and potential business opportunity. While there is no specific economic freedom score available, the island's government has made strides in creating a stable environment for businesses, focusing on tourism and agriculture. However, this also means that infrastructure and support services may be limited compared to more established economies.</p> \n<p>The absence of detailed information regarding property rights, tax burden, business freedoms, labor market regulations, and governmental integrity suggests a less developed framework for economic operations. Entrepreneurs should carefully assess the risks and seek local guidance to navigate potential challenges effectively.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Montserrat"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Montserrat",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Montserrat shows no evidence of internet censorship or network interference, with 0.00% anomaly rates across all tested platforms, including WhatsApp, Telegram, and Tor. VPN use appears unrestricted and legal, as OONI data detects no blocking or throttling, though reliability depends on standard internet connectivity rather than government-imposed barriers. Communication tools critical for remote work, such as Slack and GitHub, function reliably without disruption.",
       "seo_summary": "It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Dominican Republic."
@@ -44009,7 +44042,8 @@
       "economic_summary": "<p>Namibia presents an intriguing blend of economic opportunities for expats and entrepreneurs, with a relatively free market environment that scores moderately high overall at 60.2 on the economic freedom scale. The country boasts strong property rights (63.1) and labor freedom (62.7), making it easier to establish and operate businesses here. However, potential pitfalls include lower business freedoms and government integrity scores (58.0 and 51.5 respectively), which could impact regulatory compliance and transparency.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Namibia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Namibia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Digital freedom in Namibia appears robust, with OONI data showing no detected internet censorship or interference across major platforms like WhatsApp, Telegram, or Tor over the past 30 days. VPNs remain legal and accessible, as the 0.00% anomaly rate indicates no government-imposed restrictions, though protocol-specific network issues unrelated to censorship cannot be entirely ruled out. Communication tools critical for remote work, such as Slack and GitHub, likely operate reliably, supported by the absence of anomalies in foundational services like HTTPS and DNS.",
       "seo_summary": "While living in Namibia comes with a higher tax burden of 35.5%, expats often benefit from its robust social infrastructure and high quality of life. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Angola."
@@ -47465,7 +47499,8 @@
       "economic_summary": "<p>North Macedonia offers an economic environment that is moderately free, with a score of 63.3 on the overall Economic Freedom scale, making it quite attractive for entrepreneurs and expats seeking opportunities. The country excels in business freedom, ranking relatively high at 72.2, which can facilitate ease of starting and operating businesses. However, it's worth noting that the labor market faces challenges with a score of only 51.4 for Labor Freedom. Additionally, while North Macedonia has a lighter tax burden compared to many other countries, its property rights score is lower at 56.2, which could be a concern for investors looking to secure their assets. Overall, this balanced mix makes it an interesting destination, but careful planning and research are advisable.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#North_Macedonia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#North_Macedonia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "North Macedonia shows minimal evidence of internet censorship, with no anomalies detected for WhatsApp, Telegram, Tor, or VPNs in recent OONI data, indicating unrestricted access to these platforms. The general censorship anomaly rate is low (1.76%), and communication tools critical for remote work remain reliable, though occasional network fluctuations may occur. VPNs appear freely available and functional, as OONI tests found no interference, suggesting no government-imposed restrictions on their use.",
       "seo_summary": "North Macedonia is a solid destination for global professionals, featuring a moderate tax burden of 29.4%. With a very high English proficiency score of 595, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Albania."
@@ -47992,7 +48027,8 @@
       "economic_summary": "<p>Norway offers an exceptionally robust economic environment with a score of 78.8 on the Overall Economic Freedom scale, making it one of the most economically free countries in the world for expats and entrepreneurs. The country boasts near-perfect property rights (99.6) and very high government integrity (94.3), ensuring stability and transparency. However, be prepared for a more significant tax burden than some other countries, with a Tax Burden Score of 63.3, reflecting Norway's commitment to social welfare programs. Business Freedom stands at 91.2, creating an ideal climate for starting and running a business here.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Norway"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Norway",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Norway exhibits minimal internet censorship, with low anomaly rates for messaging apps like WhatsApp (0.43%) and Telegram (0.15%), indicating reliable access to communication tools critical for remote work. While OONI reports a 100% VPN anomaly rate, this likely reflects test server issues rather than legal restrictions, as VPNs remain legal and widely available. Overall, digital freedom is robust, with only moderate general censorship anomalies (3.79%) observed.",
       "seo_summary": "While living in Norway comes with a higher tax burden of 53.3%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 613, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Poland."
@@ -49458,7 +49494,8 @@
       "economic_summary": "<p>Relocating to Panama offers an intriguing blend of economic opportunities with a relatively high overall Economic Freedom score (64.9), making it attractive for expats and entrepreneurs seeking a stable business climate. The country boasts strong Business Freedom (72.6) and a notably light tax burden, with Tax Burden scores above average at 86.1, indicating generous tax incentives. However, consider the lower Property Rights score (56.7) and Government Integrity score (37.4), which may pose some risks for long-term investments or property acquisitions. Despite these challenges, Panama’s strategic location, favorable laws for foreign investors, and robust services sector make it a compelling choice for those willing to navigate its unique economic landscape.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Panama"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Panama",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates minimal internet censorship in Panama, with no detected anomalies for WhatsApp or Telegram, and low anomalies for Tor (2.27%) and general censorship (2.00%). While the 100% VPN anomaly rate suggests potential network interference, this likely reflects test server issues rather than a government ban, as legally permitted VPNs remain available for bypassing restrictions. Communication tools critical for remote work, such as Slack or GitHub, appear reliably accessible with no reported disruptions.",
       "seo_summary": "Relocating to Panama is highly attractive for expats looking for tax optimization, offering a very competitive tax burden of 11.2%. With a very high English proficiency score of 491, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Colombia."
@@ -51541,7 +51578,8 @@
       "economic_summary": "<p>Portugal offers a robust and inviting economic environment for expats and entrepreneurs. With an overall Economic Freedom score of 71.2, it stands as a well-regulated destination with strong property rights (88.9) ensuring your assets are secure. However, while business freedom is impressive at 83.1, the labor market presents some challenges with a lower Labor Freedom score of 54.8. Additionally, a moderate Tax Burden Score of 60.6 suggests a reasonable tax environment that can be advantageous as you establish yourself in the country.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Portugal"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Portugal",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Portugal exhibits minimal internet censorship, with low anomaly rates for WhatsApp (0.33%) and Telegram (0.20%), ensuring reliable communication tools critical for remote work. VPN availability appears unrestricted, as the OONI-reported 0.00% anomaly rate suggests no significant interference, though Tor faces moderate anomalies (3.13%) that may hint at limited network issues. Overall, digital freedom remains robust, with no legal barriers to VPN use or widespread censorship affecting essential platforms like Slack or GitHub.",
       "seo_summary": "While living in Portugal comes with a higher tax burden of 37.4%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 612, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Angola."
@@ -52695,7 +52733,8 @@
       "economic_summary": "<p>Romania offers an impressive economic environment with strong property rights and a relatively light tax burden, making it an attractive destination for expats and entrepreneurs. While business freedom is solid, labor regulations present a challenge that needs to be navigated carefully. The government's integrity score is somewhat lower, suggesting areas where transparency could improve.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Romania"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Romania",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates minimal widespread internet censorship in Romania, with low anomaly rates for messaging apps like WhatsApp (0.79%) and Telegram (0.46%), suggesting reliable access to communication tools critical for remote work. While the 100% VPN anomaly rate may reflect unreachable OONI test servers rather than a government ban, there are no legal restrictions on using VPNs. General censorship anomalies remain low (2.43%), and platforms like Slack or GitHub likely operate without significant interference.",
       "seo_summary": "While living in Romania comes with a higher tax burden of 30.7%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 605, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Italy."
@@ -54348,7 +54387,8 @@
       "economic_summary": "<p>Relocating to Saint Lucia offers a business-friendly environment with an overall economic freedom score of 67.5, making it favorable for entrepreneurs. The country excels in property rights and business freedom, ensuring secure investments and smooth operations. However, while the tax burden is relatively low at 77.7 (higher means better), labor laws present some challenges with a score of only 65.2, which might demand more flexibility and strategic planning to navigate effectively. Despite these nuances, Saint Lucia’s commitment to government integrity at 59.7 provides a solid ethical foundation for your business endeavors.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Saint_Lucia"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Saint_Lucia",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data from the past 30 days indicates no detected internet censorship in Saint Lucia, with zero anomalies for WhatsApp, Telegram, Tor, and general censorship, ensuring reliable communication tools like Slack and GitHub remain accessible for remote work. While the 0.00% VPN anomaly rate suggests no government-imposed restrictions on VPNs, users should note that OONI’s tests may not capture all edge cases, and local legality of specific protocols remains unconfirmed.",
       "seo_summary": "Saint Lucia is a solid destination for global professionals, featuring a moderate tax burden of 19.4%. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Guyana."
@@ -56913,7 +56953,8 @@
       "economic_summary": "<p>Relocating to Seychelles offers a robust and enticing business climate with an overall economic freedom score of 66.5, indicating a well-functioning market system that supports entrepreneurship. The country boasts strong property rights (82.6) and relatively low tax burdens (77.3), making it favorable for investors seeking lighter fiscal obligations. However, labor freedom lags at 52.0, which may present challenges in hiring practices and workforce flexibility. Despite this, Seychelles remains a promising destination with ample opportunities for business growth.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Seychelles"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Seychelles",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "OONI data indicates low levels of general censorship (5.63% anomaly rate) in Seychelles, with no evidence of Telegram blocks and reliable access to tools like Slack or GitHub. While WhatsApp shows moderate interference (25% anomalies) and Tor faces high anomalies (66.67%), the 0% anomaly rate for VPNs suggests they remain legal and functional, though OONI’s high Tor and general censorship anomalies may hint at sporadic network interference. Communication tools critical for remote work appear mostly reliable, with no confirmed government-imposed restrictions.",
       "seo_summary": "Seychelles is a solid destination for global professionals, featuring a moderate tax burden of 29.5%. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from India."
@@ -59440,7 +59481,8 @@
       "economic_summary": "<p>South Africa offers a mixed economic landscape for expats and entrepreneurs with an overall Economic Freedom score of 58.6, indicating a solid but not exceptional business environment. The country boasts strong labor freedom (70.8) and high levels of business freedom (67.9), making it relatively easy to set up and run a company. However, property rights (48.8) and government integrity (46.7) are areas that could benefit from improvement. While the tax burden score is favorable at 65.4, the potential risks associated with these other factors should be carefully considered. </p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#South_Africa"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#South_Africa",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "South Africa's digital freedom shows minimal general censorship (2.57% anomaly rate) with low interference against messaging tools like WhatsApp (1.63%) and Telegram (1.23%), ensuring reliable communication for remote work. VPNs appear legally available and accessible, as indicated by a 0.00% anomaly rate, though OONI notes test server issues can skew VPN-related data. Communication platforms such as Slack or GitHub likely remain functional without significant disruptions.",
       "seo_summary": "South Africa is a solid destination for global professionals, featuring a moderate tax burden of 29.8%. With a very high English proficiency score of 602, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Zimbabwe."
@@ -60479,7 +60521,8 @@
       "economic_summary": "<p>Spain presents an enticing economic canvas for expats and entrepreneurs with its overall Economic Freedom score of 66.8, making it a vibrant hub for business opportunities. Property rights are robust, offering strong legal protections that ensure peace of mind when investing in real estate or assets. However, the lighter Tax Burden Score might be offset by slightly less dynamic Labor Freedom at 61.7 and a modest Government Integrity score of 64.2, which could impact regulatory compliance and business operations. These factors combined make Spain an attractive destination with room for improvement in certain areas.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Spain"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Spain",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Spain exhibits low to moderate internet censorship, with minimal anomalies in WhatsApp (0.32%) and Telegram (0.47%), suggesting unrestricted access to major communication tools critical for remote work. While VPNs remain legal and widely available, OONI data shows a 100% anomaly rate for VPN protocols, likely reflecting test server issues rather than government-enforced blocks. Overall, communication platforms like Slack or GitHub appear reliable, though sporadic network interference could affect Tor users.",
       "seo_summary": "Spain is a solid destination for global professionals, featuring a moderate tax burden of 29.7%. With a very high English proficiency score of 540, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Morocco."
@@ -60834,7 +60877,8 @@
       "economic_summary": "<p>Sri Lanka presents an intriguing blend of opportunities for expats and entrepreneurs seeking to relocate. With a moderate overall economic freedom score, the country offers a mix of both challenges and advantages. While property rights and business freedoms are on the lower side, Sri Lanka compensates with relatively low tax burdens and reasonable labor market flexibility. However, government integrity remains a concern that could impact long-term planning and investment strategies.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Sri_Lanka"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Sri_Lanka",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Sri Lanka exhibits low general internet censorship (2.2% anomaly rate), with minor interference observed for WhatsApp and Telegram (2.04% each), suggesting potential but limited disruptions. No evidence of government bans on VPNs is detected (0.00% VPN anomaly rate), though this may reflect testing limitations rather than unrestricted access. Communication tools critical for remote work appear reliable overall, with no significant blocking reported.",
       "seo_summary": "Relocating to Sri Lanka is highly attractive for expats looking for tax optimization, offering a very competitive tax burden of 11.1%. With a very high English proficiency score of 486, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from India."
@@ -63092,7 +63136,8 @@
       "economic_summary": "<p>Taiwan offers a robust economic environment with an overall Economic Freedom score of 79.8, positioning it among the top global economies for business and investment. The property rights regime is particularly strong, ensuring security and stability for assets. However, while Taiwan has a relatively light tax burden and favorable business freedom scores, labor regulations present some challenges that might impact hiring practices. Government integrity also remains commendable, adding to the overall positive climate.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Taiwan"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Taiwan",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Taiwan's digital freedom remains robust, with minimal internet censorship indicated by low anomaly rates for WhatsApp (3.16%) and near-zero interference for Telegram (0.03%). While OONI reports a 100% VPN anomaly rate, this likely reflects test server issues rather than a government ban, as VPNs are legal and widely accessible. Communication tools critical for remote work, such as Slack and GitHub, show reliable performance with no significant censorship detected.",
       "seo_summary": ""
@@ -64084,7 +64129,8 @@
       "economic_summary": "<p>Thailand offers an appealing economic environment for expats and entrepreneurs with a moderate overall Economic Freedom score of 62.2, making it a balanced mix of opportunities and challenges. The business climate is particularly favorable, thanks to robust Business Freedom at 69.9, which allows for flexible and dynamic operations. However, be prepared for higher taxes, as the Tax Burden Score stands at 80.8, indicating a relatively heavy tax system. While property rights and labor freedom have room for improvement with scores of 41.8 and 56.4 respectively, Thailand’s strategic location and strong government integrity score of 38.9 can still make it an attractive destination for those looking to relocate or set up business.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Thailand"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Thailand",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Thailand's digital freedom shows minimal internet censorship, with low anomaly rates for WhatsApp (0.64%), Telegram (0.37%), and general censorship (2.53%), suggesting reliable access to communication tools critical for remote work like Slack or GitHub. While OONI data flags a 100% anomaly rate for VPNs, this likely reflects test server issues rather than a government ban, as noted by OONI, though some network interference or protocol-specific restrictions cannot be ruled out.",
       "seo_summary": "Thailand is a solid destination for global professionals, featuring a moderate tax burden of 20.4%. With a very high English proficiency score of 402, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Myanmar."
@@ -68066,7 +68112,8 @@
       "economic_summary": "<p>The United Arab Emirates boasts a robust economic environment with an overall Economic Freedom score of 71.9, making it an attractive destination for expats and entrepreneurs. Business freedom is particularly strong, ranking at 84.5, facilitating ease in establishing and managing companies. However, it's important to note that the tax burden is quite high, rated at a relatively low 99.9 on the scale, which could impact profitability. Despite this, the UAE's supportive business climate and strong property rights (at 62.9) provide a solid foundation for growth and investment.</p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#United_Arab_Emirates"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#United_Arab_Emirates",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "The United Arab Emirates exhibits moderate internet censorship, with a general censorship anomaly rate of 12.54%, while WhatsApp and Telegram show low anomaly rates (1.25% and 0.42%, suggesting limited disruption for mainstream communication tools critical to remote work. VPNs are not outright banned, but high Tor anomaly rates (67.92%) may indicate network interference targeting specific protocols, though OONI data does not confirm a state-level block. Overall, essential remote work platforms like Slack or GitHub are likely reliable, but users may encounter sporadic restrictions on privacy-focused or circumvention services.",
       "seo_summary": "Relocating to United Arab Emirates is highly attractive for expats looking for tax optimization, offering a very competitive tax burden of 3.0%. With a very high English proficiency score of 487, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from India."
@@ -69286,7 +69333,8 @@
       "economic_summary": "<p>Uruguay offers a robust and inviting economic environment for expats and entrepreneurs, boasting an Overall Economic Freedom score of 69.8—a testament to its stable business climate. With strong Property Rights and high Business Freedom scores, establishing and running a company is both secure and straightforward. However, while the Tax Burden Score suggests a relatively light tax environment, Labor Freedom could benefit from some improvement, potentially complicating workforce management. </p>",
       "nomad_visa": {
         "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Uruguay"
+        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#Uruguay",
+        "description": "This country offers a dedicated Digital Nomad Visa or equivalent remote work permit."
       },
       "digital_freedom_text": "Uruguay exhibits minimal internet censorship, with no detected anomalies for WhatsApp, Telegram, or Tor over the past 30 days, and a low general censorship anomaly rate of 2.82%. VPNs appear legal and widely available, as indicated by OONI’s 0.00% VPN anomaly rate, though this may reflect test server issues rather than definitive government policy; communication tools like Slack and GitHub likely remain reliable for remote work.",
       "seo_summary": "While living in Uruguay comes with a higher tax burden of 31.1%, expats often benefit from its robust social infrastructure and high quality of life. With a very high English proficiency score of 542, daily communication and business integration are seamless. It hosts a vibrant and diverse expat community, notably drawing a significant number of residents from Argentina."
