@@ -679,7 +679,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {life_expectancy != null && (
                   <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
                     <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-rose-500/10 group-hover:text-rose-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
-                      <Activity className="w-6 h-6 text-rose-400" />
+                      <Activity className="w-6 h-6" />
                     </div>
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Longevity</div>
                     <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
@@ -696,7 +696,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {doctors != null && (
                   <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
                     <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
-                      <HeartPulse className="w-6 h-6 text-blue-400" />
+                      <HeartPulse className="w-6 h-6" />
                     </div>
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Care Access</div>
                     <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
@@ -713,7 +713,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {out_of_pocket != null && (
                   <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
                     <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-amber-500/10 group-hover:text-amber-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
-                      <Landmark className="w-6 h-6 text-amber-400" />
+                      <Landmark className="w-6 h-6" />
                     </div>
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Health Cost</div>
                     <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
@@ -730,7 +730,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {obesity != null && (
                   <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
                     <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-orange-500/10 group-hover:text-orange-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
-                      <Activity className="w-6 h-6 text-orange-400" />
+                      <Activity className="w-6 h-6" />
                     </div>
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Lifestyle</div>
                     <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
