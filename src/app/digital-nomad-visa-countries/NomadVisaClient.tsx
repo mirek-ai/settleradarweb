@@ -27,8 +27,8 @@ interface NomadVisaClientProps {
 }
 
 export default function NomadVisaClient({ countries }: NomadVisaClientProps) {
-  const [sortBy, setSortBy] = useState<SortKey>('name');
-  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
+  const [sortBy, setSortBy] = useState<SortKey>('freedom');
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSort = (key: SortKey) => {
