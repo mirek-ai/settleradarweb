@@ -389,6 +389,45 @@ export default async function CompareResultPage({ params }: { params: Promise<{ 
           </div>
         </div>
 
+        {/* CONTINUATION CTA */}
+        {(() => {
+          const topOptions = ['spain', 'portugal', 'united-arab-emirates', 'poland', 'thailand', 'japan'];
+          const nextCountrySlug = topOptions.find(s => s !== countryA.slug && s !== countryB.slug) || 'spain';
+          const nextCountry = db.countries.find((c: any) => c.slug === nextCountrySlug) || countryA;
+          const nextUrl = [countryA.slug, nextCountry.slug].sort().join('/');
+
+          return (
+            <div className="mt-8 glass-panel p-8 md:p-12 rounded-3xl border border-slate-200/50 dark:border-slate-800/50 bg-gradient-to-br from-fuchsia-50/50 to-pink-50/50 dark:from-fuchsia-900/10 dark:to-pink-900/10 text-center shadow-xl relative overflow-hidden group col-span-1 md:col-span-2">
+              <div className="absolute -top-12 -right-12 opacity-5 group-hover:scale-110 transition-transform pointer-events-none">
+                <Swords className="w-64 h-64 text-fuchsia-500" />
+              </div>
+              <div className="relative z-10">
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">
+                  Still deciding?
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
+                  Neither {countryA.name} nor {countryB.name} feeling like the perfect match? See how {countryA.name} stacks up against a global hotspot like {nextCountry.name}.
+                </p>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <Link 
+                    href={`/compare/${nextUrl}`}
+                    className="inline-flex w-full sm:w-auto justify-center items-center px-8 py-4 bg-fuchsia-600 text-white rounded-xl font-bold hover:bg-fuchsia-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 text-lg"
+                  >
+                    Compare {countryA.name} vs {nextCountry.name}
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Link>
+                  <Link 
+                    href="/compare"
+                    className="inline-flex w-full sm:w-auto justify-center items-center px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 text-lg"
+                  >
+                    View All Countries
+                  </Link>
+                </div>
+              </div>
+            </div>
+          );
+        })()}
+
       </div>
     </div>
   );
