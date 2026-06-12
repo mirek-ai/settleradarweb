@@ -124,7 +124,7 @@ export default function RootLayout({
                   "url": "https://settleradar.com",
                   "logo": "https://settleradar.com/icon.png",
                   "sameAs": [
-                    "https://twitter.com/settleradar"
+                    "https://x.com/settleradar"
                   ]
                 },
                 {
