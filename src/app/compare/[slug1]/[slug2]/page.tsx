@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import { ArrowLeft, Swords, Activity, HeartPulse, GraduationCap, Scale, Sun, Users, Landmark, Wind, Droplets, CloudSnow, ThermometerSun, Shield } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Swords, Activity, HeartPulse, GraduationCap, Scale, Sun, Users, Landmark, Wind, Droplets, CloudSnow, ThermometerSun, Shield } from 'lucide-react';
 import CompareChart from './CompareChart';
 import ClimateChart from './ClimateChart';
 import { Metadata } from 'next';

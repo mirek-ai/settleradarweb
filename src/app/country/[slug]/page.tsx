@@ -3,8 +3,8 @@ import path from 'path';
 import Link from 'next/link';
 import Image from 'next/image';
 import { 
-  ArrowLeft, MapPin, Building, Shield, Wind, TrendingUp, Landmark, Sparkles, 
-  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe, BookOpen
+  ArrowLeft, ArrowRight, MapPin, Building, Shield, Wind, TrendingUp, Landmark, Sparkles, 
+  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe, BookOpen, Swords
 } from 'lucide-react';
 import { getSortedPostsData } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
