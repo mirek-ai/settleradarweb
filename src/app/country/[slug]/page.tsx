@@ -929,8 +929,14 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   const score = ind[metric.key]?.value;
                   if (score == null) return null;
                   
+                  const bestCountry = db.countries.reduce((best: any, c: any) => {
+                    const v = c.indicators?.[metric.key]?.value;
+                    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+                    return best;
+                  }, null);
+                  
                   return (
-                    <div key={idx} className="group">
+                    <div key={idx} className="group flex flex-col h-full">
                       <div className="flex justify-between items-end mb-2">
                         <div className="flex items-center gap-2">
                           {metric.icon}
@@ -940,12 +946,17 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                           {score.toFixed(1)} <span className="text-xs text-slate-500 font-normal">/ 100</span>
                         </span>
                       </div>
-                      <div className="w-full h-3 bg-slate-200/50 dark:bg-slate-800/50 rounded-full overflow-hidden shadow-inner">
+                      <div className="w-full h-3 bg-slate-200/50 dark:bg-slate-800/50 rounded-full overflow-hidden shadow-inner mb-2">
                         <div 
                           className={`h-full rounded-full bg-gradient-to-r ${metric.color} transition-all duration-1000 ease-out`} 
                           style={{ width: `${Math.min(100, Math.max(0, score))}%` }}
                         ></div>
                       </div>
+                      {bestCountry && bestCountry.v != null && (
+                        <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-2" title="Global maximum">
+                          🏆 Top: {bestCountry.v.toFixed(1)} (<Link href={`/country/${bestCountry.slug}`} className="hover:text-indigo-400 underline decoration-white/30 hover:decoration-indigo-400 underline-offset-2 transition-colors">{bestCountry.name}</Link>)
+                        </div>
+                      )}
                     </div>
                   );
                 })}
