@@ -293,6 +293,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     { label: 'Financial Freedom', key: 'heritage_financial_freedom', color: 'from-teal-400 to-teal-500', icon: <Landmark className="w-4 h-4 text-slate-400" /> },
   ];
 
+  const hasHeritage = heritageMetrics.some(m => ind[m.key]?.value != null);
+
   return (
     <div className="flex flex-col lg:flex-row gap-8 pb-24 relative max-w-[1400px] mx-auto">
       <script
@@ -921,10 +923,12 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
 
             {economic_summary && (
-              <div className="prose prose-slate max-w-none dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10 mb-10" dangerouslySetInnerHTML={{ __html: economic_summary }} />
+              <div className={`prose prose-slate max-w-none dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10 ${hasHeritage ? 'mb-10' : ''}`} dangerouslySetInnerHTML={{ __html: economic_summary }} />
             )}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 relative z-10">
+            {hasHeritage && (
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 relative z-10">
                 {heritageMetrics.map((metric, idx) => {
                   const score = ind[metric.key]?.value;
                   if (score == null) return null;
@@ -976,6 +980,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                   <Sparkles className="w-4 h-4 text-indigo-500" /> Insights based on Heritage Data
                 </div>
               </div>
+              </>
+            )}
           </div>
         </section>
 
