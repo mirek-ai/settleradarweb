@@ -45,7 +45,7 @@ Sweden's unemployment stood at **8.8% in 2025** and is projected to decline to 7
 
 If you hold an EU or EEA passport, you have full right of free movement. Register your right of residence at Migrationsverket within three months of arrival if you plan to stay beyond that point. For stays beyond one year, register with Skatteverket (Swedish Tax Agency) to obtain your **personnummer** — the 10-digit personal identity number you will need for virtually everything.[^8][^9]
 
-### Work Permit (ArbetstillstÃ¥nd) — The Standard Non-EU Path
+### Work Permit (Arbetstillstånd) — The Standard Non-EU Path
 
 Sweden's work permit is employer-sponsored. The employer applies on your behalf through the Swedish Migration Agency (Migrationsverket) at **migrationsverket.se**. You cannot apply independently.
 
@@ -85,7 +85,7 @@ Sweden allows foreign nationals to establish their own company (AB — aktiebola
 
 ## Permanent Residence and Citizenship
 
-### Permanent Residence (Permanent UppehÃ¥llstillstÃ¥nd / PUT)
+### Permanent Residence (Permanent Uppehållstillstånd / PUT)
 
 Sweden's permanent residence is conditional on how you arrived. For work permit holders:[^15]
 
@@ -261,11 +261,11 @@ Sweden's national Crime Index in 2026: **53.23 — Moderate**. The picture is un
 | Gothenburg | 45.8[^36] | 54.2 |
 | Lund | 32.1[^36] | 67.9 |
 
-Malmö's headline crime figure reflects concentrated gang violence in specific suburbs (RosengÃ¥rd, Seved, HerrgÃ¥rden). For most professional expats living in central Malmö or Hyllie, daily life is safe. The city has improved substantially in recent years following targeted policing operations.[^35]
+Malmö's headline crime figure reflects concentrated gang violence in specific suburbs (Rosengård, Seved, Herrgården). For most professional expats living in central Malmö or Hyllie, daily life is safe. The city has improved substantially in recent years following targeted policing operations.[^35]
 
 Stockholm's 46.5 crime index puts it ahead of London (55.6), Dublin (54.2), and Manchester (55.9) in Northern Europe. Crime in Stockholm concentrates in specific hotspots (Rinkeby-Kista, Järva, parts of Södermalm); the inner neighbourhoods where most expat professionals live — Ã–stermalm, Vasastan, Kungsholmen, Södermalm's northern sections — are substantively safer than the aggregate figure implies.[^36]
 
-Lund, at 32.1, is one of the safest cities in Northern Europe. Gothenburg's 45.8 reflects occasional gang-related incidents in northern suburbs (Angered, BiskopsgÃ¥rden), not the Haga-Linné-Majorna belt where most expats settle.
+Lund, at 32.1, is one of the safest cities in Northern Europe. Gothenburg's 45.8 reflects occasional gang-related incidents in northern suburbs (Angered, Biskopsgården), not the Haga-Linné-Majorna belt where most expats settle.
 
 **What the data doesn't capture:** Cybercrime, card fraud, and bicycle theft are the most common crimes affecting expats in Swedish cities. Violent crime against strangers in residential areas is low. Sweden consistently scores well on corruption indexes (ranked 6th least corrupt globally per Transparency International 2025).
 
@@ -299,7 +299,7 @@ Sweden's third city; 670,000 in the metro. Sits at the foot of the Ã–resund B
 
 Architecturally, Malmö is a surprise: the Turning Torso, the Western Harbour urban regeneration district, and the old town are all worth knowing. Food scene punches above its weight. Malmö University is a growing technology and innovation hub.
 
-Best neighbourhoods for expats: Western Harbour (Västra Hamnen), Hyllie (modern, close to the bridge), MöllevÃ¥ngen (multicultural, affordable, lively food market).
+Best neighbourhoods for expats: Western Harbour (Västra Hamnen), Hyllie (modern, close to the bridge), Möllevången (multicultural, affordable, lively food market).
 
 ### Uppsala
 
@@ -309,7 +309,7 @@ Best for: researchers, academics, medical professionals, and anyone working in S
 
 ### Lund
 
-University town in SkÃ¥ne (southern Sweden). The safest city in Sweden per Numbeo 2026 (Crime Index 32.1). Lund University is internationally ranked (top 100 globally). MAX IV (Europe's most brilliant X-ray facility) and ESS (European Spallation Source) create structural demand for physicists, engineers, and biologists. 15 minutes from Malmö by regional train.[^36]
+University town in Skåne (southern Sweden). The safest city in Sweden per Numbeo 2026 (Crime Index 32.1). Lund University is internationally ranked (top 100 globally). MAX IV (Europe's most brilliant X-ray facility) and ESS (European Spallation Source) create structural demand for physicists, engineers, and biologists. 15 minutes from Malmö by regional train.[^36]
 
 Best for: scientists, researchers, academics, life sciences professionals.
 
@@ -334,7 +334,7 @@ Sweden's climate divides sharply between south and north, and between summer and
 | Stockholm | 20–25Â°C | âˆ’5–3Â°C | Warmest summers in Sweden (Mälaren Valley effect) |
 | Gothenburg | 16–22Â°C | 0–5Â°C | Maritime, rainy; milder winters |
 | Malmö | 17–23Â°C | 1–5Â°C | Mildest major city; some snow |
-| Northern Sweden (UmeÃ¥+) | 15–24Â°C | âˆ’15 to âˆ’25Â°C | Extreme cold, midnight sun |
+| Northern Sweden (Umeå+) | 15–24Â°C | âˆ’15 to âˆ’25Â°C | Extreme cold, midnight sun |
 
 **The darkness is the adjustment.** Stockholm sees only 6–7 hours of daylight in December. Gothenburg and Malmö are slightly better. This is the single most commonly cited adjustment challenge from expats at northern latitudes. Vitamin D supplementation is near-universal. Light therapy lamps (dagsljuslampor) are sold in every pharmacy. The payoff: Swedish summer is extraordinary — 18–21 hours of daylight, warm evenings, outdoor swimming in lakes and archipelago.
 
@@ -349,9 +349,9 @@ Sweden's digital infrastructure is world-class. The country has one of the highe
 - **Broadband:** Unlimited 100–1,000 Mbps plans: approximately SEK 250–500/month[^21]
 - **Mobile:** Telia, Tele2, Telenor, and Three are the main operators. SIM plans with unlimited calls and data: SEK 150–400/month[^21]
 - **Public transport:**
-  - **Stockholm (SL):** Metro (Tunnelbana, 3 lines, 100 stations), commuter rail (pendeltÃ¥g), buses, trams, DjurgÃ¥rdslinjen ferry. Monthly card: SEK 860[^21]
+  - **Stockholm (SL):** Metro (Tunnelbana, 3 lines, 100 stations), commuter rail (pendeltåg), buses, trams, Djurgårdslinjen ferry. Monthly card: SEK 860[^21]
   - **Gothenburg (Västtrafik):** Trams, buses, commuter rail (Pendeln)
-  - **Malmö (SkÃ¥netrafiken):** Buses, PÃ¥gatÃ¥gen regional trains, Ã–resundstÃ¥g to Copenhagen
+  - **Malmö (Skånetrafiken):** Buses, Pågatågen regional trains, Ã–resundståg to Copenhagen
 - **Cars:** Drive on the right. Swedish licence required after one year of residence. Congestion charges apply in Stockholm and Gothenburg central zones. EV charging infrastructure is excellent.
 
 ***
@@ -395,7 +395,7 @@ At a 60 mÂ² central Stockholm apartment at SEK 85,000/mÂ², the purchase pric
 1. **Register at Skatteverket and get your personnummer** — book an appointment online before you arrive if possible; you must appear in person at a Skatteverket service centre; bring your residence permit, passport, lease agreement or rental contract, and employment contract; personnummer is your master key in Sweden — without it you cannot fully open a bank account, access healthcare, get a phone contract, register a gym membership, or file taxes; processing time: 1–4 weeks after your appointment[^9][^46][^8]
 2. **Open a Swedish bank account** — major options: Swedbank, Handelsbanken (most expat-accessible), SEB, Nordea; for those waiting on personnummer: Revolut, Wise, or N26 work in the interim; some banks now allow account opening before personnummer with a passport and residence permit; Bankgirot is the domestic payment system — get your bankgiro number for receiving salary
 3. **Apply for your BankID** — Sweden's digital identity system, used for signing documents, logging into government portals, filing taxes, and accessing virtually every online service; issued through your bank once you have a personnummer; without BankID, administrative life in Sweden is significantly harder
-4. **Register with a healthcare centre (VÃ¥rdcentral)** — go to the healthcare centre nearest your home and register as a patient; in Stockholm, use 1177.se to find the nearest one; registering before you are sick is critical — walk-in slots are limited in busy urban centres
+4. **Register with a healthcare centre (Vårdcentral)** — go to the healthcare centre nearest your home and register as a patient; in Stockholm, use 1177.se to find the nearest one; registering before you are sick is critical — walk-in slots are limited in busy urban centres
 5. **Get your EHIC if you are EU/EEA** — while waiting for personnummer, your EHIC provides access to Swedish healthcare at subsidised rates; after personnummer registration, you access the system as a Swedish resident
 6. **Get a Swedish phone number and SIM** — Tele2, Telia, Comviq, Hallon, and Vimla all sell plans; monthly plans starting SEK 79 for basic data; unlock your phone before travelling; most operators require personnummer for contracts but prepaid SIMs are available immediately
 7. **Apply for expert tax relief within 3 months of starting work — if you qualify** — do not miss this deadline; the Forskarskattenämnden application window is strict; check the SEK 88,201/month income threshold or whether your role qualifies as researcher/expert/key employee; this can save you tens of thousands of SEK per year[^26]
