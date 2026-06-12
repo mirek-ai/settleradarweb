@@ -634,7 +634,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {life_expectancy != null && (
                   <div className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Longevity</div>
-                    <div className="text-3xl font-black text-rose-500 mb-1 flex items-start justify-center gap-1">
+                    <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
                       {life_expectancy.toFixed(1)} <span className="text-base font-semibold mt-1">yrs</span>
                     </div>
                     <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
@@ -648,7 +648,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {doctors != null && (
                   <div className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Care Access</div>
-                    <div className="text-3xl font-black text-blue-500 mb-1 flex items-start justify-center gap-1">
+                    <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
                       {doctors.toFixed(1)}
                     </div>
                     <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
@@ -662,7 +662,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {out_of_pocket != null && (
                   <div className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Health Cost</div>
-                    <div className="text-3xl font-black text-amber-500 mb-1 flex items-start justify-center gap-1">
+                    <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
                       {out_of_pocket.toFixed(1)} <span className="text-base font-semibold mt-1">%</span>
                     </div>
                     <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
@@ -676,7 +676,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {obesity != null && (
                   <div className="glass-panel p-4 rounded-3xl text-center hover:scale-105 transition-transform duration-300 border border-white/20">
                     <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Lifestyle</div>
-                    <div className="text-3xl font-black text-orange-500 mb-1 flex items-start justify-center gap-1">
+                    <div className="text-4xl font-extrabold text-slate-900 dark:text-white mb-1 flex items-start justify-center gap-1">
                       {obesity.toFixed(1)} <span className="text-base font-semibold mt-1">%</span>
                     </div>
                     <div className="flex flex-col gap-1.5 mt-3 pt-3 border-t border-slate-200/50 dark:border-slate-800/50">
