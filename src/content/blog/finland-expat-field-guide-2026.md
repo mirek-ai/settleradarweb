@@ -361,9 +361,9 @@ Tampere is approximately 25% cheaper than Helsinki on rent. High-speed rail to H
 
 Best for: engineering professionals, gaming industry workers, Tampere University researchers, families seeking a lower cost of living within easy reach of Helsinki.
 
-### Turku (Ã…bo)
+### Turku (Åbo)
 
-Finland's oldest city; population approximately **330,000 metro**. Sweden's former capital of Finland — bilingual city with both Finnish and Swedish official status. The University of Turku and Ã…bo Akademi (Swedish-language university) make it a strong academic centre. A developing biotech corridor supports life sciences hiring. Ferry connections to Stockholm and Tallinn via the harbour.
+Finland's oldest city; population approximately **330,000 metro**. Sweden's former capital of Finland — bilingual city with both Finnish and Swedish official status. The University of Turku and Åbo Akademi (Swedish-language university) make it a strong academic centre. A developing biotech corridor supports life sciences hiring. Ferry connections to Stockholm and Tallinn via the harbour.
 
 Turku is approximately 33% cheaper than Helsinki on rent. Known for arguably the best restaurant scene relative to city size in Finland.[^20]
 
