@@ -134,6 +134,42 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     return best;
   }, null);
 
+  const bestInternet = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_internet_users_pct']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestEnglish = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['ef_epi_english']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestGini = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_gini']?.value;
+    if (v != null && (!best || v < best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestWomenInPar = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_women_in_parliament_pct']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestUrban = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_urban_population_pct']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestMigration = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_net_migration']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
   const freedom = ind['heritage_economic_freedom']?.value; 
   const education = ind['unesco_education_spending']?.value;
   const life_expectancy = ind['who_life_expectancy']?.value;
@@ -391,7 +427,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             {/* Fact 1 */}
-            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Landmark className="w-6 h-6" />
               </div>
@@ -401,14 +437,14 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               </div>
               <p className="text-sm text-slate-500 mt-2">Adjusts for purchasing power parity.</p>
               {bestGDP && bestGDP.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
                   🏆 Top: ${formatNumber(bestGDP.v)} (<Link href={`/country/${bestGDP.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestGDP.name}</Link>)
                 </div>
               )}
             </div>
 
             {/* Fact 2 */}
-            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <HeartPulse className="w-6 h-6" />
               </div>
@@ -418,14 +454,14 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               </div>
               <p className="text-sm text-slate-500 mt-2">WHO Data. UHC Index: {uhc != null ? uhc : '--'}/100.</p>
               {bestLife && bestLife.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
                   🏆 Top: {bestLife.v.toFixed(1)} yrs (<Link href={`/country/${bestLife.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestLife.name}</Link>)
                 </div>
               )}
             </div>
 
             {/* Fact 3 */}
-            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Briefcase className="w-6 h-6" />
               </div>
@@ -435,14 +471,14 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               </div>
               <p className="text-sm text-slate-500 mt-2">ILO Estimate. Indicates job market health.</p>
               {bestUnemployment && bestUnemployment.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
                   🏆 Top: {bestUnemployment.v.toFixed(1)}% (<Link href={`/country/${bestUnemployment.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestUnemployment.name}</Link>)
                 </div>
               )}
             </div>
 
             {/* Fact 4 */}
-            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Shield className="w-6 h-6" />
               </div>
@@ -452,14 +488,14 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               </div>
               <p className="text-sm text-slate-500 mt-2">World Bank Crime Data. Lower is safer.</p>
               {bestHomicides && bestHomicides.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
                   🏆 Top: {bestHomicides.v.toFixed(1)} (<Link href={`/country/${bestHomicides.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestHomicides.name}</Link>)
                 </div>
               )}
             </div>
 
             {/* Fact 5 */}
-            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <TrendingUp className="w-6 h-6" />
               </div>
@@ -471,7 +507,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
 
             {/* Fact 6 */}
-            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Smile className="w-6 h-6" />
               </div>
@@ -481,14 +517,14 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               </div>
               <p className="text-sm text-slate-500 mt-2">World Happiness Report (Cantril Ladder).</p>
               {bestHappiness && bestHappiness.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
                   🏆 Top: {bestHappiness.v.toFixed(2)} (<Link href={`/country/${bestHappiness.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestHappiness.name}</Link>)
                 </div>
               )}
             </div>
 
             {/* Fact 7 */}
-            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-emerald-500/10 group-hover:text-emerald-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Wind className="w-6 h-6" />
               </div>
@@ -498,14 +534,14 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               </div>
               <p className="text-sm text-slate-500 mt-2">World Bank Data. Lower is better.</p>
               {bestAir && bestAir.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
                   🏆 Top: {bestAir.v.toFixed(1)} µg/m³ (<Link href={`/country/${bestAir.slug}`} className="hover:text-emerald-400 underline decoration-white/30 hover:decoration-emerald-400 underline-offset-2 transition-colors">{bestAir.name}</Link>)
                 </div>
               )}
             </div>
 
             {/* Fact 8 */}
-            <div className="glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-fuchsia-500/10 group-hover:text-fuchsia-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <GraduationCap className="w-6 h-6" />
               </div>
@@ -515,7 +551,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               </div>
               <p className="text-sm text-slate-500 mt-2">UNESCO Data. Indicates focus on public schooling.</p>
               {bestEducation && bestEducation.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
                   🏆 Top: {bestEducation.v.toFixed(1)}% (<Link href={`/country/${bestEducation.slug}`} className="hover:text-fuchsia-400 underline decoration-white/30 hover:decoration-fuchsia-400 underline-offset-2 transition-colors">{bestEducation.name}</Link>)
                 </div>
               )}
@@ -645,7 +681,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             )}
             
             {/* Bento Block: Internet */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Activity className="w-6 h-6" />
               </div>
@@ -654,10 +690,15 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {internet != null ? internet.toFixed(1) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">%</span>
               </div>
               <p className="text-sm font-medium text-slate-500 mt-2">Internet Users</p>
+              {bestInternet && bestInternet.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestInternet.v.toFixed(1)}% (<Link href={`/country/${bestInternet.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestInternet.name}</Link>)
+                </div>
+              )}
             </div>
             
             {/* Bento Block: English */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <MessageCircle className="w-6 h-6" />
               </div>
@@ -666,10 +707,15 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {english != null ? english.toFixed(0) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">/ 800</span>
               </div>
               <p className="text-sm font-medium text-slate-500 mt-2">EF English Proficiency</p>
+              {bestEnglish && bestEnglish.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestEnglish.v.toFixed(0)} (<Link href={`/country/${bestEnglish.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestEnglish.name}</Link>)
+                </div>
+              )}
             </div>
 
             {/* Bento Block: Inequality */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Scale className="w-6 h-6" />
               </div>
@@ -678,10 +724,15 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {gini != null ? gini.toFixed(1) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">/ 100</span>
               </div>
               <p className="text-sm font-medium text-slate-500 mt-2">GINI Index (Lower = more equal)</p>
+              {bestGini && bestGini.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                  🏆 Top: {bestGini.v.toFixed(1)} (<Link href={`/country/${bestGini.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestGini.name}</Link>)
+                </div>
+              )}
             </div>
 
             {/* Bento Block: Women in Parliament */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Users className="w-6 h-6" />
               </div>
@@ -690,10 +741,15 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {womenInPar != null ? womenInPar.toFixed(1) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">%</span>
               </div>
               <p className="text-sm font-medium text-slate-500 mt-2">Women in Parliament</p>
+              {bestWomenInPar && bestWomenInPar.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestWomenInPar.v.toFixed(1)}% (<Link href={`/country/${bestWomenInPar.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestWomenInPar.name}</Link>)
+                </div>
+              )}
             </div>
             
             {/* Bento Block: Aging */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Users className="w-6 h-6" />
               </div>
@@ -705,7 +761,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
             
             {/* Bento Block: Urbanization */}
-            <div className="glass-panel p-6 rounded-3xl row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Building className="w-6 h-6" />
               </div>
@@ -714,10 +770,15 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {urban != null ? urban.toFixed(1) : '--'} <span className="text-base font-semibold text-slate-500 mb-1">%</span>
               </div>
               <p className="text-sm font-medium text-slate-500 mt-2">People living in cities</p>
+              {bestUrban && bestUrban.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestUrban.v.toFixed(1)}% (<Link href={`/country/${bestUrban.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestUrban.name}</Link>)
+                </div>
+              )}
             </div>
             
             {/* Bento Block: Migration */}
-            <div className="glass-panel p-6 rounded-3xl md:col-span-1 row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full md:col-span-1 row-span-1 border border-white/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                 <Globe className="w-6 h-6" />
               </div>
@@ -726,6 +787,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {migration != null ? (migration > 0 ? `+${formatNumber(migration)}` : formatNumber(migration)) : '--'}
               </div>
               <p className="text-sm font-medium text-slate-500 mt-2">Net Migration (5-yr total)</p>
+              {bestMigration && bestMigration.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestMigration.v > 0 ? `+${formatNumber(bestMigration.v)}` : formatNumber(bestMigration.v)} (<Link href={`/country/${bestMigration.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestMigration.name}</Link>)
+                </div>
+              )}
             </div>
           </div>
         </section>
@@ -749,7 +815,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               
               <div className="flex flex-wrap gap-4 relative z-10">
                 {life_expectancy != null && (
-                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl flex flex-col h-full flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
                     <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-rose-500/10 group-hover:text-rose-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                       <Activity className="w-6 h-6" />
                     </div>
@@ -758,7 +824,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       {life_expectancy.toFixed(1)} <span className="text-base font-semibold text-slate-500 mb-1">yrs</span>
                     </div>
                     {bestLife && bestLife.v != null && (
-                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
                         🏆 Top: {bestLife.v.toFixed(1)} yrs (<Link href={`/country/${bestLife.slug}`} className="hover:text-rose-400 underline decoration-white/30 hover:decoration-rose-400 underline-offset-2 transition-colors">{bestLife.name}</Link>)
                       </div>
                     )}
@@ -766,7 +832,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 )}
                 
                 {doctors != null && (
-                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl flex flex-col h-full flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
                     <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                       <HeartPulse className="w-6 h-6" />
                     </div>
@@ -775,7 +841,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       {doctors.toFixed(1)} <span className="text-base font-semibold text-slate-500 mb-1">/ 10k</span>
                     </div>
                     {bestDoctors && bestDoctors.v != null && (
-                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
                         🏆 Top: {bestDoctors.v.toFixed(1)} (<Link href={`/country/${bestDoctors.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestDoctors.name}</Link>)
                       </div>
                     )}
@@ -783,7 +849,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 )}
 
                 {out_of_pocket != null && (
-                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl flex flex-col h-full flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
                     <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-amber-500/10 group-hover:text-amber-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                       <Landmark className="w-6 h-6" />
                     </div>
@@ -792,7 +858,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       {out_of_pocket.toFixed(1)} <span className="text-base font-semibold text-slate-500 mb-1">% OOP</span>
                     </div>
                     {bestOOP && bestOOP.v != null && (
-                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
                         🏆 Top: {bestOOP.v.toFixed(1)}% (<Link href={`/country/${bestOOP.slug}`} className="hover:text-amber-400 underline decoration-white/30 hover:decoration-amber-400 underline-offset-2 transition-colors">{bestOOP.name}</Link>)
                       </div>
                     )}
@@ -800,7 +866,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 )}
 
                 {obesity != null && (
-                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
+                  <div className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] glass-panel p-6 rounded-3xl flex flex-col h-full flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group">
                     <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-orange-500/10 group-hover:text-orange-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                       <Activity className="w-6 h-6" />
                     </div>
@@ -809,7 +875,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                       {obesity.toFixed(1)} <span className="text-base font-semibold text-slate-500 mb-1">%</span>
                     </div>
                     {bestObesity && bestObesity.v != null && (
-                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-4 pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
                         🏆 Top: {bestObesity.v.toFixed(1)}% (<Link href={`/country/${bestObesity.slug}`} className="hover:text-orange-400 underline decoration-white/30 hover:decoration-orange-400 underline-offset-2 transition-colors">{bestObesity.name}</Link>)
                       </div>
                     )}
