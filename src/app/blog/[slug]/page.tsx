@@ -101,28 +101,40 @@ export default async function BlogPost(props: { params: Promise<{ slug: string }
         </ReactMarkdown>
       </div>
 
-      {postData.country && (
-        <div className="mt-16 glass-panel rounded-2xl p-8 border border-primary/20 bg-primary/5 text-center shadow-lg relative overflow-hidden">
-          <div className="absolute top-0 right-0 -mr-4 -mt-4 opacity-10">
-             <MapPin className="w-48 h-48 text-primary" />
+      {postData.country && (() => {
+        const cName = postData.country.charAt(0).toUpperCase() + postData.country.slice(1);
+        const cSlug = postData.country.toLowerCase().replace(/\s+/g, '-');
+        return (
+        <div className="mt-16 glass-panel rounded-3xl p-8 border border-slate-200/50 dark:border-slate-800/50 bg-gradient-to-br from-blue-50/50 to-indigo-50/50 dark:from-blue-900/10 dark:to-indigo-900/10 text-center shadow-xl relative overflow-hidden">
+          <div className="absolute -top-12 -right-12 opacity-5 pointer-events-none">
+             <MapPin className="w-64 h-64 text-blue-500" />
           </div>
           <div className="relative z-10">
-            <h3 className="text-2xl font-bold mb-4 text-foreground">
-              Planning to move to {postData.country.charAt(0).toUpperCase() + postData.country.slice(1)}?
+            <h3 className="text-3xl font-bold mb-4 text-slate-900 dark:text-white">
+              Want to see how {cName} stacks up?
             </h3>
-            <p className="text-foreground/70 mb-6 max-w-xl mx-auto">
-              Compare visas, check exact tax rates, calculate cost of living, and see how {postData.country.charAt(0).toUpperCase() + postData.country.slice(1)} ranks against other countries on SettleRadar.
+            <p className="text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
+              Are you seriously considering a move? Use our interactive tools to explore {cName}'s climate, tax brackets, and nomad visas, or compare it directly against your home country.
             </p>
-            <Link 
-              href={`/country/${postData.country.toLowerCase().replace(/\s+/g, '-')}`}
-              className="inline-flex items-center px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-blue-600 transition-all shadow-md hover:shadow-xl hover:scale-105"
-            >
-              Analyze {postData.country.charAt(0).toUpperCase() + postData.country.slice(1)} Data
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link 
+                href={`/country/${cSlug}`}
+                className="inline-flex w-full sm:w-auto justify-center items-center px-8 py-3.5 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+              >
+                View {cName} Profile
+              </Link>
+              <Link 
+                href={`/compare?country=${cSlug}`}
+                className="inline-flex w-full sm:w-auto justify-center items-center px-8 py-3.5 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5"
+              >
+                Compare {cName}
+                <ArrowRight className="w-5 h-5 ml-2 text-slate-400" />
+              </Link>
+            </div>
           </div>
         </div>
-      )}
+        );
+      })()}
     </article>
   );
 }
