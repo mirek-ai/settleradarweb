@@ -601,61 +601,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
         </section>
 
-        {/* NEW: POLITICS & POWER */}
-        <section id="politics">
-          <div className="flex items-center gap-2 mb-6">
-            <Gavel className="w-6 h-6 text-purple-500" />
-            <h2 className="text-3xl font-bold tracking-tight">Politics & Power</h2>
-          </div>
-          
-          {pol && Object.keys(pol).length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="glass-panel p-8 rounded-3xl relative overflow-hidden group">
-                <div className="absolute -right-6 -top-6 opacity-10 group-hover:scale-110 transition-transform">
-                  <Building className="w-32 h-32 text-purple-500" />
-                </div>
-                <p className="text-xs font-bold text-purple-500 uppercase tracking-widest mb-2">Government System</p>
-                <h3 className={`font-extrabold text-slate-900 dark:text-white leading-tight ${pol.government_type && pol.government_type.length > 40 ? 'text-lg' : pol.government_type && pol.government_type.length > 20 ? 'text-xl' : 'text-3xl'}`}>
-                  {pol.government_type || 'Unknown'}
-                </h3>
-                <div className="mt-4 space-y-1">
-                  {pol.head_of_state && (
-                    <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">
-                      Head of State: <strong className="text-slate-700 dark:text-slate-200">{pol.head_of_state}</strong>
-                    </p>
-                  )}
-                  {pol.head_of_government && (
-                    <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">
-                      Head of Gov: <strong className="text-slate-700 dark:text-slate-200">{pol.head_of_government}</strong>
-                    </p>
-                  )}
-                </div>
-              </div>
-              
-              <div className="glass-panel p-8 rounded-3xl relative overflow-hidden group">
-                <div className="absolute -right-6 -top-6 opacity-10 group-hover:scale-110 transition-transform">
-                  <Gavel className="w-32 h-32 text-blue-500" />
-                </div>
-                <p className="text-xs font-bold text-blue-500 uppercase tracking-widest mb-2">Ruling Party</p>
-                <h3 className={`font-extrabold text-slate-900 dark:text-white leading-tight ${pol.ruling_party && pol.ruling_party.length > 40 ? 'text-lg' : pol.ruling_party && pol.ruling_party.length > 20 ? 'text-xl' : 'text-3xl'}`}>
-                  {pol.ruling_party ? pol.ruling_party.replace(/\.\.\.$/, '').trim() : 'Unknown'}
-                </h3>
-                {pol.political_spectrum && (
-                  <div className="mt-4">
-                    <span className="inline-block px-3 py-1 bg-black/5 dark:bg-white/10 rounded-full text-xs font-bold uppercase text-slate-500">
-                      {pol.political_spectrum}
-                    </span>
-                  </div>
-                )}
-              </div>
-            </div>
-          ) : (
-            <div className="glass-panel p-8 rounded-3xl flex items-center gap-4">
-              <Gavel className="w-8 h-8 text-slate-400" />
-              <p className="text-slate-500 font-medium">Political structure data is currently being collected for {country.name}.</p>
-            </div>
-          )}
-        </section>
+
 
         {/* DIGITAL FREEDOM */}
         <section id="freedom">
