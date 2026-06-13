@@ -453,63 +453,12 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               </div>
               <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">GDP per Capita (PPP)</p>
               <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
-                {gdp != null ? `$${formatNumber(gdp)}` : '--'}<span className="text-base font-medium text-slate-500 ml-1">USD</span>
+                {gdp != null ? `${formatNumber(gdp)}` : '--'}<span className="text-base font-medium text-slate-500 ml-1">USD</span>
               </div>
               <p className="text-sm text-slate-500 mt-2">Adjusts for purchasing power parity.</p>
               {bestGDP && bestGDP.v != null && (
                 <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
                   🏆 Top: ${formatNumber(bestGDP.v)} (<Link href={`/country/${bestGDP.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestGDP.name}</Link>)
-                </div>
-              )}
-            </div>
-
-            {/* Fact 2 */}
-            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
-                <HeartPulse className="w-6 h-6" />
-              </div>
-              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Life Expectancy</p>
-              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
-                {life_expectancy != null ? life_expectancy.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">years</span>
-              </div>
-              <p className="text-sm text-slate-500 mt-2">WHO Data. UHC Index: {uhc != null ? uhc : '--'}/100.</p>
-              {bestLife && bestLife.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
-                  🏆 Top: {bestLife.v.toFixed(1)} yrs (<Link href={`/country/${bestLife.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestLife.name}</Link>)
-                </div>
-              )}
-            </div>
-
-            {/* Fact 3 */}
-            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
-                <Briefcase className="w-6 h-6" />
-              </div>
-              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Unemployment</p>
-              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
-                {unemployment != null ? unemployment.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">%</span>
-              </div>
-              <p className="text-sm text-slate-500 mt-2">ILO Estimate. Indicates job market health.</p>
-              {bestUnemployment && bestUnemployment.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
-                  🏆 Top: {bestUnemployment.v.toFixed(1)}% (<Link href={`/country/${bestUnemployment.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestUnemployment.name}</Link>)
-                </div>
-              )}
-            </div>
-
-            {/* Fact 4 */}
-            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
-                <Shield className="w-6 h-6" />
-              </div>
-              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Safety — Homicides</p>
-              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
-                {homicides != null ? homicides.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">per 100k</span>
-              </div>
-              <p className="text-sm text-slate-500 mt-2">World Bank Crime Data. Lower is safer.</p>
-              {bestHomicides && bestHomicides.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
-                  🏆 Top: {bestHomicides.v.toFixed(1)} (<Link href={`/country/${bestHomicides.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestHomicides.name}</Link>)
                 </div>
               )}
             </div>
@@ -531,6 +480,56 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               )}
             </div>
 
+            {/* Fact 3 */}
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Briefcase className="w-6 h-6" />
+              </div>
+              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Unemployment</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                {unemployment != null ? unemployment.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">%</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-2">ILO Estimate. Indicates job market health.</p>
+              {bestUnemployment && bestUnemployment.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                  🏆 Top: {bestUnemployment.v.toFixed(1)}% (<Link href={`/country/${bestUnemployment.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestUnemployment.name}</Link>)
+                </div>
+              )}
+            </div>
+
+            {/* Fact 9 */}
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-rose-500/10 group-hover:text-rose-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Percent className="w-6 h-6" />
+              </div>
+              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Tax Burden Score</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                {taxBurden != null ? taxBurden.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">/ 100</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-2">Heritage Foundation. Higher score means lower taxes.</p>
+              {bestTaxBurden && bestTaxBurden.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum (lowest taxes)">
+                  🏆 Top: {bestTaxBurden.v.toFixed(1)} (<Link href={`/country/${bestTaxBurden.slug}`} className="hover:text-rose-400 underline decoration-white/30 hover:decoration-rose-400 underline-offset-2 transition-colors">{bestTaxBurden.name}</Link>)
+                </div>
+              )}
+            </div>
+          {/* Fact 8 */}
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-fuchsia-500/10 group-hover:text-fuchsia-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <GraduationCap className="w-6 h-6" />
+              </div>
+              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Education Spending</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                {education != null ? education.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">% of GDP</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-2">UNESCO Data. Indicates focus on public schooling.</p>
+              {bestEducation && bestEducation.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestEducation.v.toFixed(1)}% (<Link href={`/country/${bestEducation.slug}`} className="hover:text-fuchsia-400 underline decoration-white/30 hover:decoration-fuchsia-400 underline-offset-2 transition-colors">{bestEducation.name}</Link>)
+                </div>
+              )}
+            </div>
+
             {/* Fact 6 */}
             <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
               <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
@@ -544,6 +543,40 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               {bestHappiness && bestHappiness.v != null && (
                 <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
                   🏆 Top: {bestHappiness.v.toFixed(2)} (<Link href={`/country/${bestHappiness.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestHappiness.name}</Link>)
+                </div>
+              )}
+            </div>
+
+            {/* Fact 2 */}
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <HeartPulse className="w-6 h-6" />
+              </div>
+              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Life Expectancy</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                {life_expectancy != null ? life_expectancy.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">years</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-2">WHO Data. UHC Index: {uhc != null ? uhc : '--'}/100.</p>
+              {bestLife && bestLife.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                  🏆 Top: {bestLife.v.toFixed(1)} yrs (<Link href={`/country/${bestLife.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestLife.name}</Link>)
+                </div>
+              )}
+            </div>
+
+            {/* Fact 4 */}
+            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <Shield className="w-6 h-6" />
+              </div>
+              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Safety — Homicides</p>
+              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+                {homicides != null ? homicides.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">per 100k</span>
+              </div>
+              <p className="text-sm text-slate-500 mt-2">World Bank Crime Data. Lower is safer.</p>
+              {bestHomicides && bestHomicides.v != null && (
+                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global minimum (best)">
+                  🏆 Top: {bestHomicides.v.toFixed(1)} (<Link href={`/country/${bestHomicides.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestHomicides.name}</Link>)
                 </div>
               )}
             </div>
@@ -565,40 +598,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               )}
             </div>
 
-            {/* Fact 8 */}
-            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-fuchsia-500/10 group-hover:text-fuchsia-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
-                <GraduationCap className="w-6 h-6" />
-              </div>
-              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Education Spending</p>
-              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
-                {education != null ? education.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">% of GDP</span>
-              </div>
-              <p className="text-sm text-slate-500 mt-2">UNESCO Data. Indicates focus on public schooling.</p>
-              {bestEducation && bestEducation.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
-                  🏆 Top: {bestEducation.v.toFixed(1)}% (<Link href={`/country/${bestEducation.slug}`} className="hover:text-fuchsia-400 underline decoration-white/30 hover:decoration-fuchsia-400 underline-offset-2 transition-colors">{bestEducation.name}</Link>)
-                </div>
-              )}
             </div>
-
-            {/* Fact 9 */}
-            <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-rose-500/10 group-hover:text-rose-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
-                <Percent className="w-6 h-6" />
-              </div>
-              <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Tax Burden Score</p>
-              <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
-                {taxBurden != null ? taxBurden.toFixed(1) : '--'}<span className="text-base font-medium text-slate-500 ml-1">/ 100</span>
-              </div>
-              <p className="text-sm text-slate-500 mt-2">Heritage Foundation. Higher score means lower taxes.</p>
-              {bestTaxBurden && bestTaxBurden.v != null && (
-                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum (lowest taxes)">
-                  🏆 Top: {bestTaxBurden.v.toFixed(1)} (<Link href={`/country/${bestTaxBurden.slug}`} className="hover:text-rose-400 underline decoration-white/30 hover:decoration-rose-400 underline-offset-2 transition-colors">{bestTaxBurden.name}</Link>)
-                </div>
-              )}
-            </div>
-          </div>
         </section>
 
         {/* NEW: POLITICS & POWER */}
