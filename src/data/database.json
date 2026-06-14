@@ -71946,8 +71946,9 @@
       "demographics_summary": "With a vibrant and diverse population of over 4 million, the United Arab Emirates offers expats a dynamic environment that's both young and energetic—only about 1.5% of residents are 65 or older. Safety is another highlight, with an impressively low homicide rate of just 0.7 per 100k people, making it a secure haven for digital nomads and wanderers alike. The overall societal vibe is one of harmony and progress, as evidenced by the country's consistently high happiness index scores, often exceeding 6.5 out of 10, creating an inviting atmosphere for those seeking new opportunities and experiences.",
       "politics_summary": null,
       "nomad_visa": {
-        "available": true,
-        "url": "https://en.wikipedia.org/wiki/Digital_nomad_visa#United_Arab_Emirates"
+        "duration": "1 Year",
+        "min_income_usd": 3500,
+        "cost_usd": 778
       },
       "digital_freedom_text": "The United Arab Emirates exhibits moderate internet censorship, with a general censorship anomaly rate of 12.54%, while WhatsApp and Telegram show low anomaly rates (1.25% and 0.42%, suggesting limited disruption for mainstream communication tools critical to remote work. VPNs are not outright banned, but high Tor anomaly rates (67.92%) may indicate network interference targeting specific protocols, though OONI data does not confirm a state-level block. Overall, essential remote work platforms like Slack or GitHub are likely reliable, but users may encounter sporadic restrictions on privacy-focused or circumvention services.",
       "official_language": "Arabic",
