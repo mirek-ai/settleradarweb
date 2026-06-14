@@ -179,3 +179,6 @@ For many, the Nomad Visa is a "starter" visa. If you intend to stay for more tha
 [^16]: IMI Daily - Tax Residency in Under 90 Days [IMI]
 
 *For cost of living, taxes, and safety data, read our complete [Dubai Expat Guide 2026](/country/united-arab-emirates).*
+
+*Cover photo by [Vitaly Gariev](https://www.pexels.com/photo/stunning-dubai-skyline-silhouette-at-sunset-36813102/) on [Pexels](https://www.pexels.com).*
+
