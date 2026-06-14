@@ -187,6 +187,24 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     return best;
   }, null);
 
+  const bestPoliticalStability = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_political_stability']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestRuleOfLaw = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_rule_of_law']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
+  const bestControlOfCorruption = db.countries.reduce((best: any, c: any) => {
+    const v = c.indicators?.['wb_control_of_corruption']?.value;
+    if (v != null && (!best || v > best.v)) return { v, name: c.name, slug: c.slug };
+    return best;
+  }, null);
+
   const freedom = ind['heritage_economic_freedom']?.value; 
   const education = ind['unesco_education_spending']?.value;
   const life_expectancy = ind['who_life_expectancy']?.value;
@@ -215,6 +233,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const womenInPar = ind['wb_women_in_parliament_pct']?.value;
   const taxes = ind['wb_taxes']?.value;
   const taxBurden = ind['heritage_tax_burden']?.value;
+  const political_stability = ind['wb_political_stability']?.value;
+  const rule_of_law = ind['wb_rule_of_law']?.value;
+  const control_of_corruption = ind['wb_control_of_corruption']?.value;
   
   const pol = country.politics || {};
   const climate = country.climate;
@@ -319,8 +340,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <a href="#overview" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Sparkles className="w-4 h-4 text-blue-500" /> Quick Facts
           </a>
-          <a href="#politics" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-            <Gavel className="w-4 h-4 text-purple-500" /> Politics & Power
+          <a href="#stability" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+            <Landmark className="w-4 h-4 text-purple-500" /> Political Stability
           </a>
           <a href="#freedom" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Shield className="w-4 h-4 text-emerald-500" /> Digital Freedom
@@ -1033,6 +1054,95 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </div>
           )}
         </section>
+
+        {/* POLITICAL STABILITY */}
+        {(political_stability != null || rule_of_law != null || control_of_corruption != null) && (
+          <section id="stability" className="space-y-6">
+            <div className="flex items-center gap-2">
+              <Landmark className="w-6 h-6 text-purple-500" />
+              <h2 className="text-3xl font-bold tracking-tight">Political Stability & Governance</h2>
+            </div>
+            
+            <div className="glass-panel p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-lg border border-white/20 dark:border-white/10 hover:border-purple-500/30 transition-colors group">
+              <div className="absolute -right-6 -top-6 opacity-5 group-hover:scale-110 transition-transform pointer-events-none">
+                <Landmark className="w-48 h-48 text-purple-500" />
+              </div>
+
+              {country.politics_summary ? (
+                <div className="prose prose-slate max-w-none dark:prose-invert prose-p:leading-relaxed prose-p:text-slate-700 dark:prose-p:text-slate-200 font-medium relative z-10 mb-10" dangerouslySetInnerHTML={{ __html: country.politics_summary }} />
+              ) : (
+                <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed relative z-10 font-medium mb-10">
+                  {country.name} exhibits dynamic governance metrics as tracked by the Worldwide Governance Indicators.
+                </p>
+              )}
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                {/* Tile 1 */}
+                {political_stability != null && (
+                  <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group/tile">
+                    <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover/tile:bg-purple-500/10 group-hover/tile:text-purple-500 flex items-center justify-center mb-4 group-hover/tile:scale-110 transition-all">
+                      <Shield className="w-6 h-6" />
+                    </div>
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Stability & Violence</div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                      {political_stability > 0 ? '+' : ''}{political_stability.toFixed(2)} <span className="text-base font-semibold text-slate-500 mb-1"></span>
+                    </div>
+                    {bestPoliticalStability && bestPoliticalStability.v != null && (
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                        🏆 Top: {bestPoliticalStability.v > 0 ? '+' : ''}{bestPoliticalStability.v.toFixed(2)} (<Link href={`/country/${bestPoliticalStability.slug}`} className="hover:text-purple-400 underline decoration-white/30 hover:decoration-purple-400 underline-offset-2 transition-colors">{bestPoliticalStability.name}</Link>)
+                      </div>
+                    )}
+                  </div>
+                )}
+                
+                {/* Tile 2 */}
+                {rule_of_law != null && (
+                  <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group/tile">
+                    <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover/tile:bg-blue-500/10 group-hover/tile:text-blue-500 flex items-center justify-center mb-4 group-hover/tile:scale-110 transition-all">
+                      <Gavel className="w-6 h-6" />
+                    </div>
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Rule of Law</div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                      {rule_of_law > 0 ? '+' : ''}{rule_of_law.toFixed(2)} <span className="text-base font-semibold text-slate-500 mb-1"></span>
+                    </div>
+                    {bestRuleOfLaw && bestRuleOfLaw.v != null && (
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                        🏆 Top: {bestRuleOfLaw.v > 0 ? '+' : ''}{bestRuleOfLaw.v.toFixed(2)} (<Link href={`/country/${bestRuleOfLaw.slug}`} className="hover:text-blue-400 underline decoration-white/30 hover:decoration-blue-400 underline-offset-2 transition-colors">{bestRuleOfLaw.name}</Link>)
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* Tile 3 */}
+                {control_of_corruption != null && (
+                  <div className="glass-panel p-6 rounded-3xl flex flex-col h-full hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-white/20 group/tile">
+                    <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover/tile:bg-emerald-500/10 group-hover/tile:text-emerald-500 flex items-center justify-center mb-4 group-hover/tile:scale-110 transition-all">
+                      <Activity className="w-6 h-6" />
+                    </div>
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Control of Corruption</div>
+                    <div className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-end gap-1">
+                      {control_of_corruption > 0 ? '+' : ''}{control_of_corruption.toFixed(2)} <span className="text-base font-semibold text-slate-500 mb-1"></span>
+                    </div>
+                    {bestControlOfCorruption && bestControlOfCorruption.v != null && (
+                      <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider mt-auto pt-3 border-t border-slate-200/50 dark:border-slate-800/50" title="Global maximum">
+                        🏆 Top: {bestControlOfCorruption.v > 0 ? '+' : ''}{bestControlOfCorruption.v.toFixed(2)} (<Link href={`/country/${bestControlOfCorruption.slug}`} className="hover:text-emerald-400 underline decoration-white/30 hover:decoration-emerald-400 underline-offset-2 transition-colors">{bestControlOfCorruption.name}</Link>)
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              <div className="mt-10 border-t border-slate-200/50 dark:border-slate-800/50 pt-6 relative z-10">
+                <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 leading-relaxed">
+                  Evaluated across Worldwide Governance Indicators (WGI). Scores span approximately -2.5 to 2.5, where higher scores indicate stronger governance, better stability, and lower corruption.
+                </p>
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
+                  <Sparkles className="w-4 h-4 text-purple-500" /> Insights based on World Bank Data
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* RELATED ARTICLES */}
         {relatedPosts.length > 0 && (
