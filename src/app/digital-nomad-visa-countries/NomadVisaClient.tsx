@@ -24,9 +24,10 @@ type SortKey = 'name' | 'taxes' | 'freedom' | 'homicides' | 'air' | 'happiness';
 
 interface NomadVisaClientProps {
   countries: any[];
+  guideMap?: Record<string, string>;
 }
 
-export default function NomadVisaClient({ countries }: NomadVisaClientProps) {
+export default function NomadVisaClient({ countries, guideMap = {} }: NomadVisaClientProps) {
   const [sortBy, setSortBy] = useState<SortKey>('freedom');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [searchQuery, setSearchQuery] = useState('');
@@ -227,10 +228,20 @@ export default function NomadVisaClient({ countries }: NomadVisaClientProps) {
                           <span className="text-slate-600 text-sm font-mono">--</span>
                         )}
                       </td>
-                      <td className="py-4 px-6 hidden sm:table-cell">
-                        {country.nomad_visa && (
-                          <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-bold">
-                            <CheckCircle className="w-4 h-4" /> Yes
+                      <td className="py-4 px-6 text-sm font-semibold whitespace-nowrap">
+                        {country.nomad_visa ? (
+                          guideMap[country.slug] ? (
+                            <Link href={`/blog/${guideMap[country.slug]}`} className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-bold hover:underline">
+                              <CheckCircle className="w-4 h-4" /> Yes (Read Guide)
+                            </Link>
+                          ) : (
+                            <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400">
+                              <CheckCircle className="w-4 h-4" /> Yes
+                            </div>
+                          )
+                        ) : (
+                          <div className="flex items-center gap-1.5 text-slate-400 dark:text-slate-600">
+                            <span>--</span>
                           </div>
                         )}
                       </td>
@@ -296,7 +307,7 @@ export default function NomadVisaClient({ countries }: NomadVisaClientProps) {
                         <div className="font-bold text-slate-900 dark:text-white text-base leading-tight">
                           {country.name}
                         </div>
-                        <div className="text-xs text-slate-500 flex items-center gap-1 mt-0.5">
+                        <div className="text-xs text-slate-50 flex items-center gap-1 mt-0.5">
                           <span className="truncate">{country.region}</span>
                         </div>
                       </div>
@@ -351,6 +362,29 @@ export default function NomadVisaClient({ countries }: NomadVisaClientProps) {
                       ) : <span className="text-slate-400 text-sm">--</span>}
                     </div>
                   </div>
+
+                  {country.nomad_visa?.url && !guideMap[country.slug] && (
+                    <div className="pt-2">
+                      <a 
+                        href={country.nomad_visa.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full flex items-center justify-center px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-all"
+                      >
+                        Official Visa Info
+                      </a>
+                    </div>
+                  )}
+                  {guideMap[country.slug] && (
+                    <div className="pt-2">
+                      <Link 
+                        href={`/blog/${guideMap[country.slug]}`}
+                        className="w-full flex items-center justify-center px-4 py-2 text-sm font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-900/30 dark:hover:bg-emerald-800/40 border border-emerald-200 dark:border-emerald-800 rounded-xl transition-all"
+                      >
+                        Read Visa Guide
+                      </Link>
+                    </div>
+                  )}
 
                   <Link 
                     href={`/country/${country.slug}`}

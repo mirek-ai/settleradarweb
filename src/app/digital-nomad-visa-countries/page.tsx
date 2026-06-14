@@ -12,6 +12,15 @@ export default async function NomadVisasPage() {
   const dbPath = path.join(process.cwd(), 'src', 'data', 'database.json');
   const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
 
+  const { getSortedPostsData } = require('@/lib/posts');
+  const allPosts = getSortedPostsData();
+  const visaGuides = allPosts.filter((p: any) => p.title.toLowerCase().includes('nomad visa') || p.title.toLowerCase().includes('nomad-visa'));
+  const guideMap: Record<string, string> = {};
+  visaGuides.forEach((p: any) => {
+    if (p.country) {
+      guideMap[p.country.toLowerCase().replace(/\s+/g, '-')] = p.slug;
+    }
+  });
   // Pre-filter valid countries that have a nomad visa defined
   const nomadCountries = db.countries
     .filter((country: any) => !!country.nomad_visa)
@@ -36,6 +45,7 @@ export default async function NomadVisasPage() {
   return (
     <NomadVisaClient 
       countries={nomadCountries} 
+      guideMap={guideMap}
     />
   );
 }
