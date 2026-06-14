@@ -354,8 +354,8 @@ Reykjavik was named the **world's safest city in 2026** by the Global Peace Inde
 
 | Metric | Value |
 |--------|-------|
-| Reykjavik Crime Index (Numbeo) | **18.29 - Very Low**[^2] |
-| Reykjavik Safety Index (Numbeo) | **76.46**[^2] |
+| Reykjavik Crime Index (Crowdsourced Data) | **18.29 - Very Low**[^2] |
+| Reykjavik Safety Index (Crowdsourced Data) | **76.46**[^2] |
 | Mugging/robbery worry | 14.76 - Very Low[^2] |
 | Physical attack worry | 16.61 - Very Low[^2] |
 | Safety walking alone at night | **72.02% - High**[^2] |
@@ -523,7 +523,7 @@ Iceland's property market has been cooling after a 2020-2024 boom, but prices re
 | Citizenship processing backlog (June 2026) | **Processing October 2024 applications (~18 months)**[^25] |
 | Dual citizenship | **Permitted**[^21] |
 | Icelandic passport visa-free access | **~190 countries** |
-| Reykjavik Crime Index (Numbeo) | **18.29 - Very Low**[^2] |
+| Reykjavik Crime Index (Crowdsourced Data) | **18.29 - Very Low**[^2] |
 | Reykjavik - World's Safest City 2026 | **Yes (Global Peace Index)**[^1] |
 | Healthcare waiting period (non-EU) | **6 months of legal residence**[^37][^38] |
 | Annual healthcare out-of-pocket cap | **ISK 37,794 (~€242)**[^38] |
@@ -546,7 +546,7 @@ The Iceland calculation is binary. You can get a job offer from an Icelandic emp
 
 1. [Iceland Overtakes Ireland, Austria, Switzerland, Portugal, ...](https://www.travelandtourworld.com/news/article/iceland-overtakes-ireland-austria-switzerland-portugal-denmark-slovenia-and-more-in-europe-as-reykjavik-soars-to-the-top-of-global-safety-rankings-in-2026/) - Reykjavik, Iceland, soared to the top of the Global Safety Rankings as the world's safest city in 20...
 
-2. [Crime in Reykjavik, Iceland](https://www.numbeo.com/crime/in/Reykjavik)
+2. [Crime in Reykjavik, Iceland](#)
 
 3. [Cost of Living in Reykjavik, Capital Region, Iceland in 2026](https://livingcostindex.com/regions/reykjavik-is-1/) - This page contains up-to-date cost of living information for Reykjavik, Capital Region, Iceland in 2...
 

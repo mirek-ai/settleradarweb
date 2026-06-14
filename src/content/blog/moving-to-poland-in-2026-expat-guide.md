@@ -57,7 +57,7 @@ A single person living comfortably in Poland outside of rent spends approximatel
 | Łódź | 1,900 PLN | 2,000-2,600 PLN | 3,000 PLN |
 | Lublin | 1,700 PLN | 1,800-2,400 PLN | 2,800 PLN |
 
-*Source: Domkaspot, Otodom, Numbeo 2026*[^14][^15]
+*Source: Domkaspot, Otodom, Crowdsourced Data 2026*[^14][^15]
 
 Warsaw rents grew 4-6% year-on-year through early 2026. Lublin shared rooms run 44% cheaper than Warsaw equivalents. Best expat neighborhoods: **Mokotów and Wilanów** in Warsaw; **Kazimierz and Stare Miasto** in Kraków.[^15][^16][^17][^14]
 ### Daily Expenses (Warsaw/National Average)
@@ -139,7 +139,7 @@ The capital. Highest salaries, most multinational employers, best international 
 ### Wrocław
 Growing tech sector, strong connectivity to Western Europe, younger demographic. Quality of Life Index: 145.8, Safety Index: 74.7. Rents below Warsaw and Kraków. Best for tech professionals who want upside without the capital's cost.[^35]
 ### Poznań
-2026 Business Insider co-winner for quality of life among Poland's provincial capitals. Highest Numbeo Quality of Life Index among Polish cities at 156.6. Lower congestion, better work-life balance, strong German-influenced business culture. Best for families and long-term settlers.[^36][^35]
+2026 Business Insider co-winner for quality of life among Poland's provincial capitals. Highest Crowdsourced Data Quality of Life Index among Polish cities at 156.6. Lower congestion, better work-life balance, strong German-influenced business culture. Best for families and long-term settlers.[^36][^35]
 ### Gdańsk
 Baltic coast, maritime character, strong tourism. Quality of Life Index: 147.8. Rents are driven up seasonally by tourism demand. Best for those who want coastal access and a Western European feel at a Central European price.[^35][^15]
 
@@ -191,7 +191,7 @@ Warsaw new-build average: approximately **PLN 14,750/sqm**. A 50 sqm flat in War
 | Unemployment | ~3.0% |
 | GDP per Capita (PPP) | ~$51,262 USD |
 | Life Expectancy | 75.4 years |
-| Safety Index (Numbeo) | 71.36[^35] |
+| Safety Index (Crowdsourced Data) | 71.36[^35] |
 | English Proficiency Global Rank | 13th (B2)[^32] |
 | Household Internet Access | 95.9%[^40] |
 | Median Download Speed | 152.13 Mbps[^40] |
@@ -241,7 +241,7 @@ Poland levied its fourfold fee increase on work and residence permits starting J
 
 17. [Tips and Tricks for Finding Housing in Poland - Jarnias Cyril](https://www.jarniascyril.com/expatriation/guide-moving-to-poland-expat/find-housing-poland-tips-tricks/) - Good to Know: In Warsaw, expats favor the Mokotów neighborhood for its greenery and transportation, ...
 
-18. [Cost of Living in Poland. Prices in Poland. Updated Feb 2026](https://www.numbeo.com/cost-of-living/country_result.jsp?country=Poland) - Average prices of more than 40 products and services in Poland. Prices of restaurants, food, transpo...
+18. [Cost of Living in Poland. Prices in Poland. Updated Feb 2026](#) - Average prices of more than 40 products and services in Poland. Prices of restaurants, food, transpo...
 
 19. [Poland - Individual - Taxes on personal income](https://taxsummaries.pwc.com/poland/individual/taxes-on-personal-income) - Polish tax residents pay PIT on their worldwide income. Non-residents are subject to Polish PIT on t...
 
@@ -275,7 +275,7 @@ Poland levied its fourfold fee increase on work and residence permits starting J
 
 34. [Navigating the Polish Language: A Guide for Expats](https://cupofpolish.com/navigating-the-polish-language-a-guide-for-expats/) - In this guide, we'll explore how Polish lessons for expats can help you navigate daily life, enhance...
 
-35. [Quality of Life in Poland](https://www.numbeo.com/quality-of-life/country_result.jsp?country=Poland) - Uses cost of living, purchasing power, safety, pollution, climate, traffic and other available infor...
+35. [Quality of Life in Poland](#) - Uses cost of living, purchasing power, safety, pollution, climate, traffic and other available infor...
 
 36. [Ranking of Polish Cities by Quality of Life in 2026 - Visit World](https://visitworld.today/blog/3592/ranking-of-polish-cities-by-quality-of-life-in-2026-where-is-the-best-place-to-live) - Business Insider has updated its ranking of quality of life in Poland’s provincial capitals - Poznań a...
 

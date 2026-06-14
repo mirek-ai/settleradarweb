@@ -61,7 +61,7 @@ Announced in October 2025, Romania is introducing a residence-by-investment prog
 
 ## Cost of Living: The Real Numbers
 
-A single person living comfortably in Bucharest spends **€1,000-€1,400/month** including rent. In Cluj-Napoca, expect **€800-€1,100/month**. Budget-conscious living (shared housing, public transport, home cooking) is achievable for €700-€900/month in most cities. These are not estimates - they're figures reported by expats and cross-checked against Numbeo data updated June 2026.[^19][^20][^1]
+A single person living comfortably in Bucharest spends **€1,000-€1,400/month** including rent. In Cluj-Napoca, expect **€800-€1,100/month**. Budget-conscious living (shared housing, public transport, home cooking) is achievable for €700-€900/month in most cities. These are not estimates - they're figures reported by expats and cross-checked against Crowdsourced Data data updated June 2026.[^19][^20][^1]
 
 ### Rent by City (2026)
 
@@ -75,7 +75,7 @@ A single person living comfortably in Bucharest spends **€1,000-€1,400/month
 | Brașov | €250-€350 | €300-€420 | €450-€650 |
 | Sibiu | €200-€280 | €250-€370 | €380-€530 |
 
-*Sources: Investropa, Numbeo 2026*[^4][^1]
+*Sources: Investropa, Crowdsourced Data 2026*[^4][^1]
 
 Bucharest's rental market is growing around **8% year-on-year**. Cluj-Napoca studios in central areas reach €400/month - the country's most expensive market outside premium Bucharest zones. Metro proximity in Bucharest adds €50-€100/month.[^4]
 
@@ -171,7 +171,7 @@ Young professionals in IT, finance, and multinational companies are reliably Eng
 
 ### Bucharest
 
-The capital. Highest salaries, deepest job market, every multinational present. Quality of Life Index: 131.1 (Numbeo) - lower than other Romanian cities but still solid. Safety index: 71.9. Best for corporate professionals, senior hires, and anyone who needs direct international flights. Traffic and air quality are the main drawbacks.[^31][^30]
+The capital. Highest salaries, deepest job market, every multinational present. Quality of Life Index: 131.1 (Crowdsourced Data) - lower than other Romanian cities but still solid. Safety index: 71.9. Best for corporate professionals, senior hires, and anyone who needs direct international flights. Traffic and air quality are the main drawbacks.[^31][^30]
 
 Best expat neighborhoods: **Floreasca, Dorobanți**, and **Herăstrău** (north of the city, green, diplomatic quarter); **Titan** and **Militari** for value.
 
@@ -193,7 +193,7 @@ Largest city in northeastern Romania, major university city, and the cheapest am
 
 ### City Comparison at a Glance
 
-| City | Numbeo Quality of Life | Approx. 1-BR Rent | Best For |
+| City | Crowdsourced Data Quality of Life | Approx. 1-BR Rent | Best For |
 |------|----------------------|-------------------|----------|
 | Timișoara | Highest in Romania[^31] | €300-€450 | Families, long-term settlers |
 | Cluj-Napoca | 163.7[^30] | €400-€550 | Tech workers, nomads |
@@ -267,7 +267,7 @@ Mortgage rates for foreigners in 2026: **5.5-7.5%** for RON-denominated loans. R
 | Fixed Broadband Global Rank | 12th (April 2026)[^40] |
 | 1 Gbps Internet (monthly) | ~€5-6[^5] |
 | EF English Proficiency Rank | 11th globally[^6] |
-| Numbeo Crime Index (2026) | 32.8[^27] |
+| Crowdsourced Data Crime Index (2026) | 32.8[^27] |
 | Bucharest Crime Index | 28.5[^29] |
 | Bucharest Apt. Price/sqm | ~€2,200[^24] |
 | Rental Yield (major cities) | 5-7% gross[^4] |
@@ -279,7 +279,7 @@ Romania's economy is navigating a rough patch - that's the honest summary of 202
 
 ## References
 
-1. [Cost of Living in Romania. Prices in Romania. Updated Jun 2026](https://www.numbeo.com/cost-of-living/country_result.jsp?country=Romania) - ... rent. Cost of living in Romania is, on average, 42.7% lower than in United States. Rent in Roman...
+1. [Cost of Living in Romania. Prices in Romania. Updated Jun 2026](#) - ... rent. Cost of living in Romania is, on average, 42.7% lower than in United States. Rent in Roman...
 
 2. [Travel authorities & visas - the FEPSAC Congress 2026](https://congress2026.fepsac.com/travel-authorities-visas/) - EU/EEA/Swiss Citizens: Do not need a visa and can enter Romania with a valid passport or national ID...
 
@@ -331,13 +331,13 @@ Romania's economy is navigating a rough patch - that's the honest summary of 202
 
 26. [International Health Insurance for Expats in Romania - Pacific Prime](https://www.pacificprime.com/country/europe/romania-health-insurance-pacific-prime-international/) - International health insurance ensures expats in Romania have access to private healthcare everywher...
 
-27. [Europe: Crime Index by Country 2026 - Cost of Living](https://www.numbeo.com/crime/rankings_by_country.jsp?title=2026&region=150)
+27. [Europe: Crime Index by Country 2026 - Cost of Living](#)
 
-28. [Eastern Europe: Crime Index by Country 2026 - Cost of Living](https://www.numbeo.com/crime/rankings_by_country.jsp?title=2026&region=151)
+28. [Eastern Europe: Crime Index by Country 2026 - Cost of Living](#)
 
 29. [Bucharest, Romania: Safer Than You Expect According to the ...](https://x.com/DanStoenescu/status/2016600896348836101)
 
-30. [Romania stands out for high safety levels in Numbeo's quality of life index](https://www.romania-insider.com/numbeo-romania-quality-life-safety-february-2025) - Romania's quality of life index has been evaluated at 142 out of 240, according to data from Numbeo,...
+30. [Romania stands out for high safety levels in Crowdsourced Data's quality of life index](https://www.romania-insider.com/Crowdsourced Data-romania-quality-life-safety-february-2025) - Romania's quality of life index has been evaluated at 142 out of 240, according to data from Crowdsourced Data,...
 
 31. [Top of the best cities to live in Romania in 2026 - spotmedia.ro](https://spotmedia.ro/en/news/social/top-of-the-best-cities-to-live-in-romania-in-2026) - Top of the best cities to live in Romania in 2026
 

@@ -92,7 +92,7 @@ Luxembourg has no dedicated digital nomad visa. EU citizens can live and work re
 
 ## Cost of Living: Global Financial-Centre Pricing
 
-Luxembourg ranks **12th in Numbeo's 2026 Global Cost of Living Index**, scoring 65.2 against New York City's 100 - ahead of Norway, Ireland, the Netherlands, Denmark, and Germany. Everyday costs are more than double the global median of 30.8.[^15]
+Luxembourg ranks **12th in Crowdsourced Data's 2026 Global Cost of Living Index**, scoring 65.2 against New York City's 100 - ahead of Norway, Ireland, the Netherlands, Denmark, and Germany. Everyday costs are more than double the global median of 30.8.[^15]
 
 The honest monthly budget for a single working expat in Luxembourg City:
 
@@ -206,7 +206,7 @@ The gap between actual charges (especially for specialists, dental, optical, and
 
 Luxembourg's national Crime Index: **34.2** - Safety Index: **65.8**. The safety picture is mixed in a specific way: residents rate daytime safety at **80.68% "Very High"** but night-time safety at a more modest **56.89% "Moderate."** The primary concern is drug-related activity (rated "Moderate") - Luxembourg has a visible open drug scene in certain areas of Luxembourg City, particularly around the main train station (Gare) neighbourhood. The Gare area is not dangerous by European standards, but it is the neighbourhood most commonly cited by expats as uncomfortable at night.[^28][^29]
 
-By Numbeo's 2026 European city rankings, Luxembourg City sits well below Brussels (55.4 Crime Index) and broadly comparable to Vienna and Dublin. Property crime (home break-in, car theft) is rated "Low." Violent crime and attacks: "Low." Corruption: "Low."[^30][^28]
+By Crowdsourced Data's 2026 European city rankings, Luxembourg City sits well below Brussels (55.4 Crime Index) and broadly comparable to Vienna and Dublin. Property crime (home break-in, car theft) is rated "Low." Violent crime and attacks: "Low." Corruption: "Low."[^30][^28]
 
 ***
 
@@ -373,11 +373,11 @@ Luxembourg is the only country in the world that solved its public transport pro
 
 14. [Who Can Apply for a Work Visa for Luxembourg in 2026? Eligibility ...](https://ausizzmigrationconsultants.com/work-visa-for-luxembourg/) - Discover who can apply for a Luxembourg work visa through employer sponsorship, Cat 1 skills, and AD...
 
-15. [Antony Martini's Post - LinkedIn](https://www.linkedin.com/posts/antonymartini_luxembourg-in-the-global-cost-of-living-index-activity-7426901370647154688-kBT-) - Luxembourg ranks 12th worldwide in Numbeo's 2026 Cost of Living Index, with a score of 65.2. Luxembo...
+15. [Antony Martini's Post - LinkedIn](https://www.linkedin.com/posts/antonymartini_luxembourg-in-the-global-cost-of-living-index-activity-7426901370647154688-kBT-) - Luxembourg ranks 12th worldwide in Crowdsourced Data's 2026 Cost of Living Index, with a score of 65.2. Luxembo...
 
 16. [Cost of living in Luxembourg in 2026: Clothing, Food, Housing & More](https://wise.com/gb/cost-of-living/luxembourg) - Rent prices in Luxembourg depend on location. The average monthly rent for a 1-bedroom apartment in ...
 
-17. [Cost of Living in Luxembourg](https://www.numbeo.com/cost-of-living/in/Luxembourg)
+17. [Cost of Living in Luxembourg](#)
 
 18. [Free public transport and exceptions | Ville de Luxembourg](https://www.vdl.lu/en/getting-around/bus/free-public-transport-and-exceptions)
 
@@ -399,11 +399,11 @@ Luxembourg is the only country in the world that solved its public transport pro
 
 27. [Expat Health Insurance in Luxembourg - Coverage & Plans](https://www.jarniascyril.com/expatriation/guide-moving-to-luxembourg-expats/expat-healthcare-luxembourg/) - Discover healthcare options for expatriates in Luxembourg, with practical tips for easy access and e...
 
-28. [Crime in Luxembourg](https://www.numbeo.com/crime/country_result.jsp?country=Luxembourg) - Information about crime in Luxembourg. Shows how much people think the problem in their community ar...
+28. [Crime in Luxembourg](#) - Information about crime in Luxembourg. Shows how much people think the problem in their community ar...
 
-29. [Europe: Crime Index by Country 2025](https://www.numbeo.com/crime/rankings_by_country.jsp?title=2025&region=150)
+29. [Europe: Crime Index by Country 2025](#)
 
-30. [Europe: Crime Index by City 2026 - Cost of Living](https://www.numbeo.com/crime/region_rankings.jsp?title=2026&region=150)
+30. [Europe: Crime Index by City 2026 - Cost of Living](#)
 
 31. [Moving to Luxembourg: insights and tips - Expatica](https://www.expatica.com/lu/moving/) - Get an introduction to all the essentials of life as an expat in Luxembourg, from the climate to the...
 

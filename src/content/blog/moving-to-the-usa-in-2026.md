@@ -283,9 +283,9 @@ The **PPO (Preferred Provider Organisation)** plan type offers more flexibility 
 
 ## Safety: Highly Variable by City and Neighbourhood
 
-The U.S. national Crime Index (Numbeo 2026) is **49.2**, giving a Safety Index of **50.8** — roughly the global median. This headline number obscures enormous variation across cities and neighbourhoods.[^39]
+The U.S. national Crime Index (Crowdsourced Data 2026) is **49.2**, giving a Safety Index of **50.8** — roughly the global median. This headline number obscures enormous variation across cities and neighbourhoods.[^39]
 
-### US City Safety Index Rankings (Numbeo 2026 — Selected Cities)
+### US City Safety Index Rankings (Crowdsourced Data 2026 — Selected Cities)
 
 | City | Crime Index | Safety Index |
 |------|------------|--------------|
@@ -492,8 +492,8 @@ This is the calculation that drives the migration from California and New York t
 | Foreign buyer property restriction | **None federally** (state restrictions on adversary nations)[^52][^54] |
 | Foreign national mortgage down payment | **30–40%**[^53] |
 | FIRPTA withholding (foreign seller) | **15% of sale price**[^53] |
-| U.S. national Crime Index (Numbeo 2026) | **49.2 / Safety Index 50.8**[^39] |
-| Safest major U.S. city (Numbeo 2026) | **Madison, WI — Safety Index 63.5**[^40] |
+| U.S. national Crime Index (Crowdsourced Data 2026) | **49.2 / Safety Index 50.8**[^39] |
+| Safest major U.S. city (Crowdsourced Data 2026) | **Madison, WI — Safety Index 63.5**[^40] |
 | Emergency number | **911** |
 
 The EB-1A National Interest Waiver self-petition is the single most underused tool available to qualifying professionals outside India and China. It requires no employer sponsor, no PERM process, no lottery — and for Rest of World nationals it can deliver a green card in 1.5–3 years. Senior engineers, researchers, healthcare professionals, and entrepreneurs who have published, been cited, or demonstrated industry impact should consult an immigration attorney about whether they qualify. The processing cost is approximately $700–$1,500 in filing fees plus legal fees. The benefit — breaking free from employer dependency — is worth multiples of that.[^4]
@@ -578,11 +578,11 @@ The EB-1A National Interest Waiver self-petition is the single most underused to
 
 38. [US Health Insurance for Expats: What You Need to Know](https://affordwhere.com/blog/usa-health-insurance-expats-guide) - Navigate the complex American healthcare system. Learn about insurance options, costs, and how to ge...
 
-39. [America: Crime Index by Country 2026 - Cost of Living](https://www.numbeo.com/crime/rankings_by_country.jsp?title=2026&region=019)
+39. [America: Crime Index by Country 2026 - Cost of Living](#)
 
-40. [America: Safety Index by City 2026](https://www.numbeo.com/quality-of-life/region_rankings.jsp?title=2026&displayColumn=2&region=019)
+40. [America: Safety Index by City 2026](#)
 
-41. [Crime in United States - Cost of Living](https://www.numbeo.com/crime/country_result.jsp?country=United+States) - Information about crime in United States. Shows how much people think the problem in their community...
+41. [Crime in United States - Cost of Living](#) - Information about crime in United States. Shows how much people think the problem in their community...
 
 42. [The 25 Best Places to Live for the Weather in 2024-2025](https://realestate.usnews.com/real-estate/articles/best-places-to-live-in-the-us-for-the-weather) - Moderate temperatures and abundant sunshine determine how desirable a city is to live.
 

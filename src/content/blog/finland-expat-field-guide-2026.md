@@ -322,9 +322,9 @@ The **maximum annual healthcare cost cap (kustannuskatto) for public services: �
 
 ## Safety: One of the Safest Countries in Europe
 
-Finland's national Crime Index (Numbeo 2026): **24.44 - Low**. This places Finland among the five safest countries in Europe. Safety when walking alone during daylight: **85.4% - Very High**. Safety walking alone at night: **66.9% - High**.[^34]
+Finland's national Crime Index (Crowdsourced Data 2026): **24.44 - Low**. This places Finland among the five safest countries in Europe. Safety when walking alone during daylight: **85.4% - Very High**. Safety walking alone at night: **66.9% - High**.[^34]
 
-Helsinki ranked 41st safest city in the world in the Numbeo Safety Index 2026. Context: Vantaa (part of the Helsinki metropolitan area), Jyväskylä, and Tampere are Finland's least safe cities by the police disturbance index - but "least safe in Finland" still means exceptionally safe by European or global standards.[^35][^36]
+Helsinki ranked 41st safest city in the world in the Crowdsourced Data Safety Index 2026. Context: Vantaa (part of the Helsinki metropolitan area), Jyväskylä, and Tampere are Finland's least safe cities by the police disturbance index - but "least safe in Finland" still means exceptionally safe by European or global standards.[^35][^36]
 
 **What the data captures for daily expat life:**
 - Property crime (bicycle theft, car break-ins): rated **Low**
@@ -516,7 +516,7 @@ Finland is largely open to foreign property buyers, with one meaningful restrict
 | Citizenship (language track) | **5 years with language proficiency**[^3] |
 | Citizenship test | **Planned January 2027**[^19] |
 | Dual citizenship | **Permitted - no renunciation required** |
-| National Crime Index (Numbeo 2026) | **24.44 - Low**[^34] |
+| National Crime Index (Crowdsourced Data 2026) | **24.44 - Low**[^34] |
 | Helsinki safety ranking (global 2026) | **41st safest city worldwide**[^36] |
 | Helsinki 1-BR rent (centre) | **â‚¬1,000-1,500/month**[^20] |
 | Tampere 1-BR rent (centre) | **â‚¬700-900/month**[^20] |
@@ -584,7 +584,7 @@ The January 2026 permanent residence changes landed hard. Anyone who arrived in 
 
 23. [Gross rental yields in Finland: Helsinki and 4 other cities](https://www.globalpropertyguide.com/europe/finland/rental-yields) - What rental returns (yields) do residential investments in Finland earn? Research on average incomes...
 
-24. [Cost of Living in Helsinki. Jun 2026. Prices in Helsinki](https://www.numbeo.com/cost-of-living/in/Helsinki) - The estimated monthly costs for a family of four are $4,236.9 (â‚¬3,664.6), excluding rent. The estima...
+24. [Cost of Living in Helsinki. Jun 2026. Prices in Helsinki](#) - The estimated monthly costs for a family of four are $4,236.9 (â‚¬3,664.6), excluding rent. The estima...
 
 25. [Cost of Living in Helsinki. Updated Prices Jun 2026. - Expatistan](https://www.expatistan.com/cost-of-living/helsinki) - Family of four estimated monthly costs: â‚¬4,539 Single person estimated monthly costs: â‚¬2,488 . List ...
 
@@ -604,7 +604,7 @@ The January 2026 permanent residence changes landed hard. Anyone who arrived in 
 
 33. [Finland Healthcare System - Insurance Options for Expats](https://expatfinancial.com/healthcare-information-by-region/european-healthcare-system/finland-healthcare-system/) - In Finland, those who have a valid Kela card are entitled to get partial reimbursement for private h...
 
-34. [Crime in Finland - Cost of Living](https://www.numbeo.com/crime/country_result.jsp?country=Finland) - Crime rates in Finland ; Worries being mugged or robbed. 22.50 ; Worries car stolen. 16.43 ; Worries...
+34. [Crime in Finland - Cost of Living](#) - Crime rates in Finland ; Worries being mugged or robbed. 22.50 ; Worries car stolen. 16.43 ; Worries...
 
 35. [Here are the least safe cities in Finland, based on police data - Yle](https://yle.fi/a/74-20183700) - Vantaa, Jyväskylä, and Tampere are currently Finland's most unsafe cities, according to the latest f...
 

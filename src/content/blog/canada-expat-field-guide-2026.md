@@ -325,7 +325,7 @@ Approximately **two-thirds of Canadians** carry supplemental private insurance -
 
 ## Safety: Ottawa and Quebec City Lead, Surrey and Winnipeg Are the Outliers
 
-Canada's national Crime Index (Numbeo 2026): **45.6 - Moderate**. The range across cities is wide.[^35]
+Canada's national Crime Index (Crowdsourced Data 2026): **45.6 - Moderate**. The range across cities is wide.[^35]
 
 | City | Crime Index | Safety Index |
 |------|-------------|-------------|
@@ -560,7 +560,7 @@ Canada's foreign buyer situation is the most significant property restriction fo
 | Calgary 2-BR average rent | **CAD $1,900**[^22] |
 | Foreign buyer ban expiry | **January 1, 2027** (under review)[^38][^40] |
 | Work permit holders - exempt from ban? | **Yes, with conditions**[^38] |
-| National Crime Index (Numbeo 2026) | **45.6 - Moderate**[^35] |
+| National Crime Index (Crowdsourced Data 2026) | **45.6 - Moderate**[^35] |
 | Ottawa Crime Index | **31.3 - Low**[^37] |
 | Quebec City Crime Index | **22.5 - Very Low**[^37] |
 | Emergency | **911** |
@@ -620,7 +620,7 @@ The Express Entry picture in 2026 is unambiguous: **if you're not already in Can
 
 24. [Cost of Living in Canada 2026: Calgary, Montreal, Ottawa, Toronto ...](https://www.reloplanner.com/blog/cost-of-living-canada-2026-cities-compared) - Six cities, three very different price tiers. Montreal is the outlier that changes the conversation....
 
-25. [Cost of Living in Canada. Prices in Canada. Updated Jun 2026](https://www.numbeo.com/cost-of-living/country_result.jsp?country=Canada) - The estimated monthly costs for a family of four are $3,742.5. The estimated monthly costs for a sin...
+25. [Cost of Living in Canada. Prices in Canada. Updated Jun 2026](#) - The estimated monthly costs for a family of four are $3,742.5. The estimated monthly costs for a sin...
 
 26. [Income tax changes for 2026 - TD Stories](https://stories.td.com/ca/en/article/why-your-paycheque-might-look-a-bit-different-in-2026) - So, if you make less than $58,523, you will be paying a federal tax rate of 14% in 2026. Keep in min...
 
@@ -640,11 +640,11 @@ The Express Entry picture in 2026 is unambiguous: **if you're not already in Can
 
 34. [Canada's universal health-care system: achieving its potential - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7138369/) - It provides relatively equitable access to physician and hospital services through 13 provincial and...
 
-35. [Crime Index by Country 2026 - Cost of Living](https://www.numbeo.com/crime/rankings_by_country.jsp) - Crime Index by Country 2026. ; 74, Canada, 45.6 ; 75, Kazakhstan, 45.2 ; 76, Senegal, 45.1 ; 77, Tun...
+35. [Crime Index by Country 2026 - Cost of Living](#) - Crime Index by Country 2026. ; 74, Canada, 45.6 ; 75, Kazakhstan, 45.2 ; 76, Senegal, 45.1 ; 77, Tun...
 
-36. [Crime Index by City 2026 - Cost of Living](https://www.numbeo.com/crime/rankings.jsp) - You are viewing the Crime Index 2026. These indexes are historical and are published periodically, p...
+36. [Crime Index by City 2026 - Cost of Living](#) - You are viewing the Crime Index 2026. These indexes are historical and are published periodically, p...
 
-37. [Crime in Canada - Cost of Living](https://www.numbeo.com/crime/country_result.jsp?country=Canada) - Information about crime in Canada. Shows how much people think the problem in their community are pr...
+37. [Crime in Canada - Cost of Living](#) - Information about crime in Canada. Shows how much people think the problem in their community are pr...
 
 38. [Foreign Buyer Ban in Canada 2026: Exemptions and What It Mea...](https://lifetimescanada.com/blog/real-estate/foreign-buyer-ban-in-canada-2026-exemptions-and-what-it-means-for-the-market) - Canada's foreign buyer ban has reshaped the real estate landscape since its introduction, and unders...
 

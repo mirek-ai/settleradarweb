@@ -167,7 +167,7 @@ Health insurance is not legally required - but most expats carry private cover f
 
 ## Safety
 
-Hong Kong's Crime Index in 2026: **21.4** - Safety Index: **78.6**. Every individual crime category registers "Very Low" on the Numbeo scale except drug use/dealing ("Low") and corruption/bribery ("Low").[^32][^33][^5]
+Hong Kong's Crime Index in 2026: **21.4** - Safety Index: **78.6**. Every individual crime category registers "Very Low" on the Crowdsourced Data scale except drug use/dealing ("Low") and corruption/bribery ("Low").[^32][^33][^5]
 
 **86.7% of residents report feeling safe walking alone in daylight; 76.4% at night.** In practice: Hong Kong is one of the few cities in the world where leaving a phone on a café table unattended carries little anxiety. Violent crime is exceptionally rare.[^5]
 
@@ -315,7 +315,7 @@ Hong Kong is not for everyone. The apartments are small, the summers are brutal,
 
 4. ['Buoyant' Hong Kong economic growth expected to ease fiscal deficit, financial secretary says](https://www.reuters.com/world/asia-pacific/buoyant-hong-kong-economic-growth-expected-ease-fiscal-deficit-financial-2026-02-25/) - Hong Kong's economy will remain buoyant this year, growing by 2.5%-3.5%, helping the city return to ...
 
-5. [Crime in Hong Kong, Hong Kong (China)](https://www.numbeo.com/crime/in/Hong-Kong)
+5. [Crime in Hong Kong, Hong Kong (China)](#)
 
 6. [Economists raise Hong Kong's 2026 growth view on budget support](https://www.chinadailyhk.com/hk/article/629970) - Hong Kong’s GDP is seen expanding 2.9 percent this year, up from 2.5 percent in a survey conducted a...
 
@@ -345,7 +345,7 @@ Hong Kong is not for everyone. The apartments are small, the summers are brutal,
 
 19. [Cost of Living in Hong Kong SAR, China in 2026](https://livingcostindex.com/regions/hong-kong-sar-cn/) - This page contains up-to-date cost of living information for Hong Kong SAR, China in 2026. Compare p...
 
-20. [Cost of Living in Hong Kong](https://www.numbeo.com/cost-of-living/in/Hong-Kong)
+20. [Cost of Living in Hong Kong](#)
 
 21. [Best Neighbourhoods in Hong Kong for Expats (2026)](https://hkexpatclub.com/best-neighbourhoods-hong-kong-expats/) - A detailed comparison of the best neighbourhoods in Hong Kong for expats and more on rent, commute, ...
 
@@ -371,7 +371,7 @@ Hong Kong is not for everyone. The apartments are small, the summers are brutal,
 
 32. [Crime index by country | Hong Kong SAR (2012−2026)](https://statbase.org/data/hkg-crime-index-by-country/) - Official data of Hong Kong SAR for all available years in an easy-to-read format. Crime index by cou...
 
-33. [Eastern Asia: Crime Index by Country 2026](https://www.numbeo.com/crime/rankings_by_country.jsp?title=2026&region=030)
+33. [Eastern Asia: Crime Index by Country 2026](#)
 
 34. [The Ultimate Expat Guides for Living in Hong Kong - HKStay.com](https://www.hkstay.com/expat-guides/living-in-hong-kong-expat-guide) - This comprehensive guide breaks down what it's really like to live in Hong Kong as a foreigner in 20...
 

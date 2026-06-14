@@ -9,7 +9,7 @@ country: "united-arab-emirates"
 ---
 # UAE in 2026: Zero Personal Tax, the World's Safest Cities, and a Citizenship That Virtually Nobody Gets
 
-**Abu Dhabi has been ranked the world's safest city for the 10th consecutive year, with a Crime Index of 11.1 and a Safety Index of 88.9 out of 400 global cities surveyed by Numbeo in 2026.** Dubai ranked 6th globally with a Safety Index of 83.9. Ras Al Khaimah, Ajman, and Sharjah ranked 2nd, 3rd, and 4th. Five UAE cities in the global top 10 — no other country comes close.[^1][^2][^3]
+**Abu Dhabi has been ranked the world's safest city for the 10th consecutive year, with a Crime Index of 11.1 and a Safety Index of 88.9 out of 400 global cities surveyed by Crowdsourced Data in 2026.** Dubai ranked 6th globally with a Safety Index of 83.9. Ras Al Khaimah, Ajman, and Sharjah ranked 2nd, 3rd, and 4th. Five UAE cities in the global top 10 — no other country comes close.[^1][^2][^3]
 
 Against that backdrop: zero personal income tax, IMF-forecast GDP growth of **5% in 2026**, a new 5-year self-sponsored Green Visa, and a 10-year Golden Visa with routes accessible to senior professionals, property investors, and top graduates. The UAE is the fastest-growing major expat destination in the Middle East — over 88% of its population is expatriate, making it arguably the most international country on Earth.[^4][^5]
 
@@ -275,7 +275,7 @@ UAE private hospitals — Cleveland Clinic Abu Dhabi, American Hospital Dubai, K
 
 ## Safety: Numbers That Speak for Themselves
 
-**Numbeo 2026 Crime Index — UAE Cities:**[^40][^1]
+**Crowdsourced Data 2026 Crime Index — UAE Cities:**[^40][^1]
 
 | City | Crime Index | Safety Index | Global Rank |
 |------|-------------|-------------|-------------|
@@ -508,7 +508,7 @@ The 10-year Golden Visa is the UAE's most underused tool for qualifying professi
 
 2. [Discover the World's Safest Cities in 2026 - Gulf News](https://gulfnews.com/uae/worlds-top-10-safest-cities-quality-of-life-walkable-streets-global-leadership-1.500416885) - Security and stability: UAE city named world's safest for 10th year in a row
 
-3. [Four UAE emirates ranked among world's safest in Numbeo 2026 data](https://www.khaleejtimes.com/uae/four-emirates-ranked-worlds-safest-numbeo-2026-data) - African and American cities have been listed at the bottom of the Numbeo’s Safety Index covering 400...
+3. [Four UAE emirates ranked among world's safest in Crowdsourced Data 2026 data](https://www.khaleejtimes.com/uae/four-emirates-ranked-worlds-safest-Crowdsourced Data-2026-data) - African and American cities have been listed at the bottom of the Crowdsourced Data’s Safety Index covering 400...
 
 4. [Living in the UAE: What Expats Need to Know Before Relocating in 2026 - Wego Travel Blog](https://blog.wego.com/living-in-the-uae/) - Moving to the UAE is more about sequence than luck — get the steps right and the rest follows. Here’...
 
@@ -582,9 +582,9 @@ The 10-year Golden Visa is the UAE's most underused tool for qualifying professi
 
 39. [Healthcare in New Zealand for Expats 2026 - ExpatLife.Ai](https://expatlife.ai/new-zealand/healthcare) - New Zealand's public healthcare system provides free or subsidised care to citizens and permanent re...
 
-40. [Crime rates in United Arab Emirates - Cost of Living](https://www.numbeo.com/crime/country_result.jsp?country=United+Arab+Emirates) - Crime rates in United Arab Emirates ; Problem property crimes such as vandalism and theft. 14.14, Ve...
+40. [Crime rates in United Arab Emirates - Cost of Living](#) - Crime rates in United Arab Emirates ; Problem property crimes such as vandalism and theft. 14.14, Ve...
 
-41. [Safety comparisons Abu Dhabi vs Dubai - Crime - Cost of Living](https://www.numbeo.com/crime/compare_cities.jsp?country1=United+Arab+Emirates&city1=Abu+Dhabi&country2=United+Arab+Emirates&city2=Dubai) - Crime Comparison Between Abu Dhabi and Dubai ; Problem violent crimes such as assault and armed robb...
+41. [Safety comparisons Abu Dhabi vs Dubai - Crime - Cost of Living](#) - Crime Comparison Between Abu Dhabi and Dubai ; Problem violent crimes such as assault and armed robb...
 
 42. [Ramadan in UAE: Essential rules, etiquette, and legal ...](https://timesofindia.indiatimes.com/world/middle-east/ramadan-in-uae-essential-rules-etiquette-and-legal-guidelines-every-expat-should-know/articleshow/123866301.cms) - Middle East News: Discover essential rules, etiquette, and legal guidelines for non-Muslims during R...
 

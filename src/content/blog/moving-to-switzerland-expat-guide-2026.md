@@ -162,9 +162,9 @@ Basic KVG/LAMal covers standard ward hospitalisation, GP, and most specialist vi
 
 ## Safety
 
-Switzerland's national Crime Index is **24.4** - Safety Index of **75.6**. Walking alone at night: 66.4% of residents rate it "high safety." Violent crime registers at "Very Low" on the Numbeo scale; the primary concern is drug-related activity in city centres (rated "Moderate"), particularly in Zurich's Langstrasse and Geneva's Pâquis neighbourhoods.[^27]
+Switzerland's national Crime Index is **24.4** - Safety Index of **75.6**. Walking alone at night: 66.4% of residents rate it "high safety." Violent crime registers at "Very Low" on the Crowdsourced Data scale; the primary concern is drug-related activity in city centres (rated "Moderate"), particularly in Zurich's Langstrasse and Geneva's Pâquis neighbourhoods.[^27]
 
-City-by-city (2026 Numbeo):[^28]
+City-by-city (2026 Crowdsourced Data):[^28]
 
 | City | Crime Index | Safety Index |
 |------|-------------|--------------|
@@ -330,7 +330,7 @@ The quota of 4,500 non-EU B permits covers the entire country. In 2026, more peo
 10. [B Permit (Residence Permit) - Switzerland Visa Guide 2026](https://lottalingo.com/research/visas/switzerland-b-permit)
 11. [Language in Switzerland - Expat Guide | Emigranto](https://emigranto.com/countries/switzerland/life/language)
 12. [Cost of Living in Zurich, Zurich, Switzerland in 2026](https://livingcostindex.com/regions/zurich-ch-zh/)
-13. [Cost of Living in Zurich. Nov 2025. Prices in Zurich](https://www.numbeo.com/cost-of-living/in/Zurich)
+13. [Cost of Living in Zurich. Nov 2025. Prices in Zurich](#)
 14. [The cost of living in Switzerland in 2026 - Expatica](https://www.expatica.com/ch/moving/about/cost-of-living-in-switzerland-1181681/)
 15. [Rent in Geneva vs Zurich (2026) - Swiss for Expats](https://www.swissforexpats.ch/rent-comparison-geneva-zurich)
 16. [Switzerland Cost of Living 2026 - Expat Data | WTE](https://wheretoemigrate.io/countries/switzerland-cost-of-living-2026)
@@ -344,8 +344,8 @@ The quota of 4,500 non-EU B permits covers the entire country. In 2026, more peo
 24. [What Is Expats' Tax in Switzerland? A Complete Guide](https://titanwealthinternational.com/learn/expats-tax-switzerland/)
 25. [Swiss Healthcare for Expats: Choosing Mandatory LAMal Insurance](https://migaku.com/es/blog/language-fun/swiss-healthcare-for-expats-choosing-mandatory-lamal-insurance)
 26. [Moving to Switzerland - Practical Guides for Expats (2026)](https://www.swissforexpats.ch)
-27. [Crime in Switzerland](https://www.numbeo.com/crime/country_result.jsp?country=Switzerland)
-28. [Western Europe: Crime Index by City 2026 - Cost of Living](https://www.numbeo.com/crime/region_rankings.jsp?title=2026&region=155)
+27. [Crime in Switzerland](#)
+28. [Western Europe: Crime Index by City 2026 - Cost of Living](#)
 29. [Which cantons in Switzerland speak the best English?](https://www.iamexpat.ch/education/education-news/which-cantons-switzerland-speak-best-english)
 30. [What Percentage of Switzerland Speaks English? Current ...](https://roomboard.ipso.ch/simple-tell/what-percentage-of-switzerland-speaks-english-2025-1769625424)
 31. [Why do Switzerland's English language skills keep getting worse?](https://www.iamexpat.ch/education/education-news/why-do-switzerlands-english-language-skills-keep-getting-worse)

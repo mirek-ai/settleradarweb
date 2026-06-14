@@ -89,7 +89,7 @@ A single person in Dublin comfortably spends **€2,800-3,800/month including re
 | Limerick | €700-1,100 | €900-1,400 | €1,200-1,800[^14] |
 | Waterford | €700-1,000 | €850-1,300 | €1,100-1,700 |
 
-*Sources: Dublin.ie, Numbeo, Experts for Expats 2026*[^14][^12][^11]
+*Sources: Dublin.ie, Crowdsourced Data, Experts for Expats 2026*[^14][^12][^11]
 
 **Rent Pressure Zones (RPZs)** cap annual rent increases at **2% per year** (or the rate of inflation if lower) in designated high-demand areas including Dublin city, Cork city, Galway city, and parts of Kildare, Meath, Wicklow, and Louth. If your landlord attempts to raise rent above this cap, you can challenge it through the Residential Tenancies Board. Knowing your RPZ status before signing is not optional - it determines whether you pay market rate on renewal or a legally capped one.[^8]
 
@@ -359,7 +359,7 @@ The SARP deadline is day one arithmetic. An employer that misses the 90-day Form
 9. [Health Insurance & The...](https://www.internations.org/ireland-expats/guide/moving-to)
 10. [Moving to Ireland in 2026 | All you need to know](https://www.schmidt-global.nl/moving-to-ireland-in-2026-all-you-need-to-know/)
 11. [The cost of living in Dublin](https://dublin.ie/live/getting-settled/cost-of-living/)
-12. [Cost of Living in Dublin. Jun 2026. Prices in Dublin](https://www.numbeo.com/cost-of-living/in/Dublin)
+12. [Cost of Living in Dublin. Jun 2026. Prices in Dublin](#)
 13. [Cost of Living in Ireland: Housing, Daily Expenses & Budgets 2026](https://www.liveandinvestoverseas.com/country-hub/europe/ireland/cost-of-living-in-ireland/)
 14. [Choosing where to live in Ireland - Experts for Expats](https://www.expertsforexpats.com/advice/relocation/where-to-live-in-ireland)
 15. [Vhi Healthcare | Get a Health Insurance Quote Online Today](https://www1.vhi.ie)
@@ -372,8 +372,8 @@ The SARP deadline is day one arithmetic. An employer that misses the 90-day Form
 22. [Expat Health Insurance in Ireland - Coverage & Plans](https://www.jarniascyril.com/expatriation/guide-moving-to-ireland-expat/healthcare-expats-ireland/)
 23. [Private Health Insurance Ireland: VHI vs Laya vs Irish Life](https://petersonofficeire.com/blog/private-health-insurance-ireland-vhi-vs-laya-vs-irish-life)
 24. [Health Insurance in Ireland for Foreigners](https://www.internationalinsurance.com/countries/ireland/health-insurance/)
-25. [Crime in Ireland](https://www.numbeo.com/crime/country_result.jsp?country=Ireland)
-26. [Europe: Crime Index by City 2026](https://www.numbeo.com/crime/region_rankings.jsp?title=2026&region=150)
+25. [Crime in Ireland](#)
+26. [Europe: Crime Index by City 2026](#)
 27. [5 Best Student Cities in Ireland 2026 Guide](https://www.study-abroad.org/blog/ie-best-student-cities/)
 28. [Dublin Weather Monthly Guide 2026: Plan Your Trip](https://tourismattractions.net/ireland/dublin-weather-monthly-guide)
 29. [2026 was Ireland's third hottest spring in 126 years](https://www.irishtimes.com/environment/2026/06/04/ireland-experiences-third-hottest-spring-on-record-says-met-eireann/)

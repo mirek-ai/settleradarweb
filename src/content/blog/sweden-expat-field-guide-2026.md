@@ -309,7 +309,7 @@ Best for: researchers, academics, medical professionals, and anyone working in S
 
 ### Lund
 
-University town in Skåne (southern Sweden). The safest city in Sweden per Numbeo 2026 (Crime Index 32.1). Lund University is internationally ranked (top 100 globally). MAX IV (Europe's most brilliant X-ray facility) and ESS (European Spallation Source) create structural demand for physicists, engineers, and biologists. 15 minutes from Malmö by regional train.[^36]
+University town in Skåne (southern Sweden). The safest city in Sweden per Crowdsourced Data 2026 (Crime Index 32.1). Lund University is internationally ranked (top 100 globally). MAX IV (Europe's most brilliant X-ray facility) and ESS (European Spallation Source) create structural demand for physicists, engineers, and biologists. 15 minutes from Malmö by regional train.[^36]
 
 Best for: scientists, researchers, academics, life sciences professionals.
 
@@ -495,7 +495,7 @@ The June 2026 salary increase from 80% to 90% of the median represents a real ti
 
 20. [Apply for Swedish citizenship - Swedish Migration Agency](https://www.migrationsverket.se/en/you-want-to-apply/swedish-citizenship/citizenship-for-adults/citizenship-for-adults.html) - You want to apply to become a Swedish citizen.
 
-21. [Cost of Living in Sweden. Prices in Sweden. Updated Jun 2026](https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sweden) - Cost of Living in Sweden ; 1 Bedroom Apartment in City Centre, 8,592.10kr ; 1 Bedroom Apartment Outs...
+21. [Cost of Living in Sweden. Prices in Sweden. Updated Jun 2026](#) - Cost of Living in Sweden ; 1 Bedroom Apartment in City Centre, 8,592.10kr ; 1 Bedroom Apartment Outs...
 
 22. [Cost of Living in Sweden (2026) - Movinn](https://movinn.com/guides/cost-of-living-sweden) - Housing ; 1-bedroom apartment (city center), 8,000-12,000 SEK, From 11,000 SEK (all-inclusive) ; 1-b...
 
@@ -523,9 +523,9 @@ The June 2026 salary increase from 80% to 90% of the median represents a real ti
 
 34. [Sweden | Commonwealth Fund](https://www.commonwealthfund.org/international-health-policy-center/countries/sweden) - Sweden's publicly funded health care system provides all legal residents with comprehensive health c...
 
-35. [Crime in Sweden](https://www.numbeo.com/crime/country_result.jsp?country=Sweden) - Information about crime in Sweden. Shows how much people think the problem in their community are pr...
+35. [Crime in Sweden](#) - Information about crime in Sweden. Shows how much people think the problem in their community are pr...
 
-36. [Northern Europe: Crime Index by City 2026](https://www.numbeo.com/crime/region_rankings.jsp?title=2026&region=154)
+36. [Northern Europe: Crime Index by City 2026](#)
 
 37. [List of metropolitan areas in Sweden - Wikipedia](https://en.wikipedia.org/wiki/List_of_metropolitan_areas_in_Sweden) - Sweden has three metropolitan areas consisting of the areas surrounding the three largest cities, St...
 

@@ -211,7 +211,7 @@ Australia's national crime picture is split between its cities and its remote ar
 | Melbourne | 44.2 | 55.8[^30] |
 | Gold Coast | 47.1 | 52.9[^30] |
 
-*Source: Numbeo Crime Index by City 2026*[^30]
+*Source: Crowdsourced Data Crime Index by City 2026*[^30]
 
 Remote areas tell a very different story. Alice Springs (66.9 Crime Index) and Rockhampton (66.3) rank among the most dangerous cities surveyed globally. Darwin (62.9) and Cairns (62.1) also rank poorly. The regional/remote Australia divide is sharp and real - standard expat destinations (Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra) are all consistently safe by global standards.[^30]
 
@@ -369,7 +369,7 @@ The foreign property ban ends 31 March 2027. If you're arriving on a temporary v
 16. [Cost of Living in Australia 2026 Guide - Edvise Hub](https://www.edvisehub.com/cost-of-living-in-australia-2026-guide/)
 17. [The Cost of Living in Sydney: 2026 Insights | HOLLOWAY](https://hollowayremovals.com.au/blog/the-cost-of-living-in-sydney-2026-insights/)
 18. [Latest insights into the rental market | Australian Bureau of Statistics](https://www.abs.gov.au/articles/latest-insights-rental-market)
-19. [Cost of Living in Australia. Prices in Australia. Updated Jun 2026](https://www.numbeo.com/cost-of-living/country_result.jsp?country=Australia)
+19. [Cost of Living in Australia. Prices in Australia. Updated Jun 2026](#)
 20. [Australia - Individual - Taxes on personal income](https://taxsummaries.pwc.com/australia/individual/taxes-on-personal-income)
 21. [What Is The Medicare Levy And How Much Will I Pay? - Etax](https://www.etax.com.au/medicare-levy/)
 22. [Superannuation Rate 2026: New Rules & Key Changes| SIGA](https://www.starinvestment.com.au/superannuation-rate-2026-australia/)
@@ -380,7 +380,7 @@ The foreign property ban ends 31 March 2027. If you're arriving on a temporary v
 27. [(2026) Expat Health Insurance in Australia: How to Protect Your ...](https://alea.care/resources/protection-expat-health-family-australia)
 28. [Income threshold and rates...](https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/medicare-levy-surcharge/medicare-levy-surcharge-income-thresholds-and-rates)
 29. [Are you new to Australia or returning from a stint abroad? If you are ...](https://www.facebook.com/healthgovau/posts/are-you-new-to-australia-or-returning-from-a-stint-abroad-if-you-are-a-new-migra/1024951483142856/)
-30. [Oceania: Crime Index by City 2026 - Cost of Living](https://www.numbeo.com/crime/region_rankings.jsp?title=2026&region=009)
+30. [Oceania: Crime Index by City 2026 - Cost of Living](#)
 31. [Australia on show in latest QS Best Student Cities 2026](https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/qs-best-student-cities-2026)
 32. [Best Cities in Australia for UK Expats in 2026](https://www.anglopacific.co.uk/blog/best-cities-in-australia-for-uk-expats.htm)
 33. [Top 7 Cities in Australia for American Expats - Remitly](https://www.remitly.com/blog/en-au/immigration/top-7-cities-in-australia-for-american-expats/)

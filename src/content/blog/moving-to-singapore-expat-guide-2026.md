@@ -159,7 +159,7 @@ Private specialist consultations: **S$100-S$350** per visit. Day surgery at a pr
 
 ## Safety
 
-Singapore has the **lowest crime index of any city above 5 million population globally** - a Numbeo Crime Index of **22.1** and a Safety Index of **77.7** as of 2026. The violent crime rate runs at **0.2 per 100,000 residents** annually - compared to 4.9 for New York and 1.8 for London on the same per capita basis.[^3][^35]
+Singapore has the **lowest crime index of any city above 5 million population globally** - a Crowdsourced Data Crime Index of **22.1** and a Safety Index of **77.7** as of 2026. The violent crime rate runs at **0.2 per 100,000 residents** annually - compared to 4.9 for New York and 1.8 for London on the same per capita basis.[^3][^35]
 
 Walking alone at 3am in any part of Singapore is genuinely safe. The property crime rate (95 per 100,000) is 15× lower than New York's equivalent (1,470 per 100,000). Singapore has held the #1 position in the EIU Safe Cities Index continuously since 2017.[^3]
 
@@ -317,7 +317,7 @@ Singapore doesn't compete on cost. It competes on efficiency, safety, rule of la
 23. [Singapore Cost of Living Analysis 2026](https://blog.maxthon.com/2026/01/23/singapore-cost-of-living-analysis-2026/)
 24. [Updated Rents in Singapore (2026)](https://bambooroutes.com/blogs/news/singapore-rents)
 25. [Singapore Expat Relocation Guide 2026](https://shioknest.com/guides/singapore-expat-relocation-guide?lang=en)
-26. [Cost of Living in Singapore - Numbeo](https://www.numbeo.com/cost-of-living/in/Singapore)
+26. [Cost of Living in Singapore - Crowdsourced Data](#)
 27. [How Much Does Singapore Cost?](https://gotripzi.com/destinations/singapore-sg/cost)
 28. [Budget 2026 Tax Changes Singapore](https://taxinfo.sg/budget-2026-tax-changes)
 29. [Tax in Singapore | Singapore Tax Guide](https://www.expat.hsbc.com/expat-explorer/expat-guides/singapore/tax-in-singapore/)
@@ -326,7 +326,7 @@ Singapore doesn't compete on cost. It competes on efficiency, safety, rule of la
 32. [MediShield Life - Singapore - CPF](https://www.cpf.gov.sg/member/healthcare-financing/medishield-life)
 33. [Best Expat Health Insurance Singapore 2026](https://wise.com/sg/blog/expat-health-insurance)
 34. [About Integrated Shield Plan - Singapore](https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/integrated-shield-plans/about-integrated-shield-plans/)
-35. [Crime Comparison Between Singapore And Poland](https://www.numbeo.com/crime/compare_countries_result.jsp?country1=Singapore&country2=Poland)
+35. [Crime Comparison Between Singapore And Poland](#)
 36. [Best Neighbourhoods for Expats in Singapore](https://www.99.co/singapore/insider/best-neighbourhoods-expats-singapore/)
 37. [The non-Native Dream: Expat Neighborhoods Around Singapore](https://sallybernstein.com/travel/asia/singapore_neighborhoods.html)
 38. [Most Popular Neighbourhoods for Expats in Singapore in 2025](https://noamnathan.com/most-popular-neighbourhoods-for-expats-in-singapore-in-2025/)

@@ -348,7 +348,7 @@ Chile's healthcare system is ranked **33rd globally by the WHO** - the highest-r
 
 ## Safety: Neighbourhood Discipline Is Everything
 
-Chile's Crime Index (Numbeo 2026): **60.7 - High**. Santiago city-level: **64.1 - High**. This is the most significant practical concern for expats arriving from Scandinavia, Canada, or Western Europe, and the single factor that demands the most pre-arrival research.[^35][^3]
+Chile's Crime Index (Crowdsourced Data 2026): **60.7 - High**. Santiago city-level: **64.1 - High**. This is the most significant practical concern for expats arriving from Scandinavia, Canada, or Western Europe, and the single factor that demands the most pre-arrival research.[^35][^3]
 
 The Chilean crime picture is not uniformly bad - it is geographically concentrated. The safest expat communes in Santiago have crime profiles comparable to Southern European cities. The riskiest areas of Santiago Centro, Estación Central, and some southern communes have crime comparable to the most challenging urban neighbourhoods in the Americas.
 
@@ -547,7 +547,7 @@ Prices in Santiago are commonly quoted in UF (Unidad de Fomento - inflation-adju
 | Citizenship application processing | **~2 years**[^21] |
 | Dual citizenship | **Permitted - no renunciation required**[^21] |
 | Chilean passport visa-free access | **~174 countries** |
-| National Crime Index (Numbeo 2026) | **60.7 - High**[^35] |
+| National Crime Index (Crowdsourced Data 2026) | **60.7 - High**[^35] |
 | Santiago Crime Index | **64.1 - High**[^3] |
 | Safe expat communes | Vitacura, Las Condes, Providencia, Ñuñoa, La Reina |
 | Never hail street taxis | **Use Uber, Cabify, Beat only** |
@@ -568,7 +568,7 @@ The Chile calculation is unusual among this article series. The entry requiremen
 
 2. [Chile Eyes 2.5% Growth But Risks Cloud The Horizon - Mena FN](https://menafn.com/1110847693/Chile-Eyes-25-Growth-But-Risks-Cloud-The-Horizon) - Chile Eyes 2.5% Growth But Risks Cloud The Horizon.Key Points - Chilean market analysts project 2.5%...
 
-3. [Current Crime Index - Cost of Living](https://www.numbeo.com/crime/rankings_current.jsp)
+3. [Current Crime Index - Cost of Living](#)
 
 4. [Maintaining fiscal sustainability, boosting productivity, and accelerating green transition key to driving Chile’s sustainable growth](https://www.oecd.org/en/about/news/press-releases/2025/01/maintaining-fiscal-sustainability-boosting-productivity-and-accelerating-green-transition-key-to-driving-chile-s-sustainable-growth.html) - Chile’s growth has proven resilient over recent years and its timely monetary policy tightening has ...
 
@@ -612,7 +612,7 @@ The Chile calculation is unusual among this article series. The entry requiremen
 
 24. [Understanding Chilean Citizenship and Apostille Documents](https://www.dcmobilenotary.com/dc-mobile-blog/understanding-chilean-citizenship-and-apostille-documents) - This article provides a comprehensive guide to obtaining Chilean citizenship, including the role of ...
 
-25. [Cost of Living in Santiago. May 2026. Prices in Santiago](https://www.numbeo.com/cost-of-living/in/Santiago) - The estimated monthly costs for a single person are $753.2 (CL$690,629.7), excluding rent. Santiago ...
+25. [Cost of Living in Santiago. May 2026. Prices in Santiago](#) - The estimated monthly costs for a single person are $753.2 (CL$690,629.7), excluding rent. Santiago ...
 
 26. [Chile: Real Estate and Property Market in 2026](https://www.liveandinvestoverseas.com/country-hub/chile/real-estate-in-chile/) - Property is often priced in inflation-adjusted UFs. Foreigners can buy freely, taxes are low, and de...
 
@@ -632,7 +632,7 @@ The Chile calculation is unusual among this article series. The entry requiremen
 
 34. [FONASA: Guide to Chile's Public Healthcare System - Expat.cl](https://www.expat.cl/guide-chile/healthcare/fonasa-public-healthcare-guide/) - How Chile's public healthcare system works for expats: coverage levels, costs, registration, and wha...
 
-35. [South America: Crime Index by Country 2026](https://www.numbeo.com/crime/rankings_by_country.jsp?title=2026&region=005)
+35. [South America: Crime Index by Country 2026](#)
 
 36. [How to Buy an Apartment in Santiago, Chile as a Foreigner](https://www.beckerabogados.cl/en/blog/how-to-buy-an-apartment-in-santiago-chile-as-a-foreigner/) - Learn how to buy an apartment in Santiago, Chile as a foreigner. Get expert tips, legal insights, an...
 

@@ -241,7 +241,7 @@ After enrollment, co-pays are low:[^29]
 
 Estonia's national Crime Index in 2026: **23.2 - Low**, falling for three consecutive years. Tallinn specifically: Crime Index **18.96 - Very Low**. Safety walking alone during daylight: **90.77% "Very High."** At night: **72.11% "High."**[^30][^3]
 
-Tallinn ranked **17th globally** among the world's safest cities in Numbeo's 2026 Safety Index - ahead of Singapore, Zurich, Helsinki, and Copenhagen. Violent crime is rated "Very Low." Home break-ins, car theft, muggings: all "Very Low."[^31][^32][^30]
+Tallinn ranked **17th globally** among the world's safest cities in Crowdsourced Data's 2026 Safety Index - ahead of Singapore, Zurich, Helsinki, and Copenhagen. Violent crime is rated "Very Low." Home break-ins, car theft, muggings: all "Very Low."[^31][^32][^30]
 
 The safety picture is genuinely exceptional by global standards. Tallinn's Old Town, Kalamaja, Telliskivi, and Kadriorg are all considered safe at all hours. Lasnamäe - the large Soviet-era panel housing district in the east of the city - has a rougher reputation, but even there violent crime is uncommon. Expats living in Lasnamäe report it as quieter than expected.
 
@@ -459,11 +459,11 @@ Estonia's citizenship law requiring renunciation of prior nationality is not a t
 
 29. [Norway Healthcare System & Insurance Options for Expats](https://expatfinancial.com/healthcare-information-by-region/european-healthcare-system/norway-healthcare-system/) - Public healthcare is available across Norway. It is free for those who are 16 years or younger in ag...
 
-30. [Crime in Tallinn, Estonia - Cost of Living](https://www.numbeo.com/crime/in/Tallinn) - Crime rates in Tallinn, Estonia ; Problem property crimes such as vandalism and theft. 29.10, Low ; ...
+30. [Crime in Tallinn, Estonia - Cost of Living](#) - Crime rates in Tallinn, Estonia ; Problem property crimes such as vandalism and theft. 29.10, Low ; ...
 
 31. [Top 50 Most Safest Cities in 2026 1. Qingdao, China 2. Abu ...](https://x.com/Globalstats11/status/2028520809694957964) - Top 50 Most Safest Cities in 2026 1. Qingdao, China 2. Abu Dhabi, United Arab Emirates 3. Doha, Qata...
 
-32. [Current Safety Index by City - Cost of Living](https://www.numbeo.com/crime/rankings_current.jsp?displayColumn=1)
+32. [Current Safety Index by City - Cost of Living](#)
 
 33. [International Buyer & Relocation Guides: How to Buy Property in ...](https://www.bryanestates.ee/post/international-buyer-relocation-guides-how-to-buy-property-in-estonia-from-abroad) - EU citizens can buy property in Estonia - including land - with essentially no restrictions. Non-EU ...
 

@@ -400,7 +400,7 @@ The researcher scheme threshold reduction is real money. A professional earning 
 
 22. [Moving to Denmark as an EU Citizen (from outside EU), No EHIC ...](https://www.reddit.com/r/NewToDenmark/comments/1mdshwy/moving_to_denmark_as_an_eu_citizen_from_outside/) - My plan is to register for my CPR number as soon as I arrive. However, I currently live outside of t...
 
-23. [Crime in Copenhagen, Denmark](https://www.numbeo.com/crime/in/Copenhagen)
+23. [Crime in Copenhagen, Denmark](#)
 
 24. [My 20+ Pros and Cons of Living in Denmark as an Expat](https://danny-cph.com/living-in-denmark-pros-and-cons/) - Denmark is one of the safest countries in the world, and I feel infinitely safer in Copenhagen at al...
 

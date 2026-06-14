@@ -242,7 +242,7 @@ Basic basisverzekering covers: GP (huisarts) consultations (no deductible from 2
 
 Netherlands national Crime Index 2026: **25.5 - Low**, the lowest recorded level since tracking began, declining from 26.9 in 2025. Safety walking alone at night nationally: **67.93% "High."**[^30][^31]
 
-**Dutch cities ranked, Numbeo 2026:**[^31][^4]
+**Dutch cities ranked, Crowdsourced Data 2026:**[^31][^4]
 
 | City | Crime Index | Safety Index | Safety Rank (Europe) |
 |------|-------------|--------------|----------------------|
@@ -466,7 +466,7 @@ The 30% ruling application deadline of **4 months** is the single most expensive
 
 3. [A new move against the housing crisis in the Netherlands! Starting ...](https://www.facebook.com/dutchbreakingnews/videos/a-new-move-against-the-housing-crisis-in-the-netherlandsstarting-next-week-munic/1679660193134082/) - Starting next week, municipalities can tax homes left vacant for more than a year. In Amsterdam, whe...
 
-4. [Safety Index by City 2026 - Cost of Living](https://www.numbeo.com/quality-of-life/rankings.jsp?title=2026&displayColumn=2)
+4. [Safety Index by City 2026 - Cost of Living](#)
 
 5. [The Dutch economy in 2026: Moderate growth ahead - ing think](https://think.ing.com/articles/the-dutch-economy-in-2026-moderate-economic-growth-ahead/) - We project Dutch GDP growth of 1.3% in 2026, driven primarily by consumer spending
 
@@ -500,7 +500,7 @@ The 30% ruling application deadline of **4 months** is the single most expensive
 
 20. [Moving to the Netherlands as an expat: how does the rental market ...](https://www.hellohousing.nl/moving-to-the-netherlands-as-an-expat-how-does-the-rental-market-work-and-which-rules-apply/) - Expats almost always end up in the private rental sector, as their income usually exceeds the limits...
 
-21. [Cost of Living in Netherlands](https://www.numbeo.com/cost-of-living/country_result.jsp?country=Netherlands) - Average prices of more than 40 products and services in Netherlands. Prices of restaurants, food, tr...
+21. [Cost of Living in Netherlands](#) - Average prices of more than 40 products and services in Netherlands. Prices of restaurants, food, tr...
 
 22. [Changes to Income Tax Brackets and Rates for 2026 Enter Into Effect](https://www.bdo.global/en-gb/insights/tax/expatriate-tax/netherlands-changes-to-income-tax-brackets-and-rates-for-2026-enter-into-effect) - Changes to Income Tax Brackets and Rates for 2026 Enter Into Effect
 
@@ -520,7 +520,7 @@ The 30% ruling application deadline of **4 months** is the single most expensive
 
 30. [Crime index by country | Netherlands (2012−2026) − Data, Charts ...](https://statbase.org/data/nld-crime-index-by-country/) - Official data of Netherlands for all available years in an easy-to-read format. Crime index by count...
 
-31. [Crime in Netherlands](https://www.numbeo.com/crime/country_result.jsp?country=Netherlands) - Information about crime in Netherlands. Shows how much people think the problem in their community a...
+31. [Crime in Netherlands](#) - Information about crime in Netherlands. Shows how much people think the problem in their community a...
 
 32. [Moving to the Netherlands: A Practical Guide for Internationals (2026)](https://www.dutch-online.com/blog/moving-to-the-netherlands-guide) - A complete and practical guide to moving to the Netherlands. Learn about visas, jobs, housing, cost ...
 

@@ -239,9 +239,9 @@ Available to employees earning above the insurance threshold (JAEG: **€69,300/
 
 ## Safety: Germany Is Safe. Munich and Freiburg Are Very Safe.
 
-Germany's national Crime Index (Numbeo 2026) is **38.4** — well below the EU average and substantially below the US (49.2). German cities cluster toward the safer end of the European spectrum. The exceptions tend to be specific districts in large cities, particularly around main train stations (Hauptbahnhöfe) and in certain inner-city areas.[^38]
+Germany's national Crime Index (Crowdsourced Data 2026) is **38.4** — well below the EU average and substantially below the US (49.2). German cities cluster toward the safer end of the European spectrum. The exceptions tend to be specific districts in large cities, particularly around main train stations (Hauptbahnhöfe) and in certain inner-city areas.[^38]
 
-### Crime Index by German City (Numbeo 2026)
+### Crime Index by German City (Crowdsourced Data 2026)
 
 | City | Crime Index | Safety Index |
 |------|------------|--------------|
@@ -505,8 +505,8 @@ Germany's administrative requirements are sequential — you cannot do step 3 wi
 | Total buyer transaction costs (property) | **~8–15% of purchase price**[^53] |
 | Capital gains tax on property sold after 10 years | **0% (tax-free)**[^57] |
 | Foreign national mortgage down payment | **30–40%**[^55] |
-| Germany national Crime Index (Numbeo 2026) | **38.4 / Safety Index 61.6**[^38] |
-| Safest major German city (Numbeo 2026) | **Freiburg — Safety Index 67.7**[^39] |
+| Germany national Crime Index (Crowdsourced Data 2026) | **38.4 / Safety Index 61.6**[^38] |
+| Safest major German city (Crowdsourced Data 2026) | **Freiburg — Safety Index 67.7**[^39] |
 | Emergency number | **112** (Europe-wide) |
 
 The Opportunity Card is the most underused tool available to qualified professionals who don't yet have a German job offer. You can move, experience the country, do paid work trials with employers, and work up to 20 hours per week while job-hunting legally. €13,092 in a blocked account, a degree, basic English or A1 German, and €75 in application fees. For anyone seriously considering Germany who hasn't yet secured an offer, this is the logical first step — not the last resort.[^16][^9]
@@ -591,9 +591,9 @@ The Opportunity Card is the most underused tool available to qualified professio
 
 38. [Crime index by country | Germany (2012−2026) − Data, Charts ...](https://statbase.org/data/deu-crime-index-by-country/) - Official data of Germany for all available years in an easy-to-read format. Crime index by country: ...
 
-39. [Western Europe: Crime Index by City 2026 - Cost of Living](https://www.numbeo.com/crime/region_rankings.jsp?title=2026&region=155)
+39. [Western Europe: Crime Index by City 2026 - Cost of Living](#)
 
-40. [Crime Comparison Between Stuttgart and Berlin](https://www.numbeo.com/crime/compare_cities.jsp?country1=Germany&city1=Stuttgart&country2=Germany&city2=Berlin)
+40. [Crime Comparison Between Stuttgart and Berlin](#)
 
 41. [Cost of Living Reality — What Germany Actually Costs in 2026](https://www.youtube.com/watch?v=CwP0siEDcHE) - You budgeted €1,400 for rent. Your first month costs €4,800. Not a scam. Just Germany.
 

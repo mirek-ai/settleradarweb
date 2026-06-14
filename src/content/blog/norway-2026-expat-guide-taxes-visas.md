@@ -220,7 +220,7 @@ Every registered resident is entitled to a **fastlege** (regular GP/family docto
 
 Norway's national Crime Index: **33.0 - Low.** Safety Index: **67.0.** Among Northern European countries, Norway sits between Lithuania and Latvia in crime perception - safer than Sweden (48.0) or Ireland (47.6), less safe than Finland (26.8), Denmark (26.0), or Iceland (25.7).[^24]
 
-Oslo-specific data (Numbeo, January 2026): Crime Index **35.88 - Low.** Safety Index **64.12.** Safety walking alone during daylight: **77.21% "High."** At night: **57.12% "Moderate"** - the primary concern is drug-related activity (Grønland neighbourhood, Oslo Central Station area) rated "Moderate." Violent crime: "Low." Property crime, corruption: both "Low."[^25]
+Oslo-specific data (Crowdsourced Data, January 2026): Crime Index **35.88 - Low.** Safety Index **64.12.** Safety walking alone during daylight: **77.21% "High."** At night: **57.12% "Moderate"** - the primary concern is drug-related activity (Grønland neighbourhood, Oslo Central Station area) rated "Moderate." Violent crime: "Low." Property crime, corruption: both "Low."[^25]
 
 The drug scene in Oslo is visible and geographically concentrated but not violent. Grønland and the Oslo S (central station) area are the focal points - functional for transport, less comfortable for families in terms of street atmosphere after dark.
 
@@ -416,11 +416,11 @@ The September 2025 permanent residency rule change replaced 300 hours of mandato
 
 15. [Permanent residence and citizenship - note.no](https://note.no/en/pages/permanent-residence-and-citizenship) - Our courses are designed to provide the necessary preparation for the Norwegian language test and th...
 
-16. [Cost of Living in Norway. Prices in Norway. Updated Jun 2026](https://www.numbeo.com/cost-of-living/country_result.jsp?country=Norway) - The estimated monthly costs for a family of four are $5,120.8 (48,256.4 kr), excluding rent. · The e...
+16. [Cost of Living in Norway. Prices in Norway. Updated Jun 2026](#) - The estimated monthly costs for a family of four are $5,120.8 (48,256.4 kr), excluding rent. · The e...
 
 17. [Cost of living in 2025 - Oslo vs Bergen vs Trondheim vs Tromsø](https://norgeguide.com/en/oppdag-norge-guide/priser-og-kostnader/hvor-mye-koster-det-a-bo-i-norge-sammenligning-av-oslo-bergen-trondheim-og-tromso/) - 🏙 Where is it more expensive to rent an apartment, how much do people pay for utilities in the north...
 
-18. [Cost of Living in Oslo. Mar 2026. Prices in Oslo](https://www.numbeo.com/cost-of-living/in/Oslo)
+18. [Cost of Living in Oslo. Mar 2026. Prices in Oslo](#)
 
 19. [Norwegian tax rates 2026 - The Aider Legal Blog](https://blog.aiderlegal.com/tax-rates-norway) - The tax percent in Norway depend on the income and it is determined with basic income tax and bracke...
 
@@ -432,9 +432,9 @@ The September 2025 permanent residency rule change replaced 300 hours of mandato
 
 23. [Right to healthcare services in Norway - The Nordic Co-operation](https://www.norden.org/en/info-norden/right-healthcare-services-norway) - Healthcare rights when you live in Norway. If you are registered as living in Norway, you are entitl...
 
-24. [Northern Europe](https://www.numbeo.com/crime/rankings_by_country.jsp?title=2025&region=154)
+24. [Northern Europe](#)
 
-25. [Crime in Oslo, Norway - Cost of Living](https://www.numbeo.com/crime/in/Oslo)
+25. [Crime in Oslo, Norway - Cost of Living](#)
 
 26. [Pros and cons of living in Norway (UK guide) - Wise](https://wise.com/gb/blog/pros-and-cons-living-in-norway) - Moving abroad? Read this for the pros and cons of living in Norway, to help you decide whether it’s ...
 

@@ -560,7 +560,7 @@ Vilnius residential prices rose **14% in 2025** - the fastest growth in a decade
 | Language required for citizenship | **B1 Lithuanian + Constitution exam**[^20] |
 | Dual citizenship through naturalisation | **Not permitted** (exceptions for descent)[^21] |
 | Lithuanian passport visa-free access | **~186 countries** |
-| National Crime Index (Numbeo 2026) | **Lithuania - Low** |
+| National Crime Index (Crowdsourced Data 2026) | **Lithuania - Low** |
 | Vilnius Crime Index | **28.2 - Low**[^27] |
 | Kaunas Crime Index | **36.9 - Low**[^39] |
 | Vilnius 1-BR central rent (Q1 2026) | **€600-850**[^25] |
@@ -657,7 +657,7 @@ The 10-year citizenship clock is the defining feature of Lithuania's long-term a
 
 38. [Data on criminal offenses in Lithuania](https://ird.lt/en/indicators/family.NU) - Main description
 
-39. [Crime in Kaunas, Lithuania](https://www.numbeo.com/crime/in/Kaunas)
+39. [Crime in Kaunas, Lithuania](#)
 
 40. [Property Investment in Lithuania as a Foreigner](https://immigrantinvest.com/real-estate/guides/lithuania/) - Foreigners can freely buy, sell and rent out real estate in Lithuania. Statistics confirm the liquid...
 

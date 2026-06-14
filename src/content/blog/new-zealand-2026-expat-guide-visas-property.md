@@ -304,7 +304,7 @@ Recommended providers: Southern Cross Health Society (NZ-specific, largest provi
 
 New Zealand's national Crime Index in 2026: **48.8 - Moderate** (highest ever recorded, rising for 10 consecutive years). The trend is the uncomfortable headline - the direction is wrong.[^5]
 
-**City-by-city breakdown (Numbeo 2026, Oceania ranking):**[^26]
+**City-by-city breakdown (Crowdsourced Data 2026, Oceania ranking):**[^26]
 
 | City | Crime Index | Safety Index |
 |------|-------------|--------------|
@@ -510,7 +510,7 @@ The August 2026 SMC reform reduces the required New Zealand work experience from
 
 5. [Crime index by country | New Zealand (2012−2026) − Data, Charts ...](https://statbase.org/data/nzl-crime-index-by-country/) - Official data of New Zealand for all available years in an easy-to-read format. Crime index by count...
 
-6. [Crime in New Zealand](https://www.numbeo.com/crime/country_result.jsp?country=New+Zealand) - Information about crime in New Zealand. Shows how much people think the problem in their community a...
+6. [Crime in New Zealand](#) - Information about crime in New Zealand. Shows how much people think the problem in their community a...
 
 7. [OECD sees fragile New Zealand recovery; warns on energy, ageing ...](https://www.reuters.com/world/asia-pacific/oecd-sees-fragile-new-zealand-recovery-warns-energy-ageing-capital-market-gaps-2026-05-07/) - The report said growth is expected to recover gradually to 1.4% in 2026 and 2.3% in 2027, ​supported...
 
@@ -550,7 +550,7 @@ The August 2026 SMC reform reduces the required New Zealand work experience from
 
 25. [How does healthcare work in New Zealand, and what travel insurance ...](https://www.worldsupporter.org/en/blog/how-does-healthcare-work-new-zealand-and-what-travel-insurance-health-insurance-or-expat) - [toc] How does the healthcare system work in New Zealand?
 
-26. [Oceania: Crime Index by City 2026 - Cost of Living](https://www.numbeo.com/crime/region_rankings.jsp?title=2026&region=009)
+26. [Oceania: Crime Index by City 2026 - Cost of Living](#)
 
 27. [Moving to New Zealand: A guide for expats - Wise](https://wise.com/au/blog/moving-to-new-zealand-guide-for-expats) - The cost of living. Due to its location and reliance on importing goods, some aspects of New Zealand...
 

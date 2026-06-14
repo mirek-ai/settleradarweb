@@ -20,7 +20,7 @@ Cyprus uses the euro and has traditionally had a very low corporate tax rate (12
 - **Golden Visa (Residency by Investment):** Buying property or investing **€300,000+** in Cyprus grants permanent residency. You can split the €300k across properties or use funds/shares. The investment must be held for 5 years. Once you invest, you get lifelong PR (renewable every 10 years).
 
 ## Cost of Living: The Real Numbers
-Living costs are moderate by Western Europe standards, but housing is the big ticket. Numbeo (mid-2026) estimates a family of four spends ~€3,052/month (excl. rent), while a single person spends ~€854 (excl. rent). An expat blog agrees: roughly **€3,100 (family, no rent)** and **€900 (solo, no rent)**. 
+Living costs are moderate by Western Europe standards, but housing is the big ticket. Crowdsourced Data (mid-2026) estimates a family of four spends ~€3,052/month (excl. rent), while a single person spends ~€854 (excl. rent). An expat blog agrees: roughly **€3,100 (family, no rent)** and **€900 (solo, no rent)**. 
 
 - **Housing & Utilities:** Monthly rents vary by city:
 
@@ -49,7 +49,7 @@ Cyprus has a universal health system (GESY) since 2019. Public healthcare is fun
 Many expats still take private insurance or pay cash for private care, as it’s fast and English-friendly. (Major private hospitals like Ygia or Apollonion have short waits.) Note: Non-EU nationals **must** carry private health insurance to apply for permanent residency (a basic annual policy is roughly €200-€600). Cyprus’s healthcare quality is high: the 2024 Global Health Security Index ranks Cyprus 29th worldwide (above the US/Canada). Pharmacies are excellent and medicines are affordable compared to Western Europe.
 
 ## Safety
-Cyprus is very safe. Violent crime is virtually nonexistent and petty crime is low. Numbeo’s 2024 Crime Index for Cyprus is ~32.4 (Safety 67.6).  Global Finance ranks Cyprus as the **13th safest country in the world** (2023). The main risks are tourist-area pickpocketing or occasional scams (like counterfeit notes); use common sense. Emergency services (dial 112) are reliable.
+Cyprus is very safe. Violent crime is virtually nonexistent and petty crime is low. Crowdsourced Data’s 2024 Crime Index for Cyprus is ~32.4 (Safety 67.6).  Global Finance ranks Cyprus as the **13th safest country in the world** (2023). The main risks are tourist-area pickpocketing or occasional scams (like counterfeit notes); use common sense. Emergency services (dial 112) are reliable.
 
 One important note: Cyprus is divided by a UN buffer zone (the “Green Line”). The **Republic of Cyprus (south)** and the **Turkish Republic of Northern Cyprus (north)** are separate. Always enter/exit via the Republic’s airports (Larnaca, Paphos; or the Limassol port). The north is only recognized by Turkey; crossing there can complicate future travel.  For example, the U.S. advises that entry via the north is not recognized by Cyprus, so use the official southern ports.
 
@@ -112,7 +112,7 @@ Investors: Purchasing **€300,000+** in real estate (residential or commercial)
 | Broadband Speed (median)        | ~165 Mbps (download)      |
 | Coworking Spaces                | 30+ nationwide       |
 | English (EF EPI 2025)           | Score 537 (Moderate)      |
-| Crime Index (Numbeo 2024)       | 32.4 (Safety 67.6)        |
+| Crime Index (Crowdsourced Data 2024)       | 32.4 (Safety 67.6)        |
 | Time Zone                       | GMT+2 (EET), DST +3                |
 | Official Language               | Greek (Cypriot dialect); Turkish in North; English widely spoken |
 | Currency                        | Euro (€)                          |

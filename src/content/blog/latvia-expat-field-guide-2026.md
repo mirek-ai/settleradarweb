@@ -459,7 +459,7 @@ Latvia's bureaucracy is smaller-scale and generally more efficient than Germany'
 | Annual property tax | **0.2–0.6% of cadastral value**[^52] |
 | Foreign buyer mortgage rate | **4.8–6.5% APRC**[^52] |
 | Foreign buyer down payment | **30–40%**[^52] |
-| Riga Crime Index (Numbeo) | **37.5–38.8 / Safety Index ~62**[^38][^39] |
+| Riga Crime Index (Crowdsourced Data) | **37.5–38.8 / Safety Index ~62**[^38][^39] |
 | Latvia national Safety Index | **64.52**[^40] |
 | Emergency number | **112** (general) / **113** (ambulance) |
 
@@ -543,13 +543,13 @@ The €50,000 business investment Golden Visa is one of the least-discussed resi
 
 37. [Latvia - EU-terveydenhoito.fi - EU-healthcare.fi](https://www.eu-healthcare.fi/country-specific-information-about-health-services/latvia/) - Information about healthcare services and their use in Latvia.
 
-38. [Crime Comparison Between Riga, Latvia And Oslo ...](https://www.numbeo.com/crime/compare_cities.jsp?country1=Latvia&city1=Riga&country2=Norway&city2=Oslo)
+38. [Crime Comparison Between Riga, Latvia And Oslo ...](#)
 
 39. [Is Riga Safe? A Tourist's Guide to Safety and Security](https://qeepl.com/en/blog/is-riga-safe-a-tourist-s-guide-to-safety-and-security) - Explore Riga, the capital of Latvia, known for its stunning Art Nouveau architecture and vibrant old...
 
 40. [10 Safest Cities in Latvia (2026 Updated) - Travel Safe - Abroad](https://www.travelsafe-abroad.com/safest-cities-in-latvia/) - An overview of the top ten safest cities in Latvia and safety tips when traveling to Latvia.
 
-41. [Crime in Riga, Latvia](https://www.numbeo.com/crime/in/Riga)
+41. [Crime in Riga, Latvia](#)
 
 42. [Is Latvia Safe: Guide for Expats and Residents in 2026](https://www.globalcitizensolutions.com/is-latvia-safe/) - Wondering is Latvia safe in 2026? This guide covers crime, scams, road safety, public transport, LGB...
 
