@@ -340,9 +340,6 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <a href="#overview" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Sparkles className="w-4 h-4 text-blue-500" /> Quick Facts
           </a>
-          <a href="#stability" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-            <Landmark className="w-4 h-4 text-purple-500" /> Political Stability
-          </a>
           <a href="#freedom" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Shield className="w-4 h-4 text-emerald-500" /> Digital Freedom
           </a>
@@ -357,6 +354,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           </a>
           <a href="#climate" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
             <Sun className="w-4 h-4 text-amber-500" /> Climate Profile
+          </a>
+          <a href="#stability" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+            <Landmark className="w-4 h-4 text-purple-500" /> Political Stability & Governance
           </a>
           {relatedPosts.length > 0 && (
             <a href="#articles" className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
