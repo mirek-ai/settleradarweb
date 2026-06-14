@@ -14,7 +14,7 @@ export default async function NomadVisasPage() {
 
   const { getSortedPostsData } = require('@/lib/posts');
   const allPosts = getSortedPostsData();
-  const visaGuides = allPosts.filter((p: any) => p.title.toLowerCase().includes('nomad visa') || p.title.toLowerCase().includes('nomad-visa'));
+  const visaGuides = allPosts.filter((p: any) => p.tags?.includes('nomad-visa-guide') || (p.title.toLowerCase().includes('nomad visa') && !p.slug.includes('expat-field-guide')));
   const guideMap: Record<string, string> = {};
   visaGuides.forEach((p: any) => {
     if (p.country) {
