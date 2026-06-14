@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { 
   ArrowLeft, ArrowRight, MapPin, Building, Shield, Wind, TrendingUp, Landmark, Sparkles, 
-  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe, BookOpen, Swords, Info, Percent
+  Activity, Users, HeartPulse, GraduationCap, Briefcase, Scale, Sun, Droplets, ThermometerSun, CloudSnow, CheckCircle, Smile, MessageCircle, Gavel, Calendar, Globe, BookOpen, Swords, Info, Percent, Clock
 } from 'lucide-react';
 import { getSortedPostsData } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
@@ -414,6 +414,16 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 {country.currency_name && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-violet-500/10 text-violet-600 dark:text-violet-400 border border-violet-500/20">
                     <Landmark className="w-3.5 h-3.5" /> Currency: {country.currency_name} ({country.currency_symbol || country.currency_code})
+                  </span>
+                )}
+                {country.official_language && (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20">
+                    <MessageCircle className="w-3.5 h-3.5" /> Language: {country.official_language.length > 25 ? country.official_language.substring(0, 25) + '...' : country.official_language}
+                  </span>
+                )}
+                {country.time_zone && (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                    <Clock className="w-3.5 h-3.5" /> Time: {country.time_zone}
                   </span>
                 )}
               </div>

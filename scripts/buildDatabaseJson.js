@@ -144,7 +144,9 @@ async function buildDatabaseJson() {
           demographics_summary: country.demographics_summary || existingCountry.demographics_summary || null,
           politics_summary: country.politics_summary || existingCountry.politics_summary || null,
           nomad_visa: nomadVisaObj || existingCountry.nomad_visa || undefined,
-          digital_freedom_text: country.digital_freedom_text || null
+          digital_freedom_text: country.digital_freedom_text || null,
+          official_language: country.official_language || existingCountry.official_language || null,
+          time_zone: country.time_zone || existingCountry.time_zone || null
         };
       })
     };
