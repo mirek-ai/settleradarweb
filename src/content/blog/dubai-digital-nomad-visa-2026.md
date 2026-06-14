@@ -3,7 +3,7 @@ title: "Dubai Digital Nomad Visa 2026: Requirements, Costs, Process, and What No
 description: "A complete 2026 guide to Dubai's Virtual Work Residence Permit: minimum income requirements, application steps, hidden costs, and tax realities for remote workers."
 date: "2026-06-14"
 tags: ["dubai", "uae", "digital-nomad-visa", "nomad-visa-guide", "dubai-digital-nomad-visa"]
-coverImage: "/images/blog/dubai-digital-nomad-visa-2026.jpg"
+coverImage: "/images/blog/dubai-digital-nomad-visa-2026.png"
 author: "Miroslaw Kucharzyk"
 country: "united-arab-emirates"
 ---
