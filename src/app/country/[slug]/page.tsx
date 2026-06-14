@@ -432,9 +432,18 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
                 </a>
               </h1>
               {country.nomad_visa && (
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4 bg-emerald-100 dark:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/30 shadow-sm">
-                  <CheckCircle className="w-4 h-4" /> Digital Nomad Visa Available
-                </span>
+                (() => {
+                  const visaPost = relatedPosts.find(p => p.title.toLowerCase().includes('nomad visa') || p.title.toLowerCase().includes('nomad-visa'));
+                  return visaPost ? (
+                    <Link href={`/blog/${visaPost.slug}`} className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4 bg-emerald-100 dark:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/30 shadow-sm hover:bg-emerald-200 dark:hover:bg-emerald-500/40 transition-colors">
+                      <CheckCircle className="w-4 h-4" /> Digital Nomad Visa Available (Read Guide)
+                    </Link>
+                  ) : (
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4 bg-emerald-100 dark:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/30 shadow-sm">
+                      <CheckCircle className="w-4 h-4" /> Digital Nomad Visa Available
+                    </span>
+                  );
+                })()
               )}
               {country.seo_summary ? (
                 <p className="text-slate-700 dark:text-slate-200 max-w-3xl leading-relaxed text-lg font-medium">

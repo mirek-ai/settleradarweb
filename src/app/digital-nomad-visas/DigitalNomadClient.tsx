@@ -24,9 +24,10 @@ type SortKey = 'name' | 'taxes' | 'freedom' | 'homicides' | 'air' | 'happiness';
 
 interface DigitalNomadClientProps {
   nomadCountries: any[];
+  guideMap: Record<string, string>;
 }
 
-export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClientProps) {
+export default function DigitalNomadClient({ nomadCountries, guideMap }: DigitalNomadClientProps) {
   const [sortBy, setSortBy] = useState<SortKey>('name');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
   const [searchQuery, setSearchQuery] = useState('');
@@ -221,9 +222,15 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                       </td>
                       <td className="py-4 px-6 hidden sm:table-cell">
                         {country.nomad_visa ? (
-                          <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-bold">
-                            <CheckCircle className="w-4 h-4" /> Yes
-                          </div>
+                          guideMap[country.slug] ? (
+                            <Link href={`/blog/${guideMap[country.slug]}`} className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-bold hover:underline">
+                              <CheckCircle className="w-4 h-4" /> Yes (Read Guide)
+                            </Link>
+                          ) : (
+                            <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-bold">
+                              <CheckCircle className="w-4 h-4" /> Yes
+                            </div>
+                          )
                         ) : (
                           <span className="text-slate-600 text-sm font-mono">--</span>
                         )}
@@ -348,7 +355,7 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                     >
                       Analyze Destination
                     </Link>
-                    {country.nomad_visa?.url && (
+                    {country.nomad_visa?.url && !guideMap[country.slug] && (
                       <a 
                         href={country.nomad_visa.url}
                         target="_blank"
@@ -357,6 +364,14 @@ export default function DigitalNomadClient({ nomadCountries }: DigitalNomadClien
                       >
                         <ExternalLink className="w-4 h-4 mr-2" /> Official Visa Info
                       </a>
+                    )}
+                    {guideMap[country.slug] && (
+                      <Link 
+                        href={`/blog/${guideMap[country.slug]}`}
+                        className="w-full flex items-center justify-center px-4 py-2 text-sm font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-900/30 dark:hover:bg-emerald-800/40 border border-emerald-200 dark:border-emerald-800 rounded-xl transition-all"
+                      >
+                        Read Visa Guide
+                      </Link>
                     )}
                   </div>
                 </div>

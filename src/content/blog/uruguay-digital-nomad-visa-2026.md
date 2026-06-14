@@ -143,6 +143,15 @@ Choosing this permit over more robust residency paths depends entirely on whethe
 
 ---
 
+## What's Next?
+
+Getting the visa is only half the battle. To make an informed decision, you need real-time data on cost of living, tax burdens, and safety metrics.
+
+- **Deep Dive into the Data:** Check Uruguay's real-time tax, safety, and climate metrics on our comprehensive [Uruguay Country Profile](/country/uruguay).
+- **Compare Destinations:** Not sure if Uruguay is right for your tax setup? [Compare Uruguay vs Portugal](/compare/uruguay/portugal) or explore our [Digital Nomad Visas Master List](/digital-nomad-visas) to find your perfect base.
+
+---
+
 ## Quick Reference Cheat Sheet
 
 | Detail | Data |
